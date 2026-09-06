@@ -1,8 +1,9 @@
 # Quiz du collège
 
 Quiz quotidien envoyé par e-mail du lundi au samedi à 16 h (heure de Paris).
-Une matière par jour, 5 QCM conformes au programme officiel français, corrections
-affichées à la fin, et une cagnotte de points adossée à Google Sheets.
+Une matière par jour, 7 QCM et 1 question à réponse tapée, conformes au programme
+officiel français, corrections affichées à la fin, et une cagnotte de points
+adossée à Google Sheets.
 
 Interface entièrement en français. Le paramétrage se fait dans `config.json`.
 
@@ -75,6 +76,9 @@ Tout est dans `config.json`.
 quiz de ce jour-là. Matières disponibles : `francais`, `anglais`, `maths`,
 `histoire`.
 
+**Changer le nombre de questions.** `format` : `qcm` et `saisie`. Les questions
+de saisie viennent toujours en dernier.
+
 **Changer la difficulté.** `difficulte` : `facile`, `normale` ou `exigeante`.
 
 **Changer le niveau.** `niveau_manuel` force un niveau (`"5eme"` par exemple).
@@ -102,20 +106,43 @@ choisit lui-même un chapitre du programme officiel.
 | Quiz terminé | 10 |
 | Chaque bonne réponse | 2 |
 | Sans faute | 5 |
+| Semaine complète (6 quiz, 3 pendant les vacances) | 30 |
 
-Deux pistes indépendantes :
+Trois mécanismes, réglés dans `config.json` :
 
-- **Participation.** 6 quiz dans la semaine (3 pendant les vacances scolaires)
-  déclenchent la récompense hebdomadaire, quel que soit le score. Elle ne coûte
-  aucun point.
-- **Cagnotte.** Les points s'accumulent sans remise à zéro. Une demande
-  d'échange passe en `en_attente` dans l'onglet `Recompenses` ; il suffit de
-  remplacer ce statut par `approuve` pour la valider — le solde est alors
-  débité. `refuse` libère les points.
+- **Cagnotte** (`boutique`). Les points s'accumulent sans remise à zéro et
+  s'échangent quand l'élève le décide — tout de suite ou après plusieurs mois
+  d'épargne. Une demande passe en `en_attente` dans l'onglet `Recompenses` ;
+  remplacer ce statut par `approuve` débite le solde, `refuse` libère les
+  points. Pour plafonner un article, ajouter `"max_par_mois": 1` sur sa ligne.
+- **Bonus de semaine** (`bonus_semaine`). Versé automatiquement une fois par
+  semaine dès que le nombre de quiz terminés atteint le seuil, quels que
+  soient les scores.
+- **Palier** (`palier`). Tous les 600 points *gagnés* depuis le début, une
+  récompense est acquise d'office. Le calcul se fait sur le total gagné, jamais
+  sur le solde : dépenser en boutique ne repousse pas le palier suivant.
 
 Un seul enregistrement par jour : rejouer le quiz ne recrédite rien.
 
+À 70 % de réussite et six quiz par semaine, l'élève gagne environ 160 points
+par semaine — de quoi acheter une journée de jeu chaque semaine et atteindre un
+palier toutes les quatre semaines environ.
+
 ---
+
+## Correction des réponses tapées
+
+Aucun appel réseau à la correction : les formes acceptées sont générées avec le
+quiz (`reponses_acceptees` dans le JSON du jour) et la comparaison se fait dans
+le navigateur après normalisation des deux côtés — majuscules, espaces,
+apostrophes typographiques, ponctuation finale, virgule ou point décimal, zéros
+finaux. Les accents ne sont **pas** neutralisés : `ete` pour `été` est une
+erreur, c'est voulu.
+
+Si une réponse juste est comptée fausse, c'est que la forme tapée n'est pas dans
+la liste. Ouvrir `data/AAAA-MM-JJ.json`, ajouter la forme manquante à
+`reponses_acceptees`, et surtout renforcer la consigne dans `generate_quiz.py`
+(bloc `bloc_saisie`) pour que le cas soit couvert les jours suivants.
 
 ## Diagnostic
 

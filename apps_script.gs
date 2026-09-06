@@ -11,6 +11,11 @@
  *
  * Rappel : toute modification du code exige un NOUVEAU deploiement.
  * Enregistrer ne suffit pas a mettre l'endpoint a jour.
+ *
+ * Onglet Recompenses — la colonne Points se lit selon le type :
+ *   bonus     points gagnes (semaine complete)          statut : acquis
+ *   palier    0, la recompense est acquise d'office     statut : acquis
+ *   boutique  points a debiter                          statut : en_attente → approuve / refuse
  */
 
 var ONGLET_RESULTATS = 'Resultats';
@@ -18,7 +23,7 @@ var ONGLET_RECOMPENSES = 'Recompenses';
 var FUSEAU = 'Europe/Paris';
 
 var EN_TETES_RESULTATS = ['Date', 'Matiere', 'Niveau', 'Score', 'Total', 'Points', 'Horodatage'];
-var EN_TETES_RECOMPENSES = ['Horodatage', 'Type', 'Id', 'Libelle', 'Cout', 'Statut', 'Note'];
+var EN_TETES_RECOMPENSES = ['Horodatage', 'Type', 'Id', 'Libelle', 'Points', 'Statut', 'Note'];
 
 
 // ── Installation ─────────────────────────────────────────────────────────────
@@ -81,6 +86,10 @@ function aujourdhui_() {
   return Utilities.formatDate(new Date(), FUSEAU, 'yyyy-MM-dd');
 }
 
+function moisCourant_() {
+  return Utilities.formatDate(new Date(), FUSEAU, 'yyyy-MM');
+}
+
 
 // ── Lecture ──────────────────────────────────────────────────────────────────
 
@@ -106,7 +115,7 @@ function lireRecompenses_() {
       type: String(l[1] || ''),
       id: String(l[2] || ''),
       libelle: String(l[3] || ''),
-      cout: Number(l[4]) || 0,
+      points: Number(l[4]) || 0,
       statut: String(l[5] || '')
     };
   });
@@ -116,18 +125,36 @@ function calculerEtat_() {
   var resultats = lireResultats_();
   var recompenses = lireRecompenses_();
 
+  // Total gagne : quiz + bonus de semaine. Ne diminue jamais, c'est lui qui
+  // declenche les paliers.
   var gagnes = resultats.reduce(function (s, r) { return s + r.points; }, 0);
+  gagnes += recompenses.reduce(function (s, r) {
+    return r.type === 'bonus' ? s + r.points : s;
+  }, 0);
+
   var depenses = recompenses.reduce(function (s, r) {
-    return r.statut === 'approuve' ? s + r.cout : s;
+    return (r.type === 'boutique' && r.statut === 'approuve') ? s + r.points : s;
   }, 0);
   var reserves = recompenses.reduce(function (s, r) {
-    return r.statut === 'en_attente' ? s + r.cout : s;
+    return (r.type === 'boutique' && r.statut === 'en_attente') ? s + r.points : s;
   }, 0);
+
+  var mois = moisCourant_();
+  var achatsDuMois = {};
+  recompenses.forEach(function (r) {
+    if (r.type === 'boutique' && r.statut !== 'refuse'
+        && r.horodatage.slice(0, 7) === mois) {
+      achatsDuMois[r.id] = (achatsDuMois[r.id] || 0) + 1;
+    }
+  });
 
   var lundi = lundiDe_(aujourdhui_());
   var datesSemaine = {};
   resultats.forEach(function (r) {
     if (lundiDe_(r.date) === lundi) { datesSemaine[r.date] = true; }
+  });
+  var bonusSemaineAcquis = recompenses.some(function (r) {
+    return r.type === 'bonus' && r.id === lundi;
   });
 
   return {
@@ -136,7 +163,9 @@ function calculerEtat_() {
     disponible: gagnes - depenses - reserves,
     total_gagne: gagnes,
     total_depense: depenses,
-    semaine: { lundi: lundi, jours: Object.keys(datesSemaine).length },
+    paliers_atteints: recompenses.filter(function (r) { return r.type === 'palier'; }).length,
+    achats_du_mois: achatsDuMois,
+    semaine: { lundi: lundi, jours: Object.keys(datesSemaine).length, bonus: bonusSemaineAcquis },
     fait_aujourdhui: resultats.some(function (r) { return r.date === aujourdhui_(); }),
     resultats: resultats.slice(-40),
     recompenses: recompenses.slice(-40)
@@ -167,32 +196,84 @@ function enregistrerResultat_(d) {
     maintenant_()
   ]);
 
-  var hebdo = verifierRecompenseHebdo_(date, Number(d.jours_requis) || 6, String(d.libelle_hebdo || 'Récompense de la semaine'));
-  return { ok: true, recompense_hebdo: hebdo, etat: calculerEtat_() };
+  var bonus = verifierBonusSemaine_(date, d);
+  var paliers = verifierPaliers_(d);
+
+  return { ok: true, bonus_semaine: bonus, paliers: paliers, etat: calculerEtat_() };
 }
 
-function verifierRecompenseHebdo_(date, joursRequis, libelle) {
+/** Verse le bonus une seule fois par semaine, des que le seuil de jours est atteint. */
+function verifierBonusSemaine_(date, d) {
+  var points = Number(d.bonus_points) || 0;
+  var requis = Number(d.bonus_jours_requis) || 6;
+  if (points <= 0) { return null; }
+
   var lundi = lundiDe_(date);
-  var dejaAcquise = lireRecompenses_().some(function (r) {
-    return r.type === 'hebdo' && r.id === lundi;
+  var deja = lireRecompenses_().some(function (r) {
+    return r.type === 'bonus' && r.id === lundi;
   });
-  if (dejaAcquise) { return null; }
+  if (deja) { return null; }
 
   var dates = {};
   lireResultats_().forEach(function (r) {
     if (lundiDe_(r.date) === lundi) { dates[r.date] = true; }
   });
-  if (Object.keys(dates).length < joursRequis) { return null; }
+  if (Object.keys(dates).length < requis) { return null; }
 
+  var libelle = String(d.bonus_libelle || 'Semaine complete');
   feuille_(ONGLET_RECOMPENSES).appendRow([
-    maintenant_(), 'hebdo', lundi, libelle, 0, 'acquise', 'Semaine du ' + lundi
+    maintenant_(), 'bonus', lundi, libelle, points, 'acquis', 'Semaine du ' + lundi
   ]);
-  return { libelle: libelle, semaine: lundi };
+  return { libelle: libelle, points: points, semaine: lundi };
+}
+
+/**
+ * Palier automatique tous les "pas" points GAGNES.
+ * Base sur le total gagne, jamais sur le solde : les achats en boutique
+ * ne repoussent pas le palier suivant.
+ */
+function verifierPaliers_(d) {
+  var pas = Number(d.palier_pas) || 0;
+  if (pas <= 0) { return []; }
+
+  var etat = calculerEtat_();
+  var dus = Math.floor(etat.total_gagne / pas);
+  var acquis = etat.paliers_atteints;
+  if (dus <= acquis) { return []; }
+
+  var libelle = String(d.palier_libelle || 'Palier atteint');
+  var feuille = feuille_(ONGLET_RECOMPENSES);
+  var nouveaux = [];
+
+  for (var n = acquis + 1; n <= dus; n++) {
+    var seuil = n * pas;
+    feuille.appendRow([
+      maintenant_(), 'palier', String(seuil), libelle, 0, 'acquis',
+      seuil + ' points gagnes'
+    ]);
+    nouveaux.push({ libelle: libelle, seuil: seuil });
+  }
+  return nouveaux;
 }
 
 function demanderRecompense_(d) {
   var cout = Number(d.cout) || 0;
   var etat = calculerEtat_();
+
+  // Limite mensuelle : les demandes en attente comptent, sinon on pourrait
+  // en empiler plusieurs avant la validation parentale.
+  var max = Number(d.max_par_mois) || 0;
+  if (max > 0) {
+    var mois = moisCourant_();
+    var faites = lireRecompenses_().filter(function (r) {
+      return r.type === 'boutique' && r.id === String(d.id || '')
+        && r.statut !== 'refuse' && r.horodatage.slice(0, 7) === mois;
+    }).length;
+    if (faites >= max) {
+      return { ok: false, raison: 'limite_mensuelle', etat: etat };
+    }
+  }
+
   if (etat.disponible < cout) {
     return { ok: false, raison: 'solde_insuffisant', etat: etat };
   }

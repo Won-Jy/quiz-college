@@ -41,7 +41,7 @@
     <div class="options" id="quiz-options" role="radiogroup" aria-labelledby="quiz-enonce"></div>
 
     <button class="bouton" id="bouton-suivant" disabled>Valider</button>
-    <p class="note">Les corrections arrivent à la fin des 5 questions.</p>
+    <p class="note" id="quiz-note"></p>
   </section>
 
   <!-- Résultats -->
@@ -75,6 +75,13 @@
     <h2 class="sous-titre">Cette semaine</h2>
     <ol class="semaine" id="semaine" aria-label="Jours de la semaine"></ol>
     <p class="texte" id="semaine-texte"></p>
+
+    <h2 class="sous-titre">Prochaine récompense</h2>
+    <div class="palier" id="palier" hidden>
+      <p class="palier-libelle" id="palier-libelle"></p>
+      <div class="jauge"><span id="palier-jauge"></span></div>
+      <p class="texte" id="palier-texte"></p>
+    </div>
 
     <h2 class="sous-titre">Échanger mes points</h2>
     <div class="boutique" id="boutique"></div>

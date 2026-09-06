@@ -93,6 +93,49 @@
     });
   }
 
+  // ── Correction des reponses tapees ────────────────────────────────────────
+  // Pas d'appel reseau : les formes acceptees sont generees avec le quiz.
+  // On compare apres une normalisation identique des deux cotes.
+
+  function normaliser(valeur) {
+    var t = String(valeur || '')
+      .normalize('NFC')
+      .toLowerCase()
+      .replace(/[\u2019\u2018\u0060\u00b4]/g, "'")   // apostrophes typographiques
+      .replace(/[\u00a0\u202f]/g, ' ')                // espaces insecables
+      .replace(/\s+/g, ' ')
+      .trim()
+      .replace(/[.!?;:]+$/, '')                        // ponctuation finale
+      .trim();
+    // Nombres : 0,75 = 0.75 ; 1 000 = 1000 ; 3 / 4 = 3/4 ; 12.0 = 12
+    if (/^[\d\s.,\/\-+]+$/.test(t)) {
+      t = t.replace(/,/g, '.').replace(/\s+/g, '');
+      t = t.replace(/(\.\d*?)0+$/, '$1').replace(/\.$/, '');   // 0.750 = 0.75, 12.0 = 12
+    }
+    return t;
+  }
+
+  function estJuste(q, reponse) {
+    if (q.type === 'saisie') {
+      var r = normaliser(reponse);
+      if (!r) { return false; }
+      return (q.reponses_acceptees || []).some(function (a) {
+        return normaliser(a) === r;
+      });
+    }
+    return reponse === q.reponse;
+  }
+
+  function reponseLisible(q, reponse) {
+    if (q.type === 'saisie') { return String(reponse || '').trim() || '—'; }
+    return q.options[reponse] || '—';
+  }
+
+  function bonneReponseLisible(q) {
+    if (q.type === 'saisie') { return (q.reponses_acceptees || [])[0] || ''; }
+    return q.options[q.reponse];
+  }
+
   function dessinerQuestion() {
     var q = etat.quiz.questions[etat.index];
     var total = etat.quiz.questions.length;
@@ -104,6 +147,15 @@
     var conteneur = $('quiz-options');
     conteneur.innerHTML = '';
     etat.selection = null;
+
+    var suivant = $('bouton-suivant');
+    suivant.disabled = true;
+    suivant.textContent = (etat.index === total - 1) ? 'Terminer' : 'Valider';
+
+    if (q.type === 'saisie') {
+      dessinerSaisie(q, conteneur);
+      return;
+    }
 
     q.options.forEach(function (option, i) {
       var bouton = document.createElement('button');
@@ -130,10 +182,36 @@
 
       conteneur.appendChild(bouton);
     });
+  }
 
-    var suivant = $('bouton-suivant');
-    suivant.disabled = true;
-    suivant.textContent = (etat.index === total - 1) ? 'Terminer' : 'Valider';
+  function dessinerSaisie(q, conteneur) {
+    var champ = document.createElement('input');
+    champ.type = 'text';
+    champ.className = 'saisie';
+    champ.autocomplete = 'off';
+    champ.autocapitalize = 'off';
+    champ.spellcheck = false;
+    champ.setAttribute('aria-label', 'Ta réponse');
+    champ.placeholder = 'Tape ta réponse ici';
+
+    var aide = document.createElement('p');
+    aide.className = 'note';
+    aide.textContent = 'Pas de proposition pour celle-ci : écris la réponse exacte, accents compris.';
+
+    champ.addEventListener('input', function () {
+      etat.selection = champ.value.trim() ? champ.value : null;
+      $('bouton-suivant').disabled = (etat.selection === null);
+    });
+    champ.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' && etat.selection !== null) {
+        e.preventDefault();
+        questionSuivante();
+      }
+    });
+
+    conteneur.appendChild(champ);
+    conteneur.appendChild(aide);
+    setTimeout(function () { champ.focus(); }, 60);
   }
 
   function questionSuivante() {
@@ -162,7 +240,7 @@
     var questions = etat.quiz.questions;
     var total = questions.length;
     var score = questions.reduce(function (s, q, i) {
-      return s + (etat.choix[i] === q.reponse ? 1 : 0);
+      return s + (estJuste(q, etat.choix[i]) ? 1 : 0);
     }, 0);
     var points = calculerPoints(score, total);
 
@@ -172,25 +250,26 @@
     bilan.innerHTML = '';
     questions.forEach(function (q, i) {
       var li = document.createElement('li');
-      var ok = etat.choix[i] === q.reponse;
+      var ok = estJuste(q, etat.choix[i]);
       li.className = ok ? 'juste' : 'faux';
       li.textContent = ok ? '✓' : '✕';
       li.setAttribute('aria-label', 'Question ' + (i + 1) + (ok ? ' juste' : ' fausse'));
       bilan.appendChild(li);
     });
 
-    var mots = ['Aucune bonne réponse cette fois.',
-      'Une bonne réponse.', 'Deux bonnes réponses.', 'Trois bonnes réponses.',
-      'Quatre bonnes réponses.', 'Cinq sur cinq, sans faute.'];
-    texte($('score-texte'), mots[score] || (score + ' bonnes réponses sur ' + total + '.'));
+    var phrase;
+    if (score === total) { phrase = total + ' sur ' + total + ', sans faute.'; }
+    else if (score === 0) { phrase = 'Aucune bonne réponse cette fois.'; }
+    else if (score === 1) { phrase = 'Une bonne réponse sur ' + total + '.'; }
+    else { phrase = score + ' bonnes réponses sur ' + total + '.'; }
+    texte($('score-texte'), phrase);
     texte($('gain'), '+ ' + points + ' points');
 
     dessinerCorrections(questions);
     afficher('resultats');
 
-    var requis = etat.quiz.vacances
-      ? etat.config.recompense_hebdo.jours_requis_vacances
-      : etat.config.recompense_hebdo.jours_requis;
+    var bonus = etat.config.bonus_semaine;
+    var palier = etat.config.palier || {};
 
     ecrireCarnet({
       action: 'resultat',
@@ -200,20 +279,40 @@
       score: score,
       total: total,
       points: points,
-      jours_requis: requis,
-      libelle_hebdo: etat.config.recompense_hebdo.libelle
+      bonus_jours_requis: etat.quiz.vacances ? bonus.jours_requis_vacances : bonus.jours_requis,
+      bonus_points: bonus.points,
+      bonus_libelle: bonus.libelle,
+      palier_pas: palier.pas,
+      palier_libelle: palier.libelle
     }).then(function (rep) {
       if (!rep) { return; }
       if (rep.ok === false && rep.raison === 'deja_enregistre') {
         texte($('gain'), 'Quiz déjà validé aujourd\'hui — pas de points en plus');
+        return;
       }
-      if (rep.recompense_hebdo) {
-        var bloc = $('annonce-hebdo');
-        bloc.textContent = 'Semaine complète : tu as gagné « '
-          + rep.recompense_hebdo.libelle +' ».';
-        bloc.hidden = false;
-      }
+      annoncer(rep);
     });
+  }
+
+  function annoncer(rep) {
+    var lignes = [];
+    if (rep.bonus_semaine) {
+      lignes.push('Semaine complète : + ' + rep.bonus_semaine.points + ' points de bonus.');
+    }
+    (rep.paliers || []).forEach(function (p) {
+      lignes.push(p.seuil + ' points gagnés depuis le début : « '
+        + p.libelle + ' » est à toi.');
+    });
+    if (!lignes.length) { return; }
+
+    var bloc = $('annonce-hebdo');
+    bloc.innerHTML = '';
+    lignes.forEach(function (l) {
+      var p = document.createElement('p');
+      p.textContent = l;
+      bloc.appendChild(p);
+    });
+    bloc.hidden = false;
   }
 
   function dessinerCorrections(questions) {
@@ -221,7 +320,7 @@
     liste.innerHTML = '';
 
     questions.forEach(function (q, i) {
-      var ok = etat.choix[i] === q.reponse;
+      var ok = estJuste(q, etat.choix[i]);
       var li = document.createElement('li');
 
       var verdict = document.createElement('span');
@@ -240,9 +339,9 @@
 
       if (!ok) {
         reponses.appendChild(ligneReponse(
-          'Ta réponse', q.options[etat.choix[i]] || '—', 'mauvaise'));
+          'Ta réponse', reponseLisible(q, etat.choix[i]), 'mauvaise'));
       }
-      reponses.appendChild(ligneReponse('Bonne réponse', q.options[q.reponse], 'bonne'));
+      reponses.appendChild(ligneReponse('Bonne réponse', bonneReponseLisible(q), 'bonne'));
       li.appendChild(reponses);
 
       if (q.explication) {
@@ -319,17 +418,36 @@
       ol.appendChild(li);
     }
 
+    var bonus = etat.config.bonus_semaine;
     var requis = (etat.quiz && etat.quiz.vacances)
-      ? etat.config.recompense_hebdo.jours_requis_vacances
-      : etat.config.recompense_hebdo.jours_requis;
+      ? bonus.jours_requis_vacances : bonus.jours_requis;
     var restants = Math.max(0, requis - data.semaine.jours);
     texte($('semaine-texte'), restants === 0
-      ? 'Objectif atteint : « ' + etat.config.recompense_hebdo.libelle +' » est à toi.'
+      ? 'Semaine complète : le bonus de ' + bonus.points + ' points est acquis.'
       : restants + (restants > 1 ? ' quiz restants' : ' quiz restant')
-        + ' pour « ' + etat.config.recompense_hebdo.libelle + ' ».');
+        + ' pour le bonus de ' + bonus.points + ' points.');
 
+    dessinerPalier(data);
     dessinerBoutique(data);
     dessinerJournal(data);
+  }
+
+  function dessinerPalier(data) {
+    var palier = etat.config.palier;
+    var bloc = $('palier');
+    if (!palier || !palier.pas) { bloc.hidden = true; return; }
+
+    var acquis = data.paliers_atteints * palier.pas;
+    var fait = Math.max(0, data.total_gagne - acquis);
+    var reste = Math.max(0, palier.pas - fait);
+    var part = Math.min(100, Math.round((fait / palier.pas) * 100));
+
+    $('palier-libelle').textContent = palier.libelle;
+    $('palier-jauge').style.width = part + '%';
+    $('palier-texte').textContent = reste === 0
+      ? 'Palier atteint. Regarde plus bas dans tes récompenses.'
+      : 'Encore ' + reste + ' points à gagner (' + fait + ' / ' + palier.pas + ').';
+    bloc.hidden = false;
   }
 
   function dessinerBoutique(data) {
@@ -348,26 +466,36 @@
       var cout = document.createElement('div');
       cout.className = 'cout';
       var manque = article.cout - data.disponible;
-      cout.textContent = manque > 0
-        ? article.cout + ' pts · il te manque ' + manque + ' pts'
-        : article.cout + ' pts';
+      var epuise = article.max_par_mois > 0
+        && (data.achats_du_mois || {})[article.id] >= article.max_par_mois;
+
+      cout.textContent = epuise
+        ? article.cout + ' pts · déjà pris ce mois-ci'
+        : (manque > 0
+            ? article.cout + ' pts · il te manque ' + manque + ' pts'
+            : article.cout + ' pts'
+              + (article.max_par_mois > 0 ? ' · une fois par mois' : ''));
       infos.appendChild(libelle);
       infos.appendChild(cout);
 
       var bouton = document.createElement('button');
       bouton.type = 'button';
       bouton.textContent = 'Demander';
-      bouton.disabled = manque > 0;
+      bouton.disabled = epuise || manque > 0;
       bouton.addEventListener('click', function () {
         bouton.disabled = true;
         bouton.textContent = 'Envoi…';
         ecrireCarnet({
           action: 'demande', id: article.id,
-          libelle: article.libelle, cout: article.cout
+          libelle: article.libelle, cout: article.cout,
+          max_par_mois: article.max_par_mois
         }).then(function (rep) {
           if (rep && rep.ok) {
             bouton.textContent = 'Demandé';
             dessinerCagnotte(rep.etat);
+          } else if (rep && rep.raison === 'limite_mensuelle') {
+            bouton.textContent = 'Le mois prochain';
+            cout.textContent = article.cout + ' pts · déjà pris ce mois-ci';
           } else {
             bouton.textContent = 'Réessayer';
             bouton.disabled = false;
@@ -382,7 +510,7 @@
   }
 
   var STATUTS = {
-    acquise: 'acquise',
+    acquis: 'acquis',
     en_attente: 'en attente',
     approuve: 'validée',
     refuse: 'refusée'
@@ -437,6 +565,8 @@
       texte($('quiz-matiere'), etat.quiz.matiere_affichee);
       texte($('quiz-chapitre'), etat.quiz.chapitre || '');
       $('bouton-suivant').textContent = 'Valider';
+      texte($('quiz-note'), 'Les corrections arrivent à la fin des '
+        + etat.quiz.questions.length + ' questions.');
 
       var repris = memoire('quiz-' + date);
       if (repris && repris.choix && repris.choix.length === etat.quiz.questions.length) {

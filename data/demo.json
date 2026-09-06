@@ -11,18 +11,30 @@
     {
       "id": 1,
       "question": "Dans la phrase « Le vieux chien dort sous la table », quelle est la classe grammaticale du mot « vieux » ?",
-      "options": ["Un adjectif qualificatif", "Un nom commun", "Un adverbe", "Un déterminant"],
+      "options": [
+        "Un adjectif qualificatif",
+        "Un nom commun",
+        "Un adverbe",
+        "Un déterminant"
+      ],
       "reponse": 0,
       "explication": "« Vieux » donne une précision sur le nom « chien » et s'accorde avec lui : c'est un adjectif qualificatif. Un adverbe, lui, ne s'accorde jamais.",
-      "notion": "Adjectif qualificatif"
+      "notion": "Adjectif qualificatif",
+      "type": "qcm"
     },
     {
       "id": 2,
       "question": "Quel mot de la phrase « Elle range soigneusement ses affaires » est un adverbe ?",
-      "options": ["Elle", "range", "soigneusement", "affaires"],
+      "options": [
+        "Elle",
+        "range",
+        "soigneusement",
+        "affaires"
+      ],
       "reponse": 2,
       "explication": "Un adverbe modifie le sens du verbe et reste invariable. « Soigneusement » précise comment elle range : c'est bien un adverbe.",
-      "notion": "Adverbe"
+      "notion": "Adverbe",
+      "type": "qcm"
     },
     {
       "id": 3,
@@ -35,7 +47,8 @@
       ],
       "reponse": 1,
       "explication": "« Ce » est placé devant le nom « livre » et l'accompagne : c'est un déterminant démonstratif. Un pronom, lui, remplacerait le nom au lieu de le précéder.",
-      "notion": "Déterminant démonstratif"
+      "notion": "Déterminant démonstratif",
+      "type": "qcm"
     },
     {
       "id": 4,
@@ -48,7 +61,8 @@
       ],
       "reponse": 2,
       "explication": "« Sur » relie « le livre » et « l'étagère » : c'est une préposition. Les mots « profondément », « vite » et « magnifiquement » sont des adverbes.",
-      "notion": "Préposition"
+      "notion": "Préposition",
+      "type": "qcm"
     },
     {
       "id": 5,
@@ -61,7 +75,47 @@
       ],
       "reponse": 0,
       "explication": "« Qui » reprend « les enfants » et introduit la proposition « qui jouent dehors » : c'est un pronom relatif. Il serait interrogatif seulement dans une question comme « Qui joue dehors ? ».",
-      "notion": "Pronom relatif"
+      "notion": "Pronom relatif",
+      "type": "qcm"
+    },
+    {
+      "id": 6,
+      "type": "qcm",
+      "question": "Dans « Elle a offert un cadeau à sa grand-mère », quelle est la classe grammaticale de « à » ?",
+      "options": [
+        "Un adverbe",
+        "Une préposition",
+        "Un déterminant",
+        "Une conjonction de coordination"
+      ],
+      "reponse": 1,
+      "explication": "« À » introduit le groupe « sa grand-mère » et le relie au verbe : c'est une préposition. Les conjonctions de coordination sont mais, ou, et, donc, or, ni, car.",
+      "notion": "Préposition"
+    },
+    {
+      "id": 7,
+      "type": "qcm",
+      "question": "Quel mot est un nom commun dans la phrase « Nous partirons demain matin » ?",
+      "options": [
+        "Nous",
+        "partirons",
+        "demain",
+        "matin"
+      ],
+      "reponse": 3,
+      "explication": "« Matin » désigne un moment de la journée et peut prendre un déterminant (le matin) : c'est un nom commun. « Demain » est un adverbe de temps, même s'il ressemble à un nom.",
+      "notion": "Nom commun"
+    },
+    {
+      "id": 8,
+      "type": "saisie",
+      "question": "Écris la classe grammaticale du mot « rapidement » dans « Il court rapidement ». Un seul mot attendu.",
+      "reponses_acceptees": [
+        "adverbe",
+        "un adverbe"
+      ],
+      "explication": "« Rapidement » modifie le verbe « court » et ne change jamais de forme : c'est un adverbe. Beaucoup d'adverbes se terminent en -ment.",
+      "notion": "Adverbe"
     }
   ]
 }

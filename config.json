@@ -1,19 +1,19 @@
 {
   "_notice": "Tout se règle ici. Modifier ce fichier suffit : aucun code à toucher.",
-
   "eleve": "Seam",
   "destinataire": "won.seam@gmail.com",
   "base_url": "https://won-jy.github.io/quiz-college",
   "modele": "claude-sonnet-5",
-
   "niveau_base_annee": 2026,
   "niveau_manuel": null,
   "_niveau": "niveau_manuel force un niveau ('6eme', '5eme'...). null = calcul automatique : passage au niveau superieur chaque 1er juin.",
-
-  "nb_questions": 5,
+  "format": {
+    "qcm": 7,
+    "saisie": 1
+  },
+  "_format": "qcm = questions a choix multiples ; saisie = reponse courte tapee par l'eleve (mot, nombre, date), corrigee automatiquement. La ou les questions de saisie viennent en dernier.",
   "difficulte": "normale",
   "_difficulte": "facile | normale | exigeante",
-
   "planning": {
     "1": "francais",
     "2": "anglais",
@@ -23,42 +23,68 @@
     "6": "histoire"
   },
   "_planning": "1 = lundi ... 6 = samedi. Dimanche : pas de quiz. Matieres possibles : francais, anglais, maths, histoire.",
-
   "points": {
     "participation": 10,
     "par_bonne_reponse": 2,
-    "sans_faute": 5,
-    "bonus_semaine": 15
+    "sans_faute": 5
   },
-
-  "recompense_hebdo": {
+  "bonus_semaine": {
     "jours_requis": 6,
     "jours_requis_vacances": 3,
-    "libelle": "Une journée de jeu illimitée"
+    "points": 30,
+    "libelle": "Semaine complète"
   },
-
+  "_bonus_semaine": "Bonus verse une fois par semaine si le nombre de quiz termines atteint le seuil, quels que soient les scores.",
   "boutique": [
     {
-      "id": "resto",
-      "cout": 250,
-      "libelle": "Un repas au restaurant de ton choix"
+      "id": "jeu",
+      "cout": 100,
+      "libelle": "Une journée de jeu illimitée"
     },
     {
-      "id": "grand",
-      "cout": 600,
-      "libelle": "Restaurant + un cadeau de ton choix"
+      "id": "achat",
+      "cout": 200,
+      "libelle": "Un bon d'achat de 10 €"
     }
   ],
-
+  "_boutique": "Recompenses achetees avec les points, sans limite de frequence : les points se gardent et peuvent etre depenses d'un coup. Pour plafonner un article, ajouter \"max_par_mois\": 1 sur sa ligne.",
+  "palier": {
+    "pas": 600,
+    "libelle": "Un repas au restaurant de ton choix"
+  },
+  "_palier": "Palier automatique base sur le total des points GAGNES depuis le debut. Les achats en boutique ne le font pas reculer : acheter des journees de jeu ne retarde jamais le palier suivant.",
   "vacances": [
-    { "nom": "Toussaint",   "debut": "2026-10-17", "fin": "2026-11-01" },
-    { "nom": "Noel",        "debut": "2026-12-19", "fin": "2027-01-03" },
-    { "nom": "Hiver",       "debut": "2027-02-20", "fin": "2027-03-07" },
-    { "nom": "Printemps",   "debut": "2027-04-17", "fin": "2027-05-02" },
-    { "nom": "Ascension",   "debut": "2027-05-06", "fin": "2027-05-09" },
-    { "nom": "Ete",         "debut": "2027-07-03", "fin": "2027-08-31" }
+    {
+      "nom": "Toussaint",
+      "debut": "2026-10-17",
+      "fin": "2026-11-01"
+    },
+    {
+      "nom": "Noel",
+      "debut": "2026-12-19",
+      "fin": "2027-01-03"
+    },
+    {
+      "nom": "Hiver",
+      "debut": "2027-02-20",
+      "fin": "2027-03-07"
+    },
+    {
+      "nom": "Printemps",
+      "debut": "2027-04-17",
+      "fin": "2027-05-02"
+    },
+    {
+      "nom": "Ascension",
+      "debut": "2027-05-06",
+      "fin": "2027-05-09"
+    },
+    {
+      "nom": "Ete",
+      "debut": "2027-07-03",
+      "fin": "2027-08-31"
+    }
   ],
   "_vacances": "Zone B (academie d'Aix-Marseille). Pendant ces periodes le quiz est envoye normalement, mais la recompense hebdomadaire s'obtient avec jours_requis_vacances au lieu de jours_requis.",
-
-  "sheets_url": "REMPLACER_PAR_URL_APPS_SCRIPT"
+  "sheets_url": "https://script.google.com/macros/s/AKfycbyTMuQBQVrX6bATC2waa5uqPJcDWwJqvI4ie0etMKnWVS8sJ7VQcbI4DTba3DTLh-zm9w/exec"
 }

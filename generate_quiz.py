@@ -102,8 +102,18 @@ def choisir_chapitre(programme, niveau, matiere, historique):
 
 # ── Generation ───────────────────────────────────────────────────────────────
 
+def format_quiz(cfg):
+    """Nombre de questions par type. Retro-compatible avec l'ancien nb_questions."""
+    fmt = cfg.get("format")
+    if isinstance(fmt, dict):
+        return {"qcm": int(fmt.get("qcm", 0)), "saisie": int(fmt.get("saisie", 0))}
+    return {"qcm": int(cfg.get("nb_questions", 5)), "saisie": 0}
+
+
 def construire_prompt(cfg, niveau, matiere, chapitre, notions_recentes):
-    n = cfg.get("nb_questions", 5)
+    fmt = format_quiz(cfg)
+    n_qcm, n_saisie = fmt["qcm"], fmt["saisie"]
+    total = n_qcm + n_saisie
     label = MATIERES[matiere]["nom"]
     consigne_diff = DIFFICULTES.get(cfg.get("difficulte", "normale"), DIFFICULTES["normale"])
 
@@ -122,30 +132,42 @@ def construire_prompt(cfg, niveau, matiere, chapitre, notions_recentes):
     if matiere == "anglais":
         specifique = ("\nCas particulier de l'anglais : les consignes, les propositions de reponse "
                       "explicatives et les explications sont en francais ; seules les phrases a "
-                      "completer ou a analyser sont en anglais.")
+                      "completer ou a analyser sont en anglais. Pour la question de saisie, "
+                      "l'eleve tape un mot ou une forme verbale en anglais.")
     if matiere == "maths":
         specifique = ("\nCas particulier des maths : ecris les nombres decimaux avec une virgule "
                       "(3,5 et non 3.5). Pas de LaTeX : utilise du texte simple (2/3, 5 cm2, x2 pour "
-                      "le carre).")
+                      "le carre). Pour la question de saisie, precise l'unite attendue dans l'enonce "
+                      "et n'attends que le nombre dans la reponse.")
 
-    return f"""Tu es professeur au college en France. Rédige {n} questions de {label} pour une élève de {niveau}, strictement conformes au programme officiel de l'Éducation nationale.
+    bloc_saisie = ""
+    if n_saisie:
+        bloc_saisie = f"""
+- Les {n_saisie} dernières questions sont de type "saisie" : l'élève tape la réponse au clavier, sans propositions. Elles doivent avoir une réponse unique, courte et vérifiable : une forme conjuguée, l'orthographe d'un mot, le résultat d'un calcul, une année, un nom propre. Jamais de question ouverte ni de réponse en plusieurs mots libres.
+- Pour chaque question de saisie, "reponses_acceptees" liste toutes les formes exactes acceptables. Majuscules et minuscules sont indifférentes, inutile de les dédoubler. Pour un nombre, donne la forme avec virgule et avec point, et la fraction si pertinent. Pour un nom, avec et sans article. Pour une forme verbale, seulement la forme attendue — une faute d'accent ou d'accord doit rester une erreur."""
+
+    exemple_saisie = ""
+    if n_saisie:
+        exemple_saisie = ', {"type": "saisie", "question": "...", "reponses_acceptees": ["...", "..."], "explication": "...", "notion": "..."}'
+
+    return f"""Tu es professeur au college en France. Rédige {total} questions de {label} pour une élève de {niveau}, strictement conformes au programme officiel de l'Éducation nationale.
 
 {cadre}
 Niveau de difficulté : {consigne_diff}{a_eviter}{specifique}
 
 Contraintes de rédaction :
-- Uniquement des QCM à 4 propositions, une seule bonne réponse.
+- Les {n_qcm} premières questions sont des QCM de type "qcm" à 4 propositions, une seule bonne réponse.{bloc_saisie}
 - Progression : la question 1 est la plus accessible, la dernière la plus exigeante.
-- Les mauvaises propositions correspondent à des erreurs que les élèves commettent vraiment, jamais à des réponses absurdes ou fantaisistes.
+- Les mauvaises propositions des QCM correspondent à des erreurs que les élèves commettent vraiment, jamais à des réponses absurdes ou fantaisistes.
 - L'explication fait une à trois phrases, tutoie l'élève, et rappelle la règle ou le raisonnement — pas seulement la bonne réponse.
 - Le champ "notion" nomme en trois mots maximum le point précis testé.
 - Aucune référence à une page de manuel ou à un cours particulier.
 - Tout est rédigé en français.
 
 Réponds uniquement par un objet JSON valide, sans texte autour et sans balises Markdown :
-{{"questions": [{{"question": "...", "options": ["...", "...", "...", "..."], "reponse": 0, "explication": "...", "notion": "..."}}]}}
+{{"questions": [{{"type": "qcm", "question": "...", "options": ["...", "...", "...", "..."], "reponse": 0, "explication": "...", "notion": "..."}}{exemple_saisie}]}}
 
-Le champ "reponse" est l'index (0 à 3) de la bonne proposition dans "options"."""
+Le champ "reponse" d'un QCM est l'index (0 à 3) de la bonne proposition dans "options"."""
 
 
 def extraire_json(reponse):
@@ -161,6 +183,7 @@ def extraire_json(reponse):
 def generer(cfg, prompt):
     client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
     modele = cfg.get("modele", "claude-sonnet-5")
+    fmt = format_quiz(cfg)
 
     derniere_erreur = None
     for tentative in (1, 2):
@@ -173,7 +196,7 @@ def generer(cfg, prompt):
             if rep.stop_reason == "max_tokens":
                 raise ValueError("Reponse tronquee (max_tokens atteint)")
             data = extraire_json(rep)
-            questions = valider(data.get("questions", []), cfg.get("nb_questions", 5))
+            questions = valider(data.get("questions", []), fmt)
             print(f"[OK] {len(questions)} questions generees (tentative {tentative})")
             return questions
         except Exception as e:  # noqa: BLE001
@@ -183,25 +206,42 @@ def generer(cfg, prompt):
     raise SystemExit(f"[FATAL] Generation impossible : {derniere_erreur}")
 
 
-def valider(questions, attendu):
-    propres = []
+def valider(questions, fmt):
+    """Trie et nettoie : les QCM d'abord, les saisies a la fin, dans les quantites demandees."""
+    qcm, saisie = [], []
     for i, q in enumerate(questions, start=1):
-        options = q.get("options", [])
-        reponse = q.get("reponse")
-        if len(options) != 4 or not isinstance(reponse, int) or not 0 <= reponse <= 3:
-            print(f"[WARN] question {i} ignoree (format invalide)")
-            continue
-        propres.append({
-            "id": len(propres) + 1,
+        base = {
             "question": str(q.get("question", "")).strip(),
-            "options": [str(o).strip() for o in options],
-            "reponse": reponse,
             "explication": str(q.get("explication", "")).strip(),
             "notion": str(q.get("notion", "")).strip(),
-        })
-    if len(propres) < attendu:
-        raise ValueError(f"{len(propres)} questions valides sur {attendu} attendues")
-    return propres[:attendu]
+        }
+        if not base["question"]:
+            print(f"[WARN] question {i} ignoree (enonce vide)")
+            continue
+
+        if q.get("type") == "saisie" or "reponses_acceptees" in q:
+            acceptees = [str(a).strip() for a in q.get("reponses_acceptees", []) if str(a).strip()]
+            if not acceptees:
+                print(f"[WARN] question {i} ignoree (saisie sans reponse)")
+                continue
+            saisie.append(dict(base, type="saisie", reponses_acceptees=acceptees))
+        else:
+            options = q.get("options", [])
+            reponse = q.get("reponse")
+            if len(options) != 4 or not isinstance(reponse, int) or not 0 <= reponse <= 3:
+                print(f"[WARN] question {i} ignoree (QCM invalide)")
+                continue
+            qcm.append(dict(base, type="qcm", options=[str(o).strip() for o in options],
+                            reponse=reponse))
+
+    if len(qcm) < fmt["qcm"] or len(saisie) < fmt["saisie"]:
+        raise ValueError(f"{len(qcm)} QCM et {len(saisie)} saisies valides, "
+                         f"attendu {fmt['qcm']} et {fmt['saisie']}")
+
+    propres = qcm[:fmt["qcm"]] + saisie[:fmt["saisie"]]
+    for i, q in enumerate(propres, start=1):
+        q["id"] = i
+    return propres
 
 
 # ── E-mail ───────────────────────────────────────────────────────────────────
@@ -231,7 +271,8 @@ def envoyer_email(cfg, aujourdhui, matiere, niveau, chapitre, vacances, solde):
     url = f"{cfg['base_url']}/quiz/?date={aujourdhui.isoformat()}"
     couleur = COULEURS.get(matiere, "#1F4BFF")
     affiche = MATIERES[matiere]["affiche"]
-    n = cfg.get("nb_questions", 5)
+    fmt = format_quiz(cfg)
+    n = fmt["qcm"] + fmt["saisie"]
     pts = cfg["points"]
     max_jour = pts["participation"] + pts["par_bonne_reponse"] * n + pts["sans_faute"]
 
@@ -242,10 +283,11 @@ def envoyer_email(cfg, aujourdhui, matiere, niveau, chapitre, vacances, solde):
 
     bloc_vacances = ""
     if vacances:
-        jr = cfg["recompense_hebdo"]["jours_requis_vacances"]
+        bonus = cfg["bonus_semaine"]
+        jr = bonus["jours_requis_vacances"]
         bloc_vacances = (f'<p style="margin:0 0 18px;font-size:14px;color:#555;">'
                          f'Vacances de {vacances} : {jr} quiz suffisent cette semaine '
-                         f'pour la récompense.</p>')
+                         f'pour le bonus de {bonus["points"]} points.</p>')
 
     html = f"""<html><body style="margin:0;padding:24px;background:#fff;
   font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
@@ -256,7 +298,7 @@ def envoyer_email(cfg, aujourdhui, matiere, niveau, chapitre, vacances, solde):
   <h1 style="margin:0 0 6px;font-size:30px;line-height:1.1;letter-spacing:-0.02em;">{affiche}</h1>
   <p style="margin:0 0 20px;font-size:15px;color:#333;">{chapitre or 'Programme de ' + niveau_aff}</p>
   <p style="margin:0 0 18px;font-size:15px;line-height:1.6;">
-    {n} questions, niveau {niveau_aff}. Jusqu'à <b>{max_jour} points</b> à gagner aujourd'hui.
+    {n} questions, niveau {niveau_aff}{' — dont ' + str(fmt['saisie']) + ' à taper' if fmt['saisie'] else ''}. Jusqu'à <b>{max_jour} points</b> à gagner aujourd'hui.
   </p>
   {bloc_solde}{bloc_vacances}
   <a href="{url}" style="display:inline-block;padding:15px 30px;background:{couleur};
