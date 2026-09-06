@@ -7,6 +7,18 @@ on:
     - cron: "0 14 * * 1-6"
     - cron: "0 15 * * 1-6"
   workflow_dispatch:
+    inputs:
+      matiere:
+        description: "Forcer une matiere (pour tester). auto = suivre le planning du jour."
+        required: false
+        default: "auto"
+        type: choice
+        options:
+          - auto
+          - francais
+          - anglais
+          - maths
+          - histoire
 
 permissions:
   contents: write
@@ -53,6 +65,7 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          QUIZ_MATIERE: ${{ github.event.inputs.matiere }}
         run: python generate_quiz.py
 
       - name: Enregistrer le quiz dans le depot
