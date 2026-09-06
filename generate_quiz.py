@@ -266,6 +266,17 @@ COULEURS = {
 }
 
 
+def liste_destinataires(cfg):
+    """Accepte "destinataires" (liste) ou l'ancien "destinataire" (chaine)."""
+    brut = cfg.get("destinataires") or cfg.get("destinataire") or []
+    if isinstance(brut, str):
+        brut = [brut]
+    adresses = [a.strip() for a in brut if "@" in str(a)]
+    if not adresses:
+        raise SystemExit("[FATAL] Aucune adresse valide dans config.json (destinataires)")
+    return adresses
+
+
 def envoyer_email(cfg, aujourdhui, matiere, niveau, chapitre, vacances, solde):
     niveau_aff = NIVEAUX_AFFICHES.get(niveau, niveau)
     url = f"{cfg['base_url']}/quiz/?date={aujourdhui.isoformat()}"
@@ -310,16 +321,17 @@ def envoyer_email(cfg, aujourdhui, matiere, niveau, chapitre, vacances, solde):
 </div>
 </body></html>"""
 
+    destinataires = liste_destinataires(cfg)
     msg = MIMEMultipart("alternative")
     msg["Subject"] = f"{affiche} — quiz du {aujourdhui.day} {MOIS_FR[aujourdhui.month - 1]}"
     msg["From"] = os.environ["GMAIL_USER"]
-    msg["To"] = cfg["destinataire"]
+    msg["To"] = ", ".join(destinataires)
     msg.attach(MIMEText(html, "html", "utf-8"))
 
     with smtplib.SMTP_SSL("smtp.gmail.com", 465) as s:
         s.login(os.environ["GMAIL_USER"], os.environ["GMAIL_APP_PASSWORD"])
-        s.sendmail(os.environ["GMAIL_USER"], cfg["destinataire"], msg.as_string())
-    print(f"[OK] E-mail envoye a {cfg['destinataire']}")
+        s.sendmail(os.environ["GMAIL_USER"], destinataires, msg.as_string())
+    print(f"[OK] E-mail envoye a {', '.join(destinataires)}")
 
 
 # ── Main ─────────────────────────────────────────────────────────────────────
@@ -330,7 +342,12 @@ def main():
     aujourdhui = datetime.datetime.now(PARIS).date()
 
     jour = str(aujourdhui.isoweekday())
-    matiere = cfg["planning"].get(jour)
+    forcee = os.environ.get("QUIZ_MATIERE", "").strip().lower()
+    if forcee and forcee != "auto":
+        matiere = forcee
+        print(f"[INFO] Matiere forcee manuellement : {matiere}")
+    else:
+        matiere = cfg["planning"].get(jour)
     if not matiere:
         print(f"[SKIP] Aucune matiere prevue le jour {jour}")
         return
