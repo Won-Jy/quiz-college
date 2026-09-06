@@ -1,0 +1,18 @@
+[
+  {
+    "date": "2026-09-06",
+    "matiere": "maths",
+    "niveau": "6eme",
+    "chapitre": "Les nombres decimaux : lire, comparer, ranger",
+    "notions": [
+      "lecture d'un décimal",
+      "position d'un chiffre",
+      "comparaison de décimaux",
+      "zéros inutiles",
+      "comparaison de décimaux",
+      "rangement croissant",
+      "rangement décroissant",
+      "encadrement de décimaux"
+    ]
+  }
+]

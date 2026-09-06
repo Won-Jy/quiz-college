@@ -1,0 +1,121 @@
+{
+  "date": "2026-09-06",
+  "matiere": "maths",
+  "matiere_affichee": "Mathématiques",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Les nombres decimaux : lire, comparer, ranger",
+  "vacances": null,
+  "genere_le": "2026-09-06T15:00:12+02:00",
+  "questions": [
+    {
+      "question": "Comment lit-on le nombre 4,7 ?",
+      "explication": "On lit un nombre décimal en disant la partie entière, puis virgule, puis la partie décimale chiffre par chiffre. Ici c'est quatre virgule sept.",
+      "notion": "lecture d'un décimal",
+      "type": "qcm",
+      "options": [
+        "Quatre virgule sept",
+        "Quatre sept dixièmes",
+        "Quarante-sept",
+        "Quatre virgule soixante-dix"
+      ],
+      "reponse": 0,
+      "id": 1
+    },
+    {
+      "question": "Dans le nombre 15,326 quel chiffre est le chiffre des centièmes ?",
+      "explication": "Après la virgule, l'ordre est dixièmes, centièmes, millièmes. Le chiffre des centièmes est donc le 2, juste après le 3 des dixièmes.",
+      "notion": "position d'un chiffre",
+      "type": "qcm",
+      "options": [
+        "3",
+        "2",
+        "6",
+        "5"
+      ],
+      "reponse": 1,
+      "id": 2
+    },
+    {
+      "question": "Quel est le plus grand des deux nombres 6,8 et 6,45 ?",
+      "explication": "Pour comparer, on regarde d'abord la partie entière (6 = 6), puis les dixièmes : 8 dixièmes est plus grand que 4 dixièmes. Donc 6,8 est plus grand que 6,45.",
+      "notion": "comparaison de décimaux",
+      "type": "qcm",
+      "options": [
+        "6,8",
+        "6,45",
+        "Ils sont égaux",
+        "On ne peut pas comparer"
+      ],
+      "reponse": 0,
+      "id": 3
+    },
+    {
+      "question": "Quel nombre est le plus grand : 3,50 ou 3,5 ?",
+      "explication": "Ajouter un zéro à la fin de la partie décimale ne change pas la valeur du nombre. 3,50 et 3,5 représentent donc exactement le même nombre.",
+      "notion": "zéros inutiles",
+      "type": "qcm",
+      "options": [
+        "3,50",
+        "3,5",
+        "Ils sont égaux",
+        "Impossible à savoir"
+      ],
+      "reponse": 2,
+      "id": 4
+    },
+    {
+      "question": "Parmi ces nombres, lequel est le plus petit : 2,9 ou 2,15 ?",
+      "explication": "Attention, 2,15 a plus de chiffres après la virgule mais cela ne le rend pas plus grand. On compare les dixièmes : 1 dixième est plus petit que 9 dixièmes, donc 2,15 est plus petit que 2,9.",
+      "notion": "comparaison de décimaux",
+      "type": "qcm",
+      "options": [
+        "2,9",
+        "2,15",
+        "Ils sont égaux",
+        "On ne peut pas comparer"
+      ],
+      "reponse": 1,
+      "id": 5
+    },
+    {
+      "question": "Range dans l'ordre croissant les nombres suivants : 7,2 ; 7,08 ; 7,15",
+      "explication": "Ranger dans l'ordre croissant signifie du plus petit au plus grand. En comparant les dixièmes puis les centièmes, on trouve 7,08 puis 7,15 puis 7,2.",
+      "notion": "rangement croissant",
+      "type": "qcm",
+      "options": [
+        "7,08 ; 7,15 ; 7,2",
+        "7,2 ; 7,15 ; 7,08",
+        "7,15 ; 7,08 ; 7,2",
+        "7,08 ; 7,2 ; 7,15"
+      ],
+      "reponse": 0,
+      "id": 6
+    },
+    {
+      "question": "Range dans l'ordre décroissant les nombres suivants : 12,4 ; 12,04 ; 9,9",
+      "explication": "Ranger dans l'ordre décroissant signifie du plus grand au plus petit. On compare d'abord les parties entières : 12 est plus grand que 9, puis on compare 12,4 et 12,04 en regardant les dixièmes.",
+      "notion": "rangement décroissant",
+      "type": "qcm",
+      "options": [
+        "9,9 ; 12,04 ; 12,4",
+        "12,4 ; 12,04 ; 9,9",
+        "12,04 ; 12,4 ; 9,9",
+        "9,9 ; 12,4 ; 12,04"
+      ],
+      "reponse": 1,
+      "id": 7
+    },
+    {
+      "question": "Écris le nombre décimal qui se trouve exactement entre 5,3 et 5,4. Réponds sans unité.",
+      "explication": "Pour trouver le nombre entre deux décimaux, on peut ajouter un zéro à chacun (5,30 et 5,40) puis prendre la moyenne des centièmes, ce qui donne 5,35.",
+      "notion": "encadrement de décimaux",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "5,35",
+        "5.35"
+      ],
+      "id": 8
+    }
+  ]
+}
