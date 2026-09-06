@@ -1,0 +1,70 @@
+name: Quiz du jour
+
+on:
+  schedule:
+    # 16h heure de Paris : 14h UTC en ete, 15h UTC en hiver.
+    # Les deux crons tournent, l'etape de garde n'en laisse passer qu'un.
+    - cron: "0 14 * * 1-6"
+    - cron: "0 15 * * 1-6"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: quiz-du-jour
+  cancel-in-progress: false
+
+jobs:
+  quiz:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verifier qu'il est bien 16h a Paris
+        id: garde
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "Lancement manuel : on continue."
+            echo "go=true" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          HEURE=$(TZ=Europe/Paris date +%H)
+          echo "Heure de Paris : $HEURE"
+          if [ "$HEURE" = "16" ]; then
+            echo "go=true" >> $GITHUB_OUTPUT
+          else
+            echo "go=false" >> $GITHUB_OUTPUT
+          fi
+
+      - uses: actions/checkout@v4
+        if: steps.garde.outputs.go == 'true'
+
+      - uses: actions/setup-python@v5
+        if: steps.garde.outputs.go == 'true'
+        with:
+          python-version: "3.11"
+
+      - name: Installer les dependances
+        if: steps.garde.outputs.go == 'true'
+        run: pip install --quiet anthropic
+
+      - name: Generer et envoyer le quiz
+        if: steps.garde.outputs.go == 'true'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: python generate_quiz.py
+
+      - name: Enregistrer le quiz dans le depot
+        if: steps.garde.outputs.go == 'true'
+        run: |
+          git config user.name "quiz-bot"
+          git config user.email "actions@github.com"
+          git add data/
+          if git diff --staged --quiet; then
+            echo "Rien a committer."
+            exit 0
+          fi
+          git commit -m "Quiz du $(TZ=Europe/Paris date +%F)"
+          git pull --rebase origin ${{ github.ref_name }}
+          git push
