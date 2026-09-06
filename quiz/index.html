@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<title>Quiz du jour</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+
+<div class="bandeau" aria-hidden="true"></div>
+
+<main class="page">
+
+  <!-- Chargement -->
+  <section id="vue-chargement" class="vue">
+    <p class="attente">Chargement du quiz…</p>
+  </section>
+
+  <!-- Erreur / pas de quiz -->
+  <section id="vue-vide" class="vue" hidden>
+    <h1 class="titre">Pas de quiz</h1>
+    <p class="texte" id="message-vide"></p>
+  </section>
+
+  <!-- Questions -->
+  <section id="vue-quiz" class="vue" hidden>
+    <header class="entete">
+      <p class="date" id="quiz-date"></p>
+      <h1 class="titre" id="quiz-matiere"></h1>
+      <p class="chapitre" id="quiz-chapitre"></p>
+      <ol class="pips" id="pips" aria-label="Progression"></ol>
+    </header>
+
+    <p class="rang" id="quiz-rang"></p>
+    <h2 class="enonce" id="quiz-enonce"></h2>
+    <div class="options" id="quiz-options" role="radiogroup" aria-labelledby="quiz-enonce"></div>
+
+    <button class="bouton" id="bouton-suivant" disabled>Valider</button>
+    <p class="note">Les corrections arrivent à la fin des 5 questions.</p>
+  </section>
+
+  <!-- Résultats -->
+  <section id="vue-resultats" class="vue" hidden>
+    <header class="entete">
+      <p class="date" id="res-date"></p>
+      <h1 class="titre">Terminé</h1>
+    </header>
+
+    <ol class="bilan" id="bilan" aria-label="Réponses"></ol>
+    <p class="score-texte" id="score-texte"></p>
+
+    <div class="gain" id="gain"></div>
+    <div class="annonce" id="annonce-hebdo" hidden></div>
+
+    <h2 class="sous-titre">Les corrections</h2>
+    <ol class="corrections" id="corrections"></ol>
+
+    <button class="bouton bouton-creux" id="bouton-cagnotte">Voir ma cagnotte</button>
+  </section>
+
+  <!-- Cagnotte -->
+  <section id="vue-cagnotte" class="vue" hidden>
+    <header class="entete">
+      <h1 class="titre">Ma cagnotte</h1>
+    </header>
+
+    <p class="solde" id="solde">…</p>
+    <p class="texte" id="solde-detail"></p>
+
+    <h2 class="sous-titre">Cette semaine</h2>
+    <ol class="semaine" id="semaine" aria-label="Jours de la semaine"></ol>
+    <p class="texte" id="semaine-texte"></p>
+
+    <h2 class="sous-titre">Échanger mes points</h2>
+    <div class="boutique" id="boutique"></div>
+
+    <h2 class="sous-titre">Mes récompenses</h2>
+    <ul class="journal" id="journal"></ul>
+
+    <button class="bouton bouton-creux" id="bouton-retour">Retour</button>
+  </section>
+
+</main>
+
+<script src="quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+{
+  "date": "2026-09-07",
+  "matiere": "francais",
+  "matiere_affichee": "Français",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Les classes grammaticales : nature des mots",
+  "vacances": null,
+  "genere_le": "2026-09-06T12:00:00+02:00",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Dans la phrase « Le vieux chien dort sous la table », quelle est la classe grammaticale du mot « vieux » ?",
+      "options": ["Un adjectif qualificatif", "Un nom commun", "Un adverbe", "Un déterminant"],
+      "reponse": 0,
+      "explication": "« Vieux » donne une précision sur le nom « chien » et s'accorde avec lui : c'est un adjectif qualificatif. Un adverbe, lui, ne s'accorde jamais.",
+      "notion": "Adjectif qualificatif"
+    },
+    {
+      "id": 2,
+      "question": "Quel mot de la phrase « Elle range soigneusement ses affaires » est un adverbe ?",
+      "options": ["Elle", "range", "soigneusement", "affaires"],
+      "reponse": 2,
+      "explication": "Un adverbe modifie le sens du verbe et reste invariable. « Soigneusement » précise comment elle range : c'est bien un adverbe.",
+      "notion": "Adverbe"
+    },
+    {
+      "id": 3,
+      "question": "Dans « Ce livre est à moi », quelle est la classe grammaticale du mot « Ce » ?",
+      "options": [
+        "Un pronom démonstratif",
+        "Un déterminant démonstratif",
+        "Un adjectif qualificatif",
+        "Une préposition"
+      ],
+      "reponse": 1,
+      "explication": "« Ce » est placé devant le nom « livre » et l'accompagne : c'est un déterminant démonstratif. Un pronom, lui, remplacerait le nom au lieu de le précéder.",
+      "notion": "Déterminant démonstratif"
+    },
+    {
+      "id": 4,
+      "question": "Quelle phrase contient une préposition ?",
+      "options": [
+        "Le chat dort profondément.",
+        "Il court vite et bien.",
+        "Le livre est sur l'étagère.",
+        "Elle chante magnifiquement."
+      ],
+      "reponse": 2,
+      "explication": "« Sur » relie « le livre » et « l'étagère » : c'est une préposition. Les mots « profondément », « vite » et « magnifiquement » sont des adverbes.",
+      "notion": "Préposition"
+    },
+    {
+      "id": 5,
+      "question": "Dans « Les enfants qui jouent dehors sont bruyants », quelle est la classe grammaticale de « qui » ?",
+      "options": [
+        "Un pronom relatif",
+        "Un déterminant interrogatif",
+        "Une conjonction de coordination",
+        "Un pronom personnel"
+      ],
+      "reponse": 0,
+      "explication": "« Qui » reprend « les enfants » et introduit la proposition « qui jouent dehors » : c'est un pronom relatif. Il serait interrogatif seulement dans une question comme « Qui joue dehors ? ».",
+      "notion": "Pronom relatif"
+    }
+  ]
+}

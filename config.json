@@ -1,0 +1,64 @@
+{
+  "_notice": "Tout se règle ici. Modifier ce fichier suffit : aucun code à toucher.",
+
+  "eleve": "Seam",
+  "destinataire": "won.seam@gmail.com",
+  "base_url": "https://won-jy.github.io/quiz-college",
+  "modele": "claude-sonnet-5",
+
+  "niveau_base_annee": 2026,
+  "niveau_manuel": null,
+  "_niveau": "niveau_manuel force un niveau ('6eme', '5eme'...). null = calcul automatique : passage au niveau superieur chaque 1er juin.",
+
+  "nb_questions": 5,
+  "difficulte": "normale",
+  "_difficulte": "facile | normale | exigeante",
+
+  "planning": {
+    "1": "francais",
+    "2": "anglais",
+    "3": "maths",
+    "4": "francais",
+    "5": "anglais",
+    "6": "histoire"
+  },
+  "_planning": "1 = lundi ... 6 = samedi. Dimanche : pas de quiz. Matieres possibles : francais, anglais, maths, histoire.",
+
+  "points": {
+    "participation": 10,
+    "par_bonne_reponse": 2,
+    "sans_faute": 5,
+    "bonus_semaine": 15
+  },
+
+  "recompense_hebdo": {
+    "jours_requis": 6,
+    "jours_requis_vacances": 3,
+    "libelle": "Une journée de jeu illimitée"
+  },
+
+  "boutique": [
+    {
+      "id": "resto",
+      "cout": 250,
+      "libelle": "Un repas au restaurant de ton choix"
+    },
+    {
+      "id": "grand",
+      "cout": 600,
+      "libelle": "Restaurant + un cadeau de ton choix"
+    }
+  ],
+
+  "vacances": [
+    { "nom": "Toussaint",   "debut": "2026-10-17", "fin": "2026-11-01" },
+    { "nom": "Noel",        "debut": "2026-12-19", "fin": "2027-01-03" },
+    { "nom": "Hiver",       "debut": "2027-02-20", "fin": "2027-03-07" },
+    { "nom": "Printemps",   "debut": "2027-04-17", "fin": "2027-05-02" },
+    { "nom": "Ascension",   "debut": "2027-05-06", "fin": "2027-05-09" },
+    { "nom": "Ete",         "debut": "2027-07-03", "fin": "2027-08-31" }
+  ],
+  "_vacances": "Zone B (academie d'Aix-Marseille). Pendant ces periodes le quiz est envoye normalement, mais la recompense hebdomadaire s'obtient avec jours_requis_vacances au lieu de jours_requis.",
+
+  "sheets_url": "REMPLACER_PAR_URL_APPS_SCRIPT"
+}
