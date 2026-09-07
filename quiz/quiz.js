@@ -289,7 +289,21 @@
       palier_libelle: palier.libelle
     };
 
+    // Deja enregistre depuis cet appareil : on affiche la correction sans rien renvoyer.
+    if (memoire('envoye') === etat.quiz.date) {
+      dejaFait();
+      return;
+    }
+
     envoyer(charge);
+  }
+
+  function dejaFait() {
+    texte($('gain'), 'Quiz déjà terminé aujourd\'hui');
+    var bloc = $('synchro');
+    bloc.hidden = false;
+    bloc.className = 'synchro';
+    bloc.textContent = 'Tes points sont déjà enregistrés. Reviens demain pour en gagner d\'autres.';
   }
 
   // Envoi du resultat. En cas d'echec on garde la charge sous le coude :
@@ -303,6 +317,7 @@
     ecrireCarnet(charge).then(function (rep) {
       if (rep && rep.ok) {
         memoire('attente', null);
+        memoire('envoye', charge.date);
         bloc.hidden = true;
         annoncer(rep);
         return;
@@ -310,8 +325,8 @@
 
       if (rep && rep.raison === 'deja_enregistre') {
         memoire('attente', null);
-        bloc.hidden = true;
-        texte($('gain'), 'Quiz déjà validé aujourd\'hui — pas de points en plus');
+        memoire('envoye', charge.date);
+        dejaFait();
         return;
       }
 
@@ -602,6 +617,7 @@
         ecrireCarnet(enAttente).then(function (rep) {
           if (rep && (rep.ok || rep.raison === 'deja_enregistre')) {
             memoire('attente', null);
+            memoire('envoye', enAttente.date);
           }
         });
       }
