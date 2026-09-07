@@ -1,0 +1,123 @@
+{
+  "date": "2026-09-07",
+  "matiere": "francais",
+  "matiere_affichee": "Français",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Les classes grammaticales : nature des mots",
+  "vacances": null,
+  "genere_le": "2026-09-07T17:48:53+02:00",
+  "questions": [
+    {
+      "question": "Quelle est la classe grammaticale du mot « chat » dans la phrase : « Le chat dort sur le canapé » ?",
+      "explication": "« Chat » désigne un être vivant et peut être précédé d'un déterminant : c'est donc un nom commun. Rappelle-toi que le nom est souvent encadré par un déterminant comme « le », « un » ou « ce ».",
+      "notion": "nom commun",
+      "type": "qcm",
+      "options": [
+        "Un nom commun",
+        "Un adjectif qualificatif",
+        "Un déterminant",
+        "Un verbe"
+      ],
+      "reponse": 0,
+      "id": 1
+    },
+    {
+      "question": "Dans la phrase « Cette voiture est rapide », quelle est la nature du mot « cette » ?",
+      "explication": "« Cette » accompagne le nom « voiture », il ne le remplace pas : c'est donc un déterminant démonstratif, et non un pronom. Le pronom démonstratif, lui, remplacerait le nom (exemple : celle-ci).",
+      "notion": "déterminant démonstratif",
+      "type": "qcm",
+      "options": [
+        "Un déterminant démonstratif",
+        "Un pronom démonstratif",
+        "Un adjectif qualificatif",
+        "Un nom"
+      ],
+      "reponse": 0,
+      "id": 2
+    },
+    {
+      "question": "Dans la phrase « Il mange une pomme rouge », quelle est la classe grammaticale du mot « rouge » ?",
+      "explication": "« Rouge » précise la couleur du nom « pomme » : c'est un adjectif qualificatif. Attention, « rouge » peut aussi être un nom dans d'autres phrases, mais ici il qualifie un nom.",
+      "notion": "adjectif qualificatif",
+      "type": "qcm",
+      "options": [
+        "Un adjectif qualificatif",
+        "Un nom",
+        "Un adverbe",
+        "Un verbe"
+      ],
+      "reponse": 0,
+      "id": 3
+    },
+    {
+      "question": "Dans la phrase « Elle chante joyeusement », quelle est la nature du mot « joyeusement » ?",
+      "explication": "« Joyeusement » modifie le verbe « chante » et se termine en -ment : c'est un adverbe. Ne confonds pas avec l'adjectif « joyeuse », dont il est formé.",
+      "notion": "adverbe",
+      "type": "qcm",
+      "options": [
+        "Un adverbe",
+        "Un adjectif qualificatif",
+        "Un nom",
+        "Un verbe"
+      ],
+      "reponse": 0,
+      "id": 4
+    },
+    {
+      "question": "Dans la phrase « Marie et Paul jouent ensemble », quelle est la classe grammaticale du mot « et » ?",
+      "explication": "« Et » relie deux noms de même fonction : c'est une conjonction de coordination, comme « mais, ou, donc, or, ni, car ». Une préposition introduit plutôt un complément (à, de, pour, avec...).",
+      "notion": "conjonction de coordination",
+      "type": "qcm",
+      "options": [
+        "Une conjonction de coordination",
+        "Une préposition",
+        "Un adverbe",
+        "Un pronom"
+      ],
+      "reponse": 0,
+      "id": 5
+    },
+    {
+      "question": "Dans la phrase « Je pense qu'il viendra demain », quelle est la nature du mot « il » ?",
+      "explication": "« Il » remplace une personne ou une chose déjà nommée, il ne précède pas de nom : c'est un pronom personnel. Le déterminant, lui, accompagne toujours un nom.",
+      "notion": "pronom personnel",
+      "type": "qcm",
+      "options": [
+        "Un pronom personnel",
+        "Un déterminant",
+        "Un nom propre",
+        "Un adjectif"
+      ],
+      "reponse": 0,
+      "id": 6
+    },
+    {
+      "question": "Dans la phrase « Le livre que je lis est passionnant », quelle est la classe grammaticale du mot « que » ?",
+      "explication": "« Que » remplace « le livre » (c'est le COD de « lis ») et introduit une proposition relative : c'est un pronom relatif. La conjonction de subordination « que », elle, n'a pas de fonction et ne remplace rien (exemple : je crois que tu viens).",
+      "notion": "pronom relatif",
+      "type": "qcm",
+      "options": [
+        "Un pronom relatif",
+        "Une conjonction de subordination",
+        "Un adverbe",
+        "Un déterminant"
+      ],
+      "reponse": 0,
+      "id": 7
+    },
+    {
+      "question": "Indique la classe grammaticale du mot en majuscules : « Donne-LEUR ce livre. »",
+      "explication": "Ici, « leur » remplace des personnes déjà citées (à eux) et reste invariable : c'est un pronom personnel. Attention à ne pas le confondre avec le déterminant possessif « leurs » qui, lui, accompagne un nom et prend un s au pluriel.",
+      "notion": "pronom personnel leur",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "pronom",
+        "pronom personnel",
+        "un pronom",
+        "un pronom personnel"
+      ],
+      "id": 8
+    }
+  ]
+}

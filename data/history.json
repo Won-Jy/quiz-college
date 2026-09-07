@@ -14,5 +14,21 @@
       "rangement décroissant",
       "encadrement de décimaux"
     ]
+  },
+  {
+    "date": "2026-09-07",
+    "matiere": "francais",
+    "niveau": "6eme",
+    "chapitre": "Les classes grammaticales : nature des mots",
+    "notions": [
+      "nom commun",
+      "déterminant démonstratif",
+      "adjectif qualificatif",
+      "adverbe",
+      "conjonction de coordination",
+      "pronom personnel",
+      "pronom relatif",
+      "pronom personnel leur"
+    ]
   }
 ]
