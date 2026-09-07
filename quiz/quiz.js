@@ -45,7 +45,8 @@
   function memoire(cle, valeur) {
     try {
       if (valeur === undefined) { return JSON.parse(localStorage.getItem(cle)); }
-      localStorage.setItem(cle, JSON.stringify(valeur));
+      if (valeur === null) { localStorage.removeItem(cle); }
+      else { localStorage.setItem(cle, JSON.stringify(valeur)); }
     } catch (e) { /* mode prive ou stockage plein : on continue sans */ }
     return null;
   }
@@ -69,7 +70,9 @@
 
   function ecrireCarnet(charge) {
     var url = urlCarnet();
-    if (!url) { return Promise.resolve(null); }
+    if (!url) {
+      return Promise.resolve({ ok: false, raison: 'carnet_absent' });
+    }
     // text/plain evite la requete preflight, qu'Apps Script ne gere pas.
     return fetch(url, {
       method: 'POST',
@@ -77,7 +80,7 @@
       body: JSON.stringify(charge)
     })
       .then(function (r) { return r.json(); })
-      .catch(function () { return null; });
+      .catch(function () { return { ok: false, raison: 'reseau' }; });
   }
 
   // ── Questions ─────────────────────────────────────────────────────────────
@@ -271,7 +274,7 @@
     var bonus = etat.config.bonus_semaine;
     var palier = etat.config.palier || {};
 
-    ecrireCarnet({
+    var charge = {
       action: 'resultat',
       date: etat.quiz.date,
       matiere: etat.quiz.matiere_affichee,
@@ -284,13 +287,48 @@
       bonus_libelle: bonus.libelle,
       palier_pas: palier.pas,
       palier_libelle: palier.libelle
-    }).then(function (rep) {
-      if (!rep) { return; }
-      if (rep.ok === false && rep.raison === 'deja_enregistre') {
+    };
+
+    envoyer(charge);
+  }
+
+  // Envoi du resultat. En cas d'echec on garde la charge sous le coude :
+  // elle repartira toute seule a la prochaine ouverture de la page.
+  function envoyer(charge) {
+    var bloc = $('synchro');
+    bloc.hidden = false;
+    bloc.className = 'synchro';
+    bloc.textContent = 'Enregistrement de tes points…';
+
+    ecrireCarnet(charge).then(function (rep) {
+      if (rep && rep.ok) {
+        memoire('attente', null);
+        bloc.hidden = true;
+        annoncer(rep);
+        return;
+      }
+
+      if (rep && rep.raison === 'deja_enregistre') {
+        memoire('attente', null);
+        bloc.hidden = true;
         texte($('gain'), 'Quiz déjà validé aujourd\'hui — pas de points en plus');
         return;
       }
-      annoncer(rep);
+
+      // Echec : on conserve et on propose de reessayer.
+      memoire('attente', charge);
+      bloc.className = 'synchro echec';
+      bloc.textContent = '';
+      var texteEchec = document.createElement('span');
+      texteEchec.textContent = rep && rep.raison === 'carnet_absent'
+        ? 'Le carnet de points n\'est pas relié : tes points ne sont pas encore enregistrés.'
+        : 'Tes points n\'ont pas pu être enregistrés. Vérifie ta connexion.';
+      var bouton = document.createElement('button');
+      bouton.type = 'button';
+      bouton.textContent = 'Réessayer';
+      bouton.addEventListener('click', function () { envoyer(charge); });
+      bloc.appendChild(texteEchec);
+      bloc.appendChild(bouton);
     });
   }
 
@@ -549,7 +587,7 @@
     var date = params.get('date') || dateParis();
 
     Promise.all([
-      fetch('../config.json').then(function (r) { return r.json(); }),
+      fetch('../config.json?v=' + Date.now()).then(function (r) { return r.json(); }),
       fetch('../data/' + date + '.json').then(function (r) {
         if (!r.ok) { throw new Error('introuvable'); }
         return r.json();
@@ -557,6 +595,16 @@
     ]).then(function (res) {
       etat.config = res[0];
       etat.quiz = res[1];
+
+      // Un resultat n'avait pas pu partir la derniere fois : on le renvoie.
+      var enAttente = memoire('attente');
+      if (enAttente && enAttente.action === 'resultat') {
+        ecrireCarnet(enAttente).then(function (rep) {
+          if (rep && (rep.ok || rep.raison === 'deja_enregistre')) {
+            memoire('attente', null);
+          }
+        });
+      }
 
       document.body.dataset.matiere = etat.quiz.matiere;
       document.title = etat.quiz.matiere_affichee + ' — quiz du jour';

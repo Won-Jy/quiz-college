@@ -263,6 +263,37 @@ body {
   font-size: 1.05rem;
 }
 
+.synchro {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+  padding: 12px 14px;
+  border: 2px solid var(--filet);
+  font-size: 0.9rem;
+  color: var(--gris);
+}
+
+.synchro[hidden] { display: none; }
+
+.synchro.echec {
+  border-color: var(--faux);
+  color: var(--encre);
+}
+
+.synchro button {
+  flex-shrink: 0;
+  margin-left: auto;
+  padding: 8px 14px;
+  background: var(--faux);
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
 .annonce {
   margin-top: 20px;
   padding: 16px 18px;
