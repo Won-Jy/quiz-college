@@ -30,5 +30,21 @@
       "pronom relatif",
       "pronom personnel leur"
     ]
+  },
+  {
+    "date": "2026-09-08",
+    "matiere": "anglais",
+    "niveau": "6eme",
+    "chapitre": "Be et have got",
+    "notions": [
+      "be - conjugaison",
+      "have got - conjugaison",
+      "be - conjugaison",
+      "have got - négation",
+      "have got - interrogation",
+      "be - contraction",
+      "be vs have got",
+      "have got - conjugaison"
+    ]
   }
 ]

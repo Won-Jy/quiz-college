@@ -1,0 +1,120 @@
+{
+  "date": "2026-09-08",
+  "matiere": "anglais",
+  "matiere_affichee": "Anglais",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Be et have got",
+  "vacances": null,
+  "genere_le": "2026-09-08T19:58:30+02:00",
+  "questions": [
+    {
+      "question": "Complète : I ___ eleven years old.",
+      "explication": "Avec « I », on utilise toujours « am ». Attention, en anglais on dit « I am eleven » et non « I have eleven » comme en français.",
+      "notion": "be - conjugaison",
+      "type": "qcm",
+      "options": [
+        "am",
+        "is",
+        "are",
+        "have"
+      ],
+      "reponse": 0,
+      "id": 1
+    },
+    {
+      "question": "Complète : She ___ got a cat.",
+      "explication": "Avec « he/she/it », le verbe « have got » devient « has got ». C'est une règle à bien retenir pour la 3e personne du singulier.",
+      "notion": "have got - conjugaison",
+      "type": "qcm",
+      "options": [
+        "have",
+        "has",
+        "is",
+        "are"
+      ],
+      "reponse": 1,
+      "id": 2
+    },
+    {
+      "question": "Complète : They ___ happy today.",
+      "explication": "« They » est un sujet pluriel, donc on utilise « are » avec le verbe « be ». Pense à bien accorder le verbe au sujet.",
+      "notion": "be - conjugaison",
+      "type": "qcm",
+      "options": [
+        "is",
+        "am",
+        "are",
+        "have"
+      ],
+      "reponse": 2,
+      "id": 3
+    },
+    {
+      "question": "Complète (forme négative) : He ___ got a brother.",
+      "explication": "À la forme négative avec « he/she/it », on utilise « hasn't got ». Ne confonds pas avec « haven't », qui s'utilise avec I/you/we/they.",
+      "notion": "have got - négation",
+      "type": "qcm",
+      "options": [
+        "don't have",
+        "doesn't have",
+        "haven't",
+        "hasn't"
+      ],
+      "reponse": 3,
+      "id": 4
+    },
+    {
+      "question": "Complète (forme interrogative) : ___ she got a bike?",
+      "explication": "Pour poser une question avec « have got » à la 3e personne du singulier, on place « Has » devant le sujet. On dit donc « Has she got... ? ».",
+      "notion": "have got - interrogation",
+      "type": "qcm",
+      "options": [
+        "Is",
+        "Are",
+        "Has",
+        "Have"
+      ],
+      "reponse": 2,
+      "id": 5
+    },
+    {
+      "question": "Quelle est la forme contractée correcte de « We are French »?",
+      "explication": "La contraction de « We are » est « We're », avec une apostrophe entre le pronom et le « re ». Fais attention à ne pas oublier l'apostrophe.",
+      "notion": "be - contraction",
+      "type": "qcm",
+      "options": [
+        "We's French.",
+        "We're French.",
+        "We'r French.",
+        "Were French."
+      ],
+      "reponse": 1,
+      "id": 6
+    },
+    {
+      "question": "Complète : My brother ___ tall.",
+      "explication": "Pour décrire une caractéristique physique comme la taille, on utilise « be » suivi d'un adjectif, pas « have got ». On dit « He is tall », pas « He has got tall ».",
+      "notion": "be vs have got",
+      "type": "qcm",
+      "options": [
+        "has got",
+        "have got",
+        "is",
+        "are"
+      ],
+      "reponse": 2,
+      "id": 7
+    },
+    {
+      "question": "Complète avec la forme correcte du verbe « have got » : He ___ got two sisters.",
+      "explication": "Avec « he », le verbe « have got » se conjugue en « has got ». C'est la règle de la 3e personne du singulier.",
+      "notion": "have got - conjugaison",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "has"
+      ],
+      "id": 8
+    }
+  ]
+}
