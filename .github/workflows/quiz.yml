@@ -2,11 +2,15 @@ name: Quiz du jour
 
 on:
   schedule:
-    # GitHub decale souvent les crons de plusieurs dizaines de minutes.
-    # On tente donc toutes les heures de 14h a 19h UTC : la garde ci-dessous
-    # laisse passer la premiere tentative utile et bloque toutes les suivantes,
-    # puisqu'elle verifie si le quiz du jour existe deja.
-    - cron: "0 14,15,16,17,18,19 * * 1-6"
+    # Jamais a l'heure pile : c'est la minute la plus chargee chez GitHub,
+    # et les crons y sont purement et simplement abandonnes.
+    # Quatre tentatives decalees ; la garde ci-dessous laisse passer la
+    # premiere utile et bloque les suivantes, puisqu'elle verifie si le
+    # quiz du jour existe deja.
+    - cron: "7 14 * * 1-6"    # 16h07 a Paris
+    - cron: "41 14 * * 1-6"   # 16h41
+    - cron: "23 15 * * 1-6"   # 17h23
+    - cron: "12 16 * * 1-6"   # 18h12
   workflow_dispatch:
     inputs:
       matiere:
