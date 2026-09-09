@@ -46,5 +46,21 @@
       "be vs have got",
       "have got - conjugaison"
     ]
+  },
+  {
+    "date": "2026-09-09",
+    "matiere": "maths",
+    "niveau": "6eme",
+    "chapitre": "Addition et soustraction de decimaux",
+    "notions": [
+      "addition sans retenue",
+      "addition avec retenue",
+      "soustraction sans retenue",
+      "soustraction avec retenue",
+      "addition décimales différentes",
+      "soustraction avec entier",
+      "problème monnaie",
+      "problème deux étapes"
+    ]
   }
 ]

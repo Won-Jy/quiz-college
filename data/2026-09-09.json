@@ -1,0 +1,121 @@
+{
+  "date": "2026-09-09",
+  "matiere": "maths",
+  "matiere_affichee": "Mathématiques",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Addition et soustraction de decimaux",
+  "vacances": null,
+  "genere_le": "2026-09-09T19:37:52+02:00",
+  "questions": [
+    {
+      "question": "Calcule : 4,2 + 3,5",
+      "explication": "Tu additionnes les unités entre elles et les dixièmes entre eux : 4+3=7 et 2+5=7, donc 7,7. Il ne faut jamais coller les chiffres après la virgule comme des entiers.",
+      "notion": "addition sans retenue",
+      "type": "qcm",
+      "options": [
+        "7,7",
+        "7,17",
+        "6,7",
+        "8,7"
+      ],
+      "reponse": 0,
+      "id": 1
+    },
+    {
+      "question": "Calcule : 5,6 + 2,7",
+      "explication": "5+2=7 pour les unités, mais 6+7=13 dixièmes, donc tu poses 3 et tu retiens 1 unité, ce qui donne 8,3. N'oublie jamais la retenue quand la somme des dixièmes dépasse 9.",
+      "notion": "addition avec retenue",
+      "type": "qcm",
+      "options": [
+        "8,3",
+        "7,3",
+        "8,13",
+        "7,13"
+      ],
+      "reponse": 0,
+      "id": 2
+    },
+    {
+      "question": "Calcule : 9,8 - 3,5",
+      "explication": "Tu soustrais les unités (9-3=6) et les dixièmes (8-5=3) séparément, ce qui donne 6,3. Attention à ne pas additionner par erreur au lieu de soustraire.",
+      "notion": "soustraction sans retenue",
+      "type": "qcm",
+      "options": [
+        "6,3",
+        "6,7",
+        "5,3",
+        "13,3"
+      ],
+      "reponse": 0,
+      "id": 3
+    },
+    {
+      "question": "Calcule : 7,2 - 3,5",
+      "explication": "Comme 2 dixièmes est plus petit que 5 dixièmes, il faut emprunter une unité : 12 dixièmes - 5 dixièmes = 7 dixièmes, puis 6-3=3 unités, donc 3,7. C'est la retenue en soustraction, comme avec les entiers.",
+      "notion": "soustraction avec retenue",
+      "type": "qcm",
+      "options": [
+        "3,7",
+        "4,7",
+        "3,3",
+        "4,3"
+      ],
+      "reponse": 0,
+      "id": 4
+    },
+    {
+      "question": "Calcule : 3,4 + 2,56",
+      "explication": "Il faut aligner les virgules, donc écrire 3,40 pour avoir deux chiffres après la virgule comme 2,56, puis additionner : 5,96. Sans compléter par un zéro, on risque d'oublier les centièmes.",
+      "notion": "addition décimales différentes",
+      "type": "qcm",
+      "options": [
+        "5,96",
+        "5,6",
+        "6,96",
+        "5,10"
+      ],
+      "reponse": 0,
+      "id": 5
+    },
+    {
+      "question": "Calcule : 5 - 2,3",
+      "explication": "Écris 5 comme 5,0 pour aligner les virgules : tu empruntes une unité pour faire 10 dixièmes - 3 dixièmes = 7, puis 4-2=2 unités, donc 2,7. Un nombre entier a toujours des dixièmes égaux à zéro.",
+      "notion": "soustraction avec entier",
+      "type": "qcm",
+      "options": [
+        "2,7",
+        "3,7",
+        "2,3",
+        "4,7"
+      ],
+      "reponse": 0,
+      "id": 6
+    },
+    {
+      "question": "Un jouet coûte 12,50 euros. Tom paie avec un billet de 20 euros. Combien la caissière lui rend-elle ?",
+      "explication": "Il faut calculer 20 - 12,50 en écrivant 20 comme 20,00 pour aligner les virgules, ce qui donne 7,50 euros. Pense bien à emprunter sur les unités quand les dixièmes ou centièmes du haut sont plus petits.",
+      "notion": "problème monnaie",
+      "type": "qcm",
+      "options": [
+        "7,50 euros",
+        "8,50 euros",
+        "7,00 euros",
+        "12,50 euros"
+      ],
+      "reponse": 0,
+      "id": 7
+    },
+    {
+      "question": "Léa achète un cahier à 2,35 euros et un stylo à 1,80 euros. Elle paie avec un billet de 10 euros. Quelle somme, en euros, lui rend-on ? (réponds uniquement par le nombre)",
+      "explication": "On additionne d'abord les achats : 2,35 + 1,80 = 4,15 euros, puis on soustrait ce total à 10 euros : 10 - 4,15 = 5,85 euros. Il faut bien enchaîner une addition puis une soustraction en alignant les virgules à chaque étape.",
+      "notion": "problème deux étapes",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "5,85",
+        "5.85"
+      ],
+      "id": 8
+    }
+  ]
+}
