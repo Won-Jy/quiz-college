@@ -1,0 +1,120 @@
+{
+  "date": "2026-09-10",
+  "matiere": "francais",
+  "matiere_affichee": "Français",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Les fonctions dans la phrase : sujet, COD, COI",
+  "vacances": null,
+  "genere_le": "2026-09-10T17:35:05+02:00",
+  "questions": [
+    {
+      "question": "Dans la phrase « Les oiseaux chantent dans les arbres. », quel est le sujet du verbe ?",
+      "explication": "Le sujet fait l'action exprimée par le verbe : ici, ce sont « les oiseaux » qui chantent. Pour le trouver, pose la question « qui est-ce qui chante ? ».",
+      "notion": "sujet du verbe",
+      "type": "qcm",
+      "options": [
+        "Les oiseaux",
+        "chantent",
+        "dans les arbres",
+        "arbres"
+      ],
+      "reponse": 0,
+      "id": 1
+    },
+    {
+      "question": "Dans la phrase « Chaque matin, la boulangère prépare le pain. », quel est le sujet du verbe « prépare » ?",
+      "explication": "Le sujet n'est pas toujours au début de la phrase : ici « Chaque matin » précise le temps, mais c'est « la boulangère » qui fait l'action de préparer.",
+      "notion": "sujet du verbe",
+      "type": "qcm",
+      "options": [
+        "Chaque matin",
+        "la boulangère",
+        "prépare",
+        "le pain"
+      ],
+      "reponse": 1,
+      "id": 2
+    },
+    {
+      "question": "Dans la phrase « Le chat griffe le canapé. », quel est le COD ?",
+      "explication": "Le COD répond à la question « quoi ? » posée après le verbe : le chat griffe quoi ? le canapé. C'est un complément essentiel qu'on ne peut pas supprimer.",
+      "notion": "complément d'objet direct",
+      "type": "qcm",
+      "options": [
+        "Le chat",
+        "griffe",
+        "le canapé",
+        "canapé"
+      ],
+      "reponse": 2,
+      "id": 3
+    },
+    {
+      "question": "Dans la phrase « Le professeur parle à ses élèves. », quel est le COI ?",
+      "explication": "Le COI est introduit par une préposition comme « à » et répond à la question « à qui ? » : le professeur parle à qui ? à ses élèves. Il faut garder la préposition dans ta réponse.",
+      "notion": "complément d'objet indirect",
+      "type": "qcm",
+      "options": [
+        "Le professeur",
+        "parle",
+        "à ses élèves",
+        "ses élèves"
+      ],
+      "reponse": 2,
+      "id": 4
+    },
+    {
+      "question": "Dans la phrase « Les enfants adorent les histoires de pirates. », quelle est la fonction du groupe « les histoires de pirates » ?",
+      "explication": "Ce groupe répond à la question « adorent quoi ? », c'est donc le COD du verbe adorer, alors que « les enfants » est le sujet de la phrase.",
+      "notion": "complément d'objet direct",
+      "type": "qcm",
+      "options": [
+        "Sujet",
+        "COD",
+        "COI",
+        "Complément circonstanciel"
+      ],
+      "reponse": 1,
+      "id": 5
+    },
+    {
+      "question": "Dans la phrase « Elle réfléchit à son avenir. », quelle est la fonction du groupe « à son avenir » ?",
+      "explication": "Le verbe « réfléchir » se construit avec la préposition « à » : contrairement au COD, le COI est toujours introduit par une préposition comme « à » ou « de ».",
+      "notion": "complément d'objet indirect",
+      "type": "qcm",
+      "options": [
+        "COD",
+        "COI",
+        "Sujet",
+        "Complément circonstanciel"
+      ],
+      "reponse": 1,
+      "id": 6
+    },
+    {
+      "question": "Dans la phrase « Les élèves dorment paisiblement. », quelle est la fonction de « paisiblement » ?",
+      "explication": "« paisiblement » précise la manière dont les élèves dorment, ce n'est donc pas un complément d'objet ; le verbe « dormir » ne peut d'ailleurs jamais avoir de COD ou de COI.",
+      "notion": "complément d'objet distinction",
+      "type": "qcm",
+      "options": [
+        "COD",
+        "COI",
+        "Sujet",
+        "Ni COD ni COI"
+      ],
+      "reponse": 3,
+      "id": 7
+    },
+    {
+      "question": "Recopie le complément d'objet indirect (COI) de cette phrase : « Le vieux marin racontait ses aventures à ses petits-enfants. »",
+      "explication": "Le COI répond à la question « à qui ? » : le marin racontait ses aventures à qui ? à ses petits-enfants. N'oublie pas d'inclure la préposition « à » dans ta réponse.",
+      "notion": "complément d'objet indirect",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "à ses petits-enfants"
+      ],
+      "id": 8
+    }
+  ]
+}

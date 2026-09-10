@@ -62,5 +62,21 @@
       "problème monnaie",
       "problème deux étapes"
     ]
+  },
+  {
+    "date": "2026-09-10",
+    "matiere": "francais",
+    "niveau": "6eme",
+    "chapitre": "Les fonctions dans la phrase : sujet, COD, COI",
+    "notions": [
+      "sujet du verbe",
+      "sujet du verbe",
+      "complément d'objet direct",
+      "complément d'objet indirect",
+      "complément d'objet direct",
+      "complément d'objet indirect",
+      "complément d'objet distinction",
+      "complément d'objet indirect"
+    ]
   }
 ]
