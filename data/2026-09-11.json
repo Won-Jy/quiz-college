@@ -1,0 +1,120 @@
+{
+  "date": "2026-09-11",
+  "matiere": "anglais",
+  "matiere_affichee": "Anglais",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Le present simple",
+  "vacances": null,
+  "genere_le": "2026-09-11T19:43:05+02:00",
+  "questions": [
+    {
+      "question": "Complète : She ___ football every Saturday.",
+      "explication": "Avec he/she/it au présent simple, on ajoute un -s à la fin du verbe. Ici le sujet est she, donc il faut plays.",
+      "notion": "présent simple 3e personne",
+      "type": "qcm",
+      "options": [
+        "play",
+        "plays",
+        "playing",
+        "played"
+      ],
+      "reponse": 1,
+      "id": 1
+    },
+    {
+      "question": "Complète : My parents ___ in London.",
+      "explication": "Avec les sujets I, you, we, they (ou un pluriel comme my parents), le verbe garde sa forme de base sans -s.",
+      "notion": "présent simple base verbale",
+      "type": "qcm",
+      "options": [
+        "lives",
+        "live",
+        "living",
+        "to live"
+      ],
+      "reponse": 1,
+      "id": 2
+    },
+    {
+      "question": "Complète : He ___ (study) English every day.",
+      "explication": "Quand un verbe se termine par une consonne + y, on remplace le y par ies à la 3e personne du singulier.",
+      "notion": "orthographe verbe en -y",
+      "type": "qcm",
+      "options": [
+        "studys",
+        "studies",
+        "studes",
+        "study"
+      ],
+      "reponse": 1,
+      "id": 3
+    },
+    {
+      "question": "Complète : She ___ (watch) TV in the evening.",
+      "explication": "Les verbes qui se terminent par -ch, -sh, -ss, -x ou -o prennent -es à la 3e personne du singulier.",
+      "notion": "orthographe verbe -es",
+      "type": "qcm",
+      "options": [
+        "watchs",
+        "watches",
+        "watchies",
+        "watch"
+      ],
+      "reponse": 1,
+      "id": 4
+    },
+    {
+      "question": "Complète : I ___ like spinach.",
+      "explication": "Pour former la négation au présent simple avec I, you, we, they, on utilise don't devant la base verbale.",
+      "notion": "négation présent simple",
+      "type": "qcm",
+      "options": [
+        "don't",
+        "doesn't",
+        "not",
+        "no"
+      ],
+      "reponse": 0,
+      "id": 5
+    },
+    {
+      "question": "Complète : My brother ___ eat meat.",
+      "explication": "Avec he, she, it, la négation du présent simple se forme avec doesn't, et le verbe reste à sa forme de base sans -s.",
+      "notion": "négation 3e personne",
+      "type": "qcm",
+      "options": [
+        "don't",
+        "doesn't",
+        "not",
+        "isn't"
+      ],
+      "reponse": 1,
+      "id": 6
+    },
+    {
+      "question": "Complète : ___ you like chocolate?",
+      "explication": "Pour poser une question au présent simple avec you, on utilise l'auxiliaire Do en début de phrase, suivi du verbe à sa forme de base.",
+      "notion": "interrogation présent simple",
+      "type": "qcm",
+      "options": [
+        "Do",
+        "Does",
+        "Are",
+        "Is"
+      ],
+      "reponse": 0,
+      "id": 7
+    },
+    {
+      "question": "Conjugue le verbe go à la 3e personne du singulier au présent simple (he ___ to school).",
+      "explication": "Les verbes qui se terminent par -o prennent -es à la 3e personne du singulier, donc go devient goes.",
+      "notion": "conjugaison verbe irrégulier",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "goes"
+      ],
+      "id": 8
+    }
+  ]
+}

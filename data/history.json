@@ -78,5 +78,21 @@
       "complément d'objet distinction",
       "complément d'objet indirect"
     ]
+  },
+  {
+    "date": "2026-09-11",
+    "matiere": "anglais",
+    "niveau": "6eme",
+    "chapitre": "Le present simple",
+    "notions": [
+      "présent simple 3e personne",
+      "présent simple base verbale",
+      "orthographe verbe en -y",
+      "orthographe verbe -es",
+      "négation présent simple",
+      "négation 3e personne",
+      "interrogation présent simple",
+      "conjugaison verbe irrégulier"
+    ]
   }
 ]
