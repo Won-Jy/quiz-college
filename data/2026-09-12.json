@@ -1,0 +1,121 @@
+{
+  "date": "2026-09-12",
+  "matiere": "histoire",
+  "matiere_affichee": "Histoire-Géographie",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "La Prehistoire et les premiers hommes",
+  "vacances": null,
+  "genere_le": "2026-09-12T18:57:52+02:00",
+  "questions": [
+    {
+      "question": "Que signifie le mot « Préhistoire » ?",
+      "explication": "La Préhistoire est la très longue période qui va de l'apparition de l'homme jusqu'à l'invention de l'écriture. Elle ne concerne pas les dinosaures, qui ont disparu bien avant l'apparition des premiers hommes.",
+      "notion": "définition Préhistoire",
+      "type": "qcm",
+      "options": [
+        "La période avant l'invention de l'écriture",
+        "La période des dinosaures",
+        "La période qui suit l'Antiquité",
+        "La période de la Révolution française"
+      ],
+      "reponse": 0,
+      "id": 1
+    },
+    {
+      "question": "Quel est le nom de l'espèce humaine actuelle, apparue à la fin de la Préhistoire ?",
+      "explication": "Homo sapiens est notre espèce, celle qui existe encore aujourd'hui. Homo habilis et Homo erectus sont des espèces plus anciennes, et Néandertal a disparu il y a environ 30 000 ans.",
+      "notion": "évolution de l'homme",
+      "type": "qcm",
+      "options": [
+        "Homo sapiens",
+        "Homo erectus",
+        "Homo habilis",
+        "Néandertal"
+      ],
+      "reponse": 0,
+      "id": 2
+    },
+    {
+      "question": "Pendant le Paléolithique, comment vivaient les hommes ?",
+      "explication": "Au Paléolithique, les hommes ne savent ni cultiver ni élever des animaux : ils se déplacent pour chasser et cueillir leur nourriture. La vie sédentaire n'arrive qu'avec le Néolithique.",
+      "notion": "mode de vie Paléolithique",
+      "type": "qcm",
+      "options": [
+        "Ils étaient chasseurs-cueilleurs et se déplaçaient souvent",
+        "Ils étaient agriculteurs et restaient au même endroit",
+        "Ils vivaient dans de grandes villes",
+        "Ils faisaient du commerce entre villages"
+      ],
+      "reponse": 0,
+      "id": 3
+    },
+    {
+      "question": "Comment appelle-t-on la période où les hommes deviennent agriculteurs, éleveurs et sédentaires ?",
+      "explication": "Le Néolithique correspond à la « révolution néolithique » : les hommes cultivent la terre, élèvent des animaux et s'installent durablement dans des villages. Attention à ne pas confondre avec le Paléolithique, période précédente.",
+      "notion": "révolution néolithique",
+      "type": "qcm",
+      "options": [
+        "Le Néolithique",
+        "Le Paléolithique",
+        "L'Antiquité",
+        "Le Moyen Âge"
+      ],
+      "reponse": 0,
+      "id": 4
+    },
+    {
+      "question": "À quoi sert la maîtrise du feu pour les hommes préhistoriques ?",
+      "explication": "Le feu apporte chaleur, lumière et protection contre les animaux dangereux, et il permet de cuire les aliments. Le travail du métal n'apparaît que bien plus tard, à l'Antiquité.",
+      "notion": "maîtrise du feu",
+      "type": "qcm",
+      "options": [
+        "Se chauffer, cuisiner et se protéger des animaux",
+        "Fabriquer des outils en métal",
+        "Écrire des textes",
+        "Construire des bateaux à moteur"
+      ],
+      "reponse": 0,
+      "id": 5
+    },
+    {
+      "question": "Où retrouve-t-on des peintures réalisées par les hommes préhistoriques ?",
+      "explication": "Les hommes préhistoriques peignaient directement sur les parois des grottes, comme à Lascaux. Les tablettes d'argile et le papyrus servaient à l'écriture, inventée bien plus tard.",
+      "notion": "art pariétal",
+      "type": "qcm",
+      "options": [
+        "Sur les parois des grottes",
+        "Sur des tablettes d'argile",
+        "Sur du papyrus",
+        "Sur des vases en céramique"
+      ],
+      "reponse": 0,
+      "id": 6
+    },
+    {
+      "question": "Au Paléolithique, les outils sont fabriqués en pierre...",
+      "explication": "Au Paléolithique, les hommes taillent le silex pour obtenir des outils tranchants. La pierre polie apparaît plus tard, au Néolithique, une fois les techniques améliorées.",
+      "notion": "pierre taillée Paléolithique",
+      "type": "qcm",
+      "options": [
+        "taillée",
+        "polie",
+        "fondue",
+        "sculptée dans du marbre"
+      ],
+      "reponse": 0,
+      "id": 7
+    },
+    {
+      "question": "Quel est le nom de la grotte ornée découverte en 1940 en Dordogne, célèbre pour ses peintures préhistoriques d'animaux ?",
+      "explication": "La grotte de Lascaux, découverte en 1940 par quatre adolescents, contient des centaines de peintures d'animaux réalisées au Paléolithique. C'est l'un des sites préhistoriques les plus célèbres de France.",
+      "notion": "site préhistorique français",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "Lascaux",
+        "la grotte de Lascaux"
+      ],
+      "id": 8
+    }
+  ]
+}

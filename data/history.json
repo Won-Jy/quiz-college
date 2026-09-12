@@ -94,5 +94,21 @@
       "interrogation présent simple",
       "conjugaison verbe irrégulier"
     ]
+  },
+  {
+    "date": "2026-09-12",
+    "matiere": "histoire",
+    "niveau": "6eme",
+    "chapitre": "La Prehistoire et les premiers hommes",
+    "notions": [
+      "définition Préhistoire",
+      "évolution de l'homme",
+      "mode de vie Paléolithique",
+      "révolution néolithique",
+      "maîtrise du feu",
+      "art pariétal",
+      "pierre taillée Paléolithique",
+      "site préhistorique français"
+    ]
   }
 ]
