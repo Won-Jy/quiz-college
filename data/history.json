@@ -110,5 +110,21 @@
       "pierre taillée Paléolithique",
       "site préhistorique français"
     ]
+  },
+  {
+    "date": "2026-09-14",
+    "matiere": "francais",
+    "niveau": "6eme",
+    "chapitre": "Le present de l'indicatif",
+    "notions": [
+      "terminaisons 1er groupe",
+      "verbe avoir",
+      "verbe 2e groupe",
+      "verbes en -ger",
+      "verbe 3e groupe irrégulier",
+      "valeurs du présent",
+      "accord sujet-verbe",
+      "verbe 3e groupe irrégulier"
+    ]
   }
 ]

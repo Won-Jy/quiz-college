@@ -1,0 +1,120 @@
+{
+  "date": "2026-09-14",
+  "matiere": "francais",
+  "matiere_affichee": "Français",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Le present de l'indicatif",
+  "vacances": null,
+  "genere_le": "2026-09-14T20:10:09+02:00",
+  "questions": [
+    {
+      "question": "Quelle est la forme correcte du verbe 'chanter' avec le sujet 'tu' au présent de l'indicatif ?",
+      "explication": "Au présent, les verbes du premier groupe prennent -es à la 2e personne du singulier. Tu dois donc écrire 'tu chantes'.",
+      "notion": "terminaisons 1er groupe",
+      "type": "qcm",
+      "options": [
+        "tu chante",
+        "tu chantes",
+        "tu chantent",
+        "tu chanter"
+      ],
+      "reponse": 1,
+      "id": 1
+    },
+    {
+      "question": "Complète : 'Nous ___ un chat noir.' avec le verbe avoir au présent.",
+      "explication": "Le verbe avoir au présent se conjugue 'nous avons' à la 1re personne du pluriel. C'est un verbe irrégulier à connaître par cœur.",
+      "notion": "verbe avoir",
+      "type": "qcm",
+      "options": [
+        "avons",
+        "avez",
+        "ont",
+        "as"
+      ],
+      "reponse": 0,
+      "id": 2
+    },
+    {
+      "question": "Complète : 'Vous ___ vos devoirs avant le dîner.' avec le verbe finir au présent.",
+      "explication": "Les verbes du deuxième groupe comme 'finir' prennent -issez à la 2e personne du pluriel au présent : nous finissons, vous finissez.",
+      "notion": "verbe 2e groupe",
+      "type": "qcm",
+      "options": [
+        "finissez",
+        "finez",
+        "finissiez",
+        "finissent"
+      ],
+      "reponse": 0,
+      "id": 3
+    },
+    {
+      "question": "Complète : 'Nous ___ des pommes au goûter.' avec le verbe manger au présent.",
+      "explication": "Les verbes en -ger gardent le e après le g devant les terminaisons en a et o pour conserver le son [j], d'où 'nous mangeons'.",
+      "notion": "verbes en -ger",
+      "type": "qcm",
+      "options": [
+        "mangons",
+        "mangeons",
+        "mangeions",
+        "mangent"
+      ],
+      "reponse": 1,
+      "id": 4
+    },
+    {
+      "question": "Complète : 'Vous ___ du sport tous les mercredis.' avec le verbe faire au présent.",
+      "explication": "Le verbe 'faire' est irrégulier au présent : je fais, tu fais, il fait, nous faisons, vous faites, ils font. Il faut retenir cette forme particulière.",
+      "notion": "verbe 3e groupe irrégulier",
+      "type": "qcm",
+      "options": [
+        "faites",
+        "faisez",
+        "faisont",
+        "fesez"
+      ],
+      "reponse": 0,
+      "id": 5
+    },
+    {
+      "question": "Dans la phrase 'La Terre tourne autour du Soleil.', quelle valeur a le présent de l'indicatif ?",
+      "explication": "Le présent peut exprimer un fait toujours vrai, une vérité scientifique valable à tout moment, comme ici.",
+      "notion": "valeurs du présent",
+      "type": "qcm",
+      "options": [
+        "une vérité générale",
+        "une action en train de se dérouler",
+        "un futur proche",
+        "un ordre"
+      ],
+      "reponse": 0,
+      "id": 6
+    },
+    {
+      "question": "Quelle phrase est correctement conjuguée au présent de l'indicatif ?",
+      "explication": "Le sujet 'ils' est un pluriel, le verbe 'prendre' doit s'accorder à la 3e personne du pluriel : ils prennent, avec deux n.",
+      "notion": "accord sujet-verbe",
+      "type": "qcm",
+      "options": [
+        "Ils prend le bus tous les matins.",
+        "Il prennent le bus tous les matins.",
+        "Ils prennent le bus tous les matins.",
+        "Ils prenent le bus tous les matins."
+      ],
+      "reponse": 2,
+      "id": 7
+    },
+    {
+      "question": "Conjugue le verbe 'venir' à la 3e personne du pluriel au présent de l'indicatif.",
+      "explication": "Le verbe 'venir' est irrégulier : je viens, tu viens, il vient, nous venons, vous venez, ils viennent. Attention au doublement du n.",
+      "notion": "verbe 3e groupe irrégulier",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "viennent"
+      ],
+      "id": 8
+    }
+  ]
+}
