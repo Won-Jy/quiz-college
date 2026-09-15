@@ -126,5 +126,21 @@
       "accord sujet-verbe",
       "verbe 3e groupe irrégulier"
     ]
+  },
+  {
+    "date": "2026-09-15",
+    "matiere": "anglais",
+    "niveau": "6eme",
+    "chapitre": "Le present continu",
+    "notions": [
+      "formation present continu",
+      "accord be present continu",
+      "orthographe -ing e muet",
+      "orthographe -ing consonne doublée",
+      "négation present continu",
+      "interrogation present continu",
+      "usage present continu",
+      "formation present continu"
+    ]
   }
 ]

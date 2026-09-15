@@ -1,0 +1,120 @@
+{
+  "date": "2026-09-15",
+  "matiere": "anglais",
+  "matiere_affichee": "Anglais",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Le present continu",
+  "vacances": null,
+  "genere_le": "2026-09-15T18:53:24+02:00",
+  "questions": [
+    {
+      "question": "Comment forme-t-on le present continu en anglais ?",
+      "explication": "Le present continu se construit toujours avec l'auxiliaire BE conjugué suivi du verbe qui prend la terminaison -ING. C'est cette structure à deux éléments qu'il faut retenir.",
+      "notion": "formation present continu",
+      "type": "qcm",
+      "options": [
+        "BE + verbe + ING",
+        "verbe + ING tout seul",
+        "BE + base verbale",
+        "HAVE + verbe + ING"
+      ],
+      "reponse": 0,
+      "id": 1
+    },
+    {
+      "question": "She ___ playing football in the garden.",
+      "explication": "Avec le sujet 'she', on utilise toujours 'is' devant le verbe en -ING. C'est la même règle d'accord qu'avec BE seul.",
+      "notion": "accord be present continu",
+      "type": "qcm",
+      "options": [
+        "is",
+        "are",
+        "am",
+        "be"
+      ],
+      "reponse": 0,
+      "id": 2
+    },
+    {
+      "question": "Quelle est la bonne orthographe du verbe 'make' au present continu ?",
+      "explication": "Quand un verbe se termine par un -e muet, on supprime ce -e avant d'ajouter -ING : make devient making. Attention à ne pas garder les deux lettres.",
+      "notion": "orthographe -ing e muet",
+      "type": "qcm",
+      "options": [
+        "making",
+        "makeing",
+        "makking",
+        "makinge"
+      ],
+      "reponse": 0,
+      "id": 3
+    },
+    {
+      "question": "Quelle est la bonne orthographe du verbe 'run' au present continu ?",
+      "explication": "Quand un verbe court se termine par une seule voyelle suivie d'une seule consonne, on double cette consonne avant d'ajouter -ING : run devient running.",
+      "notion": "orthographe -ing consonne doublée",
+      "type": "qcm",
+      "options": [
+        "runing",
+        "running",
+        "runnning",
+        "runeing"
+      ],
+      "reponse": 1,
+      "id": 4
+    },
+    {
+      "question": "Comment dit-on 'Il ne mange pas' (en ce moment) au present continu ?",
+      "explication": "À la forme négative, NOT se place juste après l'auxiliaire BE, avant le verbe en -ING : is + not + eating. Le verbe garde toujours sa terminaison -ING.",
+      "notion": "négation present continu",
+      "type": "qcm",
+      "options": [
+        "He is not eating",
+        "He not is eating",
+        "He doesn't eating",
+        "He isn't eats"
+      ],
+      "reponse": 0,
+      "id": 5
+    },
+    {
+      "question": "Quelle est la bonne question pour 'Est-ce qu'ils regardent la télévision ?' (en ce moment)",
+      "explication": "Pour poser une question au present continu, on inverse simplement le sujet et l'auxiliaire BE : Are + they + watching. Le verbe garde son -ING.",
+      "notion": "interrogation present continu",
+      "type": "qcm",
+      "options": [
+        "Are they watching television?",
+        "Do they watching television?",
+        "Are they watch television?",
+        "Is they watching television?"
+      ],
+      "reponse": 0,
+      "id": 6
+    },
+    {
+      "question": "Look! The dog ___ in the garden.",
+      "explication": "Le mot 'Look!' indique une action en train de se dérouler sous nos yeux, il faut donc utiliser le present continu et non le présent simple qui sert aux habitudes.",
+      "notion": "usage present continu",
+      "type": "qcm",
+      "options": [
+        "is running",
+        "runs",
+        "run",
+        "are running"
+      ],
+      "reponse": 0,
+      "id": 7
+    },
+    {
+      "question": "Complète la phrase avec la forme correcte du present continu du verbe 'swim' : 'They ___ in the pool right now.'",
+      "explication": "Avec le sujet 'they', l'auxiliaire est 'are', et 'swim' se termine par une voyelle suivie d'une consonne, donc on double le 'm' : swimming.",
+      "notion": "formation present continu",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "are swimming"
+      ],
+      "id": 8
+    }
+  ]
+}
