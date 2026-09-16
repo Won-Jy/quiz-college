@@ -142,5 +142,21 @@
       "usage present continu",
       "formation present continu"
     ]
+  },
+  {
+    "date": "2026-09-16",
+    "matiere": "maths",
+    "niveau": "6eme",
+    "chapitre": "Multiplication et division de decimaux",
+    "notions": [
+      "multiplication par 10",
+      "division par 100",
+      "multiplication decimal entier",
+      "multiplication deux decimaux",
+      "division decimal entier",
+      "probleme multiplication",
+      "ordre de grandeur",
+      "division decimale"
+    ]
   }
 ]

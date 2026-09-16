@@ -1,0 +1,121 @@
+{
+  "date": "2026-09-16",
+  "matiere": "maths",
+  "matiere_affichee": "Mathématiques",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Multiplication et division de decimaux",
+  "vacances": null,
+  "genere_le": "2026-09-16T20:08:36+02:00",
+  "questions": [
+    {
+      "question": "Quel est le résultat de 4,35 x 10 ?",
+      "explication": "Pour multiplier par 10, tu décales la virgule d'un rang vers la droite : 4,35 devient 43,5.",
+      "notion": "multiplication par 10",
+      "type": "qcm",
+      "options": [
+        "43,5",
+        "4,35",
+        "0,435",
+        "435"
+      ],
+      "reponse": 0,
+      "id": 1
+    },
+    {
+      "question": "Quel est le résultat de 56,2 : 100 ?",
+      "explication": "Diviser par 100 déplace la virgule de deux rangs vers la gauche : 56,2 devient 0,562.",
+      "notion": "division par 100",
+      "type": "qcm",
+      "options": [
+        "0,562",
+        "5,62",
+        "562",
+        "0,0562"
+      ],
+      "reponse": 0,
+      "id": 2
+    },
+    {
+      "question": "Quel est le résultat de 2,5 x 4 ?",
+      "explication": "2,5 multiplié par 4 donne 10 ; attention à ne pas confondre avec une addition (2,5+4=6,5).",
+      "notion": "multiplication decimal entier",
+      "type": "qcm",
+      "options": [
+        "10",
+        "8,5",
+        "6,5",
+        "100"
+      ],
+      "reponse": 0,
+      "id": 3
+    },
+    {
+      "question": "Quel est le résultat de 1,2 x 0,3 ?",
+      "explication": "1,2 a un chiffre après la virgule et 0,3 aussi : le résultat doit donc avoir deux chiffres après la virgule, soit 0,36.",
+      "notion": "multiplication deux decimaux",
+      "type": "qcm",
+      "options": [
+        "0,36",
+        "3,6",
+        "36",
+        "0,036"
+      ],
+      "reponse": 0,
+      "id": 4
+    },
+    {
+      "question": "Quel est le résultat de 12,6 : 3 ?",
+      "explication": "12 divisé par 3 fait 4, et 0,6 divisé par 3 fait 0,2, donc le résultat est 4,2.",
+      "notion": "division decimal entier",
+      "type": "qcm",
+      "options": [
+        "4,2",
+        "42",
+        "4,02",
+        "3,2"
+      ],
+      "reponse": 0,
+      "id": 5
+    },
+    {
+      "question": "Un stylo coûte 1,50 euro. Combien coûtent 6 stylos ?",
+      "explication": "Il faut multiplier le prix d'un stylo par le nombre de stylos : 1,5 x 6 = 9 euros, pas les additionner.",
+      "notion": "probleme multiplication",
+      "type": "qcm",
+      "options": [
+        "9 euros",
+        "7,5 euros",
+        "6,5 euros",
+        "90 euros"
+      ],
+      "reponse": 0,
+      "id": 6
+    },
+    {
+      "question": "Sans calculer précisément, quel est l'ordre de grandeur de 19,8 x 5,1 ?",
+      "explication": "19,8 est proche de 20 et 5,1 est proche de 5 ; 20 x 5 = 100, c'est l'ordre de grandeur du résultat exact (100,98).",
+      "notion": "ordre de grandeur",
+      "type": "qcm",
+      "options": [
+        "100",
+        "25",
+        "1000",
+        "10"
+      ],
+      "reponse": 0,
+      "id": 7
+    },
+    {
+      "question": "Calcule 15,6 : 4. Donne le résultat sous forme décimale.",
+      "explication": "15,6 divisé par 4 : 12:4=3 pour la partie entière, puis 3,6:4=0,9, ce qui donne 3,9.",
+      "notion": "division decimale",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "3,9",
+        "3.9"
+      ],
+      "id": 8
+    }
+  ]
+}
