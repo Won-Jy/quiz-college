@@ -1,0 +1,120 @@
+{
+  "date": "2026-09-17",
+  "matiere": "francais",
+  "matiere_affichee": "Français",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "L'imparfait et le passe simple",
+  "vacances": null,
+  "genere_le": "2026-09-17T19:31:37+02:00",
+  "questions": [
+    {
+      "question": "Quelle terminaison correspond à l'imparfait à la 3e personne du pluriel (ils/elles) ?",
+      "explication": "L'imparfait se termine toujours par -ais, -ais, -ait, -ions, -iez, -aient, quel que soit le groupe du verbe. C'est une terminaison très régulière à retenir par cœur.",
+      "notion": "terminaisons imparfait",
+      "type": "qcm",
+      "options": [
+        "-aient",
+        "-ait",
+        "-irent",
+        "-ent"
+      ],
+      "reponse": 0,
+      "id": 1
+    },
+    {
+      "question": "Dans la phrase \"Il faisait beau ce jour-là\", à quel temps est conjugué le verbe \"faisait\" ?",
+      "explication": "La terminaison -ait et l'idée d'une situation qui dure indiquent l'imparfait. Il décrit ici un état, pas une action ponctuelle.",
+      "notion": "reconnaître l'imparfait",
+      "type": "qcm",
+      "options": [
+        "imparfait",
+        "passé simple",
+        "présent",
+        "futur"
+      ],
+      "reponse": 0,
+      "id": 2
+    },
+    {
+      "question": "Dans la phrase \"Soudain, elle sursauta\", à quel temps est conjugué le verbe \"sursauta\" ?",
+      "explication": "Le mot \"soudain\" annonce une action brève et unique : c'est le signe du passé simple. La terminaison -a à la 3e personne du singulier le confirme.",
+      "notion": "reconnaître le passé simple",
+      "type": "qcm",
+      "options": [
+        "passé simple",
+        "imparfait",
+        "présent",
+        "passé composé"
+      ],
+      "reponse": 0,
+      "id": 3
+    },
+    {
+      "question": "Quelle est la forme correcte du verbe \"avoir\" à l'imparfait, 1re personne du singulier ?",
+      "explication": "Attention à ne pas confondre avec le passé simple (j'eus). À l'imparfait, on écrit toujours -ais à la première personne, jamais -ait ni -ai.",
+      "notion": "conjugaison avoir imparfait",
+      "type": "qcm",
+      "options": [
+        "j'avais",
+        "j'eus",
+        "j'ai",
+        "j'avait"
+      ],
+      "reponse": 0,
+      "id": 4
+    },
+    {
+      "question": "Comment écrit-on le verbe \"manger\" à l'imparfait, 1re personne du singulier ?",
+      "explication": "Les verbes en -ger gardent le e après le g devant a et o pour conserver le son [j]. On écrit donc mangeais, comme mangeons au présent.",
+      "notion": "imparfait verbes en -ger",
+      "type": "qcm",
+      "options": [
+        "je mangeais",
+        "je mangais",
+        "je mangai",
+        "je mangeai"
+      ],
+      "reponse": 0,
+      "id": 5
+    },
+    {
+      "question": "Dans un récit, on utilise généralement l'imparfait pour...",
+      "explication": "L'imparfait sert surtout à la description ou aux habitudes, il forme l'arrière-plan du récit, tandis que le passé simple raconte les actions ponctuelles au premier plan.",
+      "notion": "valeur de l'imparfait",
+      "type": "qcm",
+      "options": [
+        "décrire une action qui dure ou qui se répète",
+        "raconter une action brève qui fait avancer l'histoire",
+        "exprimer un ordre",
+        "poser une question"
+      ],
+      "reponse": 0,
+      "id": 6
+    },
+    {
+      "question": "Quelle est la forme correcte du verbe \"venir\" au passé simple, 3e personne du singulier ?",
+      "explication": "Venir est un verbe irrégulier au passé simple : il se conjugue avec les terminaisons en -ins, -ins, -int, comme tenir. On écrit donc il vint, pas venit ni vena.",
+      "notion": "passé simple verbe irrégulier",
+      "type": "qcm",
+      "options": [
+        "il vint",
+        "il venait",
+        "il venit",
+        "il vena"
+      ],
+      "reponse": 0,
+      "id": 7
+    },
+    {
+      "question": "Conjugue le verbe \"finir\" à l'imparfait, 3e personne du pluriel : ils ...",
+      "explication": "Pour les verbes du 2e groupe comme finir, on garde le radical avec -iss- avant d'ajouter la terminaison de l'imparfait -aient.",
+      "notion": "imparfait 2e groupe",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "finissaient"
+      ],
+      "id": 8
+    }
+  ]
+}

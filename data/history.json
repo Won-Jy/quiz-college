@@ -158,5 +158,21 @@
       "ordre de grandeur",
       "division decimale"
     ]
+  },
+  {
+    "date": "2026-09-17",
+    "matiere": "francais",
+    "niveau": "6eme",
+    "chapitre": "L'imparfait et le passe simple",
+    "notions": [
+      "terminaisons imparfait",
+      "reconnaître l'imparfait",
+      "reconnaître le passé simple",
+      "conjugaison avoir imparfait",
+      "imparfait verbes en -ger",
+      "valeur de l'imparfait",
+      "passé simple verbe irrégulier",
+      "imparfait 2e groupe"
+    ]
   }
 ]
