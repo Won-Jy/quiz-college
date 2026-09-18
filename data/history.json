@@ -174,5 +174,21 @@
       "passé simple verbe irrégulier",
       "imparfait 2e groupe"
     ]
+  },
+  {
+    "date": "2026-09-18",
+    "matiere": "anglais",
+    "niveau": "6eme",
+    "chapitre": "Pronoms personnels et adjectifs possessifs",
+    "notions": [
+      "pronom personnel sujet",
+      "adjectif possessif",
+      "pronom personnel sujet",
+      "adjectif possessif",
+      "pronom vs possessif",
+      "pronom complément",
+      "adjectif possessif",
+      "adjectif possessif pluriel"
+    ]
   }
 ]

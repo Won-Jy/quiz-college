@@ -1,0 +1,120 @@
+{
+  "date": "2026-09-18",
+  "matiere": "anglais",
+  "matiere_affichee": "Anglais",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Pronoms personnels et adjectifs possessifs",
+  "vacances": null,
+  "genere_le": "2026-09-18T18:49:07+02:00",
+  "questions": [
+    {
+      "question": "Complète : \"___ is my brother.\" (Il est mon frère.)",
+      "explication": "Pour parler d'un garçon ou d'un homme, on utilise le pronom sujet He. She est réservé aux filles ou femmes.",
+      "notion": "pronom personnel sujet",
+      "type": "qcm",
+      "options": [
+        "He",
+        "She",
+        "It",
+        "They"
+      ],
+      "reponse": 0,
+      "id": 1
+    },
+    {
+      "question": "Complète : \"Lisa loves ___ cat.\" (Lisa aime son chat.)",
+      "explication": "Lisa est une fille, donc on utilise l'adjectif possessif her pour dire \"son/sa/ses\" à elle. His serait pour un garçon.",
+      "notion": "adjectif possessif",
+      "type": "qcm",
+      "options": [
+        "his",
+        "her",
+        "its",
+        "their"
+      ],
+      "reponse": 1,
+      "id": 2
+    },
+    {
+      "question": "Complète : \"Tom and Ben are brothers. ___ live in London.\" (Ils vivent à Londres.)",
+      "explication": "Tom et Ben forment un groupe de plusieurs personnes, donc on utilise le pronom sujet pluriel They.",
+      "notion": "pronom personnel sujet",
+      "type": "qcm",
+      "options": [
+        "He",
+        "She",
+        "It",
+        "They"
+      ],
+      "reponse": 3,
+      "id": 3
+    },
+    {
+      "question": "Complète : \"The dog is hungry. ___ bowl is empty.\" (Sa gamelle est vide.)",
+      "explication": "Pour un animal ou un objet, on utilise l'adjectif possessif Its, différent de his (pour un garçon) et her (pour une fille).",
+      "notion": "adjectif possessif",
+      "type": "qcm",
+      "options": [
+        "His",
+        "Her",
+        "Its",
+        "Their"
+      ],
+      "reponse": 2,
+      "id": 4
+    },
+    {
+      "question": "Quelle phrase contient une erreur ?",
+      "explication": "Ici il faut un adjectif possessif avant name, donc on doit écrire His name is Paul, et non He name is Paul qui est un pronom sujet.",
+      "notion": "pronom vs possessif",
+      "type": "qcm",
+      "options": [
+        "My father is tall.",
+        "She is my sister.",
+        "He name is Paul.",
+        "Our house is big."
+      ],
+      "reponse": 2,
+      "id": 5
+    },
+    {
+      "question": "Complète : \"Can you help ___ ?\" (Peux-tu m'aider ?)",
+      "explication": "Après un verbe comme help, on utilise le pronom complément me, pas le pronom sujet I ni l'adjectif possessif my.",
+      "notion": "pronom complément",
+      "type": "qcm",
+      "options": [
+        "I",
+        "me",
+        "my",
+        "mine"
+      ],
+      "reponse": 1,
+      "id": 6
+    },
+    {
+      "question": "Complète : \"Mrs Smith is a teacher. ___ class is fun.\" (Sa classe est amusante.)",
+      "explication": "Mrs Smith est une femme, donc on utilise l'adjectif possessif Her, à ne pas confondre avec His réservé aux hommes.",
+      "notion": "adjectif possessif",
+      "type": "qcm",
+      "options": [
+        "His",
+        "Her",
+        "Its",
+        "Their"
+      ],
+      "reponse": 1,
+      "id": 7
+    },
+    {
+      "question": "Complète avec l'adjectif possessif correct : \"John and Mary love ___ parents.\" (Ils aiment leurs parents.)",
+      "explication": "John et Mary représentent plusieurs personnes, donc on utilise l'adjectif possessif pluriel their pour dire \"leur/leurs\".",
+      "notion": "adjectif possessif pluriel",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "their"
+      ],
+      "id": 8
+    }
+  ]
+}
