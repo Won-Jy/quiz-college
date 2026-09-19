@@ -1,0 +1,121 @@
+{
+  "date": "2026-09-19",
+  "matiere": "histoire",
+  "matiere_affichee": "Histoire-Géographie",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "La revolution neolithique",
+  "vacances": null,
+  "genere_le": "2026-09-19T19:11:02+02:00",
+  "questions": [
+    {
+      "question": "Que signifie le mot « Néolithique » ?",
+      "explication": "Néolithique vient du grec et signifie « nouvelle pierre », car les hommes inventent une nouvelle façon de travailler la pierre à cette période.",
+      "notion": "sens du mot néolithique",
+      "type": "qcm",
+      "options": [
+        "Nouvelle pierre",
+        "Vieille pierre",
+        "Pierre taillée",
+        "Pierre creuse"
+      ],
+      "reponse": 0,
+      "id": 1
+    },
+    {
+      "question": "Quelles sont les deux nouvelles activités qui apparaissent au Néolithique ?",
+      "explication": "Les hommes apprennent à cultiver des plantes et à domestiquer des animaux, ce qui change complètement leur mode de vie.",
+      "notion": "agriculture et élevage",
+      "type": "qcm",
+      "options": [
+        "La chasse et la cueillette",
+        "L'agriculture et l'élevage",
+        "La pêche et la chasse",
+        "Le commerce et l'artisanat"
+      ],
+      "reponse": 1,
+      "id": 2
+    },
+    {
+      "question": "Grâce à l'agriculture et à l'élevage, les hommes du Néolithique deviennent...",
+      "explication": "Comme ils cultivent la terre et élèvent des animaux, les hommes n'ont plus besoin de se déplacer pour trouver de la nourriture : ils se sédentarisent.",
+      "notion": "sédentarisation",
+      "type": "qcm",
+      "options": [
+        "nomades",
+        "sédentaires",
+        "chasseurs",
+        "migrateurs"
+      ],
+      "reponse": 1,
+      "id": 3
+    },
+    {
+      "question": "Où vivent désormais les hommes du Néolithique ?",
+      "explication": "La sédentarisation permet la construction de villages où les habitants restent installés durablement.",
+      "notion": "habitat néolithique",
+      "type": "qcm",
+      "options": [
+        "Dans des villages",
+        "Dans des grottes",
+        "Dans des igloos",
+        "Dans des villes fortifiées"
+      ],
+      "reponse": 0,
+      "id": 4
+    },
+    {
+      "question": "Au Néolithique, comment travaille-t-on la pierre ?",
+      "explication": "Attention à ne pas confondre : la pierre taillée est utilisée au Paléolithique, tandis qu'au Néolithique on invente la pierre polie, plus solide et plus efficace.",
+      "notion": "pierre polie",
+      "type": "qcm",
+      "options": [
+        "On la taille uniquement",
+        "On la polit",
+        "On la laisse brute",
+        "On la fait fondre"
+      ],
+      "reponse": 1,
+      "id": 5
+    },
+    {
+      "question": "Quel nouvel objet apparaît au Néolithique pour conserver et transporter la nourriture ?",
+      "explication": "Les hommes fabriquent des poteries en argile cuite, une invention nouvelle liée au mode de vie sédentaire.",
+      "notion": "invention de la poterie",
+      "type": "qcm",
+      "options": [
+        "La poterie",
+        "La roue",
+        "Le métal",
+        "La faucille"
+      ],
+      "reponse": 0,
+      "id": 6
+    },
+    {
+      "question": "Que peut-on observer aujourd'hui à Carnac, en France, datant du Néolithique ?",
+      "explication": "Attention, les peintures rupestres appartiennent au Paléolithique : à Carnac, ce sont des menhirs, des mégalithes dressés par les hommes du Néolithique.",
+      "notion": "mégalithes néolithiques",
+      "type": "qcm",
+      "options": [
+        "Des peintures rupestres",
+        "Des menhirs",
+        "Des poteries grecques",
+        "Des pyramides"
+      ],
+      "reponse": 1,
+      "id": 7
+    },
+    {
+      "question": "Vers quelle année avant J.-C. situe-t-on le début de la révolution néolithique ?",
+      "explication": "On situe généralement le début de la révolution néolithique vers 9000 avant J.-C., au Proche-Orient.",
+      "notion": "date révolution néolithique",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "9000",
+        "-9000"
+      ],
+      "id": 8
+    }
+  ]
+}

@@ -190,5 +190,21 @@
       "adjectif possessif",
       "adjectif possessif pluriel"
     ]
+  },
+  {
+    "date": "2026-09-19",
+    "matiere": "histoire",
+    "niveau": "6eme",
+    "chapitre": "La revolution neolithique",
+    "notions": [
+      "sens du mot néolithique",
+      "agriculture et élevage",
+      "sédentarisation",
+      "habitat néolithique",
+      "pierre polie",
+      "invention de la poterie",
+      "mégalithes néolithiques",
+      "date révolution néolithique"
+    ]
   }
 ]
