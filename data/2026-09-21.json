@@ -1,0 +1,120 @@
+{
+  "date": "2026-09-21",
+  "matiere": "francais",
+  "matiere_affichee": "Français",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "L'accord sujet-verbe",
+  "vacances": null,
+  "genere_le": "2026-09-21T20:25:56+02:00",
+  "questions": [
+    {
+      "question": "Les enfants ... dans la cour.",
+      "explication": "Le sujet « les enfants » est pluriel, donc le verbe se termine par -ent à la 3e personne du pluriel.",
+      "notion": "accord sujet pluriel",
+      "type": "qcm",
+      "options": [
+        "joue",
+        "joues",
+        "jouent",
+        "jouons"
+      ],
+      "reponse": 2,
+      "id": 1
+    },
+    {
+      "question": "Le chat ... sur le canapé.",
+      "explication": "Le sujet « le chat » est singulier (3e personne), le verbe prend donc la terminaison -t.",
+      "notion": "accord sujet singulier",
+      "type": "qcm",
+      "options": [
+        "dort",
+        "dorment",
+        "dors",
+        "dormons"
+      ],
+      "reponse": 0,
+      "id": 2
+    },
+    {
+      "question": "Dans le jardin ... les enfants.",
+      "explication": "Même si le verbe est placé avant le sujet, il faut chercher qui fait l'action : ici « les enfants », donc le verbe reste au pluriel.",
+      "notion": "sujet inversé",
+      "type": "qcm",
+      "options": [
+        "joue",
+        "joues",
+        "jouent",
+        "jouez"
+      ],
+      "reponse": 2,
+      "id": 3
+    },
+    {
+      "question": "Paul et Marie ... au cinéma.",
+      "explication": "Deux sujets reliés par « et » forment un sujet pluriel, même si chacun est singulier : le verbe se met donc au pluriel.",
+      "notion": "sujets multiples",
+      "type": "qcm",
+      "options": [
+        "va",
+        "vas",
+        "vont",
+        "allons"
+      ],
+      "reponse": 2,
+      "id": 4
+    },
+    {
+      "question": "Le livre de mes cousins ... sur la table.",
+      "explication": "Le sujet réel est « le livre », singulier ; « de mes cousins » n'est qu'un complément du nom qui ne doit pas influencer l'accord.",
+      "notion": "sujet éloigné par complément",
+      "type": "qcm",
+      "options": [
+        "sont",
+        "est",
+        "es",
+        "êtes"
+      ],
+      "reponse": 1,
+      "id": 5
+    },
+    {
+      "question": "Ce sont les élèves qui ... la meilleure note.",
+      "explication": "Le pronom « qui » reprend « les élèves », qui est pluriel ; le verbe doit donc s'accorder avec cet antécédent pluriel, pas avec « note ».",
+      "notion": "accord avec antécédent",
+      "type": "qcm",
+      "options": [
+        "obtient",
+        "obtiens",
+        "obtiennent",
+        "obtenons"
+      ],
+      "reponse": 2,
+      "id": 6
+    },
+    {
+      "question": "On ... toujours raison.",
+      "explication": "« On » est un sujet qui se comporte toujours comme une 3e personne du singulier, même s'il désigne plusieurs personnes.",
+      "notion": "accord avec on",
+      "type": "qcm",
+      "options": [
+        "a",
+        "ont",
+        "as",
+        "avons"
+      ],
+      "reponse": 0,
+      "id": 7
+    },
+    {
+      "question": "Écris correctement le verbe entre parenthèses : Les feuilles des arbres (tomber) en automne.",
+      "explication": "Le sujet est « les feuilles », pluriel ; « des arbres » n'est qu'un complément du nom, il ne faut pas s'accorder avec lui.",
+      "notion": "sujet éloigné par complément",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "tombent"
+      ],
+      "id": 8
+    }
+  ]
+}

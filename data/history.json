@@ -206,5 +206,21 @@
       "mégalithes néolithiques",
       "date révolution néolithique"
     ]
+  },
+  {
+    "date": "2026-09-21",
+    "matiere": "francais",
+    "niveau": "6eme",
+    "chapitre": "L'accord sujet-verbe",
+    "notions": [
+      "accord sujet pluriel",
+      "accord sujet singulier",
+      "sujet inversé",
+      "sujets multiples",
+      "sujet éloigné par complément",
+      "accord avec antécédent",
+      "accord avec on",
+      "sujet éloigné par complément"
+    ]
   }
 ]
