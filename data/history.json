@@ -222,5 +222,21 @@
       "accord avec on",
       "sujet éloigné par complément"
     ]
+  },
+  {
+    "date": "2026-09-22",
+    "matiere": "anglais",
+    "niveau": "6eme",
+    "chapitre": "There is / there are",
+    "notions": [
+      "there is singulier",
+      "there are pluriel",
+      "there is indénombrable",
+      "négation there isn't",
+      "négation there aren't",
+      "question is there",
+      "question are there",
+      "there is indénombrable"
+    ]
   }
 ]

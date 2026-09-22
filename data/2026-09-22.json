@@ -1,0 +1,121 @@
+{
+  "date": "2026-09-22",
+  "matiere": "anglais",
+  "matiere_affichee": "Anglais",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "There is / there are",
+  "vacances": null,
+  "genere_le": "2026-09-22T18:47:21+02:00",
+  "questions": [
+    {
+      "question": "Choisis la forme correcte : ___ a mouse in the kitchen.",
+      "explication": "Devant un nom singulier comme « a mouse », on utilise « there is ». C'est la structure de base pour dire qu'il y a une seule chose.",
+      "notion": "there is singulier",
+      "type": "qcm",
+      "options": [
+        "There is",
+        "There are",
+        "There have",
+        "Is there"
+      ],
+      "reponse": 0,
+      "id": 1
+    },
+    {
+      "question": "Choisis la forme correcte : ___ six chairs in the classroom.",
+      "explication": "Devant un nom pluriel comme « six chairs », on utilise « there are ». Le verbe s'accorde avec le nombre d'éléments.",
+      "notion": "there are pluriel",
+      "type": "qcm",
+      "options": [
+        "There is",
+        "There are",
+        "There has",
+        "Are there"
+      ],
+      "reponse": 1,
+      "id": 2
+    },
+    {
+      "question": "Choisis la forme correcte : ___ some water in the bottle.",
+      "explication": "« Water » est un nom indénombrable, donc on utilise toujours « there is », même avec « some ». On ne compte pas les liquides.",
+      "notion": "there is indénombrable",
+      "type": "qcm",
+      "options": [
+        "There are",
+        "There is",
+        "There have",
+        "They are"
+      ],
+      "reponse": 1,
+      "id": 3
+    },
+    {
+      "question": "Choisis la forme correcte pour dire qu'il n'y a pas de chat dans le jardin : ___ a cat in the garden.",
+      "explication": "Pour la négation au singulier, on ajoute « not » après « is » : « there isn't ». C'est comme pour le verbe be normal.",
+      "notion": "négation there isn't",
+      "type": "qcm",
+      "options": [
+        "There isn't",
+        "There aren't",
+        "There don't",
+        "There not is"
+      ],
+      "reponse": 0,
+      "id": 4
+    },
+    {
+      "question": "Choisis la forme correcte : ___ any students in the classroom today.",
+      "explication": "« Students » est pluriel, donc la négation se fait avec « there aren't ». On utilise « any » à la place de « some » dans les phrases négatives.",
+      "notion": "négation there aren't",
+      "type": "qcm",
+      "options": [
+        "There isn't",
+        "There aren't",
+        "There doesn't",
+        "There not are"
+      ],
+      "reponse": 1,
+      "id": 5
+    },
+    {
+      "question": "Choisis la question correcte : ___ a swimming pool in your school?",
+      "explication": "Pour poser une question au singulier, on inverse simplement « is » et « there » : « Is there ». Le sujet reste singulier.",
+      "notion": "question is there",
+      "type": "qcm",
+      "options": [
+        "Is there",
+        "Are there",
+        "There is",
+        "Have there"
+      ],
+      "reponse": 0,
+      "id": 6
+    },
+    {
+      "question": "Choisis la question correcte pour compléter : « ___ any pencils in your bag? » - « Yes, there are. »",
+      "explication": "Comme la réponse utilise « there are », la question doit être au pluriel : « Are there ». On repère le pluriel grâce à « pencils » et à la réponse donnée.",
+      "notion": "question are there",
+      "type": "qcm",
+      "options": [
+        "Is there",
+        "Are there",
+        "There is",
+        "Does there"
+      ],
+      "reponse": 1,
+      "id": 7
+    },
+    {
+      "question": "Complète la phrase avec la forme correcte (deux mots) : ___ some sugar in the cupboard.",
+      "explication": "« Sugar » est indénombrable, donc même avec « some », on utilise « there is » et non « there are ». Pense bien à vérifier si le nom peut se compter ou non.",
+      "notion": "there is indénombrable",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "there is",
+        "There is"
+      ],
+      "id": 8
+    }
+  ]
+}
