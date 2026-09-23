@@ -1,0 +1,120 @@
+{
+  "date": "2026-09-23",
+  "matiere": "maths",
+  "matiere_affichee": "Mathématiques",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Les fractions : sens et representation",
+  "vacances": null,
+  "genere_le": "2026-09-23T14:03:05+02:00",
+  "questions": [
+    {
+      "question": "Dans la fraction 3/5, comment s'appelle le nombre 5 ?",
+      "explication": "Le dénominateur est le nombre du bas, il indique en combien de parts égales on a partagé l'unité. Le numérateur, lui, est le nombre du haut.",
+      "notion": "vocabulaire fraction",
+      "type": "qcm",
+      "options": [
+        "Le numérateur",
+        "Le dénominateur",
+        "Le quotient",
+        "Le diviseur"
+      ],
+      "reponse": 1,
+      "id": 1
+    },
+    {
+      "question": "Une pizza est partagée en 8 parts égales. Léa mange 3 parts. Quelle fraction de la pizza a-t-elle mangée ?",
+      "explication": "Le dénominateur (8) indique le nombre total de parts, et le numérateur (3) indique le nombre de parts mangées.",
+      "notion": "lecture fraction partage",
+      "type": "qcm",
+      "options": [
+        "3/8",
+        "8/3",
+        "5/8",
+        "3/5"
+      ],
+      "reponse": 0,
+      "id": 2
+    },
+    {
+      "question": "Un segment est partagé en 4 parties égales. Quelle fraction représente une seule de ces parties ?",
+      "explication": "Il y a 4 parts égales au total, donc le dénominateur est 4, et on ne prend qu'une seule part, donc le numérateur est 1.",
+      "notion": "lecture fraction segment",
+      "type": "qcm",
+      "options": [
+        "1/4",
+        "4/1",
+        "1/3",
+        "4/4"
+      ],
+      "reponse": 0,
+      "id": 3
+    },
+    {
+      "question": "Quelle fraction est égale à 1 ?",
+      "explication": "Une fraction est égale à 1 quand le numérateur et le dénominateur sont identiques : on a pris toutes les parts de l'unité.",
+      "notion": "fraction égale à 1",
+      "type": "qcm",
+      "options": [
+        "5/5",
+        "5/1",
+        "1/5",
+        "0/5"
+      ],
+      "reponse": 0,
+      "id": 4
+    },
+    {
+      "question": "Sur une droite graduée, l'unité entre 0 et 1 est partagée en 6 parties égales. Quelle fraction correspond au point placé sur la 4e graduation à partir de 0 ?",
+      "explication": "Le dénominateur 6 correspond au nombre total de graduations dans l'unité, et le numérateur 4 correspond au nombre de graduations parcourues depuis 0.",
+      "notion": "fraction droite graduée",
+      "type": "qcm",
+      "options": [
+        "4/6",
+        "6/4",
+        "4/4",
+        "5/6"
+      ],
+      "reponse": 0,
+      "id": 5
+    },
+    {
+      "question": "Un rectangle est divisé en 10 parts égales et 7 parts sont colorées. Quelle fraction représente la partie colorée ?",
+      "explication": "Le numérateur correspond aux parts colorées (7) et le dénominateur au nombre total de parts (10). Attention à ne pas confondre avec la partie non colorée.",
+      "notion": "lecture fraction figure",
+      "type": "qcm",
+      "options": [
+        "7/10",
+        "10/7",
+        "3/10",
+        "7/3"
+      ],
+      "reponse": 0,
+      "id": 6
+    },
+    {
+      "question": "Dans une classe de 24 élèves, 1/3 des élèves sont des garçons. Combien y a-t-il de garçons ?",
+      "explication": "Pour trouver 1/3 de 24, on partage 24 en 3 parts égales : 24 divisé par 3 égale 8. Attention, la moitié (1/2) donnerait 12, pas 1/3.",
+      "notion": "fraction d'une quantité",
+      "type": "qcm",
+      "options": [
+        "8",
+        "3",
+        "24",
+        "12"
+      ],
+      "reponse": 0,
+      "id": 7
+    },
+    {
+      "question": "Un gâteau est partagé en 12 parts égales. Combien de parts faut-il prendre pour obtenir 3/4 du gâteau ? Réponds uniquement par un nombre de parts.",
+      "explication": "On cherche d'abord la valeur d'un quart : 12 divisé par 4 égale 3 parts. Comme on veut 3/4, on prend 3 fois 3 parts, soit 9 parts.",
+      "notion": "fraction d'une quantité",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "9"
+      ],
+      "id": 8
+    }
+  ]
+}
