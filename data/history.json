@@ -254,5 +254,21 @@
       "fraction d'une quantité",
       "fraction d'une quantité"
     ]
+  },
+  {
+    "date": "2026-09-24",
+    "matiere": "francais",
+    "niveau": "6eme",
+    "chapitre": "L'accord du participe passe avec etre et avoir",
+    "notions": [
+      "accord avec être",
+      "accord avec avoir",
+      "accord avec être",
+      "accord avec avoir",
+      "accord avec être",
+      "accord avec avoir",
+      "accord COD avant avoir",
+      "accord avec être"
+    ]
   }
 ]

@@ -1,0 +1,120 @@
+{
+  "date": "2026-09-24",
+  "matiere": "francais",
+  "matiere_affichee": "Français",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "L'accord du participe passe avec etre et avoir",
+  "vacances": null,
+  "genere_le": "2026-09-24T20:23:34+02:00",
+  "questions": [
+    {
+      "question": "Quand le participe passé est employé avec l'auxiliaire être, avec quoi s'accorde-t-il ?",
+      "explication": "Avec l'auxiliaire être, le participe passé s'accorde en genre et en nombre avec le sujet du verbe. C'est la règle de base à connaître par cœur.",
+      "notion": "accord avec être",
+      "type": "qcm",
+      "options": [
+        "Avec le sujet du verbe",
+        "Avec le complément d'objet direct",
+        "Il ne s'accorde jamais",
+        "Avec le verbe conjugué"
+      ],
+      "reponse": 0,
+      "id": 1
+    },
+    {
+      "question": "Quand le participe passé est employé avec l'auxiliaire avoir, que se passe-t-il en général ?",
+      "explication": "Avec l'auxiliaire avoir, le participe passé reste invariable, sauf cas particulier que tu verras plus tard. Il ne s'accorde pas avec le sujet comme avec être.",
+      "notion": "accord avec avoir",
+      "type": "qcm",
+      "options": [
+        "Il s'accorde avec le sujet",
+        "Il reste invariable",
+        "Il s'accorde toujours avec le complément",
+        "Il prend toujours un -s"
+      ],
+      "reponse": 1,
+      "id": 2
+    },
+    {
+      "question": "Complète correctement : « Les filles sont ... au cinéma. »",
+      "explication": "Le sujet « les filles » est féminin pluriel, et le verbe est conjugué avec être, donc le participe passé s'accorde : allées.",
+      "notion": "accord avec être",
+      "type": "qcm",
+      "options": [
+        "allé",
+        "allée",
+        "allées",
+        "allés"
+      ],
+      "reponse": 2,
+      "id": 3
+    },
+    {
+      "question": "Complète correctement : « Ils ont ... leur travail. »",
+      "explication": "Avec l'auxiliaire avoir, le participe passé ne s'accorde pas avec le sujet « ils ». Il reste donc invariable : fini.",
+      "notion": "accord avec avoir",
+      "type": "qcm",
+      "options": [
+        "fini",
+        "finis",
+        "finie",
+        "finies"
+      ],
+      "reponse": 0,
+      "id": 4
+    },
+    {
+      "question": "Complète correctement : « Ma mère est ... très tôt ce matin. »",
+      "explication": "Le sujet « ma mère » est féminin singulier, et le verbe est conjugué avec être, donc le participe passé s'accorde : partie.",
+      "notion": "accord avec être",
+      "type": "qcm",
+      "options": [
+        "parti",
+        "partis",
+        "partie",
+        "parties"
+      ],
+      "reponse": 2,
+      "id": 5
+    },
+    {
+      "question": "Complète correctement : « Les enfants ont ... la salle de classe. »",
+      "explication": "Avec l'auxiliaire avoir, le participe passé ne s'accorde pas avec le sujet « les enfants ». On écrit donc quitté, sans marque d'accord.",
+      "notion": "accord avec avoir",
+      "type": "qcm",
+      "options": [
+        "quitté",
+        "quittés",
+        "quittée",
+        "quittées"
+      ],
+      "reponse": 0,
+      "id": 6
+    },
+    {
+      "question": "Dans la phrase « Voici les lettres que j'ai ... », quelle est la forme correcte du participe passé ?",
+      "explication": "Le complément d'objet direct « que » (mis pour « les lettres », féminin pluriel) est placé avant l'auxiliaire avoir : dans ce cas précis, le participe passé s'accorde avec lui, d'où écrites.",
+      "notion": "accord COD avant avoir",
+      "type": "qcm",
+      "options": [
+        "écrit",
+        "écrits",
+        "écrite",
+        "écrites"
+      ],
+      "reponse": 3,
+      "id": 7
+    },
+    {
+      "question": "Écris correctement le participe passé du verbe entre parenthèses : « Les élèves sont ... (rentrer) en classe après la récréation. »",
+      "explication": "Le verbe est conjugué avec être, donc le participe passé s'accorde avec le sujet « les élèves », masculin pluriel : rentrés.",
+      "notion": "accord avec être",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "rentrés"
+      ],
+      "id": 8
+    }
+  ]
+}
