@@ -270,5 +270,21 @@
       "accord COD avant avoir",
       "accord avec être"
     ]
+  },
+  {
+    "date": "2026-09-25",
+    "matiere": "anglais",
+    "niveau": "6eme",
+    "chapitre": "Les mots interrogatifs : wh- words",
+    "notions": [
+      "sens where",
+      "sens who",
+      "sens when",
+      "sens why",
+      "choix what",
+      "choix how",
+      "how many indénombrable",
+      "how old"
+    ]
   }
 ]

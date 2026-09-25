@@ -1,0 +1,120 @@
+{
+  "date": "2026-09-25",
+  "matiere": "anglais",
+  "matiere_affichee": "Anglais",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Les mots interrogatifs : wh- words",
+  "vacances": null,
+  "genere_le": "2026-09-25T20:29:11+02:00",
+  "questions": [
+    {
+      "question": "Quel mot interrogatif utilise-t-on pour demander un lieu ?",
+      "explication": "Tu utilises 'where' pour demander où se trouve quelque chose ou quelqu'un. C'est le mot interrogatif du lieu.",
+      "notion": "sens where",
+      "type": "qcm",
+      "options": [
+        "Where",
+        "What",
+        "Who",
+        "When"
+      ],
+      "reponse": 0,
+      "id": 1
+    },
+    {
+      "question": "Quel mot interrogatif utilise-t-on pour demander de qui on parle ?",
+      "explication": "'Who' sert à demander une personne, alors que 'what' sert à demander une chose. Pense à l'anglais 'who' proche de 'qui'.",
+      "notion": "sens who",
+      "type": "qcm",
+      "options": [
+        "What",
+        "Who",
+        "Why",
+        "How"
+      ],
+      "reponse": 1,
+      "id": 2
+    },
+    {
+      "question": "Quel mot interrogatif utilise-t-on pour demander un moment précis ?",
+      "explication": "'When' interroge sur le temps, comme 'quand' en français. Ne le confonds pas avec 'where' qui interroge sur le lieu.",
+      "notion": "sens when",
+      "type": "qcm",
+      "options": [
+        "When",
+        "Where",
+        "What",
+        "Why"
+      ],
+      "reponse": 0,
+      "id": 3
+    },
+    {
+      "question": "Quel mot interrogatif utilise-t-on pour demander une raison ?",
+      "explication": "'Why' correspond à 'pourquoi' et sert à demander une explication ou une cause. On y répond souvent par 'because'.",
+      "notion": "sens why",
+      "type": "qcm",
+      "options": [
+        "Why",
+        "How",
+        "What",
+        "Who"
+      ],
+      "reponse": 0,
+      "id": 4
+    },
+    {
+      "question": "Complète : '___ is your favourite colour?'",
+      "explication": "On demande ici une chose précise, la couleur préférée, donc on utilise 'what', qui correspond à 'quel/quelle' ou 'que'.",
+      "notion": "choix what",
+      "type": "qcm",
+      "options": [
+        "What",
+        "Who",
+        "Where",
+        "When"
+      ],
+      "reponse": 0,
+      "id": 5
+    },
+    {
+      "question": "Complète : '___ do you go to school? By bus.'",
+      "explication": "La réponse 'by bus' donne un moyen, une manière : on pose donc la question avec 'how', qui correspond à 'comment'.",
+      "notion": "choix how",
+      "type": "qcm",
+      "options": [
+        "How",
+        "Why",
+        "What",
+        "Where"
+      ],
+      "reponse": 0,
+      "id": 6
+    },
+    {
+      "question": "Complète : '___ books do you have?' (la réponse est un nombre, comme 'three')",
+      "explication": "'Books' est un nom dénombrable (on peut le compter), donc on utilise 'how many'. 'How much' sert pour les noms indénombrables comme 'money' ou 'water'.",
+      "notion": "how many indénombrable",
+      "type": "qcm",
+      "options": [
+        "How many",
+        "How much",
+        "What",
+        "Which"
+      ],
+      "reponse": 0,
+      "id": 7
+    },
+    {
+      "question": "Complète la phrase avec le mot interrogatif qui manque : '___ old are you?'",
+      "explication": "Pour demander l'âge en anglais, on utilise toujours 'how old', qui signifie littéralement 'comment vieux'.",
+      "notion": "how old",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "how"
+      ],
+      "id": 8
+    }
+  ]
+}
