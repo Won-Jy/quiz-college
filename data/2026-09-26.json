@@ -1,0 +1,124 @@
+{
+  "date": "2026-09-26",
+  "matiere": "histoire",
+  "matiere_affichee": "Histoire-Géographie",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Les premiers Etats et l'ecriture en Mesopotamie",
+  "vacances": null,
+  "genere_le": "2026-09-26T19:43:37+02:00",
+  "questions": [
+    {
+      "question": "Qu'est-ce que la Mésopotamie ?",
+      "explication": "Le mot Mésopotamie vient du grec et signifie « pays entre les fleuves ». Tu dois retenir que cette région se trouve entre deux grands fleuves du Proche-Orient.",
+      "notion": "définition Mésopotamie",
+      "type": "qcm",
+      "options": [
+        "Une région d'Afrique du Nord",
+        "Une région située entre deux fleuves",
+        "Une île de la mer Méditerranée",
+        "Une chaîne de montagnes d'Asie"
+      ],
+      "reponse": 1,
+      "id": 1
+    },
+    {
+      "question": "Quels sont les deux fleuves qui encadrent la Mésopotamie ?",
+      "explication": "Ce sont le Tigre et l'Euphrate qui coulent en Mésopotamie et permettent l'agriculture grâce à leurs crues fertilisantes.",
+      "notion": "fleuves de Mésopotamie",
+      "type": "qcm",
+      "options": [
+        "Le Nil et le Jourdain",
+        "Le Tigre et l'Euphrate",
+        "Le Rhône et le Rhin",
+        "L'Indus et le Gange"
+      ],
+      "reponse": 1,
+      "id": 2
+    },
+    {
+      "question": "Comment s'appelle l'une des premières grandes villes de Mésopotamie ?",
+      "explication": "Uruk est l'une des premières cités sumériennes, avec des milliers d'habitants, un temple et des remparts. Athènes, Rome et Memphis sont des villes d'autres civilisations plus tardives.",
+      "notion": "première cité",
+      "type": "qcm",
+      "options": [
+        "Uruk",
+        "Athènes",
+        "Rome",
+        "Memphis"
+      ],
+      "reponse": 0,
+      "id": 3
+    },
+    {
+      "question": "Sur quel support les habitants de Mésopotamie écrivaient-ils ?",
+      "explication": "Les scribes gravaient les signes avec un roseau taillé sur des tablettes d'argile molle, qui séchaient ensuite au soleil ou au four.",
+      "notion": "support de l'écriture",
+      "type": "qcm",
+      "options": [
+        "Le papyrus",
+        "La tablette d'argile",
+        "Le parchemin",
+        "La pierre taillée"
+      ],
+      "reponse": 1,
+      "id": 4
+    },
+    {
+      "question": "Comment appelle-t-on l'écriture inventée en Mésopotamie ?",
+      "explication": "Le mot cunéiforme vient du latin cuneus, qui signifie « coin », car les signes ont une forme de coin gravé dans l'argile. Les hiéroglyphes sont l'écriture des Égyptiens, pas des Mésopotamiens.",
+      "notion": "nom de l'écriture",
+      "type": "qcm",
+      "options": [
+        "L'écriture hiéroglyphique",
+        "L'écriture cunéiforme",
+        "L'écriture alphabétique",
+        "L'écriture latine"
+      ],
+      "reponse": 1,
+      "id": 5
+    },
+    {
+      "question": "Qui était chargé d'écrire les textes dans la société mésopotamienne ?",
+      "explication": "Le scribe est un homme formé pendant de longues années dans une école pour apprendre à écrire et compter. Le roi et le prêtre commandaient ou dirigeaient les cultes, mais ce n'était pas leur métier d'écrire les textes.",
+      "notion": "rôle du scribe",
+      "type": "qcm",
+      "options": [
+        "Le roi",
+        "Le scribe",
+        "Le paysan",
+        "Le prêtre"
+      ],
+      "reponse": 1,
+      "id": 6
+    },
+    {
+      "question": "Quel roi de Babylone est célèbre pour avoir fait rédiger un célèbre code de lois ?",
+      "explication": "Hammurabi a fait graver son code de lois sur une grande stèle, afin que la justice de son royaume soit connue de tous. Ramsès est un pharaon égyptien, pas un roi de Mésopotamie.",
+      "notion": "roi et code de lois",
+      "type": "qcm",
+      "options": [
+        "Hammurabi",
+        "Sargon",
+        "Gilgamesh",
+        "Ramsès"
+      ],
+      "reponse": 0,
+      "id": 7
+    },
+    {
+      "question": "Vers quelle date l'écriture apparaît-elle en Mésopotamie ?",
+      "explication": "C'est vers 3300 avant J.-C., à la fin de la période néolithique, que les Sumériens inventent l'écriture pour gérer les récoltes et les échanges commerciaux.",
+      "notion": "date invention écriture",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "3300 av. J.-C.",
+        "-3300",
+        "3300 avant j.-c.",
+        "vers 3300 av. j.-c.",
+        "3300 avant jesus christ"
+      ],
+      "id": 8
+    }
+  ]
+}

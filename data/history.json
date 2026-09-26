@@ -286,5 +286,21 @@
       "how many indénombrable",
       "how old"
     ]
+  },
+  {
+    "date": "2026-09-26",
+    "matiere": "histoire",
+    "niveau": "6eme",
+    "chapitre": "Les premiers Etats et l'ecriture en Mesopotamie",
+    "notions": [
+      "définition Mésopotamie",
+      "fleuves de Mésopotamie",
+      "première cité",
+      "support de l'écriture",
+      "nom de l'écriture",
+      "rôle du scribe",
+      "roi et code de lois",
+      "date invention écriture"
+    ]
   }
 ]
