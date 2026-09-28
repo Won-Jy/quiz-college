@@ -302,5 +302,21 @@
       "roi et code de lois",
       "date invention écriture"
     ]
+  },
+  {
+    "date": "2026-09-28",
+    "matiere": "francais",
+    "niveau": "6eme",
+    "chapitre": "Les homophones grammaticaux : a/a, et/est, on/ont, son/sont, ce/se",
+    "notions": [
+      "homophone a/à",
+      "homophone a/à",
+      "homophone et/est",
+      "homophone et/est",
+      "homophone on/ont",
+      "homophone on/ont",
+      "homophones ce/se",
+      "homophone a/à"
+    ]
   }
 ]

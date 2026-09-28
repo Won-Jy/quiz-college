@@ -1,0 +1,120 @@
+{
+  "date": "2026-09-28",
+  "matiere": "francais",
+  "matiere_affichee": "Français",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Les homophones grammaticaux : a/a, et/est, on/ont, son/sont, ce/se",
+  "vacances": null,
+  "genere_le": "2026-09-28T19:35:56+02:00",
+  "questions": [
+    {
+      "question": "Complète : Léo ... une nouvelle console de jeux.",
+      "explication": "Tu peux remplacer par « avait » : Léo avait une console. C'est donc le verbe avoir qui s'écrit sans accent.",
+      "notion": "homophone a/à",
+      "type": "qcm",
+      "options": [
+        "a",
+        "à",
+        "est",
+        "ont"
+      ],
+      "reponse": 0,
+      "id": 1
+    },
+    {
+      "question": "Complète : Le ballon est resté coincé ... côté du grillage.",
+      "explication": "Ici on ne peut pas dire « avait côté », donc ce n'est pas le verbe avoir. C'est la préposition « à » avec son accent.",
+      "notion": "homophone a/à",
+      "type": "qcm",
+      "options": [
+        "a",
+        "à",
+        "et",
+        "on"
+      ],
+      "reponse": 1,
+      "id": 2
+    },
+    {
+      "question": "Complète : Ce plat sent très bon ... il donne faim à toute la classe.",
+      "explication": "Ici « et » relie deux idées, comme « et puis ». On ne peut pas le remplacer par « était », donc ce n'est pas le verbe être.",
+      "notion": "homophone et/est",
+      "type": "qcm",
+      "options": [
+        "et",
+        "est",
+        "on",
+        "ont"
+      ],
+      "reponse": 0,
+      "id": 3
+    },
+    {
+      "question": "Complète : Ce gâteau ... vraiment trop sucré pour moi.",
+      "explication": "Tu peux remplacer par « était » : ce gâteau était trop sucré. C'est donc le verbe être avec un t.",
+      "notion": "homophone et/est",
+      "type": "qcm",
+      "options": [
+        "et",
+        "est",
+        "on",
+        "sont"
+      ],
+      "reponse": 1,
+      "id": 4
+    },
+    {
+      "question": "Complète : ... range la salle de classe avant de partir en récréation.",
+      "explication": "Tu peux remplacer par « il » : il range la salle. C'est donc le pronom « on », qui ne prend pas de t.",
+      "notion": "homophone on/ont",
+      "type": "qcm",
+      "options": [
+        "On",
+        "Ont",
+        "Se",
+        "Ce"
+      ],
+      "reponse": 0,
+      "id": 5
+    },
+    {
+      "question": "Complète : Les élèves ... rendu leur exposé en retard.",
+      "explication": "Tu peux remplacer par « avaient » : les élèves avaient rendu. C'est donc le verbe avoir conjugué, qui prend un t.",
+      "notion": "homophone on/ont",
+      "type": "qcm",
+      "options": [
+        "on",
+        "ont",
+        "sont",
+        "son"
+      ],
+      "reponse": 1,
+      "id": 6
+    },
+    {
+      "question": "Complète les deux blancs : ... professeur explique que les verbes pronominaux ... conjuguent avec un pronom réfléchi.",
+      "explication": "« Ce professeur » est un déterminant démonstratif devant un nom, alors que « se conjuguent » est un pronom réfléchi qu'on retrouve dans l'infinitif « se conjuguer ». Attention à ne pas confondre les deux emplois dans une même phrase.",
+      "notion": "homophones ce/se",
+      "type": "qcm",
+      "options": [
+        "Ce / se",
+        "Se / ce",
+        "Ce / ce",
+        "Se / se"
+      ],
+      "reponse": 0,
+      "id": 7
+    },
+    {
+      "question": "Complète avec le mot qui convient : Marie ... trouvé son cahier sous la table.",
+      "explication": "Tu peux dire « Marie avait trouvé », donc c'est le verbe avoir qui s'écrit sans accent.",
+      "notion": "homophone a/à",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "a"
+      ],
+      "id": 8
+    }
+  ]
+}
