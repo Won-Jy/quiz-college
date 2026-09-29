@@ -318,5 +318,21 @@
       "homophones ce/se",
       "homophone a/à"
     ]
+  },
+  {
+    "date": "2026-09-29",
+    "matiere": "anglais",
+    "niveau": "6eme",
+    "chapitre": "Can : capacite et permission",
+    "notions": [
+      "formation can affirmatif",
+      "sens capacité",
+      "négation avec can",
+      "interrogation avec can",
+      "invariabilité de can",
+      "sens permission",
+      "réponse courte can",
+      "négation permission"
+    ]
   }
 ]

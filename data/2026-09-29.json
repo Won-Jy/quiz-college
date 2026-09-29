@@ -1,0 +1,121 @@
+{
+  "date": "2026-09-29",
+  "matiere": "anglais",
+  "matiere_affichee": "Anglais",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Can : capacite et permission",
+  "vacances": null,
+  "genere_le": "2026-09-29T20:34:27+02:00",
+  "questions": [
+    {
+      "question": "Comment dit-on « Je peux nager » en anglais ?",
+      "explication": "Après can, tu utilises toujours la base verbale sans « to » et sans « s ». On dit simplement « I can swim ».",
+      "notion": "formation can affirmatif",
+      "type": "qcm",
+      "options": [
+        "I can swim",
+        "I cans swim",
+        "I can to swim",
+        "I am can swim"
+      ],
+      "reponse": 0,
+      "id": 1
+    },
+    {
+      "question": "« She can play the piano. » Cette phrase exprime :",
+      "explication": "Ici, can indique que la personne sait faire quelque chose, donc c'est une capacité et non une permission.",
+      "notion": "sens capacité",
+      "type": "qcm",
+      "options": [
+        "une permission",
+        "une capacité",
+        "une obligation",
+        "une habitude"
+      ],
+      "reponse": 1,
+      "id": 2
+    },
+    {
+      "question": "Quelle est la forme négative correcte de « He can play football » ?",
+      "explication": "On forme la négation avec can't suivi de la base verbale, jamais avec don't ou doesn't devant can.",
+      "notion": "négation avec can",
+      "type": "qcm",
+      "options": [
+        "He can't plays football",
+        "He can't play football",
+        "He don't can play football",
+        "He doesn't can play football"
+      ],
+      "reponse": 1,
+      "id": 3
+    },
+    {
+      "question": "Quelle est la forme interrogative correcte pour « Tu peux venir ? » ?",
+      "explication": "Avec can, on inverse simplement le sujet et can, sans utiliser do ou does : « Can you come? ».",
+      "notion": "interrogation avec can",
+      "type": "qcm",
+      "options": [
+        "Do you can come?",
+        "Can you come?",
+        "You can come?",
+        "Does you can come?"
+      ],
+      "reponse": 1,
+      "id": 4
+    },
+    {
+      "question": "Choisis la forme correcte : « My brother ___ ride a bike. »",
+      "explication": "Can ne prend jamais de s, même à la troisième personne du singulier. C'est une règle particulière à retenir.",
+      "notion": "invariabilité de can",
+      "type": "qcm",
+      "options": [
+        "cans",
+        "can",
+        "canning",
+        "is can"
+      ],
+      "reponse": 1,
+      "id": 5
+    },
+    {
+      "question": "« Can I open the window, please? » Cette phrase exprime :",
+      "explication": "Ici, la personne demande l'autorisation d'ouvrir la fenêtre : can exprime donc une permission.",
+      "notion": "sens permission",
+      "type": "qcm",
+      "options": [
+        "une capacité",
+        "une permission",
+        "une négation",
+        "une habitude"
+      ],
+      "reponse": 1,
+      "id": 6
+    },
+    {
+      "question": "Quelle réponse courte est correcte à la question « Can you swim? » ?",
+      "explication": "Dans une réponse courte avec can, on ne répète pas le verbe : on dit simplement « Yes, I can » ou « No, I can't ».",
+      "notion": "réponse courte can",
+      "type": "qcm",
+      "options": [
+        "Yes, I can swim",
+        "Yes, I can",
+        "Yes, I do",
+        "Yes, I am"
+      ],
+      "reponse": 1,
+      "id": 7
+    },
+    {
+      "question": "Complète avec can ou can't : « You ___ eat in the classroom, it's forbidden. »",
+      "explication": "Comme manger en classe est interdit, il faut utiliser la forme négative can't pour exprimer l'absence de permission.",
+      "notion": "négation permission",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "can't",
+        "cannot"
+      ],
+      "id": 8
+    }
+  ]
+}
