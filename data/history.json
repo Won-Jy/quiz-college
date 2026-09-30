@@ -334,5 +334,21 @@
       "réponse courte can",
       "négation permission"
     ]
+  },
+  {
+    "date": "2026-09-30",
+    "matiere": "maths",
+    "niveau": "6eme",
+    "chapitre": "Fractions egales et simplification",
+    "notions": [
+      "fractions égales",
+      "fractions égales",
+      "simplification de fraction",
+      "simplification de fraction",
+      "fraction irréductible",
+      "fractions égales",
+      "simplification de fraction",
+      "simplification de fraction"
+    ]
   }
 ]

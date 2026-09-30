@@ -1,0 +1,120 @@
+{
+  "date": "2026-09-30",
+  "matiere": "maths",
+  "matiere_affichee": "Mathématiques",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Fractions egales et simplification",
+  "vacances": null,
+  "genere_le": "2026-09-30T20:30:58+02:00",
+  "questions": [
+    {
+      "question": "Quelle fraction est égale à 2/3 ?",
+      "explication": "Pour obtenir une fraction égale, tu multiplies le numérateur et le dénominateur par le même nombre : 2x2=4 et 3x2=6, donc 2/3 = 4/6.",
+      "notion": "fractions égales",
+      "type": "qcm",
+      "options": [
+        "4/6",
+        "3/4",
+        "5/6",
+        "2/6"
+      ],
+      "reponse": 0,
+      "id": 1
+    },
+    {
+      "question": "On multiplie le numérateur et le dénominateur de 3/5 par 4. Quelle fraction obtient-on ?",
+      "explication": "Il faut multiplier le numérateur ET le dénominateur par 4 : 3x4=12 et 5x4=20, donc on obtient 12/20.",
+      "notion": "fractions égales",
+      "type": "qcm",
+      "options": [
+        "7/9",
+        "12/20",
+        "3/20",
+        "12/5"
+      ],
+      "reponse": 1,
+      "id": 2
+    },
+    {
+      "question": "Quelle est la fraction simplifiée de 6/8 ?",
+      "explication": "6 et 8 sont tous les deux divisibles par 2 : 6/2=3 et 8/2=4, donc 6/8 = 3/4.",
+      "notion": "simplification de fraction",
+      "type": "qcm",
+      "options": [
+        "3/4",
+        "6/4",
+        "2/3",
+        "3/8"
+      ],
+      "reponse": 0,
+      "id": 3
+    },
+    {
+      "question": "Pour simplifier la fraction 10/15, par quel nombre divise-t-on le numérateur et le dénominateur ?",
+      "explication": "5 est le plus grand nombre qui divise à la fois 10 et 15, c'est le diviseur commun à utiliser pour simplifier.",
+      "notion": "simplification de fraction",
+      "type": "qcm",
+      "options": [
+        "2",
+        "5",
+        "10",
+        "3"
+      ],
+      "reponse": 1,
+      "id": 4
+    },
+    {
+      "question": "Parmi ces fractions, laquelle est déjà irréductible (impossible à simplifier) ?",
+      "explication": "5 et 7 n'ont aucun diviseur commun autre que 1, donc 5/7 ne peut pas être simplifiée. Les autres fractions ont un diviseur commun supérieur à 1.",
+      "notion": "fraction irréductible",
+      "type": "qcm",
+      "options": [
+        "4/6",
+        "5/7",
+        "9/12",
+        "8/10"
+      ],
+      "reponse": 1,
+      "id": 5
+    },
+    {
+      "question": "Quel nombre manque dans l'égalité 3/4 = .../12 ?",
+      "explication": "4x3=12, donc il faut aussi multiplier le numérateur par 3 : 3x3=9. On obtient 3/4 = 9/12.",
+      "notion": "fractions égales",
+      "type": "qcm",
+      "options": [
+        "6",
+        "9",
+        "12",
+        "8"
+      ],
+      "reponse": 1,
+      "id": 6
+    },
+    {
+      "question": "Quelle fraction, une fois simplifiée au maximum, donne 2/3 ?",
+      "explication": "12 et 18 sont tous les deux divisibles par 6 : 12/6=2 et 18/6=3, donc 12/18 simplifiée donne bien 2/3. Les autres fractions ne se simplifient pas en 2/3.",
+      "notion": "simplification de fraction",
+      "type": "qcm",
+      "options": [
+        "12/18",
+        "8/15",
+        "10/12",
+        "9/15"
+      ],
+      "reponse": 0,
+      "id": 7
+    },
+    {
+      "question": "Simplifie complètement la fraction 24/36 pour obtenir une fraction irréductible. Écris ta réponse sous la forme numérateur/dénominateur (exemple : 2/3).",
+      "explication": "24 et 36 sont tous les deux divisibles par 12 : 24/12=2 et 36/12=3. On obtient 2/3, qui ne peut plus être simplifiée.",
+      "notion": "simplification de fraction",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "2/3"
+      ],
+      "id": 8
+    }
+  ]
+}
