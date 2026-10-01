@@ -350,5 +350,21 @@
       "simplification de fraction",
       "simplification de fraction"
     ]
+  },
+  {
+    "date": "2026-10-01",
+    "matiere": "francais",
+    "niveau": "6eme",
+    "chapitre": "Les determinants",
+    "notions": [
+      "reconnaître un déterminant",
+      "article indéfini",
+      "article défini contracté",
+      "déterminant possessif",
+      "déterminant démonstratif",
+      "déterminant numéral",
+      "déterminant ou pronom possessif",
+      "élision article défini"
+    ]
   }
 ]
