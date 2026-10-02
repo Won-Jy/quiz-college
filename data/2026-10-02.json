@@ -1,0 +1,120 @@
+{
+  "date": "2026-10-02",
+  "matiere": "anglais",
+  "matiere_affichee": "Anglais",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Les prepositions de lieu",
+  "vacances": null,
+  "genere_le": "2026-10-02T17:14:40+02:00",
+  "questions": [
+    {
+      "question": "Complète : The cat is ___ the box.",
+      "explication": "Quand un objet est à l'intérieur d'un contenant, on utilise 'in'. Ici le chat est dans la boîte, donc on choisit 'in'.",
+      "notion": "préposition in",
+      "type": "qcm",
+      "options": [
+        "in",
+        "on",
+        "under",
+        "behind"
+      ],
+      "reponse": 0,
+      "id": 1
+    },
+    {
+      "question": "Complète : The book is ___ the table.",
+      "explication": "Quand un objet est posé sur une surface, on utilise 'on'. Le livre est sur la table, donc 'on' est correct.",
+      "notion": "préposition on",
+      "type": "qcm",
+      "options": [
+        "in",
+        "on",
+        "under",
+        "next to"
+      ],
+      "reponse": 1,
+      "id": 2
+    },
+    {
+      "question": "Complète : The dog is ___ the table.",
+      "explication": "'Under' signifie 'sous' : le chien est en dessous de la table. Attention à ne pas confondre avec 'on' qui signifie 'sur'.",
+      "notion": "préposition under",
+      "type": "qcm",
+      "options": [
+        "on",
+        "in",
+        "under",
+        "in front of"
+      ],
+      "reponse": 2,
+      "id": 3
+    },
+    {
+      "question": "Complète : My school is ___ the bakery.",
+      "explication": "'In front of' veut dire 'devant'. C'est l'inverse de 'behind' qui signifie 'derrière', ne les confonds pas.",
+      "notion": "préposition in front of",
+      "type": "qcm",
+      "options": [
+        "behind",
+        "in front of",
+        "next to",
+        "between"
+      ],
+      "reponse": 1,
+      "id": 4
+    },
+    {
+      "question": "Complète : The chair is ___ the desk.",
+      "explication": "'Behind' signifie 'derrière'. C'est le contraire de 'in front of' qui veut dire 'devant', fais attention à ne pas les inverser.",
+      "notion": "préposition behind",
+      "type": "qcm",
+      "options": [
+        "in front of",
+        "behind",
+        "under",
+        "near"
+      ],
+      "reponse": 1,
+      "id": 5
+    },
+    {
+      "question": "Complète : My pen is ___ my book.",
+      "explication": "'Next to' signifie 'à côté de'. On utilise 'between' seulement quand il y a deux éléments de part et d'autre.",
+      "notion": "préposition next to",
+      "type": "qcm",
+      "options": [
+        "between",
+        "next to",
+        "in",
+        "on"
+      ],
+      "reponse": 1,
+      "id": 6
+    },
+    {
+      "question": "Complète : The cinema is ___ the bakery and the school.",
+      "explication": "'Between' signifie 'entre' et s'utilise quand un élément se trouve au milieu de deux autres éléments, ici la boulangerie et l'école.",
+      "notion": "préposition between",
+      "type": "qcm",
+      "options": [
+        "between",
+        "next to",
+        "in front of",
+        "under"
+      ],
+      "reponse": 0,
+      "id": 7
+    },
+    {
+      "question": "Complète avec la préposition de lieu qui convient : The ball is ___ the bed.",
+      "explication": "Le ballon est sous le lit, on utilise donc 'under' pour exprimer cette position en dessous.",
+      "notion": "préposition under",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "under"
+      ],
+      "id": 8
+    }
+  ]
+}

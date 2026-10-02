@@ -366,5 +366,21 @@
       "déterminant ou pronom possessif",
       "élision article défini"
     ]
+  },
+  {
+    "date": "2026-10-02",
+    "matiere": "anglais",
+    "niveau": "6eme",
+    "chapitre": "Les prepositions de lieu",
+    "notions": [
+      "préposition in",
+      "préposition on",
+      "préposition under",
+      "préposition in front of",
+      "préposition behind",
+      "préposition next to",
+      "préposition between",
+      "préposition under"
+    ]
   }
 ]
