@@ -382,5 +382,21 @@
       "préposition between",
       "préposition under"
     ]
+  },
+  {
+    "date": "2026-10-03",
+    "matiere": "histoire",
+    "niveau": "6eme",
+    "chapitre": "L'Egypte ancienne : pharaons et pyramides",
+    "notions": [
+      "fleuve Nil",
+      "pouvoir du pharaon",
+      "fonction des pyramides",
+      "écriture hiéroglyphique",
+      "construction des pyramides",
+      "momification et croyances",
+      "crues et agriculture",
+      "pharaon Khéops"
+    ]
   }
 ]

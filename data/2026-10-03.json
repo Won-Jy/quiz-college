@@ -1,0 +1,121 @@
+{
+  "date": "2026-10-03",
+  "matiere": "histoire",
+  "matiere_affichee": "Histoire-Géographie",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "L'Egypte ancienne : pharaons et pyramides",
+  "vacances": null,
+  "genere_le": "2026-10-03T19:53:31+02:00",
+  "questions": [
+    {
+      "question": "Sur quel fleuve s'est développée la civilisation égyptienne ?",
+      "explication": "L'Égypte ancienne se développe le long du Nil, qui traverse le désert du nord au sud. Attention à ne pas confondre avec le Tigre et l'Euphrate, qui sont les fleuves de Mésopotamie.",
+      "notion": "fleuve Nil",
+      "type": "qcm",
+      "options": [
+        "Le Nil",
+        "Le Tigre",
+        "L'Euphrate",
+        "Le Jourdain"
+      ],
+      "reponse": 0,
+      "id": 1
+    },
+    {
+      "question": "Qui est le pharaon dans l'Égypte ancienne ?",
+      "explication": "Le pharaon cumule le pouvoir politique et religieux : il gouverne l'Égypte et est vu comme un dieu sur Terre. Le scribe et le prêtre sont des fonctions importantes mais différentes.",
+      "notion": "pouvoir du pharaon",
+      "type": "qcm",
+      "options": [
+        "Le roi, considéré comme un dieu vivant",
+        "Le chef des scribes",
+        "Le prêtre principal des temples",
+        "L'architecte en chef des pyramides"
+      ],
+      "reponse": 0,
+      "id": 2
+    },
+    {
+      "question": "À quoi servent principalement les pyramides d'Égypte ?",
+      "explication": "Les pyramides sont construites pour abriter le corps momifié du pharaon et tout ce dont il a besoin dans l'au-delà. Ce ne sont ni des greniers ni des bâtiments militaires.",
+      "notion": "fonction des pyramides",
+      "type": "qcm",
+      "options": [
+        "Ce sont les tombeaux des pharaons",
+        "Ce sont des greniers à blé",
+        "Ce sont des observatoires astronomiques",
+        "Ce sont des casernes pour l'armée"
+      ],
+      "reponse": 0,
+      "id": 3
+    },
+    {
+      "question": "Quelle écriture utilisent les Égyptiens de l'Antiquité ?",
+      "explication": "Les Égyptiens inventent les hiéroglyphes, une écriture faite de signes-images. L'écriture cunéiforme, elle, est utilisée en Mésopotamie, il ne faut pas les confondre.",
+      "notion": "écriture hiéroglyphique",
+      "type": "qcm",
+      "options": [
+        "Les hiéroglyphes",
+        "L'alphabet latin",
+        "L'écriture cunéiforme",
+        "Le braille"
+      ],
+      "reponse": 0,
+      "id": 4
+    },
+    {
+      "question": "Qui construit réellement les pyramides, selon les historiens ?",
+      "explication": "Contrairement à une idée reçue venue des films, les chantiers des pyramides emploient des paysans réquisitionnés pendant la crue du Nil et des artisans qualifiés, qui sont nourris et logés. Ce ne sont pas des esclaves enchaînés.",
+      "notion": "construction des pyramides",
+      "type": "qcm",
+      "options": [
+        "Des paysans et des ouvriers qualifiés, payés et nourris",
+        "Uniquement des esclaves enchaînés",
+        "Des prisonniers de guerre torturés",
+        "Seulement des scribes et des prêtres"
+      ],
+      "reponse": 0,
+      "id": 5
+    },
+    {
+      "question": "Pourquoi les Égyptiens momifient-ils les corps des défunts ?",
+      "explication": "Les Égyptiens croient en une vie après la mort : le corps doit donc être conservé intact pour que l'âme du défunt puisse y revenir. Ce n'est pas une pratique d'hygiène.",
+      "notion": "momification et croyances",
+      "type": "qcm",
+      "options": [
+        "Pour préserver le corps en vue de la vie dans l'au-delà",
+        "Pour des raisons d'hygiène et éviter les épidémies",
+        "Pour pouvoir vendre les corps aux voyageurs",
+        "Pour punir les criminels après leur mort"
+      ],
+      "reponse": 0,
+      "id": 6
+    },
+    {
+      "question": "Pourquoi le Nil est-il indispensable à la vie des Égyptiens de l'Antiquité ?",
+      "explication": "Chaque année, les crues du Nil déposent du limon fertile sur les terres, ce qui permet aux Égyptiens de cultiver le blé et de nourrir la population. C'est pour cela qu'on dit que l'Égypte est un don du Nil.",
+      "notion": "crues et agriculture",
+      "type": "qcm",
+      "options": [
+        "Ses crues déposent du limon qui fertilise les terres pour l'agriculture",
+        "Il sert uniquement de frontière naturelle avec les pays voisins",
+        "Il fournit tout l'or utilisé pour construire les pyramides",
+        "Il empêche à lui seul toute invasion étrangère"
+      ],
+      "reponse": 0,
+      "id": 7
+    },
+    {
+      "question": "Quel est le nom du pharaon qui a fait construire la plus grande pyramide de Gizeh ?",
+      "explication": "Khéops est le pharaon à l'origine de la Grande Pyramide de Gizeh, la plus grande jamais construite en Égypte. C'est l'un des monuments les plus célèbres de l'Antiquité.",
+      "notion": "pharaon Khéops",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "khéops",
+        "kheops"
+      ],
+      "id": 8
+    }
+  ]
+}
