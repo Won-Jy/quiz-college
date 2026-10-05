@@ -398,5 +398,21 @@
       "crues et agriculture",
       "pharaon Khéops"
     ]
+  },
+  {
+    "date": "2026-10-05",
+    "matiere": "francais",
+    "niveau": "6eme",
+    "chapitre": "Le groupe nominal et ses expansions",
+    "notions": [
+      "nom noyau",
+      "déterminant",
+      "adjectif épithète",
+      "complément du nom",
+      "proposition relative",
+      "complément du nom",
+      "place de l'adjectif",
+      "accord de l'adjectif"
+    ]
   }
 ]

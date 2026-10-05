@@ -1,0 +1,120 @@
+{
+  "date": "2026-10-05",
+  "matiere": "francais",
+  "matiere_affichee": "Français",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Le groupe nominal et ses expansions",
+  "vacances": null,
+  "genere_le": "2026-10-05T23:27:44+02:00",
+  "questions": [
+    {
+      "question": "Dans le groupe nominal \"le petit chat noir\", quel mot est le nom noyau ?",
+      "explication": "Le nom noyau est le mot principal du groupe nominal, celui qui ne peut pas être supprimé : ici c'est \"chat\", les autres mots ne font que le compléter.",
+      "notion": "nom noyau",
+      "type": "qcm",
+      "options": [
+        "le",
+        "petit",
+        "chat",
+        "noir"
+      ],
+      "reponse": 2,
+      "id": 1
+    },
+    {
+      "question": "Dans le groupe nominal \"une grande maison\", quel mot est le déterminant ?",
+      "explication": "Le déterminant se place devant le nom pour l'introduire : \"une\" indique le genre et le nombre du nom \"maison\".",
+      "notion": "déterminant",
+      "type": "qcm",
+      "options": [
+        "grande",
+        "maison",
+        "une",
+        "grande maison"
+      ],
+      "reponse": 2,
+      "id": 2
+    },
+    {
+      "question": "Dans le groupe nominal \"un livre intéressant\", comment appelle-t-on l'expansion \"intéressant\" ?",
+      "explication": "\"Intéressant\" est un adjectif qui qualifie directement le nom \"livre\" sans mot de liaison : c'est un adjectif épithète.",
+      "notion": "adjectif épithète",
+      "type": "qcm",
+      "options": [
+        "un complément du nom",
+        "un adjectif épithète",
+        "une proposition subordonnée relative",
+        "un déterminant"
+      ],
+      "reponse": 1,
+      "id": 3
+    },
+    {
+      "question": "Dans le groupe nominal \"la maison de mes grands-parents\", quelle est la nature de l'expansion \"de mes grands-parents\" ?",
+      "explication": "\"De mes grands-parents\" est un groupe nominal introduit par la préposition \"de\" : c'est un complément du nom, pas un adjectif.",
+      "notion": "complément du nom",
+      "type": "qcm",
+      "options": [
+        "un adjectif épithète",
+        "un groupe nominal complément du nom",
+        "une proposition subordonnée relative",
+        "une apposition"
+      ],
+      "reponse": 1,
+      "id": 4
+    },
+    {
+      "question": "Dans la phrase \"Le chien qui aboie me fait peur\", quelle expansion complète le nom \"chien\" ?",
+      "explication": "\"Qui aboie\" contient un verbe conjugué et est introduite par le pronom relatif \"qui\" : c'est une proposition subordonnée relative.",
+      "notion": "proposition relative",
+      "type": "qcm",
+      "options": [
+        "un adjectif épithète",
+        "un complément du nom",
+        "une proposition subordonnée relative",
+        "un groupe nominal prépositionnel"
+      ],
+      "reponse": 2,
+      "id": 5
+    },
+    {
+      "question": "Parmi ces groupes nominaux, lequel contient un complément du nom ?",
+      "explication": "\"De sport\" est un groupe introduit par une préposition qui complète le nom \"sac\" : c'est un complément du nom, contrairement aux adjectifs des autres exemples.",
+      "notion": "complément du nom",
+      "type": "qcm",
+      "options": [
+        "la robe rouge",
+        "le sac de sport",
+        "un enfant joyeux",
+        "une belle fleur"
+      ],
+      "reponse": 1,
+      "id": 6
+    },
+    {
+      "question": "Dans le groupe nominal \"des fleurs magnifiques\", où est placé l'adjectif épithète par rapport au nom ?",
+      "explication": "L'adjectif épithète peut se placer avant ou après le nom ; ici \"magnifiques\" suit le nom \"fleurs\" qu'il qualifie.",
+      "notion": "place de l'adjectif",
+      "type": "qcm",
+      "options": [
+        "avant le nom",
+        "après le nom",
+        "il encadre le nom",
+        "il n'y a pas d'adjectif épithète"
+      ],
+      "reponse": 1,
+      "id": 7
+    },
+    {
+      "question": "Accorde l'adjectif entre parenthèses pour compléter le groupe nominal : \"une histoire (passionnant)\"",
+      "explication": "L'adjectif épithète s'accorde en genre et en nombre avec le nom qu'il qualifie : \"histoire\" est féminin singulier, donc l'adjectif prend un e.",
+      "notion": "accord de l'adjectif",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "passionnante"
+      ],
+      "id": 8
+    }
+  ]
+}
