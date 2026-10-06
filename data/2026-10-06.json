@@ -1,0 +1,120 @@
+{
+  "date": "2026-10-06",
+  "matiere": "anglais",
+  "matiere_affichee": "Anglais",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Les prepositions de temps : in, on, at",
+  "vacances": null,
+  "genere_le": "2026-10-06T21:26:38+02:00",
+  "questions": [
+    {
+      "question": "I go to school ___ Monday.",
+      "explication": "Devant un jour de la semaine, on utilise toujours \"on\". Retiens bien : on + jour.",
+      "notion": "préposition jour semaine",
+      "type": "qcm",
+      "options": [
+        "on",
+        "in",
+        "at",
+        "for"
+      ],
+      "reponse": 0,
+      "id": 1
+    },
+    {
+      "question": "My birthday is ___ April.",
+      "explication": "Devant un mois, on utilise \"in\" car c'est une période assez longue. On dirait aussi \"in summer\" ou \"in 2024\".",
+      "notion": "préposition mois",
+      "type": "qcm",
+      "options": [
+        "at",
+        "on",
+        "in",
+        "for"
+      ],
+      "reponse": 2,
+      "id": 2
+    },
+    {
+      "question": "The film starts ___ 8 o'clock.",
+      "explication": "Devant une heure précise, on utilise toujours \"at\". C'est la règle pour les moments précis de la journée.",
+      "notion": "préposition heure précise",
+      "type": "qcm",
+      "options": [
+        "in",
+        "on",
+        "at",
+        "from"
+      ],
+      "reponse": 2,
+      "id": 3
+    },
+    {
+      "question": "We go to the beach ___ summer.",
+      "explication": "Les saisons fonctionnent comme les mois : on utilise \"in\" car c'est une longue période de l'année.",
+      "notion": "préposition saison",
+      "type": "qcm",
+      "options": [
+        "on",
+        "at",
+        "in",
+        "for"
+      ],
+      "reponse": 2,
+      "id": 4
+    },
+    {
+      "question": "I wake up ___ the morning.",
+      "explication": "Pour les moments de la journée (morning, afternoon, evening), on utilise \"in the...\". Attention, la nuit fait exception !",
+      "notion": "préposition moment journée",
+      "type": "qcm",
+      "options": [
+        "in",
+        "on",
+        "at",
+        "for"
+      ],
+      "reponse": 0,
+      "id": 5
+    },
+    {
+      "question": "Her birthday party is ___ 25 December.",
+      "explication": "Devant une date précise (jour + mois), on utilise \"on\", comme pour les jours de la semaine. C'est un repère précis dans le calendrier.",
+      "notion": "préposition date précise",
+      "type": "qcm",
+      "options": [
+        "in",
+        "at",
+        "on",
+        "for"
+      ],
+      "reponse": 2,
+      "id": 6
+    },
+    {
+      "question": "I don't go to school ___ night.",
+      "explication": "\"At night\" est une exception à connaître par cœur : contrairement aux autres moments de la journée, la nuit utilise \"at\" et non \"in\".",
+      "notion": "exception at night",
+      "type": "qcm",
+      "options": [
+        "in",
+        "on",
+        "at",
+        "for"
+      ],
+      "reponse": 2,
+      "id": 7
+    },
+    {
+      "question": "Complète avec la préposition correcte : My grandmother was born ___ 1952.",
+      "explication": "Devant une année, on utilise toujours \"in\", comme pour les mois ou les saisons : ce sont de longues périodes de temps.",
+      "notion": "préposition année",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "in"
+      ],
+      "id": 8
+    }
+  ]
+}

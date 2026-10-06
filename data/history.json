@@ -414,5 +414,21 @@
       "place de l'adjectif",
       "accord de l'adjectif"
     ]
+  },
+  {
+    "date": "2026-10-06",
+    "matiere": "anglais",
+    "niveau": "6eme",
+    "chapitre": "Les prepositions de temps : in, on, at",
+    "notions": [
+      "préposition jour semaine",
+      "préposition mois",
+      "préposition heure précise",
+      "préposition saison",
+      "préposition moment journée",
+      "préposition date précise",
+      "exception at night",
+      "préposition année"
+    ]
   }
 ]
