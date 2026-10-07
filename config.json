@@ -22,6 +22,11 @@
     "jusqu_au": "2026-10-17"
   },
   "_renfort": "Ajoute nb_questions QCM de revision (etiquette « Révision ») a chaque quiz entre du et jusqu_au, quelle que soit la matiere du jour. Pour arreter : mettre une date passee dans jusqu_au.",
+  "rattrapage": {
+    "par_jour": 2,
+    "delai_jours": 3
+  },
+  "_rattrapage": "Les questions ratees reviennent au plus par_jour fois par quiz, au moins delai_jours apres l'erreur. Reussie : maitrisee. Ratee : elle reviendra. Suivi dans l'onglet Erreurs du carnet. par_jour a 0 pour desactiver.",
   "planning": {
     "1": "francais",
     "2": "anglais",
@@ -34,7 +39,8 @@
   "points": {
     "participation": 10,
     "par_bonne_reponse": 2,
-    "sans_faute": 5
+    "sans_faute": 5,
+    "par_rattrapage": 3
   },
   "bonus_semaine": {
     "jours_requis": 6,

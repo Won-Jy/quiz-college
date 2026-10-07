@@ -294,6 +294,73 @@ Réponds uniquement par un objet JSON valide :
 {{"questions": [{{"type": "qcm", "question": "...", "options": ["...", "...", "...", "..."], "reponse": 0, "explication": "...", "notion": "..."}}]}}"""
 
 
+def lire_erreurs(cfg):
+    url = cfg.get("sheets_url", "")
+    if not url.startswith("http"):
+        return []
+    try:
+        with urllib.request.urlopen(f"{url}?action=erreurs", timeout=20) as r:
+            return json.loads(r.read().decode()).get("erreurs", [])
+    except Exception as e:  # noqa: BLE001
+        print(f"[WARN] erreurs indisponibles : {e}")
+        return []
+
+
+def choisir_rattrapages(cfg, erreurs, historique, aujourdhui):
+    """
+    Ressort les questions ratees : jamais avant `delai_jours` apres l'erreur
+    ou la derniere tentative, les plus anciennes d'abord, `par_jour` au plus.
+    """
+    reglage = cfg.get("rattrapage") or {}
+    par_jour = int(reglage.get("par_jour", 0))
+    delai = int(reglage.get("delai_jours", 3))
+    if par_jour <= 0 or not erreurs:
+        return []
+
+    limite = aujourdhui - datetime.timedelta(days=delai)
+
+    # Deja ressortie recemment (et pas encore jouee) : on attend.
+    recentes = set()
+    for h in historique:
+        try:
+            if datetime.date.fromisoformat(h["date"]) > limite:
+                recentes.update(f"{r['date']}#{r['id']}" for r in h.get("rattrapages", []))
+        except (KeyError, ValueError):
+            continue
+
+    candidates = []
+    for e in erreurs:
+        try:
+            d = datetime.date.fromisoformat(e["date"])
+            der = datetime.date.fromisoformat(e["derniere"]) if e.get("derniere") else d
+        except (KeyError, ValueError):
+            continue
+        cle = f"{e['date']}#{e['id']}"
+        if d <= limite and der <= limite and cle not in recentes:
+            candidates.append((d, int(e["id"]), e))
+    candidates.sort(key=lambda c: (c[0], c[1]))
+
+    choisies = []
+    for d, num, e in candidates:
+        source = DATA_DIR / f"{d.isoformat()}.json"
+        if not source.exists():
+            continue
+        quiz = json.loads(source.read_text(encoding="utf-8"))
+        q = next((x for x in quiz["questions"] if x.get("id") == num), None)
+        if not q:
+            continue
+        copie = {k: v for k, v in q.items() if k not in ("id", "etiquette", "rattrapage")}
+        if "options" in copie:
+            copie["options"] = list(copie["options"])
+        copie.setdefault("type", "qcm")
+        copie["etiquette"] = "Rattrapage · " + quiz.get("matiere_affichee", "")
+        copie["rattrapage"] = {"date": d.isoformat(), "id": num}
+        choisies.append(copie)
+        if len(choisies) >= par_jour:
+            break
+    return choisies
+
+
 # ── E-mail ───────────────────────────────────────────────────────────────────
 
 def lire_solde(cfg):
@@ -433,6 +500,15 @@ def main():
         except SystemExit as e:
             print(f"[WARN] renfort ignore : {e}")
 
+    rattrapages = choisir_rattrapages(cfg, lire_erreurs(cfg), historique, aujourdhui)
+    if rattrapages:
+        qcm = [q for q in questions if q["type"] == "qcm"]
+        saisie = [q for q in questions if q["type"] != "qcm"]
+        questions = qcm + rattrapages + saisie
+        for i, q in enumerate(questions, start=1):
+            q["id"] = i
+        print(f"[OK] {len(rattrapages)} question(s) de rattrapage")
+
     melanger(questions, aujourdhui.isoformat())
 
     DATA_DIR.mkdir(exist_ok=True)
@@ -457,6 +533,7 @@ def main():
         "niveau": niveau,
         "chapitre": chapitre,
         "notions": [q["notion"] for q in questions if q["notion"] and not q.get("etiquette")],
+        "rattrapages": [q["rattrapage"] for q in questions if q.get("rattrapage")],
         "notions_renfort": [q["notion"] for q in questions if q.get("etiquette")],
     })
     HISTORY_FILE.write_text(

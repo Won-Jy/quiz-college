@@ -163,3 +163,19 @@ Sélectionner la colonne A → **Format → Nombre → Texte brut**.
 
 **Vacances scolaires.** Les dates de `config.json` couvrent la zone B
 (académie d'Aix-Marseille) pour 2026-2027. À remettre à jour chaque été.
+
+---
+
+## Révisions ciblées et rattrapages
+
+**Renfort** (`renfort` dans `config.json`). Après un contrôle raté, décrire le
+point du programme dans `theme` et fixer une période (`du`, `jusqu_au`) : chaque
+quiz de la période reçoit `nb_questions` QCM supplémentaires marqués
+« Révision », quelle que soit la matière du jour.
+
+**Rattrapage** (`rattrapage`). Chaque question ratée est notée dans l'onglet
+`Erreurs` du carnet (statut `a_revoir`). Au moins `delai_jours` plus tard, elle
+revient telle quelle — propositions remélangées — marquée « Rattrapage ».
+Réussie, elle passe en `maitrise` et rapporte `points.par_rattrapage` ; ratée,
+elle reviendra après un nouveau délai. `par_jour` à 0 désactive le mécanisme.
+L'onglet `Erreurs` donne aussi, d'un coup d'œil, les notions qui résistent.

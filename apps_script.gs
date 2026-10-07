@@ -20,10 +20,13 @@
 
 var ONGLET_RESULTATS = 'Resultats';
 var ONGLET_RECOMPENSES = 'Recompenses';
+var ONGLET_ERREURS = 'Erreurs';
 var FUSEAU = 'Europe/Paris';
 
 var EN_TETES_RESULTATS = ['Date', 'Matiere', 'Niveau', 'Score', 'Total', 'Points', 'Horodatage'];
 var EN_TETES_RECOMPENSES = ['Horodatage', 'Type', 'Id', 'Libelle', 'Points', 'Statut', 'Note'];
+// Statut : a_revoir tant que la question n'a pas ete reussie en rattrapage, puis maitrise.
+var EN_TETES_ERREURS = ['Date', 'Id', 'Matiere', 'Notion', 'Statut', 'Tentatives', 'Derniere'];
 
 
 // ── Installation ─────────────────────────────────────────────────────────────
@@ -32,6 +35,7 @@ function initialiser() {
   var classeur = SpreadsheetApp.getActiveSpreadsheet();
   creerOnglet(classeur, ONGLET_RESULTATS, EN_TETES_RESULTATS);
   creerOnglet(classeur, ONGLET_RECOMPENSES, EN_TETES_RECOMPENSES);
+  creerOnglet(classeur, ONGLET_ERREURS, EN_TETES_ERREURS);
   // Colonne A des resultats en texte brut : Sheets ne doit pas convertir les dates.
   classeur.getSheetByName(ONGLET_RESULTATS).getRange('A:A').setNumberFormat('@');
   return 'Onglets prets.';
@@ -52,7 +56,8 @@ function creerOnglet(classeur, nom, enTetes) {
 
 function feuille_(nom) {
   var classeur = SpreadsheetApp.getActiveSpreadsheet();
-  var enTetes = nom === ONGLET_RESULTATS ? EN_TETES_RESULTATS : EN_TETES_RECOMPENSES;
+  var enTetes = nom === ONGLET_RESULTATS ? EN_TETES_RESULTATS
+    : (nom === ONGLET_ERREURS ? EN_TETES_ERREURS : EN_TETES_RECOMPENSES);
   return creerOnglet(classeur, nom, enTetes);
 }
 
@@ -60,11 +65,24 @@ function feuille_(nom) {
 // ── Dates ────────────────────────────────────────────────────────────────────
 
 /** Ramene une cellule (texte ou Date) a une chaine AAAA-MM-JJ. */
+function deuxChiffres_(n) {
+  return ('0' + Number(n)).slice(-2);
+}
+
+/**
+ * Ramene une cellule a une chaine AAAA-MM-JJ, quel que soit le format sous
+ * lequel Sheets l'a stockee (objet Date, 2026-09-07, 07/09/2026, 2026. 9. 7).
+ */
 function normaliserDate_(valeur) {
   if (valeur instanceof Date) {
     return Utilities.formatDate(valeur, FUSEAU, 'yyyy-MM-dd');
   }
-  return String(valeur || '').trim().slice(0, 10);
+  var t = String(valeur || '').trim().replace(/^'/, '');
+  var m = t.match(/^(\d{4})\s*[-\/.]\s*(\d{1,2})\s*[-\/.]\s*(\d{1,2})/);
+  if (m) { return m[1] + '-' + deuxChiffres_(m[2]) + '-' + deuxChiffres_(m[3]); }
+  m = t.match(/^(\d{1,2})\s*[-\/.]\s*(\d{1,2})\s*[-\/.]\s*(\d{4})/);
+  if (m) { return m[3] + '-' + deuxChiffres_(m[2]) + '-' + deuxChiffres_(m[1]); }
+  return t.slice(0, 10);
 }
 
 /** Lundi de la semaine contenant la date ISO donnee. */
@@ -187,7 +205,7 @@ function enregistrerResultat_(d) {
   }
 
   feuille_(ONGLET_RESULTATS).appendRow([
-    date,
+    "'" + date,   // apostrophe : Sheets garde la date en texte brut
     String(d.matiere || ''),
     String(d.niveau || ''),
     Number(d.score) || 0,
@@ -195,6 +213,9 @@ function enregistrerResultat_(d) {
     Number(d.points) || 0,
     maintenant_()
   ]);
+
+  enregistrerErreurs_(d.erreurs || [], String(d.matiere || ''));
+  majRattrapages_(d.rattrapages || []);
 
   var bonus = verifierBonusSemaine_(date, d);
   var paliers = verifierPaliers_(d);
@@ -287,6 +308,63 @@ function demanderRecompense_(d) {
 
 // ── Points d'entree ──────────────────────────────────────────────────────────
 
+// ── Erreurs et rattrapages ──────────────────────────────────────────────────
+
+function lireErreurs_() {
+  var feuille = feuille_(ONGLET_ERREURS);
+  var lignes = feuille.getDataRange().getValues();
+  var liste = [];
+  for (var i = 1; i < lignes.length; i++) {
+    var l = lignes[i];
+    if (!l[0]) { continue; }
+    liste.push({
+      ligne: i + 1,
+      date: normaliserDate_(l[0]),
+      id: Number(l[1]) || 0,
+      matiere: String(l[2] || ''),
+      notion: String(l[3] || ''),
+      statut: String(l[4] || ''),
+      tentatives: Number(l[5]) || 0,
+      derniere: l[6] ? normaliserDate_(l[6]) : ''
+    });
+  }
+  return liste;
+}
+
+/** Ajoute les questions ratees, sans doublon (date + numero de question). */
+function enregistrerErreurs_(erreurs, matiere) {
+  if (!erreurs.length) { return 0; }
+  var connues = {};
+  lireErreurs_().forEach(function (e) { connues[e.date + '#' + e.id] = true; });
+  var feuille = feuille_(ONGLET_ERREURS);
+  var ajoutees = 0;
+  erreurs.forEach(function (e) {
+    var date = normaliserDate_(e.date);
+    var id = Number(e.id) || 0;
+    if (!date || !id || connues[date + '#' + id]) { return; }
+    connues[date + '#' + id] = true;
+    feuille.appendRow(["'" + date, id, String(e.matiere || matiere || ''),
+                       String(e.notion || ''), 'a_revoir', 0, '']);
+    ajoutees++;
+  });
+  return ajoutees;
+}
+
+/** Reussi en rattrapage : maitrise. Rate : on note la tentative, il reviendra plus tard. */
+function majRattrapages_(rattrapages) {
+  if (!rattrapages.length) { return; }
+  var index = {};
+  lireErreurs_().forEach(function (e) { index[e.date + '#' + e.id] = e; });
+  var feuille = feuille_(ONGLET_ERREURS);
+  rattrapages.forEach(function (r) {
+    var e = index[normaliserDate_(r.date) + '#' + (Number(r.id) || 0)];
+    if (!e) { return; }
+    feuille.getRange(e.ligne, 5).setValue(r.juste ? 'maitrise' : 'a_revoir');
+    feuille.getRange(e.ligne, 6).setValue(e.tentatives + 1);
+    feuille.getRange(e.ligne, 7).setValue("'" + aujourdhui_());
+  });
+}
+
 function reponse_(objet) {
   return ContentService
     .createTextOutput(JSON.stringify(objet))
@@ -295,6 +373,10 @@ function reponse_(objet) {
 
 function doGet(e) {
   try {
+    if (e && e.parameter && e.parameter.action === 'erreurs') {
+      var aRevoir = lireErreurs_().filter(function (x) { return x.statut === 'a_revoir'; });
+      return reponse_({ ok: true, erreurs: aRevoir });
+    }
     return reponse_(calculerEtat_());
   } catch (err) {
     return reponse_({ ok: false, erreur: String(err) });
@@ -306,6 +388,9 @@ function doPost(e) {
     var d = JSON.parse(e.postData.contents);
     if (d.action === 'resultat') { return reponse_(enregistrerResultat_(d)); }
     if (d.action === 'demande') { return reponse_(demanderRecompense_(d)); }
+    if (d.action === 'erreurs_import') {
+      return reponse_({ ok: true, ajoutees: enregistrerErreurs_(d.erreurs || [], '') });
+    }
     return reponse_({ ok: false, raison: 'action_inconnue' });
   } catch (err) {
     return reponse_({ ok: false, erreur: String(err) });

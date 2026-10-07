@@ -233,11 +233,33 @@
 
   // ── Resultats ─────────────────────────────────────────────────────────────
 
-  function calculerPoints(score, total) {
+  function calculerPoints(questions) {
     var p = etat.config.points;
-    var somme = p.participation + p.par_bonne_reponse * score;
-    if (score === total) { somme += p.sans_faute; }
+    var parRattrapage = p.par_rattrapage || p.par_bonne_reponse;
+    var score = 0;
+    var somme = p.participation;
+    questions.forEach(function (q, i) {
+      if (!estJuste(q, etat.choix[i])) { return; }
+      score++;
+      somme += q.rattrapage ? parRattrapage : p.par_bonne_reponse;
+    });
+    if (score === questions.length) { somme += p.sans_faute; }
     return somme;
+  }
+
+  /** Questions ratees aujourd'hui, et resultat des rattrapages. */
+  function bilanErreurs(quiz, choix) {
+    var erreurs = [], rattrapages = [];
+    quiz.questions.forEach(function (q, i) {
+      var ok = estJuste(q, choix[i]);
+      if (q.rattrapage) {
+        rattrapages.push({ date: q.rattrapage.date, id: q.rattrapage.id, juste: ok });
+      } else if (!ok) {
+        erreurs.push({ date: quiz.date, id: q.id, notion: q.notion || '',
+                       matiere: quiz.matiere_affichee });
+      }
+    });
+    return { erreurs: erreurs, rattrapages: rattrapages };
   }
 
   function terminer() {
@@ -246,7 +268,7 @@
     var score = questions.reduce(function (s, q, i) {
       return s + (estJuste(q, etat.choix[i]) ? 1 : 0);
     }, 0);
-    var points = calculerPoints(score, total);
+    var points = calculerPoints(questions);
 
     texte($('res-date'), dateLisible(etat.quiz.date) + ' · ' + etat.quiz.matiere_affichee);
 
@@ -289,6 +311,9 @@
       palier_pas: palier.pas,
       palier_libelle: palier.libelle
     };
+    var suivi = bilanErreurs(etat.quiz, etat.choix);
+    charge.erreurs = suivi.erreurs;
+    charge.rattrapages = suivi.rattrapages;
 
     // Deja enregistre depuis cet appareil : on affiche la correction sans rien renvoyer.
     if (memoire('envoye') === etat.quiz.date) {
@@ -379,8 +404,8 @@
 
       var verdict = document.createElement('span');
       verdict.className = 'verdict ' + (ok ? 'juste' : 'faux');
-      verdict.textContent = ok ? 'Question ' + (i + 1) + ' · juste'
-                               : 'Question ' + (i + 1) + ' · à revoir';
+      var tete = 'Question ' + (i + 1) + (q.etiquette ? ' · ' + q.etiquette : '');
+      verdict.textContent = tete + (ok ? ' · juste' : ' · à revoir');
       li.appendChild(verdict);
 
       var enonce = document.createElement('p');
@@ -598,6 +623,37 @@
 
   // ── Demarrage ─────────────────────────────────────────────────────────────
 
+  // Les quiz deja faits sur cet appareil gardent les reponses de l'eleve :
+  // on en extrait les erreurs une seule fois pour alimenter les rattrapages.
+  function importerErreursPassees() {
+    if (memoire('erreurs_importees') || !urlCarnet()) { return; }
+    var dates = [];
+    try {
+      for (var k = 0; k < localStorage.length; k++) {
+        var m = /^quiz-(\d{4}-\d{2}-\d{2})$/.exec(localStorage.key(k));
+        if (m) { dates.push(m[1]); }
+      }
+    } catch (e) { return; }
+    if (!dates.length) { memoire('erreurs_importees', true); return; }
+
+    Promise.all(dates.map(function (d) {
+      return fetch('../data/' + d + '.json')
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .catch(function () { return null; });
+    })).then(function (quiz) {
+      var erreurs = [];
+      quiz.forEach(function (qz) {
+        if (!qz) { return; }
+        var repris = memoire('quiz-' + qz.date);
+        if (!repris || !repris.choix || repris.choix.length !== qz.questions.length) { return; }
+        erreurs = erreurs.concat(bilanErreurs(qz, repris.choix).erreurs);
+      });
+      return ecrireCarnet({ action: 'erreurs_import', erreurs: erreurs });
+    }).then(function (rep) {
+      if (rep && rep.ok) { memoire('erreurs_importees', true); }
+    });
+  }
+
   function demarrer() {
     var params = new URLSearchParams(location.search);
     var date = params.get('date') || dateParis();
@@ -622,6 +678,8 @@
           }
         });
       }
+
+      importerErreursPassees();
 
       document.body.dataset.matiere = etat.quiz.matiere;
       document.title = etat.quiz.matiere_affichee + ' — quiz du jour';
