@@ -1,0 +1,120 @@
+{
+  "date": "2026-10-07",
+  "matiere": "maths",
+  "matiere_affichee": "Mathématiques",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Comparer et additionner des fractions simples",
+  "vacances": null,
+  "genere_le": "2026-10-07T18:42:02+02:00",
+  "questions": [
+    {
+      "question": "Quelle est la plus grande fraction parmi 3/7 et 5/7 ?",
+      "explication": "Quand deux fractions ont le même dénominateur, la plus grande est celle qui a le plus grand numérateur. Ici 5 est plus grand que 3, donc 5/7 est plus grand.",
+      "notion": "comparaison même dénominateur",
+      "type": "qcm",
+      "options": [
+        "3/7",
+        "5/7",
+        "Elles sont égales",
+        "On ne peut pas savoir"
+      ],
+      "reponse": 1,
+      "id": 1
+    },
+    {
+      "question": "Quelle est la plus petite fraction parmi 7/10 et 3/10 ?",
+      "explication": "Les deux fractions ont le même dénominateur 10, donc on compare les numérateurs : 3 est plus petit que 7, donc 3/10 est la plus petite.",
+      "notion": "comparaison même dénominateur",
+      "type": "qcm",
+      "options": [
+        "7/10",
+        "3/10",
+        "Elles sont égales",
+        "On ne peut pas savoir"
+      ],
+      "reponse": 1,
+      "id": 2
+    },
+    {
+      "question": "Combien vaut 2/9 + 5/9 ?",
+      "explication": "Pour additionner deux fractions de même dénominateur, on additionne seulement les numérateurs et on garde le dénominateur. Donc 2/9 + 5/9 = 7/9.",
+      "notion": "addition même dénominateur",
+      "type": "qcm",
+      "options": [
+        "7/9",
+        "7/18",
+        "3/9",
+        "10/9"
+      ],
+      "reponse": 0,
+      "id": 3
+    },
+    {
+      "question": "Quelle fraction est égale à 1 ?",
+      "explication": "Une fraction est égale à 1 quand son numérateur est égal à son dénominateur. C'est le cas de 6/6.",
+      "notion": "fraction égale un",
+      "type": "qcm",
+      "options": [
+        "5/6",
+        "6/6",
+        "6/5",
+        "7/6"
+      ],
+      "reponse": 1,
+      "id": 4
+    },
+    {
+      "question": "Parmi 9/8 et 1, quel est le plus grand nombre ?",
+      "explication": "Une fraction est plus grande que 1 quand son numérateur est plus grand que son dénominateur. Ici 9 est plus grand que 8, donc 9/8 est plus grand que 1.",
+      "notion": "comparaison fraction et un",
+      "type": "qcm",
+      "options": [
+        "9/8",
+        "1",
+        "Ils sont égaux",
+        "On ne peut pas comparer"
+      ],
+      "reponse": 0,
+      "id": 5
+    },
+    {
+      "question": "Combien vaut 3/11 + 4/11 + 2/11 ?",
+      "explication": "Toutes ces fractions ont le même dénominateur 11, donc on additionne uniquement les numérateurs : 3 + 4 + 2 = 9. Le résultat est 9/11.",
+      "notion": "addition trois fractions",
+      "type": "qcm",
+      "options": [
+        "9/11",
+        "9/33",
+        "9/22",
+        "11/11"
+      ],
+      "reponse": 0,
+      "id": 6
+    },
+    {
+      "question": "Quelle est la plus grande fraction parmi 4/5 et 4/9 ?",
+      "explication": "Quand deux fractions ont le même numérateur, la plus grande est celle qui a le plus petit dénominateur. Comme 5 est plus petit que 9, 4/5 est plus grand que 4/9.",
+      "notion": "comparaison même numérateur",
+      "type": "qcm",
+      "options": [
+        "4/5",
+        "4/9",
+        "Elles sont égales",
+        "On ne peut pas savoir"
+      ],
+      "reponse": 0,
+      "id": 7
+    },
+    {
+      "question": "Calcule 5/12 + 6/12. Donne le résultat sous la forme numérateur/dénominateur.",
+      "explication": "Les deux fractions ont le même dénominateur 12, donc on additionne les numérateurs : 5 + 6 = 11. Le résultat est 11/12.",
+      "notion": "addition même dénominateur",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "11/12"
+      ],
+      "id": 8
+    }
+  ]
+}

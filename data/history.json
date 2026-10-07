@@ -430,5 +430,21 @@
       "exception at night",
       "préposition année"
     ]
+  },
+  {
+    "date": "2026-10-07",
+    "matiere": "maths",
+    "niveau": "6eme",
+    "chapitre": "Comparer et additionner des fractions simples",
+    "notions": [
+      "comparaison même dénominateur",
+      "comparaison même dénominateur",
+      "addition même dénominateur",
+      "fraction égale un",
+      "comparaison fraction et un",
+      "addition trois fractions",
+      "comparaison même numérateur",
+      "addition même dénominateur"
+    ]
   }
 ]
