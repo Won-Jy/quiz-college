@@ -8,6 +8,7 @@ et envoie le lien par e-mail. Tout le parametrage vit dans config.json.
 import datetime
 import json
 import os
+import random
 import re
 import smtplib
 import sys
@@ -180,10 +181,10 @@ def extraire_json(reponse):
     return json.loads(brut[debut:fin + 1])
 
 
-def generer(cfg, prompt):
+def generer(cfg, prompt, fmt=None):
     client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
     modele = cfg.get("modele", "claude-sonnet-5")
-    fmt = format_quiz(cfg)
+    fmt = fmt or format_quiz(cfg)
 
     derniere_erreur = None
     for tentative in (1, 2):
@@ -244,6 +245,55 @@ def valider(questions, fmt):
     return propres
 
 
+def melanger(questions, graine):
+    """
+    Le modele place la bonne reponse en A beaucoup trop souvent (54 % sur le
+    premier mois, 2 % en D). On remelange les propositions ici, de facon
+    reproductible, pour que la position ne donne aucun indice.
+    """
+    hasard = random.Random(graine)
+    for q in questions:
+        if q.get("type") != "qcm":
+            continue
+        bonne = q["options"][q["reponse"]]
+        options = q["options"][:]
+        hasard.shuffle(options)
+        q["options"] = options
+        q["reponse"] = options.index(bonne)
+    return questions
+
+
+def renfort_actif(cfg, aujourdhui):
+    r = cfg.get("renfort") or {}
+    if not r.get("theme") or not r.get("jusqu_au"):
+        return None
+    try:
+        fin = datetime.date.fromisoformat(r["jusqu_au"])
+        debut = datetime.date.fromisoformat(r.get("du", "2000-01-01"))
+    except ValueError:
+        print("[WARN] dates de renfort illisibles, ignore")
+        return None
+    return r if debut <= aujourdhui <= fin else None
+
+
+def prompt_renfort(renfort, niveau, notions_recentes):
+    n = int(renfort.get("nb_questions", 2))
+    a_eviter = ""
+    if notions_recentes:
+        a_eviter = ("\nCes points ont deja ete travailles les jours precedents, "
+                    "change d'angle : " + ", ".join(notions_recentes[:10]))
+    return f"""Tu es professeur au college en France. L'élève, en classe de {niveau}, a eu des difficultés en contrôle sur ce point du programme :
+
+{renfort["theme"]}
+{renfort.get("precision", "")}{a_eviter}
+
+Rédige {n} QCM de révision ciblés sur ce point, à 4 propositions, une seule bonne réponse. Ce sont des exercices d'application concrets (calcul, conversion, lecture de situation), comme en contrôle, du plus simple au plus exigeant. Les mauvaises propositions reprennent les erreurs typiques des élèves (unité oubliée, confusion périmètre/aire, mauvaise conversion...). Écris les nombres décimaux avec une virgule. Pas de LaTeX.
+L'explication fait une à trois phrases, tutoie l'élève et montre le calcul. Le champ "notion" nomme en trois mots maximum le point testé. Tout en français.
+
+Réponds uniquement par un objet JSON valide :
+{{"questions": [{{"type": "qcm", "question": "...", "options": ["...", "...", "...", "..."], "reponse": 0, "explication": "...", "notion": "..."}}]}}"""
+
+
 # ── E-mail ───────────────────────────────────────────────────────────────────
 
 def lire_solde(cfg):
@@ -277,13 +327,13 @@ def liste_destinataires(cfg):
     return adresses
 
 
-def envoyer_email(cfg, aujourdhui, matiere, niveau, chapitre, vacances, solde):
+def envoyer_email(cfg, aujourdhui, matiere, niveau, chapitre, vacances, solde, total=None):
     niveau_aff = NIVEAUX_AFFICHES.get(niveau, niveau)
     url = f"{cfg['base_url']}/quiz/?date={aujourdhui.isoformat()}"
     couleur = COULEURS.get(matiere, "#1F4BFF")
     affiche = MATIERES[matiere]["affiche"]
     fmt = format_quiz(cfg)
-    n = fmt["qcm"] + fmt["saisie"]
+    n = total or (fmt["qcm"] + fmt["saisie"])
     pts = cfg["points"]
     max_jour = pts["participation"] + pts["par_bonne_reponse"] * n + pts["sans_faute"]
 
@@ -364,6 +414,27 @@ def main():
 
     questions = generer(cfg, construire_prompt(cfg, niveau, matiere, chapitre, recentes))
 
+    renfort = renfort_actif(cfg, aujourdhui)
+    if renfort:
+        deja = [n for h in historique for n in h.get("notions_renfort", [])]
+        n = int(renfort.get("nb_questions", 2))
+        try:
+            extra = generer(cfg, prompt_renfort(renfort, niveau, deja[-10:]),
+                            {"qcm": n, "saisie": 0})
+            for q in extra:
+                q["etiquette"] = "Révision"
+            # Les revisions passent avant la question a taper, qui reste la derniere.
+            qcm = [q for q in questions if q["type"] == "qcm"]
+            saisie = [q for q in questions if q["type"] != "qcm"]
+            questions = qcm + extra + saisie
+            for i, q in enumerate(questions, start=1):
+                q["id"] = i
+            print(f"[OK] {len(extra)} questions de renfort ajoutees")
+        except SystemExit as e:
+            print(f"[WARN] renfort ignore : {e}")
+
+    melanger(questions, aujourdhui.isoformat())
+
     DATA_DIR.mkdir(exist_ok=True)
     quiz = {
         "date": aujourdhui.isoformat(),
@@ -385,12 +456,14 @@ def main():
         "matiere": matiere,
         "niveau": niveau,
         "chapitre": chapitre,
-        "notions": [q["notion"] for q in questions if q["notion"]],
+        "notions": [q["notion"] for q in questions if q["notion"] and not q.get("etiquette")],
+        "notions_renfort": [q["notion"] for q in questions if q.get("etiquette")],
     })
     HISTORY_FILE.write_text(
         json.dumps(historique[-120:], ensure_ascii=False, indent=2), encoding="utf-8")
 
-    envoyer_email(cfg, aujourdhui, matiere, niveau, chapitre, vacances, lire_solde(cfg))
+    envoyer_email(cfg, aujourdhui, matiere, niveau, chapitre, vacances, lire_solde(cfg),
+                  total=len(questions))
 
 
 if __name__ == "__main__":

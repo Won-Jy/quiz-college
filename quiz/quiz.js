@@ -144,7 +144,8 @@
     var total = etat.quiz.questions.length;
 
     dessinerPips();
-    texte($('quiz-rang'), 'Question ' + (etat.index + 1) + ' sur ' + total);
+    texte($('quiz-rang'), 'Question ' + (etat.index + 1) + ' sur ' + total
+      + (q.etiquette ? ' · ' + q.etiquette : ''));
     texte($('quiz-enonce'), q.question);
 
     var conteneur = $('quiz-options');

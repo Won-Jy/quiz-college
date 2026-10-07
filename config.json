@@ -14,6 +14,14 @@
   "_format": "qcm = questions a choix multiples ; saisie = reponse courte tapee par l'eleve (mot, nombre, date), corrigee automatiquement. La ou les questions de saisie viennent en dernier.",
   "difficulte": "normale",
   "_difficulte": "facile | normale | exigeante",
+  "renfort": {
+    "theme": "Grandeurs et mesures : comparer, estimer, mesurer, calculer des longueurs (périmètre, distance), aires, volumes, angles, durées, masses et prix avec des nombres entiers et décimaux",
+    "precision": "Inclure des conversions d'unités (m/cm/mm, kg/g, m2/cm2, h/min) et des problèmes de la vie courante.",
+    "nb_questions": 2,
+    "du": "2026-10-08",
+    "jusqu_au": "2026-10-17"
+  },
+  "_renfort": "Ajoute nb_questions QCM de revision (etiquette « Révision ») a chaque quiz entre du et jusqu_au, quelle que soit la matiere du jour. Pour arreter : mettre une date passee dans jusqu_au.",
   "planning": {
     "1": "francais",
     "2": "anglais",
