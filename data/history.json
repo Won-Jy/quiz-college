@@ -446,5 +446,37 @@
       "comparaison même numérateur",
       "addition même dénominateur"
     ]
+  },
+  {
+    "date": "2026-10-08",
+    "matiere": "francais",
+    "niveau": "6eme",
+    "chapitre": "La ponctuation et les types de phrases",
+    "notions": [
+      "types de phrases",
+      "types de phrases",
+      "ponctuation finale",
+      "types de phrases",
+      "forme négative",
+      "virgule et complément",
+      "type et forme combinés",
+      "ponctuation finale"
+    ],
+    "rattrapages": [
+      {
+        "date": "2026-09-06",
+        "id": 8
+      },
+      {
+        "date": "2026-09-07",
+        "id": 4
+      }
+    ],
+    "notions_renfort": [
+      "Périmètre rectangle",
+      "Conversion aire m2/cm2",
+      "encadrement de décimaux",
+      "adverbe"
+    ]
   }
 ]
