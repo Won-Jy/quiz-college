@@ -478,5 +478,37 @@
       "encadrement de décimaux",
       "adverbe"
     ]
+  },
+  {
+    "date": "2026-10-09",
+    "matiere": "anglais",
+    "niveau": "6eme",
+    "chapitre": "Les nombres, l'heure et la date",
+    "notions": [
+      "nombres cardinaux",
+      "heure pile",
+      "jours de la semaine",
+      "mois de l'année",
+      "demi-heure",
+      "date ordinale",
+      "quart d'heure",
+      "heure et quart"
+    ],
+    "rattrapages": [
+      {
+        "date": "2026-09-07",
+        "id": 5
+      },
+      {
+        "date": "2026-09-07",
+        "id": 7
+      }
+    ],
+    "notions_renfort": [
+      "Périmètre rectangle",
+      "Conversion aire m2/cm2",
+      "conjonction de coordination",
+      "pronom relatif"
+    ]
   }
 ]

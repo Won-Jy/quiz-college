@@ -1,0 +1,189 @@
+{
+  "date": "2026-10-09",
+  "matiere": "anglais",
+  "matiere_affichee": "Anglais",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Les nombres, l'heure et la date",
+  "vacances": null,
+  "genere_le": "2026-10-09T21:27:01+02:00",
+  "questions": [
+    {
+      "question": "Comment écrit-on le nombre 14 en anglais ?",
+      "explication": "Quatorze s'écrit fourteen, avec le u après fo. Fourteenth est l'ordinal (quatorzième) et fourty n'existe pas.",
+      "notion": "nombres cardinaux",
+      "type": "qcm",
+      "options": [
+        "forteen",
+        "fourteen",
+        "fourteenth",
+        "fourty"
+      ],
+      "reponse": 1,
+      "id": 1
+    },
+    {
+      "question": "Comment dit-on qu'il est 3:00 en anglais ?",
+      "explication": "Pour dire l'heure pile, on utilise o'clock et non hours, qui est une traduction littérale du français. Half past three correspondrait à 3h30.",
+      "notion": "heure pile",
+      "type": "qcm",
+      "options": [
+        "It's three hour.",
+        "It's half past three.",
+        "It's three o'clock.",
+        "It's three hours."
+      ],
+      "reponse": 2,
+      "id": 2
+    },
+    {
+      "question": "Which day comes right after Monday?",
+      "explication": "Après Monday vient Tuesday. Sunday est avant Monday et Wednesday est deux jours après. Attention à l'orthographe correcte : Tuesday, pas Thuesday.",
+      "notion": "jours de la semaine",
+      "type": "qcm",
+      "options": [
+        "Wednesday",
+        "Sunday",
+        "Tuesday",
+        "Thuesday"
+      ],
+      "reponse": 2,
+      "id": 3
+    },
+    {
+      "question": "Which month is the first month of the year?",
+      "explication": "L'année commence par January. December est le dernier mois, et June/July sont au milieu de l'année.",
+      "notion": "mois de l'année",
+      "type": "qcm",
+      "options": [
+        "December",
+        "July",
+        "June",
+        "January"
+      ],
+      "reponse": 3,
+      "id": 4
+    },
+    {
+      "question": "Comment dit-on qu'il est 4:30 en anglais ?",
+      "explication": "Half past four signifie 4h30, car on ajoute half past à l'heure déjà passée, donc quatre. Half past five correspondrait à 5h30.",
+      "notion": "demi-heure",
+      "type": "qcm",
+      "options": [
+        "It's half past four.",
+        "It's half past five.",
+        "It's four half.",
+        "It's quarter past four."
+      ],
+      "reponse": 0,
+      "id": 5
+    },
+    {
+      "question": "Quelle est la bonne façon d'écrire la date du 1er mai en anglais ?",
+      "explication": "On utilise l'ordinal first suivi de of devant le mois. One est un cardinal, pas un ordinal, donc il ne convient pas pour une date.",
+      "notion": "date ordinale",
+      "type": "qcm",
+      "options": [
+        "the first of May",
+        "the one of May",
+        "May first the",
+        "the first May"
+      ],
+      "reponse": 0,
+      "id": 6
+    },
+    {
+      "question": "Comment dit-on qu'il est 6:15 en anglais ?",
+      "explication": "Quarter past six signifie 6h15 : on ajoute un quart d'heure à six heures. Quarter to six correspondrait à 5h45.",
+      "notion": "quart d'heure",
+      "type": "qcm",
+      "options": [
+        "It's quarter past seven.",
+        "It's six quarter.",
+        "It's quarter past six.",
+        "It's quarter to six."
+      ],
+      "reponse": 2,
+      "id": 7
+    },
+    {
+      "question": "Un rectangle mesure 7,5 cm de longueur et 4 cm de largeur. Quel est son périmètre ?",
+      "explication": "Le périmètre d'un rectangle se calcule avec (L + l) × 2, donc (7,5 + 4) × 2 = 23 cm. Attention, 11,5 cm c'est seulement L + l, tu as oublié de multiplier par 2 !",
+      "notion": "Périmètre rectangle",
+      "type": "qcm",
+      "options": [
+        "30 cm",
+        "11,5 cm",
+        "23 cm",
+        "23 cm²"
+      ],
+      "reponse": 2,
+      "id": 8,
+      "etiquette": "Révision"
+    },
+    {
+      "question": "Combien y a-t-il de cm² dans 3,5 m² ?",
+      "explication": "Pour une aire, 1 m² = 10000 cm² (car c'est une unité au carré), donc 3,5 m² = 3,5 × 10000 = 35000 cm². Ne confonds pas avec les longueurs où 1 m = 100 cm !",
+      "notion": "Conversion aire m2/cm2",
+      "type": "qcm",
+      "options": [
+        "350 cm²",
+        "35000 cm²",
+        "3500 cm²",
+        "0,00035 cm²"
+      ],
+      "reponse": 1,
+      "id": 9,
+      "etiquette": "Révision"
+    },
+    {
+      "question": "Dans la phrase « Marie et Paul jouent ensemble », quelle est la classe grammaticale du mot « et » ?",
+      "explication": "« Et » relie deux noms de même fonction : c'est une conjonction de coordination, comme « mais, ou, donc, or, ni, car ». Une préposition introduit plutôt un complément (à, de, pour, avec...).",
+      "notion": "conjonction de coordination",
+      "type": "qcm",
+      "options": [
+        "Une conjonction de coordination",
+        "Une préposition",
+        "Un adverbe",
+        "Un pronom"
+      ],
+      "reponse": 0,
+      "etiquette": "Rattrapage · Français",
+      "rattrapage": {
+        "date": "2026-09-07",
+        "id": 5
+      },
+      "id": 10
+    },
+    {
+      "question": "Dans la phrase « Le livre que je lis est passionnant », quelle est la classe grammaticale du mot « que » ?",
+      "explication": "« Que » remplace « le livre » (c'est le COD de « lis ») et introduit une proposition relative : c'est un pronom relatif. La conjonction de subordination « que », elle, n'a pas de fonction et ne remplace rien (exemple : je crois que tu viens).",
+      "notion": "pronom relatif",
+      "type": "qcm",
+      "options": [
+        "Une conjonction de subordination",
+        "Un pronom relatif",
+        "Un déterminant",
+        "Un adverbe"
+      ],
+      "reponse": 1,
+      "etiquette": "Rattrapage · Français",
+      "rattrapage": {
+        "date": "2026-09-07",
+        "id": 7
+      },
+      "id": 11
+    },
+    {
+      "question": "Écris en anglais comment on dit l'heure 9:15 (deux ou trois mots).",
+      "explication": "9h15 se dit quarter past nine, car on ajoute un quart d'heure à l'heure neuf. Il faut combiner le nombre nine et l'expression quarter past.",
+      "notion": "heure et quart",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "quarter past nine",
+        "a quarter past nine"
+      ],
+      "id": 12
+    }
+  ]
+}
