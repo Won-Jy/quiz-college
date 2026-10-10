@@ -1,0 +1,188 @@
+{
+  "date": "2026-10-10",
+  "matiere": "histoire",
+  "matiere_affichee": "Histoire-Géographie",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Le monde des cites grecques",
+  "vacances": null,
+  "genere_le": "2026-10-10T20:27:30+02:00",
+  "questions": [
+    {
+      "question": "Qu'est-ce qu'une cité grecque ?",
+      "explication": "Une cité grecque, ou polis, est une ville indépendante qui possède son propre gouvernement, ses lois et son territoire. La Grèce antique n'est pas un seul pays uni, mais un ensemble de centaines de cités.",
+      "notion": "définition cité grecque",
+      "type": "qcm",
+      "options": [
+        "Un simple village sans organisation politique",
+        "Un immense empire qui regroupe toute la Grèce sous un seul roi",
+        "Une province gouvernée par un roi perse",
+        "Une ville indépendante avec son territoire, ses lois et ses dieux"
+      ],
+      "reponse": 3,
+      "id": 1
+    },
+    {
+      "question": "Autour de quelle mer les cités grecques se développent-elles et fondent-elles des colonies ?",
+      "explication": "Les Grecs installent leurs cités sur les côtes de la mer Méditerranée, puis fondent des colonies sur tout son pourtour grâce à la navigation. C'est pour cela qu'on parle du 'monde grec' plutôt que d'un seul pays.",
+      "notion": "espace méditerranéen",
+      "type": "qcm",
+      "options": [
+        "La mer Méditerranée",
+        "La mer du Nord",
+        "La mer Rouge",
+        "L'océan Atlantique"
+      ],
+      "reponse": 0,
+      "id": 2
+    },
+    {
+      "question": "Comment s'appelle la colline sacrée d'une cité grecque, où se trouvent les temples dédiés aux dieux ?",
+      "explication": "L'acropole est la partie haute et fortifiée de la cité, réservée aux temples et aux lieux de culte. Ne la confonds pas avec l'agora, qui est la place publique en bas de la ville.",
+      "notion": "organisation cité grecque",
+      "type": "qcm",
+      "options": [
+        "L'agora",
+        "L'acropole",
+        "Le forum",
+        "Le théâtre"
+      ],
+      "reponse": 1,
+      "id": 3
+    },
+    {
+      "question": "Comment s'appelle la place publique où les citoyens se réunissent pour discuter, commercer et voter ?",
+      "explication": "L'agora est le cœur de la vie politique et économique de la cité : les citoyens s'y rassemblent pour débattre et prendre des décisions. L'acropole, elle, est réservée à la religion.",
+      "notion": "organisation cité grecque",
+      "type": "qcm",
+      "options": [
+        "L'acropole",
+        "Le sanctuaire",
+        "Le stade",
+        "L'agora"
+      ],
+      "reponse": 3,
+      "id": 4
+    },
+    {
+      "question": "À Athènes, qui a le droit d'être citoyen ?",
+      "explication": "Attention à ne pas confondre habitant et citoyen : être citoyen est un statut réservé aux hommes libres nés de parents athéniens. Les femmes, les esclaves et les étrangers ne sont pas citoyens, même s'ils vivent dans la cité.",
+      "notion": "citoyenneté athénienne",
+      "type": "qcm",
+      "options": [
+        "Un homme libre, né de parents athéniens",
+        "Seulement les femmes de la cité",
+        "Les esclaves qui travaillent pour la cité",
+        "Toute personne qui habite à Athènes"
+      ],
+      "reponse": 0,
+      "id": 5
+    },
+    {
+      "question": "Qu'est-ce que la démocratie mise en place à Athènes ?",
+      "explication": "Démocratie vient du grec 'demos' (le peuple) et 'kratos' (le pouvoir) : ce sont les citoyens qui votent les lois et prennent les décisions, par exemple à l'assemblée. Athènes est la première cité à avoir inventé ce système.",
+      "notion": "démocratie athénienne",
+      "type": "qcm",
+      "options": [
+        "Un système où seuls les plus riches ont le droit de voter",
+        "Un système dirigé uniquement par les prêtres",
+        "Un système où un roi seul décide de tout pour la cité",
+        "Un système où les citoyens participent aux décisions politiques de la cité"
+      ],
+      "reponse": 3,
+      "id": 6
+    },
+    {
+      "question": "Que croient les Grecs à propos de leurs dieux ?",
+      "explication": "Les Grecs sont polythéistes : ils adorent de nombreux dieux comme Zeus, Athéna ou Poséidon, chacun ayant un rôle précis. Ils leur construisent des temples pour les honorer.",
+      "notion": "religion polythéiste grecque",
+      "type": "qcm",
+      "options": [
+        "Ils ne croient en aucun dieu",
+        "Ils sont monothéistes : ils croient en un seul dieu",
+        "Ils sont polythéistes : ils croient en plusieurs dieux",
+        "Ils pensent que leur roi est lui-même un dieu"
+      ],
+      "reponse": 2,
+      "id": 7
+    },
+    {
+      "question": "Un sac de farine pèse 3,5 kg. Combien cela représente-t-il en grammes ?",
+      "explication": "Tu multiplies par 1000 pour passer des kg aux g : 3,5 x 1000 = 3500 g. Attention à ne pas juste déplacer la virgule d'un seul rang.",
+      "notion": "conversion masse",
+      "type": "qcm",
+      "options": [
+        "3500 g",
+        "350 g",
+        "3,5 g",
+        "35 g"
+      ],
+      "reponse": 0,
+      "id": 8,
+      "etiquette": "Révision"
+    },
+    {
+      "question": "Une séance de cinéma commence à 14h45 et dure 1h30. À quelle heure se termine-t-elle ?",
+      "explication": "Tu ajoutes 1h30 à 14h45 : d'abord les heures (14h+1h=15h), puis les minutes (45min+30min=75min=1h15min), donc 15h+1h15=16h15. Il ne faut jamais écrire plus de 59 minutes.",
+      "notion": "calcul durée",
+      "type": "qcm",
+      "options": [
+        "16h30",
+        "16h15",
+        "15h15",
+        "15h75"
+      ],
+      "reponse": 1,
+      "id": 9,
+      "etiquette": "Révision"
+    },
+    {
+      "question": "Indique la classe grammaticale du mot en majuscules : « Donne-LEUR ce livre. »",
+      "explication": "Ici, « leur » remplace des personnes déjà citées (à eux) et reste invariable : c'est un pronom personnel. Attention à ne pas le confondre avec le déterminant possessif « leurs » qui, lui, accompagne un nom et prend un s au pluriel.",
+      "notion": "pronom personnel leur",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "pronom",
+        "pronom personnel",
+        "un pronom",
+        "un pronom personnel"
+      ],
+      "etiquette": "Rattrapage · Français",
+      "rattrapage": {
+        "date": "2026-09-07",
+        "id": 8
+      },
+      "id": 10
+    },
+    {
+      "question": "Complète : I ___ eleven years old.",
+      "explication": "Avec « I », on utilise toujours « am ». Attention, en anglais on dit « I am eleven » et non « I have eleven » comme en français.",
+      "notion": "be - conjugaison",
+      "type": "qcm",
+      "options": [
+        "am",
+        "have",
+        "are",
+        "is"
+      ],
+      "reponse": 0,
+      "etiquette": "Rattrapage · Anglais",
+      "rattrapage": {
+        "date": "2026-09-08",
+        "id": 1
+      },
+      "id": 11
+    },
+    {
+      "question": "Quelle cité grecque est connue pour avoir inventé la démocratie ?",
+      "explication": "C'est à Athènes, au Ve siècle avant J.-C., que les citoyens ont mis en place pour la première fois un système où le peuple participe directement aux décisions politiques.",
+      "notion": "cité de la démocratie",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "Athènes",
+        "athènes"
+      ],
+      "id": 12
+    }
+  ]
+}

@@ -510,5 +510,37 @@
       "conjonction de coordination",
       "pronom relatif"
     ]
+  },
+  {
+    "date": "2026-10-10",
+    "matiere": "histoire",
+    "niveau": "6eme",
+    "chapitre": "Le monde des cites grecques",
+    "notions": [
+      "définition cité grecque",
+      "espace méditerranéen",
+      "organisation cité grecque",
+      "organisation cité grecque",
+      "citoyenneté athénienne",
+      "démocratie athénienne",
+      "religion polythéiste grecque",
+      "cité de la démocratie"
+    ],
+    "rattrapages": [
+      {
+        "date": "2026-09-07",
+        "id": 8
+      },
+      {
+        "date": "2026-09-08",
+        "id": 1
+      }
+    ],
+    "notions_renfort": [
+      "conversion masse",
+      "calcul durée",
+      "pronom personnel leur",
+      "be - conjugaison"
+    ]
   }
 ]
