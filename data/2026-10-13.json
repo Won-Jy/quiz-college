@@ -1,0 +1,185 @@
+{
+  "date": "2026-10-13",
+  "matiere": "anglais",
+  "matiere_affichee": "Anglais",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Le pluriel des noms",
+  "vacances": null,
+  "genere_le": "2026-10-13T22:11:30+02:00",
+  "questions": [
+    {
+      "question": "Quel est le pluriel de 'book' ?",
+      "explication": "Pour la plupart des noms, on ajoute simplement -s au singulier. C'est la règle générale du pluriel en anglais.",
+      "notion": "pluriel régulier -s",
+      "type": "qcm",
+      "options": [
+        "bookes",
+        "bookves",
+        "books",
+        "bookies"
+      ],
+      "reponse": 2,
+      "id": 1
+    },
+    {
+      "question": "Quel est le pluriel de 'box' ?",
+      "explication": "Quand un nom se termine par -x, -s, -sh ou -ch, on ajoute -es pour pouvoir le prononcer facilement. Pense à 'bus' qui devient 'buses'.",
+      "notion": "pluriel en -es",
+      "type": "qcm",
+      "options": [
+        "boxs",
+        "boxes",
+        "boxies",
+        "box"
+      ],
+      "reponse": 1,
+      "id": 2
+    },
+    {
+      "question": "Quel est le pluriel de 'baby' ?",
+      "explication": "Quand un nom se termine par une consonne + y, le y devient ie avant d'ajouter -s. C'est le cas de 'baby' qui devient 'babies'.",
+      "notion": "pluriel consonne+y",
+      "type": "qcm",
+      "options": [
+        "babies",
+        "babyes",
+        "baby",
+        "babys"
+      ],
+      "reponse": 0,
+      "id": 3
+    },
+    {
+      "question": "Quel est le pluriel de 'toy' ?",
+      "explication": "Attention, ici le y est précédé d'une voyelle (o), donc on ajoute simplement -s sans transformer le y. La règle du y en ie ne s'applique que si le y suit une consonne.",
+      "notion": "pluriel voyelle+y",
+      "type": "qcm",
+      "options": [
+        "toy",
+        "toys",
+        "toyes",
+        "toies"
+      ],
+      "reponse": 1,
+      "id": 4
+    },
+    {
+      "question": "Quel est le pluriel de 'child' ?",
+      "explication": "'Child' fait partie des noms irréguliers qu'il faut apprendre par cœur, son pluriel est 'children' et non 'childs'.",
+      "notion": "pluriel irrégulier",
+      "type": "qcm",
+      "options": [
+        "children",
+        "childs",
+        "childes",
+        "childies"
+      ],
+      "reponse": 0,
+      "id": 5
+    },
+    {
+      "question": "Quel est le pluriel de 'man' ?",
+      "explication": "'Man' est un autre nom irrégulier très courant : son pluriel est 'men', sans ajouter de -s à la fin.",
+      "notion": "pluriel irrégulier",
+      "type": "qcm",
+      "options": [
+        "manes",
+        "men's",
+        "men",
+        "mans"
+      ],
+      "reponse": 2,
+      "id": 6
+    },
+    {
+      "question": "Quelle phrase est correctement écrite ?",
+      "explication": "'Watch' se termine par -ch, donc on ajoute -es pour former le pluriel : 'watches'. Il ne faut pas oublier la règle même dans une phrase complète.",
+      "notion": "pluriel en -es",
+      "type": "qcm",
+      "options": [
+        "I have two watchies.",
+        "I have two watch.",
+        "I have two watches.",
+        "I have two watchs."
+      ],
+      "reponse": 2,
+      "id": 7
+    },
+    {
+      "question": "Combien font 3,5 m en cm ?",
+      "explication": "Tu dois multiplier par 100 pour passer des mètres aux centimètres : 3,5 × 100 = 350. Attention à ne pas confondre avec la conversion en mm (×1000).",
+      "notion": "conversion longueur",
+      "type": "qcm",
+      "options": [
+        "0,35 cm",
+        "35 cm",
+        "350 cm",
+        "3500 cm"
+      ],
+      "reponse": 2,
+      "id": 8,
+      "etiquette": "Révision"
+    },
+    {
+      "question": "Un cube a un côté de 3 cm. Quel est son volume ?",
+      "explication": "Le volume d'un cube se calcule en multipliant côté × côté × côté, soit 3 × 3 × 3 = 27. N'oublie pas l'unité cm³ car on mesure un volume, pas une aire.",
+      "notion": "volume cube",
+      "type": "qcm",
+      "options": [
+        "27 cm³",
+        "27 cm²",
+        "18 cm³",
+        "9 cm³"
+      ],
+      "reponse": 0,
+      "id": 9,
+      "etiquette": "Révision"
+    },
+    {
+      "question": "Écris le nombre décimal qui se trouve exactement entre 5,3 et 5,4. Réponds sans unité.",
+      "explication": "Pour trouver le nombre entre deux décimaux, on peut ajouter un zéro à chacun (5,30 et 5,40) puis prendre la moyenne des centièmes, ce qui donne 5,35.",
+      "notion": "encadrement de décimaux",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "5,35",
+        "5.35"
+      ],
+      "etiquette": "Rattrapage · Mathématiques",
+      "rattrapage": {
+        "date": "2026-09-06",
+        "id": 8
+      },
+      "id": 10
+    },
+    {
+      "question": "Dans la phrase « Marie et Paul jouent ensemble », quelle est la classe grammaticale du mot « et » ?",
+      "explication": "« Et » relie deux noms de même fonction : c'est une conjonction de coordination, comme « mais, ou, donc, or, ni, car ». Une préposition introduit plutôt un complément (à, de, pour, avec...).",
+      "notion": "conjonction de coordination",
+      "type": "qcm",
+      "options": [
+        "Un adverbe",
+        "Une conjonction de coordination",
+        "Une préposition",
+        "Un pronom"
+      ],
+      "reponse": 1,
+      "etiquette": "Rattrapage · Français",
+      "rattrapage": {
+        "date": "2026-09-07",
+        "id": 5
+      },
+      "id": 11
+    },
+    {
+      "question": "Écris le pluriel du mot 'foot'.",
+      "explication": "'Foot' est un nom irrégulier dont le pluriel change complètement de forme : 'feet'. Il faut le mémoriser car il ne suit aucune règle classique.",
+      "notion": "pluriel irrégulier",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "feet"
+      ],
+      "id": 12
+    }
+  ]
+}

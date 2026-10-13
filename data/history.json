@@ -542,5 +542,37 @@
       "pronom personnel leur",
       "be - conjugaison"
     ]
+  },
+  {
+    "date": "2026-10-13",
+    "matiere": "anglais",
+    "niveau": "6eme",
+    "chapitre": "Le pluriel des noms",
+    "notions": [
+      "pluriel régulier -s",
+      "pluriel en -es",
+      "pluriel consonne+y",
+      "pluriel voyelle+y",
+      "pluriel irrégulier",
+      "pluriel irrégulier",
+      "pluriel en -es",
+      "pluriel irrégulier"
+    ],
+    "rattrapages": [
+      {
+        "date": "2026-09-06",
+        "id": 8
+      },
+      {
+        "date": "2026-09-07",
+        "id": 5
+      }
+    ],
+    "notions_renfort": [
+      "conversion longueur",
+      "volume cube",
+      "encadrement de décimaux",
+      "conjonction de coordination"
+    ]
   }
 ]
