@@ -1,0 +1,187 @@
+{
+  "date": "2026-10-14",
+  "matiere": "maths",
+  "matiere_affichee": "Mathématiques",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "La proportionnalite et les tableaux",
+  "vacances": null,
+  "genere_le": "2026-10-14T20:30:37+02:00",
+  "questions": [
+    {
+      "question": "Dans un tableau de proportionnalite, comment passe-t-on des nombres de la premiere ligne a ceux de la deuxieme ligne ?",
+      "explication": "Dans un tableau de proportionnalite, il existe un seul nombre, le coefficient, par lequel on multiplie chaque nombre de la premiere ligne pour obtenir celui de la deuxieme ligne.",
+      "notion": "definition proportionnalite",
+      "type": "qcm",
+      "options": [
+        "On multiplie tous les nombres par le meme nombre",
+        "On divise tous les nombres par des nombres differents",
+        "On ajoute le meme nombre a chaque colonne",
+        "On multiplie seulement certains nombres"
+      ],
+      "reponse": 0,
+      "id": 1
+    },
+    {
+      "question": "Dans un tableau de proportionnalite : 3 kg coutent 9 euros. Combien coutent 5 kg ?",
+      "explication": "Le coefficient est 9 divise par 3, soit 3. Il faut donc multiplier 5 par 3 pour trouver 15 euros.",
+      "notion": "coefficient de proportionnalite",
+      "type": "qcm",
+      "options": [
+        "24 euros",
+        "8 euros",
+        "15 euros",
+        "12 euros"
+      ],
+      "reponse": 2,
+      "id": 2
+    },
+    {
+      "question": "On donne le tableau : Nombre de livres : 2 ; 4 ; 5 - Prix en euros : 6 ; 12 ; 14. Ce tableau est-il un tableau de proportionnalite ?",
+      "explication": "Pour verifier la proportionnalite, il faut que le meme coefficient fonctionne partout : ici 2x3=6 et 4x3=12 marchent, mais 5x3=15 et non 14, donc ce n'est pas un tableau de proportionnalite.",
+      "notion": "verifier proportionnalite",
+      "type": "qcm",
+      "options": [
+        "Oui, car tous les nombres sont multiplies par 3",
+        "Non, car 5 multiplie par 3 donne 15 et non 14",
+        "Oui, car on peut toujours multiplier par un nombre quelconque",
+        "Non, car les nombres ne sont pas tous entiers"
+      ],
+      "reponse": 1,
+      "id": 3
+    },
+    {
+      "question": "Dans un tableau de proportionnalite, 4 objets coutent 10 euros. Quel est le coefficient de proportionnalite (prix d'un objet) ?",
+      "explication": "Le coefficient s'obtient en divisant le prix par le nombre d'objets : 10 divise par 4 egale 2,5 euros par objet.",
+      "notion": "calcul du coefficient",
+      "type": "qcm",
+      "options": [
+        "0,4",
+        "2,5",
+        "6",
+        "40"
+      ],
+      "reponse": 1,
+      "id": 4
+    },
+    {
+      "question": "Pour 5 bonbons, on paie 2 euros. Combien paie-t-on pour 15 bonbons, sachant que le prix est proportionnel au nombre de bonbons ?",
+      "explication": "15 bonbons represente 3 fois 5 bonbons, donc le prix est aussi multiplie par 3 : 2x3=6 euros.",
+      "notion": "produit en croix",
+      "type": "qcm",
+      "options": [
+        "10 euros",
+        "4 euros",
+        "6 euros",
+        "3 euros"
+      ],
+      "reponse": 2,
+      "id": 5
+    },
+    {
+      "question": "Une recette pour 4 personnes necessite 200 g de farine. Combien faut-il de farine pour 6 personnes ?",
+      "explication": "Le coefficient est 200 divise par 4, soit 50 g par personne. Pour 6 personnes, il faut donc 6x50=300 g.",
+      "notion": "probleme proportionnalite",
+      "type": "qcm",
+      "options": [
+        "400 g",
+        "350 g",
+        "250 g",
+        "300 g"
+      ],
+      "reponse": 3,
+      "id": 6
+    },
+    {
+      "question": "Dans un tableau de proportionnalite : 3 kg coutent 9 euros et 5 kg coutent 15 euros. En additionnant ces deux colonnes, combien coutent 8 kg ?",
+      "explication": "Dans un tableau de proportionnalite, on peut additionner deux colonnes pour en obtenir une troisieme : 3+5=8 kg et 9+15=24 euros.",
+      "notion": "addition de colonnes",
+      "type": "qcm",
+      "options": [
+        "21 euros",
+        "27 euros",
+        "18 euros",
+        "24 euros"
+      ],
+      "reponse": 3,
+      "id": 7
+    },
+    {
+      "question": "Un rectangle mesure 5 cm de long et 3 cm de large. Quel est son périmètre ?",
+      "explication": "Le périmètre, c'est le tour de la figure : tu additionnes les 4 côtés, soit 2 fois (5+3) = 16 cm. Attention, 15 cm² c'est l'aire (5x3), pas le périmètre !",
+      "notion": "périmètre rectangle",
+      "type": "qcm",
+      "options": [
+        "15 cm",
+        "8 cm",
+        "15 cm²",
+        "16 cm"
+      ],
+      "reponse": 3,
+      "id": 8,
+      "etiquette": "Révision"
+    },
+    {
+      "question": "Un film commence à 14h50 et dure 1h45min. À quelle heure se termine-t-il ?",
+      "explication": "Tu additionnes d'abord les minutes : 50 + 45 = 95 min, soit 1h35min. Il faut donc ajouter 1h + 1h35min à 14h, ce qui donne 16h35. Tu ne peux jamais laisser 95 minutes dans le résultat final !",
+      "notion": "calcul durée",
+      "type": "qcm",
+      "options": [
+        "16h35",
+        "15h95",
+        "15h35",
+        "16h25"
+      ],
+      "reponse": 0,
+      "id": 9,
+      "etiquette": "Révision"
+    },
+    {
+      "question": "Dans la phrase « Le livre que je lis est passionnant », quelle est la classe grammaticale du mot « que » ?",
+      "explication": "« Que » remplace « le livre » (c'est le COD de « lis ») et introduit une proposition relative : c'est un pronom relatif. La conjonction de subordination « que », elle, n'a pas de fonction et ne remplace rien (exemple : je crois que tu viens).",
+      "notion": "pronom relatif",
+      "type": "qcm",
+      "options": [
+        "Un adverbe",
+        "Un pronom relatif",
+        "Une conjonction de subordination",
+        "Un déterminant"
+      ],
+      "reponse": 1,
+      "etiquette": "Rattrapage · Français",
+      "rattrapage": {
+        "date": "2026-09-07",
+        "id": 7
+      },
+      "id": 10
+    },
+    {
+      "question": "Indique la classe grammaticale du mot en majuscules : « Donne-LEUR ce livre. »",
+      "explication": "Ici, « leur » remplace des personnes déjà citées (à eux) et reste invariable : c'est un pronom personnel. Attention à ne pas le confondre avec le déterminant possessif « leurs » qui, lui, accompagne un nom et prend un s au pluriel.",
+      "notion": "pronom personnel leur",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "pronom",
+        "pronom personnel",
+        "un pronom",
+        "un pronom personnel"
+      ],
+      "etiquette": "Rattrapage · Français",
+      "rattrapage": {
+        "date": "2026-09-07",
+        "id": 8
+      },
+      "id": 11
+    },
+    {
+      "question": "Un fruit coute le meme prix par kilogramme. Pour 4 kg, on paie 18 euros. Combien paie-t-on pour 10 kg ? Donne ta reponse en euros, uniquement le nombre.",
+      "explication": "Le coefficient est 18 divise par 4, soit 4,5 euros par kilo. Pour 10 kg, il faut donc calculer 10x4,5=45 euros.",
+      "notion": "calcul valeur manquante",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "45"
+      ],
+      "id": 12
+    }
+  ]
+}
