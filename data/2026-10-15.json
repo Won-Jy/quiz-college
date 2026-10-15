@@ -1,0 +1,190 @@
+{
+  "date": "2026-10-15",
+  "matiere": "francais",
+  "matiere_affichee": "Français",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Synonymes, antonymes et familles de mots",
+  "vacances": null,
+  "genere_le": "2026-10-15T20:12:25+02:00",
+  "questions": [
+    {
+      "question": "Quel mot est un synonyme de « content » ?",
+      "explication": "Un synonyme est un mot qui a un sens proche. « Joyeux » veut dire la même chose que « content ».",
+      "notion": "synonymes",
+      "type": "qcm",
+      "options": [
+        "fatigué",
+        "joyeux",
+        "triste",
+        "grand"
+      ],
+      "reponse": 1,
+      "id": 1
+    },
+    {
+      "question": "Quel mot est un antonyme de « grand » ?",
+      "explication": "Un antonyme est un mot de sens contraire. « Petit » est l'opposé de « grand », les autres mots veulent dire la même chose.",
+      "notion": "antonymes",
+      "type": "qcm",
+      "options": [
+        "haut",
+        "immense",
+        "large",
+        "petit"
+      ],
+      "reponse": 3,
+      "id": 2
+    },
+    {
+      "question": "Quel mot appartient à la même famille que « terre » ?",
+      "explication": "Les mots d'une même famille partagent le même radical. « Terrain » contient le radical « terr- » comme « terre ».",
+      "notion": "famille de mots",
+      "type": "qcm",
+      "options": [
+        "terrain",
+        "mer",
+        "ciel",
+        "table"
+      ],
+      "reponse": 0,
+      "id": 3
+    },
+    {
+      "question": "Dans la phrase « Le guépard est rapide », quel mot peut remplacer « rapide » sans changer le sens ?",
+      "explication": "« Véloce » signifie aussi « rapide », c'est donc un synonyme. Les autres mots ont un sens contraire.",
+      "notion": "synonymes",
+      "type": "qcm",
+      "options": [
+        "véloce",
+        "lent",
+        "lourd",
+        "immobile"
+      ],
+      "reponse": 0,
+      "id": 4
+    },
+    {
+      "question": "Quel mot est formé avec un préfixe pour exprimer le contraire de « patient » ?",
+      "explication": "Le préfixe « im- » devant « patient » forme son contraire, un adjectif. Les autres mots ne sont pas des adjectifs ou ne sont pas construits avec ce préfixe.",
+      "notion": "antonymes préfixe",
+      "type": "qcm",
+      "options": [
+        "patiemment",
+        "impatience",
+        "impatient",
+        "patience"
+      ],
+      "reponse": 2,
+      "id": 5
+    },
+    {
+      "question": "Quel mot n'appartient PAS à la famille de « chant » ?",
+      "explication": "Attention aux pièges : « champ » se prononce comme « chant » mais vient d'un radical différent, lié à l'agriculture, pas au fait de chanter.",
+      "notion": "famille de mots",
+      "type": "qcm",
+      "options": [
+        "champ",
+        "chanson",
+        "chanteur",
+        "chanter"
+      ],
+      "reponse": 0,
+      "id": 6
+    },
+    {
+      "question": "Quel est le synonyme le plus précis de « regarder » dans la phrase « Il regarde attentivement le tableau » ?",
+      "explication": "« Observer » insiste sur l'attention portée, comme dans la phrase. « Apercevoir » et « jeter un coup d'œil » évoquent au contraire un regard rapide, et « voir » est trop général.",
+      "notion": "nuances synonymes",
+      "type": "qcm",
+      "options": [
+        "jeter un coup d'œil",
+        "apercevoir",
+        "observer",
+        "voir"
+      ],
+      "reponse": 2,
+      "id": 7
+    },
+    {
+      "question": "Combien y a-t-il de grammes dans 3,5 kg ?",
+      "explication": "Tu dois multiplier par 1000 pour passer des kg aux g : 3,5 x 1000 = 3500 g. Attention à ne pas confondre avec x100.",
+      "notion": "conversion masse",
+      "type": "qcm",
+      "options": [
+        "35 g",
+        "3500 g",
+        "350 g",
+        "3,5 g"
+      ],
+      "reponse": 1,
+      "id": 8,
+      "etiquette": "Révision"
+    },
+    {
+      "question": "Un jardin rectangulaire mesure 8 m de longueur et 5 m de largeur. Quelle est son aire ?",
+      "explication": "L'aire d'un rectangle se calcule en multipliant longueur par largeur : 8 x 5 = 40 m2. Attention, 13 ou 26 correspondraient au périmètre, pas à l'aire, et il ne faut jamais oublier l'unité au carré.",
+      "notion": "aire rectangle",
+      "type": "qcm",
+      "options": [
+        "13 m2",
+        "26 m2",
+        "40 m",
+        "40 m2"
+      ],
+      "reponse": 3,
+      "id": 9,
+      "etiquette": "Révision"
+    },
+    {
+      "question": "Complète : They ___ happy today.",
+      "explication": "« They » est un sujet pluriel, donc on utilise « are » avec le verbe « be ». Pense à bien accorder le verbe au sujet.",
+      "notion": "be - conjugaison",
+      "type": "qcm",
+      "options": [
+        "have",
+        "is",
+        "are",
+        "am"
+      ],
+      "reponse": 2,
+      "etiquette": "Rattrapage · Anglais",
+      "rattrapage": {
+        "date": "2026-09-08",
+        "id": 3
+      },
+      "id": 10
+    },
+    {
+      "question": "Complète (forme négative) : He ___ got a brother.",
+      "explication": "À la forme négative avec « he/she/it », on utilise « hasn't got ». Ne confonds pas avec « haven't », qui s'utilise avec I/you/we/they.",
+      "notion": "have got - négation",
+      "type": "qcm",
+      "options": [
+        "doesn't have",
+        "hasn't",
+        "haven't",
+        "don't have"
+      ],
+      "reponse": 1,
+      "etiquette": "Rattrapage · Anglais",
+      "rattrapage": {
+        "date": "2026-09-08",
+        "id": 4
+      },
+      "id": 11
+    },
+    {
+      "question": "Donne un mot de la même famille que « dent » qui désigne la personne qui soigne les dents.",
+      "explication": "On retrouve le radical « dent- » dans « dentiste », comme dans « dentaire » ou « dentier ».",
+      "notion": "famille de mots",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "dentiste",
+        "le dentiste",
+        "un dentiste"
+      ],
+      "id": 12
+    }
+  ]
+}

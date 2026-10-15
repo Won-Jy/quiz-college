@@ -606,5 +606,37 @@
       "pronom relatif",
       "pronom personnel leur"
     ]
+  },
+  {
+    "date": "2026-10-15",
+    "matiere": "francais",
+    "niveau": "6eme",
+    "chapitre": "Synonymes, antonymes et familles de mots",
+    "notions": [
+      "synonymes",
+      "antonymes",
+      "famille de mots",
+      "synonymes",
+      "antonymes préfixe",
+      "famille de mots",
+      "nuances synonymes",
+      "famille de mots"
+    ],
+    "rattrapages": [
+      {
+        "date": "2026-09-08",
+        "id": 3
+      },
+      {
+        "date": "2026-09-08",
+        "id": 4
+      }
+    ],
+    "notions_renfort": [
+      "conversion masse",
+      "aire rectangle",
+      "be - conjugaison",
+      "have got - négation"
+    ]
   }
 ]
