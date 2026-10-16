@@ -1,0 +1,185 @@
+{
+  "date": "2026-10-16",
+  "matiere": "anglais",
+  "matiere_affichee": "Anglais",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Les adjectifs et l'ordre des mots",
+  "vacances": null,
+  "genere_le": "2026-10-16T19:57:51+02:00",
+  "questions": [
+    {
+      "question": "Comment dit-on 'une grande maison' en anglais ?",
+      "explication": "En anglais, l'adjectif se place toujours avant le nom, contrairement au français. On dit donc 'a big house' et non 'a house big'.",
+      "notion": "place de l'adjectif",
+      "type": "qcm",
+      "options": [
+        "a bigs house",
+        "a house big",
+        "big a house",
+        "a big house"
+      ],
+      "reponse": 3,
+      "id": 1
+    },
+    {
+      "question": "Quelle phrase est correcte ?",
+      "explication": "En anglais, l'adjectif est invariable : il ne prend jamais de -s même devant un nom pluriel. On écrit donc 'red cars' et non 'reds cars'.",
+      "notion": "invariabilité de l'adjectif",
+      "type": "qcm",
+      "options": [
+        "I have red two cars",
+        "I have two cars red",
+        "I have two red cars",
+        "I have two reds cars"
+      ],
+      "reponse": 2,
+      "id": 2
+    },
+    {
+      "question": "Choisis la phrase correctement construite.",
+      "explication": "L'ordre correct en anglais est sujet + verbe + déterminant + adjectif + nom : 'She has a black cat'.",
+      "notion": "ordre des mots",
+      "type": "qcm",
+      "options": [
+        "She has a cat black",
+        "She has a black cat",
+        "She a black cat has",
+        "She has black a cat"
+      ],
+      "reponse": 1,
+      "id": 3
+    },
+    {
+      "question": "Choisis la traduction correcte de 'Mon frère est petit.'",
+      "explication": "Après le verbe 'to be', l'adjectif se place juste après, comme en français : 'My brother is small'.",
+      "notion": "adjectif après be",
+      "type": "qcm",
+      "options": [
+        "Is my brother small",
+        "My brother is small",
+        "My small brother is",
+        "My brother small is"
+      ],
+      "reponse": 1,
+      "id": 4
+    },
+    {
+      "question": "Choisis la phrase correcte pour 'Il regarde un film intéressant.'",
+      "explication": "L'adjectif 'interesting' se place avant le nom 'film', et on utilise 'an' car 'interesting' commence par une voyelle.",
+      "notion": "place de l'adjectif",
+      "type": "qcm",
+      "options": [
+        "He watches interesting a film",
+        "He watches an interesting film",
+        "He watches a film interesting",
+        "He an interesting film watches"
+      ],
+      "reponse": 1,
+      "id": 5
+    },
+    {
+      "question": "Choisis la phrase correcte pour 'Mon vieux chien dort.'",
+      "explication": "L'ordre est adjectif possessif + adjectif qualificatif + nom + verbe : 'My old dog sleeps'.",
+      "notion": "ordre adjectifs multiples",
+      "type": "qcm",
+      "options": [
+        "My dog old sleeps",
+        "Old my dog sleeps",
+        "My dog sleeps old",
+        "My old dog sleeps"
+      ],
+      "reponse": 3,
+      "id": 6
+    },
+    {
+      "question": "Quelle phrase contient une erreur d'ordre des mots ?",
+      "explication": "Quand plusieurs adjectifs précèdent un nom, l'âge ou l'état se place avant la couleur : on dit 'a new red car', pas 'a red new car'.",
+      "notion": "ordre adjectifs multiples",
+      "type": "qcm",
+      "options": [
+        "He is a tall man",
+        "We have a nice house",
+        "She has two black cats",
+        "I have a red new car"
+      ],
+      "reponse": 3,
+      "id": 7
+    },
+    {
+      "question": "Un crayon mesure 2,75 m... non, en fait il mesure 2,75 cm en largeur réelle d'un segment de dessin. Combien cela représente-t-il en millimètres ?",
+      "explication": "Pour passer des cm aux mm, tu multiplies par 10 : 2,75 cm x 10 = 27,5 mm. Pense à bien déplacer la virgule d'un rang.",
+      "notion": "conversion longueur",
+      "type": "qcm",
+      "options": [
+        "0,275 mm",
+        "27,5 mm",
+        "2,75 mm",
+        "275 mm"
+      ],
+      "reponse": 1,
+      "id": 8,
+      "etiquette": "Révision"
+    },
+    {
+      "question": "Un terrain rectangulaire a une aire de 4 m². Combien de cm² cela représente-t-il ?",
+      "explication": "Attention, pour une aire 1 m² = 10000 cm² (et pas 100 comme pour les longueurs). Donc 4 m² x 10000 = 40000 cm².",
+      "notion": "conversion aire",
+      "type": "qcm",
+      "options": [
+        "400 cm²",
+        "40000 cm²",
+        "400000 cm²",
+        "4000 cm²"
+      ],
+      "reponse": 1,
+      "id": 9,
+      "etiquette": "Révision"
+    },
+    {
+      "question": "Écris le nombre décimal qui se trouve exactement entre 5,3 et 5,4. Réponds sans unité.",
+      "explication": "Pour trouver le nombre entre deux décimaux, on peut ajouter un zéro à chacun (5,30 et 5,40) puis prendre la moyenne des centièmes, ce qui donne 5,35.",
+      "notion": "encadrement de décimaux",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "5,35",
+        "5.35"
+      ],
+      "etiquette": "Rattrapage · Mathématiques",
+      "rattrapage": {
+        "date": "2026-09-06",
+        "id": 8
+      },
+      "id": 10
+    },
+    {
+      "question": "Dans la phrase « Marie et Paul jouent ensemble », quelle est la classe grammaticale du mot « et » ?",
+      "explication": "« Et » relie deux noms de même fonction : c'est une conjonction de coordination, comme « mais, ou, donc, or, ni, car ». Une préposition introduit plutôt un complément (à, de, pour, avec...).",
+      "notion": "conjonction de coordination",
+      "type": "qcm",
+      "options": [
+        "Une conjonction de coordination",
+        "Une préposition",
+        "Un adverbe",
+        "Un pronom"
+      ],
+      "reponse": 0,
+      "etiquette": "Rattrapage · Français",
+      "rattrapage": {
+        "date": "2026-09-07",
+        "id": 5
+      },
+      "id": 11
+    },
+    {
+      "question": "Remets dans l'ordre : 'a dog black big'. Quel adjectif doit être placé juste avant le nom 'dog' dans la phrase correcte ?",
+      "explication": "L'ordre correct des adjectifs place la taille avant la couleur : 'a big black dog'. L'adjectif juste avant le nom est donc 'black'.",
+      "notion": "ordre adjectifs multiples",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "black"
+      ],
+      "id": 12
+    }
+  ]
+}

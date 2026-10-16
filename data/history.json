@@ -638,5 +638,37 @@
       "be - conjugaison",
       "have got - négation"
     ]
+  },
+  {
+    "date": "2026-10-16",
+    "matiere": "anglais",
+    "niveau": "6eme",
+    "chapitre": "Les adjectifs et l'ordre des mots",
+    "notions": [
+      "place de l'adjectif",
+      "invariabilité de l'adjectif",
+      "ordre des mots",
+      "adjectif après be",
+      "place de l'adjectif",
+      "ordre adjectifs multiples",
+      "ordre adjectifs multiples",
+      "ordre adjectifs multiples"
+    ],
+    "rattrapages": [
+      {
+        "date": "2026-09-06",
+        "id": 8
+      },
+      {
+        "date": "2026-09-07",
+        "id": 5
+      }
+    ],
+    "notions_renfort": [
+      "conversion longueur",
+      "conversion aire",
+      "encadrement de décimaux",
+      "conjonction de coordination"
+    ]
   }
 ]
