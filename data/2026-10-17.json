@@ -1,0 +1,188 @@
+{
+  "date": "2026-10-17",
+  "matiere": "histoire",
+  "matiere_affichee": "Histoire-Géographie",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Athenes et la democratie",
+  "vacances": "Toussaint",
+  "genere_le": "2026-10-17T19:00:28+02:00",
+  "questions": [
+    {
+      "question": "Que signifie le mot « démocratie » ?",
+      "explication": "Démocratie vient des mots grecs demos (le peuple) et kratos (le pouvoir). C'est donc un régime où les citoyens participent aux décisions.",
+      "notion": "sens démocratie",
+      "type": "qcm",
+      "options": [
+        "Le pouvoir du peuple",
+        "Le pouvoir d'un seul homme",
+        "Le pouvoir des dieux",
+        "Le pouvoir de l'armée"
+      ],
+      "reponse": 0,
+      "id": 1
+    },
+    {
+      "question": "À quel siècle Athènes connaît-elle son apogée démocratique, sous l'influence de Périclès ?",
+      "explication": "C'est au Ve siècle avant J-C que la démocratie athénienne atteint son plus haut développement, notamment grâce à Périclès.",
+      "notion": "siècle démocratie athénienne",
+      "type": "qcm",
+      "options": [
+        "Le Ier siècle avant J-C",
+        "Le IIIe siècle après J-C",
+        "Le Ve siècle avant J-C",
+        "Le Xe siècle avant J-C"
+      ],
+      "reponse": 2,
+      "id": 2
+    },
+    {
+      "question": "Où les citoyens athéniens se réunissent-ils pour voter les lois ?",
+      "explication": "La Pnyx est la colline où se réunit l'Ecclésia pour voter les lois. L'Agora est la place du marché, l'Acropole la colline sacrée avec les temples.",
+      "notion": "lieu de vote",
+      "type": "qcm",
+      "options": [
+        "Sur la colline de la Pnyx",
+        "Sur l'Agora",
+        "Dans le Parthénon",
+        "Sur l'Acropole"
+      ],
+      "reponse": 0,
+      "id": 3
+    },
+    {
+      "question": "Parmi ces habitants d'Athènes, lequel est considéré comme citoyen ?",
+      "explication": "À Athènes, seuls les hommes libres nés de père et de mère athéniens sont citoyens. Les femmes, les esclaves et les métèques en sont exclus.",
+      "notion": "critères de citoyenneté",
+      "type": "qcm",
+      "options": [
+        "Une femme née à Athènes",
+        "Un esclave né à Athènes",
+        "Un étranger (métèque) installé à Athènes",
+        "Un homme libre né de parents athéniens"
+      ],
+      "reponse": 3,
+      "id": 4
+    },
+    {
+      "question": "Qu'est-ce que l'Ecclésia ?",
+      "explication": "L'Ecclésia est l'assemblée où tous les citoyens peuvent venir voter les lois et prendre les grandes décisions de la cité.",
+      "notion": "institution Ecclésia",
+      "type": "qcm",
+      "options": [
+        "L'assemblée des citoyens qui vote les lois",
+        "Le marché public d'Athènes",
+        "L'armée athénienne",
+        "Le temple dédié à Athéna"
+      ],
+      "reponse": 0,
+      "id": 5
+    },
+    {
+      "question": "Qu'est-ce que l'ostracisme ?",
+      "explication": "L'ostracisme permettait aux citoyens de voter l'exil d'un homme politique considéré comme une menace pour la démocratie, en écrivant son nom sur un tesson de poterie.",
+      "notion": "ostracisme",
+      "type": "qcm",
+      "options": [
+        "Une procédure pour bannir un citoyen jugé dangereux pour la démocratie",
+        "Un impôt payé par les étrangers",
+        "Une fête religieuse en l'honneur d'Athéna",
+        "Un tribunal qui juge les esclaves"
+      ],
+      "reponse": 0,
+      "id": 6
+    },
+    {
+      "question": "Pourquoi peut-on dire que la démocratie athénienne n'est pas une démocratie totale ?",
+      "explication": "Seuls les hommes libres de parents athéniens sont citoyens : cela représente une petite partie de la population d'Athènes, le reste étant exclu du pouvoir.",
+      "notion": "limites de la démocratie",
+      "type": "qcm",
+      "options": [
+        "Car la majorité de la population (femmes, esclaves, étrangers) est exclue de la citoyenneté",
+        "Car les citoyens n'ont pas le droit de parler à l'assemblée",
+        "Car Athènes est gouvernée par un roi",
+        "Car les citoyens ne votent jamais les lois"
+      ],
+      "reponse": 0,
+      "id": 7
+    },
+    {
+      "question": "Un rectangle mesure 8 cm de longueur et 5 cm de largeur. Quel est son périmètre ?",
+      "explication": "Le périmètre d'un rectangle se calcule avec (L + l) x 2, donc tu fais (8 + 5) x 2 = 26 cm. Attention à ne pas confondre avec l'aire, qui donnerait 8 x 5 = 40 cm².",
+      "notion": "périmètre rectangle",
+      "type": "qcm",
+      "options": [
+        "26 cm",
+        "26 cm²",
+        "40 cm",
+        "13 cm"
+      ],
+      "reponse": 0,
+      "id": 8,
+      "etiquette": "Révision"
+    },
+    {
+      "question": "Un film commence à 20h50 et dure 1h40min. À quelle heure se termine-t-il ?",
+      "explication": "Tu additionnes d'abord les minutes : 50 + 40 = 90 min, soit 1h30min. Tu ajoutes ensuite cette heure en plus aux heures de départ : 20h + 1h (du film) + 1h30min = 22h30.",
+      "notion": "addition de durées",
+      "type": "qcm",
+      "options": [
+        "21h30",
+        "22h90",
+        "22h30",
+        "21h90"
+      ],
+      "reponse": 2,
+      "id": 9,
+      "etiquette": "Révision"
+    },
+    {
+      "question": "Dans la phrase « Le livre que je lis est passionnant », quelle est la classe grammaticale du mot « que » ?",
+      "explication": "« Que » remplace « le livre » (c'est le COD de « lis ») et introduit une proposition relative : c'est un pronom relatif. La conjonction de subordination « que », elle, n'a pas de fonction et ne remplace rien (exemple : je crois que tu viens).",
+      "notion": "pronom relatif",
+      "type": "qcm",
+      "options": [
+        "Une conjonction de subordination",
+        "Un pronom relatif",
+        "Un adverbe",
+        "Un déterminant"
+      ],
+      "reponse": 1,
+      "etiquette": "Rattrapage · Français",
+      "rattrapage": {
+        "date": "2026-09-07",
+        "id": 7
+      },
+      "id": 10
+    },
+    {
+      "question": "Indique la classe grammaticale du mot en majuscules : « Donne-LEUR ce livre. »",
+      "explication": "Ici, « leur » remplace des personnes déjà citées (à eux) et reste invariable : c'est un pronom personnel. Attention à ne pas le confondre avec le déterminant possessif « leurs » qui, lui, accompagne un nom et prend un s au pluriel.",
+      "notion": "pronom personnel leur",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "pronom",
+        "pronom personnel",
+        "un pronom",
+        "un pronom personnel"
+      ],
+      "etiquette": "Rattrapage · Français",
+      "rattrapage": {
+        "date": "2026-09-07",
+        "id": 8
+      },
+      "id": 11
+    },
+    {
+      "question": "Quel est le nom de l'homme politique qui a dirigé Athènes et renforcé la démocratie au Ve siècle avant J-C ?",
+      "explication": "Périclès est le stratège qui a dirigé Athènes pendant son âge d'or et a développé les institutions démocratiques.",
+      "notion": "nom Périclès",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "Périclès",
+        "périclès"
+      ],
+      "id": 12
+    }
+  ]
+}

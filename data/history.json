@@ -670,5 +670,37 @@
       "encadrement de décimaux",
       "conjonction de coordination"
     ]
+  },
+  {
+    "date": "2026-10-17",
+    "matiere": "histoire",
+    "niveau": "6eme",
+    "chapitre": "Athenes et la democratie",
+    "notions": [
+      "sens démocratie",
+      "siècle démocratie athénienne",
+      "lieu de vote",
+      "critères de citoyenneté",
+      "institution Ecclésia",
+      "ostracisme",
+      "limites de la démocratie",
+      "nom Périclès"
+    ],
+    "rattrapages": [
+      {
+        "date": "2026-09-07",
+        "id": 7
+      },
+      {
+        "date": "2026-09-07",
+        "id": 8
+      }
+    ],
+    "notions_renfort": [
+      "périmètre rectangle",
+      "addition de durées",
+      "pronom relatif",
+      "pronom personnel leur"
+    ]
   }
 ]
