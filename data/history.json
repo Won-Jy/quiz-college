@@ -702,5 +702,35 @@
       "pronom relatif",
       "pronom personnel leur"
     ]
+  },
+  {
+    "date": "2026-10-19",
+    "matiere": "francais",
+    "niveau": "6eme",
+    "chapitre": "Sens propre et sens figure",
+    "notions": [
+      "définition sens propre",
+      "définition sens figuré",
+      "identifier sens propre",
+      "identifier sens figuré",
+      "identifier sens propre",
+      "identifier sens figuré",
+      "distinguer sens propre figuré",
+      "repérer mot sens figuré"
+    ],
+    "rattrapages": [
+      {
+        "date": "2026-09-06",
+        "id": 8
+      },
+      {
+        "date": "2026-09-07",
+        "id": 5
+      }
+    ],
+    "notions_renfort": [
+      "encadrement de décimaux",
+      "conjonction de coordination"
+    ]
   }
 ]

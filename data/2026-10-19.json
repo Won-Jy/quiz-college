@@ -1,0 +1,157 @@
+{
+  "date": "2026-10-19",
+  "matiere": "francais",
+  "matiere_affichee": "Français",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Sens propre et sens figure",
+  "vacances": "Toussaint",
+  "genere_le": "2026-10-19T21:47:40+02:00",
+  "questions": [
+    {
+      "question": "Le sens propre d'un mot, c'est :",
+      "explication": "Le sens propre est le sens de base d'un mot, celui qu'on utilise le plus souvent et qui désigne une réalité concrète. Par exemple, « une table en bois » est au sens propre.",
+      "notion": "définition sens propre",
+      "type": "qcm",
+      "options": [
+        "son sens le plus rare dans le dictionnaire",
+        "son sens quand le mot est au pluriel",
+        "son sens imagé, différent du sens habituel",
+        "son sens premier, concret et habituel"
+      ],
+      "reponse": 3,
+      "id": 1
+    },
+    {
+      "question": "Le sens figuré d'un mot, c'est :",
+      "explication": "Le sens figuré donne une image à un mot : on l'emploie pour exprimer autre chose que son sens habituel, souvent de façon imagée. Par exemple, « dévorer un livre » ne veut pas dire manger le livre.",
+      "notion": "définition sens figuré",
+      "type": "qcm",
+      "options": [
+        "son sens dans une question",
+        "son sens quand le mot est un nom propre",
+        "son sens dans une phrase négative",
+        "un sens imagé, créé par comparaison avec le sens propre"
+      ],
+      "reponse": 3,
+      "id": 2
+    },
+    {
+      "question": "Dans la phrase « Le chat dort sur le tapis », le mot « dort » est employé :",
+      "explication": "Le chat dort vraiment, c'est une action réelle et concrète : c'est donc le sens propre du verbe dormir.",
+      "notion": "identifier sens propre",
+      "type": "qcm",
+      "options": [
+        "au sens caché",
+        "au sens figuré",
+        "au sens contraire",
+        "au sens propre"
+      ],
+      "reponse": 3,
+      "id": 3
+    },
+    {
+      "question": "Dans la phrase « Cette histoire m'a glacé le sang », l'expression « glacé le sang » est employée :",
+      "explication": "Le sang n'est pas vraiment devenu de la glace ! Cette expression imagée signifie « m'a fait très peur » : c'est le sens figuré.",
+      "notion": "identifier sens figuré",
+      "type": "qcm",
+      "options": [
+        "au sens exact",
+        "au sens littéral",
+        "au sens figuré",
+        "au sens propre"
+      ],
+      "reponse": 2,
+      "id": 4
+    },
+    {
+      "question": "Dans la phrase « Le feu brûle dans la cheminée », le mot « feu » est employé :",
+      "explication": "Il s'agit d'un vrai feu, concret, qui chauffe réellement la pièce : c'est le sens propre du mot.",
+      "notion": "identifier sens propre",
+      "type": "qcm",
+      "options": [
+        "au sens propre",
+        "au sens imagé",
+        "au sens figuré",
+        "au sens comparé"
+      ],
+      "reponse": 0,
+      "id": 5
+    },
+    {
+      "question": "Dans la phrase « Elle a le feu sacré pour la musique », le mot « feu » est employé :",
+      "explication": "Il n'y a pas de flammes réelles ici : « le feu sacré » signifie une grande passion. C'est donc une image, le sens figuré.",
+      "notion": "identifier sens figuré",
+      "type": "qcm",
+      "options": [
+        "au sens habituel",
+        "au sens figuré",
+        "au sens concret",
+        "au sens propre"
+      ],
+      "reponse": 1,
+      "id": 6
+    },
+    {
+      "question": "Parmi ces phrases, laquelle emploie le verbe « dévorer » au sens figuré ?",
+      "explication": "On ne mange pas vraiment un livre ! « Dévorer un roman » veut dire le lire très vite et avec passion : c'est une image, donc le sens figuré. Dans les autres phrases, on mange réellement quelque chose.",
+      "notion": "distinguer sens propre figuré",
+      "type": "qcm",
+      "options": [
+        "Il dévore ce roman passionnant.",
+        "Le chien dévore sa gamelle.",
+        "Le loup dévore l'agneau.",
+        "Le lion dévore sa proie."
+      ],
+      "reponse": 0,
+      "id": 7
+    },
+    {
+      "question": "Écris le nombre décimal qui se trouve exactement entre 5,3 et 5,4. Réponds sans unité.",
+      "explication": "Pour trouver le nombre entre deux décimaux, on peut ajouter un zéro à chacun (5,30 et 5,40) puis prendre la moyenne des centièmes, ce qui donne 5,35.",
+      "notion": "encadrement de décimaux",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "5,35",
+        "5.35"
+      ],
+      "etiquette": "Rattrapage · Mathématiques",
+      "rattrapage": {
+        "date": "2026-09-06",
+        "id": 8
+      },
+      "id": 8
+    },
+    {
+      "question": "Dans la phrase « Marie et Paul jouent ensemble », quelle est la classe grammaticale du mot « et » ?",
+      "explication": "« Et » relie deux noms de même fonction : c'est une conjonction de coordination, comme « mais, ou, donc, or, ni, car ». Une préposition introduit plutôt un complément (à, de, pour, avec...).",
+      "notion": "conjonction de coordination",
+      "type": "qcm",
+      "options": [
+        "Un pronom",
+        "Une préposition",
+        "Un adverbe",
+        "Une conjonction de coordination"
+      ],
+      "reponse": 3,
+      "etiquette": "Rattrapage · Français",
+      "rattrapage": {
+        "date": "2026-09-07",
+        "id": 5
+      },
+      "id": 9
+    },
+    {
+      "question": "Dans la phrase « Ce vendeur a un sourire de requin », quel mot est employé au sens figuré ?",
+      "explication": "Le vendeur n'est pas un vrai poisson ! Le mot « requin » est utilisé ici pour évoquer quelqu'un de rusé et dangereux : c'est une image, donc le sens figuré.",
+      "notion": "repérer mot sens figuré",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "requin",
+        "un requin",
+        "le requin"
+      ],
+      "id": 10
+    }
+  ]
+}
