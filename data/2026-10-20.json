@@ -1,0 +1,157 @@
+{
+  "date": "2026-10-20",
+  "matiere": "anglais",
+  "matiere_affichee": "Anglais",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Vocabulaire : la famille",
+  "vacances": "Toussaint",
+  "genere_le": "2026-10-20T20:25:54+02:00",
+  "questions": [
+    {
+      "question": "Comment dit-on « la mère » en anglais ?",
+      "explication": "« Mother » signifie « la mère » en anglais, c'est un mot de vocabulaire de base sur la famille à connaître par cœur.",
+      "notion": "vocabulaire famille",
+      "type": "qcm",
+      "options": [
+        "brother",
+        "sister",
+        "mother",
+        "father"
+      ],
+      "reponse": 2,
+      "id": 1
+    },
+    {
+      "question": "Comment dit-on « le père » en anglais ?",
+      "explication": "« Father » veut dire « le père ». Attention à ne pas le confondre avec « brother » qui signifie « le frère ».",
+      "notion": "vocabulaire famille",
+      "type": "qcm",
+      "options": [
+        "brother",
+        "father",
+        "son",
+        "uncle"
+      ],
+      "reponse": 1,
+      "id": 2
+    },
+    {
+      "question": "Quel mot anglais signifie « la sœur » ?",
+      "explication": "« Sister » signifie « la sœur », tandis que « brother » désigne « le frère ». Ce sont deux mots souvent confondus, fais attention à l'orthographe.",
+      "notion": "vocabulaire famille",
+      "type": "qcm",
+      "options": [
+        "aunt",
+        "cousin",
+        "sister",
+        "brother"
+      ],
+      "reponse": 2,
+      "id": 3
+    },
+    {
+      "question": "Complète : « My mother and my father are my ___. »",
+      "explication": "« Parents » désigne le père et la mère ensemble. « Grandparents » désigne les grands-parents, il ne faut pas confondre les deux mots.",
+      "notion": "vocabulaire famille",
+      "type": "qcm",
+      "options": [
+        "children",
+        "cousins",
+        "parents",
+        "grandparents"
+      ],
+      "reponse": 2,
+      "id": 4
+    },
+    {
+      "question": "Comment dit-on « les grands-parents » en anglais ?",
+      "explication": "« Grandparents » est formé du préfixe « grand- » ajouté à « parents », comme dans « grandmother » et « grandfather ».",
+      "notion": "vocabulaire famille",
+      "type": "qcm",
+      "options": [
+        "parents",
+        "family",
+        "grandparents",
+        "relatives"
+      ],
+      "reponse": 2,
+      "id": 5
+    },
+    {
+      "question": "Quel mot désigne « la tante » en anglais ?",
+      "explication": "« Aunt » signifie « la tante ». « Uncle » est son équivalent masculin, « l'oncle ». Retiens bien les deux ensemble.",
+      "notion": "vocabulaire famille",
+      "type": "qcm",
+      "options": [
+        "aunt",
+        "niece",
+        "uncle",
+        "nephew"
+      ],
+      "reponse": 0,
+      "id": 6
+    },
+    {
+      "question": "Complète : « My father's brother is my ___. »",
+      "explication": "Le frère de ton père est ton oncle, donc « uncle ». Il faut réfléchir au lien de parenté, pas juste traduire mot à mot.",
+      "notion": "lien de parenté",
+      "type": "qcm",
+      "options": [
+        "grandfather",
+        "cousin",
+        "uncle",
+        "nephew"
+      ],
+      "reponse": 2,
+      "id": 7
+    },
+    {
+      "question": "Dans la phrase « Le livre que je lis est passionnant », quelle est la classe grammaticale du mot « que » ?",
+      "explication": "« Que » remplace « le livre » (c'est le COD de « lis ») et introduit une proposition relative : c'est un pronom relatif. La conjonction de subordination « que », elle, n'a pas de fonction et ne remplace rien (exemple : je crois que tu viens).",
+      "notion": "pronom relatif",
+      "type": "qcm",
+      "options": [
+        "Une conjonction de subordination",
+        "Un adverbe",
+        "Un déterminant",
+        "Un pronom relatif"
+      ],
+      "reponse": 3,
+      "etiquette": "Rattrapage · Français",
+      "rattrapage": {
+        "date": "2026-09-07",
+        "id": 7
+      },
+      "id": 8
+    },
+    {
+      "question": "Indique la classe grammaticale du mot en majuscules : « Donne-LEUR ce livre. »",
+      "explication": "Ici, « leur » remplace des personnes déjà citées (à eux) et reste invariable : c'est un pronom personnel. Attention à ne pas le confondre avec le déterminant possessif « leurs » qui, lui, accompagne un nom et prend un s au pluriel.",
+      "notion": "pronom personnel leur",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "pronom",
+        "pronom personnel",
+        "un pronom",
+        "un pronom personnel"
+      ],
+      "etiquette": "Rattrapage · Français",
+      "rattrapage": {
+        "date": "2026-09-07",
+        "id": 8
+      },
+      "id": 9
+    },
+    {
+      "question": "Complète cette phrase en anglais : « My mother's mother is my ___. »",
+      "explication": "La mère de ta mère est ta grand-mère, donc « grandmother ». Il s'agit bien de réfléchir au lien familial avant de répondre.",
+      "notion": "lien de parenté",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "grandmother"
+      ],
+      "id": 10
+    }
+  ]
+}

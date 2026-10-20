@@ -732,5 +732,35 @@
       "encadrement de décimaux",
       "conjonction de coordination"
     ]
+  },
+  {
+    "date": "2026-10-20",
+    "matiere": "anglais",
+    "niveau": "6eme",
+    "chapitre": "Vocabulaire : la famille",
+    "notions": [
+      "vocabulaire famille",
+      "vocabulaire famille",
+      "vocabulaire famille",
+      "vocabulaire famille",
+      "vocabulaire famille",
+      "vocabulaire famille",
+      "lien de parenté",
+      "lien de parenté"
+    ],
+    "rattrapages": [
+      {
+        "date": "2026-09-07",
+        "id": 7
+      },
+      {
+        "date": "2026-09-07",
+        "id": 8
+      }
+    ],
+    "notions_renfort": [
+      "pronom relatif",
+      "pronom personnel leur"
+    ]
   }
 ]
