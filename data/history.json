@@ -762,5 +762,35 @@
       "pronom relatif",
       "pronom personnel leur"
     ]
+  },
+  {
+    "date": "2026-10-21",
+    "matiere": "maths",
+    "niveau": "6eme",
+    "chapitre": "Les pourcentages simples",
+    "notions": [
+      "sens du pourcentage",
+      "pourcentage en fraction",
+      "calcul de pourcentage",
+      "calcul de pourcentage",
+      "calcul de pourcentage",
+      "pourcentage d'un effectif",
+      "pourcentage de réduction",
+      "calcul de pourcentage"
+    ],
+    "rattrapages": [
+      {
+        "date": "2026-09-08",
+        "id": 4
+      },
+      {
+        "date": "2026-09-08",
+        "id": 7
+      }
+    ],
+    "notions_renfort": [
+      "have got - négation",
+      "be vs have got"
+    ]
   }
 ]
