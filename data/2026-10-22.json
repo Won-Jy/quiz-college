@@ -1,0 +1,156 @@
+{
+  "date": "2026-10-22",
+  "matiere": "francais",
+  "matiere_affichee": "Français",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "La comparaison et la metaphore",
+  "vacances": "Toussaint",
+  "genere_le": "2026-10-22T20:28:33+02:00",
+  "questions": [
+    {
+      "question": "Quel mot permet d'introduire une comparaison dans une phrase ?",
+      "explication": "Le mot « comme » est l'outil de comparaison le plus courant. Il relie deux éléments que l'on rapproche.",
+      "notion": "outil de comparaison",
+      "type": "qcm",
+      "options": [
+        "comme",
+        "et",
+        "donc",
+        "mais"
+      ],
+      "reponse": 0,
+      "id": 1
+    },
+    {
+      "question": "Dans la phrase « Ses yeux brillaient comme des étoiles », quel est l'outil de comparaison ?",
+      "explication": "« Comme » est le mot qui relie le comparé (les yeux) et le comparant (des étoiles). C'est lui, l'outil de comparaison.",
+      "notion": "outil de comparaison",
+      "type": "qcm",
+      "options": [
+        "brillaient",
+        "comme",
+        "étoiles",
+        "yeux"
+      ],
+      "reponse": 1,
+      "id": 2
+    },
+    {
+      "question": "Qu'est-ce qu'une métaphore ?",
+      "explication": "La métaphore rapproche deux éléments sans employer de mot comme « comme » ou « tel que ». L'image est donnée directement.",
+      "notion": "définition métaphore",
+      "type": "qcm",
+      "options": [
+        "Une phrase qui pose une question",
+        "Une comparaison sans outil de comparaison",
+        "Une répétition du même mot",
+        "Une comparaison qui utilise un outil de comparaison"
+      ],
+      "reponse": 1,
+      "id": 3
+    },
+    {
+      "question": "Laquelle de ces phrases est une métaphore ?",
+      "explication": "Dans cette phrase, il n'y a aucun outil de comparaison : on dit directement qu'il « est » un lièvre, c'est donc une métaphore.",
+      "notion": "reconnaître métaphore",
+      "type": "qcm",
+      "options": [
+        "Il court plus vite qu'un lièvre.",
+        "Il court comme un lièvre.",
+        "Il est un vrai lièvre sur la piste.",
+        "Il est rapide tel un lièvre."
+      ],
+      "reponse": 2,
+      "id": 4
+    },
+    {
+      "question": "Dans « Cette ville est une fourmilière », quel est le comparant (l'image utilisée) ?",
+      "explication": "Le comparant est l'image que l'on utilise pour décrire quelque chose : ici, « fourmilière » décrit l'agitation de la ville.",
+      "notion": "comparé et comparant",
+      "type": "qcm",
+      "options": [
+        "cette",
+        "est",
+        "fourmilière",
+        "ville"
+      ],
+      "reponse": 2,
+      "id": 5
+    },
+    {
+      "question": "Dans « La neige est un tapis blanc », quel est le comparé (ce dont on parle) ?",
+      "explication": "Le comparé est l'élément réel dont on parle : ici, c'est « la neige ». Le comparant « un tapis blanc » sert à l'imager.",
+      "notion": "comparé et comparant",
+      "type": "qcm",
+      "options": [
+        "blanc",
+        "est",
+        "neige",
+        "tapis"
+      ],
+      "reponse": 2,
+      "id": 6
+    },
+    {
+      "question": "Que faut-il faire pour transformer une comparaison en métaphore ?",
+      "explication": "Il suffit de retirer le mot qui introduit la comparaison (comme, tel que...) pour que le rapprochement devienne direct, donc une métaphore.",
+      "notion": "transformer comparaison en métaphore",
+      "type": "qcm",
+      "options": [
+        "Supprimer l'outil de comparaison",
+        "Ajouter un adjectif",
+        "Ajouter un complément du nom",
+        "Changer le temps du verbe"
+      ],
+      "reponse": 0,
+      "id": 7
+    },
+    {
+      "question": "Écris le nombre décimal qui se trouve exactement entre 5,3 et 5,4. Réponds sans unité.",
+      "explication": "Pour trouver le nombre entre deux décimaux, on peut ajouter un zéro à chacun (5,30 et 5,40) puis prendre la moyenne des centièmes, ce qui donne 5,35.",
+      "notion": "encadrement de décimaux",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "5,35",
+        "5.35"
+      ],
+      "etiquette": "Rattrapage · Mathématiques",
+      "rattrapage": {
+        "date": "2026-09-06",
+        "id": 8
+      },
+      "id": 8
+    },
+    {
+      "question": "Dans la phrase « Marie et Paul jouent ensemble », quelle est la classe grammaticale du mot « et » ?",
+      "explication": "« Et » relie deux noms de même fonction : c'est une conjonction de coordination, comme « mais, ou, donc, or, ni, car ». Une préposition introduit plutôt un complément (à, de, pour, avec...).",
+      "notion": "conjonction de coordination",
+      "type": "qcm",
+      "options": [
+        "Une préposition",
+        "Une conjonction de coordination",
+        "Un pronom",
+        "Un adverbe"
+      ],
+      "reponse": 1,
+      "etiquette": "Rattrapage · Français",
+      "rattrapage": {
+        "date": "2026-09-07",
+        "id": 5
+      },
+      "id": 9
+    },
+    {
+      "question": "Dans la métaphore « Mon frère est un ours le matin », quel mot est le comparant ?",
+      "explication": "Le comparant est l'image utilisée pour décrire le frère : ici, « ours » évoque son mauvais caractère au réveil, sans aucun outil de comparaison.",
+      "notion": "identifier le comparant",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "ours",
+        "un ours"
+      ],
+      "id": 10
+    }
+  ]
+}

@@ -792,5 +792,35 @@
       "have got - négation",
       "be vs have got"
     ]
+  },
+  {
+    "date": "2026-10-22",
+    "matiere": "francais",
+    "niveau": "6eme",
+    "chapitre": "La comparaison et la metaphore",
+    "notions": [
+      "outil de comparaison",
+      "outil de comparaison",
+      "définition métaphore",
+      "reconnaître métaphore",
+      "comparé et comparant",
+      "comparé et comparant",
+      "transformer comparaison en métaphore",
+      "identifier le comparant"
+    ],
+    "rattrapages": [
+      {
+        "date": "2026-09-06",
+        "id": 8
+      },
+      {
+        "date": "2026-09-07",
+        "id": 5
+      }
+    ],
+    "notions_renfort": [
+      "encadrement de décimaux",
+      "conjonction de coordination"
+    ]
   }
 ]
