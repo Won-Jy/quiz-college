@@ -822,5 +822,35 @@
       "encadrement de décimaux",
       "conjonction de coordination"
     ]
+  },
+  {
+    "date": "2026-10-23",
+    "matiere": "anglais",
+    "niveau": "6eme",
+    "chapitre": "Vocabulaire : l'ecole",
+    "notions": [
+      "vocabulaire personnes école",
+      "vocabulaire fournitures scolaires",
+      "vocabulaire fournitures scolaires",
+      "vocabulaire lieux école",
+      "vocabulaire matières scolaires",
+      "vocabulaire fournitures scolaires",
+      "vocabulaire personnes école",
+      "vocabulaire fournitures scolaires"
+    ],
+    "rattrapages": [
+      {
+        "date": "2026-09-09",
+        "id": 4
+      },
+      {
+        "date": "2026-09-09",
+        "id": 6
+      }
+    ],
+    "notions_renfort": [
+      "soustraction avec retenue",
+      "soustraction avec entier"
+    ]
   }
 ]

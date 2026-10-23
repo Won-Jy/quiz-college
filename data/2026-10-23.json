@@ -1,0 +1,159 @@
+{
+  "date": "2026-10-23",
+  "matiere": "anglais",
+  "matiere_affichee": "Anglais",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Vocabulaire : l'ecole",
+  "vacances": "Toussaint",
+  "genere_le": "2026-10-23T20:14:52+02:00",
+  "questions": [
+    {
+      "question": "Comment dit-on « le professeur » en anglais ?",
+      "explication": "Le mot « teacher » désigne la personne qui enseigne, alors que « pupil » ou « student » désignent l'élève. Attention à ne pas confondre les deux rôles.",
+      "notion": "vocabulaire personnes école",
+      "type": "qcm",
+      "options": [
+        "headmaster",
+        "student",
+        "teacher",
+        "pupil"
+      ],
+      "reponse": 2,
+      "id": 1
+    },
+    {
+      "question": "Comment dit-on « un cartable » en anglais ?",
+      "explication": "« Schoolbag » est formé de « school » (école) et « bag » (sac), c'est le mot utilisé pour le cartable. Les autres mots désignent d'autres objets de la classe.",
+      "notion": "vocabulaire fournitures scolaires",
+      "type": "qcm",
+      "options": [
+        "desk",
+        "ruler",
+        "schoolbag",
+        "book"
+      ],
+      "reponse": 2,
+      "id": 2
+    },
+    {
+      "question": "Complète : « I write with a ___. »",
+      "explication": "On écrit avec un stylo, qui se dit « pen » en anglais. Le « rubber » sert à effacer, pas à écrire.",
+      "notion": "vocabulaire fournitures scolaires",
+      "type": "qcm",
+      "options": [
+        "pen",
+        "ruler",
+        "rubber",
+        "book"
+      ],
+      "reponse": 0,
+      "id": 3
+    },
+    {
+      "question": "Quel mot désigne « la cour de récréation » ?",
+      "explication": "« Playground » vient de « play » (jouer) et « ground » (terrain), c'est bien la cour où les élèves jouent. « Classroom » désigne la salle de classe.",
+      "notion": "vocabulaire lieux école",
+      "type": "qcm",
+      "options": [
+        "classroom",
+        "canteen",
+        "library",
+        "playground"
+      ],
+      "reponse": 3,
+      "id": 4
+    },
+    {
+      "question": "Quelle matière correspond à « les mathématiques » ?",
+      "explication": "« Maths » est l'abréviation anglaise de « Mathematics ». Les autres mots désignent d'autres matières scolaires.",
+      "notion": "vocabulaire matières scolaires",
+      "type": "qcm",
+      "options": [
+        "English",
+        "Maths",
+        "Art",
+        "History"
+      ],
+      "reponse": 1,
+      "id": 5
+    },
+    {
+      "question": "Complète : « She reads a ___ in the library. »",
+      "explication": "Dans une bibliothèque, on lit un livre, qui se dit « book » en anglais. « Pen » et « rubber » sont des objets pour écrire ou effacer, pas pour lire.",
+      "notion": "vocabulaire fournitures scolaires",
+      "type": "qcm",
+      "options": [
+        "rubber",
+        "desk",
+        "book",
+        "pen"
+      ],
+      "reponse": 2,
+      "id": 6
+    },
+    {
+      "question": "Quelle phrase explique correctement la différence entre « pupil » et « teacher » ?",
+      "explication": "Il faut bien distinguer les deux rôles dans la classe : l'élève qui apprend (« pupil ») et la personne qui enseigne (« teacher »). Ce sont deux mots différents, pas des synonymes.",
+      "notion": "vocabulaire personnes école",
+      "type": "qcm",
+      "options": [
+        "les deux mots signifient « élève »",
+        "les deux mots signifient « professeur »",
+        "« pupil » désigne l'élève, « teacher » désigne le professeur",
+        "« pupil » désigne le professeur, « teacher » désigne l'élève"
+      ],
+      "reponse": 2,
+      "id": 7
+    },
+    {
+      "question": "Calcule : 7,2 - 3,5",
+      "explication": "Comme 2 dixièmes est plus petit que 5 dixièmes, il faut emprunter une unité : 12 dixièmes - 5 dixièmes = 7 dixièmes, puis 6-3=3 unités, donc 3,7. C'est la retenue en soustraction, comme avec les entiers.",
+      "notion": "soustraction avec retenue",
+      "type": "qcm",
+      "options": [
+        "3,7",
+        "3,3",
+        "4,7",
+        "4,3"
+      ],
+      "reponse": 0,
+      "etiquette": "Rattrapage · Mathématiques",
+      "rattrapage": {
+        "date": "2026-09-09",
+        "id": 4
+      },
+      "id": 8
+    },
+    {
+      "question": "Calcule : 5 - 2,3",
+      "explication": "Écris 5 comme 5,0 pour aligner les virgules : tu empruntes une unité pour faire 10 dixièmes - 3 dixièmes = 7, puis 4-2=2 unités, donc 2,7. Un nombre entier a toujours des dixièmes égaux à zéro.",
+      "notion": "soustraction avec entier",
+      "type": "qcm",
+      "options": [
+        "4,7",
+        "2,7",
+        "3,7",
+        "2,3"
+      ],
+      "reponse": 1,
+      "etiquette": "Rattrapage · Mathématiques",
+      "rattrapage": {
+        "date": "2026-09-09",
+        "id": 6
+      },
+      "id": 9
+    },
+    {
+      "question": "Comment écrit-on en anglais le mot qui signifie « la gomme » ?",
+      "explication": "En anglais britannique on dit « rubber », et « eraser » en anglais américain. Les deux formes désignent l'objet qui efface le crayon.",
+      "notion": "vocabulaire fournitures scolaires",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "rubber",
+        "eraser"
+      ],
+      "id": 10
+    }
+  ]
+}
