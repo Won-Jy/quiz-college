@@ -852,5 +852,35 @@
       "soustraction avec retenue",
       "soustraction avec entier"
     ]
+  },
+  {
+    "date": "2026-10-24",
+    "matiere": "histoire",
+    "niveau": "6eme",
+    "chapitre": "Les recits fondateurs grecs : L'Iliade et L'Odyssee",
+    "notions": [
+      "auteur des épopées",
+      "contenu de l'Iliade",
+      "contenu de l'Odyssée",
+      "transmission orale",
+      "dieux grecs",
+      "récit fondateur",
+      "date de composition",
+      "personnage de l'Odyssée"
+    ],
+    "rattrapages": [
+      {
+        "date": "2026-09-07",
+        "id": 7
+      },
+      {
+        "date": "2026-09-07",
+        "id": 8
+      }
+    ],
+    "notions_renfort": [
+      "pronom relatif",
+      "pronom personnel leur"
+    ]
   }
 ]

@@ -1,0 +1,158 @@
+{
+  "date": "2026-10-24",
+  "matiere": "histoire",
+  "matiere_affichee": "Histoire-Géographie",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Les recits fondateurs grecs : L'Iliade et L'Odyssee",
+  "vacances": "Toussaint",
+  "genere_le": "2026-10-24T19:21:46+02:00",
+  "questions": [
+    {
+      "question": "Qui est l'auteur traditionnel de l'Iliade et de l'Odyssée ?",
+      "explication": "Homère est le poète grec auquel la tradition attribue ces deux grands récits. On n'est pas certain qu'il ait réellement existé, mais son nom reste associé à ces œuvres.",
+      "notion": "auteur des épopées",
+      "type": "qcm",
+      "options": [
+        "Hérodote",
+        "Homère",
+        "Platon",
+        "Hésiode"
+      ],
+      "reponse": 1,
+      "id": 1
+    },
+    {
+      "question": "Quel événement l'Iliade raconte-t-elle ?",
+      "explication": "L'Iliade se concentre sur un épisode de la guerre de Troie, notamment la colère d'Achille. Ne confonds pas avec l'Odyssée qui parle du retour d'un héros.",
+      "notion": "contenu de l'Iliade",
+      "type": "qcm",
+      "options": [
+        "Le retour d'Ulysse vers Ithaque",
+        "La guerre de Troie",
+        "La construction des pyramides",
+        "La fondation de Rome"
+      ],
+      "reponse": 1,
+      "id": 2
+    },
+    {
+      "question": "Que raconte l'Odyssée ?",
+      "explication": "L'Odyssée suit le voyage d'Ulysse qui met dix ans à rentrer chez lui après la guerre de Troie. C'est bien différent de l'Iliade qui se déroule pendant la guerre elle-même.",
+      "notion": "contenu de l'Odyssée",
+      "type": "qcm",
+      "options": [
+        "Le siège de la ville de Troie",
+        "La jeunesse du héros Hector",
+        "Le long retour d'Ulysse vers Ithaque",
+        "Les exploits d'Achille au combat"
+      ],
+      "reponse": 2,
+      "id": 3
+    },
+    {
+      "question": "Comment ces récits étaient-ils transmis avant d'être mis par écrit ?",
+      "explication": "Avant l'écriture, des poètes appelés aèdes récitaient et chantaient ces histoires de mémoire, de génération en génération. Elles n'ont été écrites que plus tard.",
+      "notion": "transmission orale",
+      "type": "qcm",
+      "options": [
+        "Oralement, récités par des aèdes",
+        "Inscrits dans un code de lois",
+        "Peints sur des parois de tombeaux",
+        "Gravés sur des tablettes d'argile"
+      ],
+      "reponse": 0,
+      "id": 4
+    },
+    {
+      "question": "Qui intervient régulièrement aux côtés des humains dans ces récits ?",
+      "explication": "Les dieux grecs comme Zeus, Athéna ou Poséidon prennent parti et influencent le destin des héros. Ces récits montrent une société où les dieux se mêlent à la vie des hommes.",
+      "notion": "dieux grecs",
+      "type": "qcm",
+      "options": [
+        "Les pharaons",
+        "Les scribes",
+        "Les dieux grecs",
+        "Les rois mésopotamiens"
+      ],
+      "reponse": 2,
+      "id": 5
+    },
+    {
+      "question": "Pourquoi appelle-t-on l'Iliade et l'Odyssée des récits « fondateurs » pour les Grecs ?",
+      "explication": "Ces récits sont lus et connus par tous les Grecs, qui y puisent des valeurs communes comme le courage ou l'hospitalité : ils forgent une identité partagée. C'est pour cela qu'on les dit « fondateurs ».",
+      "notion": "récit fondateur",
+      "type": "qcm",
+      "options": [
+        "Parce qu'ils transmettent des valeurs et une culture communes à tous les Grecs",
+        "Parce qu'ils expliquent la construction des pyramides",
+        "Parce qu'ils décrivent un code de lois",
+        "Parce qu'ils racontent l'invention de l'écriture"
+      ],
+      "reponse": 0,
+      "id": 6
+    },
+    {
+      "question": "Vers quel siècle avant J.-C. ces poèmes auraient-ils été composés ?",
+      "explication": "On situe la composition de ces poèmes vers le VIIIe siècle avant J.-C., bien après les événements qu'ils racontent. Attention à ne pas confondre avec l'époque classique grecque, plus tardive.",
+      "notion": "date de composition",
+      "type": "qcm",
+      "options": [
+        "Le VIIIe siècle avant J.-C.",
+        "Le IIIe siècle avant J.-C.",
+        "Le Ve siècle avant J.-C.",
+        "Le Xe siècle après J.-C."
+      ],
+      "reponse": 0,
+      "id": 7
+    },
+    {
+      "question": "Dans la phrase « Le livre que je lis est passionnant », quelle est la classe grammaticale du mot « que » ?",
+      "explication": "« Que » remplace « le livre » (c'est le COD de « lis ») et introduit une proposition relative : c'est un pronom relatif. La conjonction de subordination « que », elle, n'a pas de fonction et ne remplace rien (exemple : je crois que tu viens).",
+      "notion": "pronom relatif",
+      "type": "qcm",
+      "options": [
+        "Un pronom relatif",
+        "Une conjonction de subordination",
+        "Un adverbe",
+        "Un déterminant"
+      ],
+      "reponse": 0,
+      "etiquette": "Rattrapage · Français",
+      "rattrapage": {
+        "date": "2026-09-07",
+        "id": 7
+      },
+      "id": 8
+    },
+    {
+      "question": "Indique la classe grammaticale du mot en majuscules : « Donne-LEUR ce livre. »",
+      "explication": "Ici, « leur » remplace des personnes déjà citées (à eux) et reste invariable : c'est un pronom personnel. Attention à ne pas le confondre avec le déterminant possessif « leurs » qui, lui, accompagne un nom et prend un s au pluriel.",
+      "notion": "pronom personnel leur",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "pronom",
+        "pronom personnel",
+        "un pronom",
+        "un pronom personnel"
+      ],
+      "etiquette": "Rattrapage · Français",
+      "rattrapage": {
+        "date": "2026-09-07",
+        "id": 8
+      },
+      "id": 9
+    },
+    {
+      "question": "Quel est le nom de l'épouse d'Ulysse qui l'attend fidèlement à Ithaque pendant vingt ans ?",
+      "explication": "Pénélope attend le retour de son mari Ulysse en résistant aux prétendants qui veulent l'épouser. Elle symbolise la fidélité dans l'Odyssée.",
+      "notion": "personnage de l'Odyssée",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "Pénélope",
+        "pénélope"
+      ],
+      "id": 10
+    }
+  ]
+}
