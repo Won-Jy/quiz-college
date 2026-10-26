@@ -1,0 +1,155 @@
+{
+  "date": "2026-10-26",
+  "matiere": "francais",
+  "matiere_affichee": "Français",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Le discours direct et le discours indirect",
+  "vacances": "Toussaint",
+  "genere_le": "2026-10-26T20:51:34+01:00",
+  "questions": [
+    {
+      "question": "Quelle phrase est écrite au discours direct ?",
+      "explication": "Au discours direct, les paroles sont rapportées telles quelles, entre guillemets. Les autres phrases reformulent les paroles sans les guillemets, c'est le discours indirect.",
+      "notion": "discours direct",
+      "type": "qcm",
+      "options": [
+        "Marie dit être fatiguée.",
+        "Marie dit : « Je suis fatiguée. »",
+        "Marie dit qu'elle est fatiguée.",
+        "Marie a dit qu'elle était fatiguée."
+      ],
+      "reponse": 1,
+      "id": 1
+    },
+    {
+      "question": "Quel signe de ponctuation précède généralement les guillemets ouvrants quand on rapporte des paroles au discours direct ?",
+      "explication": "Les deux points annoncent les paroles qui vont suivre, juste avant l'ouverture des guillemets. C'est une règle fixe du discours direct.",
+      "notion": "ponctuation discours direct",
+      "type": "qcm",
+      "options": [
+        "Le point d'exclamation",
+        "La virgule",
+        "Les deux points",
+        "Le point-virgule"
+      ],
+      "reponse": 2,
+      "id": 2
+    },
+    {
+      "question": "Quelle phrase est écrite au discours indirect ?",
+      "explication": "Au discours indirect, il n'y a plus de guillemets ni de deux points : la question est intégrée dans la phrase grâce à un mot de liaison comme « quelle ». Les autres phrases gardent les guillemets du discours direct.",
+      "notion": "discours indirect",
+      "type": "qcm",
+      "options": [
+        "Il demande quelle heure il est.",
+        "« Quelle heure est-il ? » demande-t-il.",
+        "Il demande : « Est-ce quelle heure il est ? »",
+        "Il demande : « Quelle heure est-il ? »"
+      ],
+      "reponse": 0,
+      "id": 3
+    },
+    {
+      "question": "Dans la phrase « Le professeur explique que les élèves doivent réviser. », quel est le verbe introducteur ?",
+      "explication": "Le verbe introducteur est celui qui annonce les paroles rapportées, ici « explique ». Il est suivi de « que » qui introduit le discours indirect.",
+      "notion": "verbe introducteur",
+      "type": "qcm",
+      "options": [
+        "explique",
+        "réviser",
+        "que",
+        "doivent"
+      ],
+      "reponse": 0,
+      "id": 4
+    },
+    {
+      "question": "Transforme au discours indirect : Paul dit : « Je viendrai demain. »",
+      "explication": "Au discours indirect, le pronom « je » devient « il » car on ne parle plus à la première personne, et le temps du verbe reste le futur puisque l'action est toujours à venir.",
+      "notion": "transformation discours",
+      "type": "qcm",
+      "options": [
+        "Paul dit : il viendra demain.",
+        "Paul dit que je viendrai demain.",
+        "Paul dit qu'il viendra demain.",
+        "Paul dit qu'il vient demain."
+      ],
+      "reponse": 2,
+      "id": 5
+    },
+    {
+      "question": "Léa dit : « Mon chat est malade. » Transforme cette phrase au discours indirect.",
+      "explication": "Le possessif « mon » doit changer en « son » car on ne rapporte plus les paroles à la première personne mais à la troisième personne. Pense toujours à vérifier qui parle dans la phrase transformée.",
+      "notion": "changement pronom possessif",
+      "type": "qcm",
+      "options": [
+        "Léa dit que son chat est malade.",
+        "Léa dit que ton chat est malade.",
+        "Léa dit que mon chat est malade.",
+        "Léa dit : « Son chat est malade. »"
+      ],
+      "reponse": 0,
+      "id": 6
+    },
+    {
+      "question": "Pourquoi utilise-t-on « si » plutôt que « que » pour rapporter une question fermée (oui/non) au discours indirect ?",
+      "explication": "« Si » sert à transformer une question fermée qui attend oui ou non, alors que « que » introduit une phrase affirmative rapportée. C'est le sens de la phrase d'origine qui détermine le bon mot de liaison.",
+      "notion": "mot de liaison",
+      "type": "qcm",
+      "options": [
+        "Parce que « si » est plus poli que « que »",
+        "Parce que « si » introduit une question indirecte totale, alors que « que » introduit une affirmation",
+        "Parce que « que » ne s'emploie jamais après le verbe « demander »",
+        "Parce que « si » remplace toujours « est-ce que » dans toutes les phrases"
+      ],
+      "reponse": 1,
+      "id": 7
+    },
+    {
+      "question": "Écris le nombre décimal qui se trouve exactement entre 5,3 et 5,4. Réponds sans unité.",
+      "explication": "Pour trouver le nombre entre deux décimaux, on peut ajouter un zéro à chacun (5,30 et 5,40) puis prendre la moyenne des centièmes, ce qui donne 5,35.",
+      "notion": "encadrement de décimaux",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "5,35",
+        "5.35"
+      ],
+      "etiquette": "Rattrapage · Mathématiques",
+      "rattrapage": {
+        "date": "2026-09-06",
+        "id": 8
+      },
+      "id": 8
+    },
+    {
+      "question": "Dans la phrase « Marie et Paul jouent ensemble », quelle est la classe grammaticale du mot « et » ?",
+      "explication": "« Et » relie deux noms de même fonction : c'est une conjonction de coordination, comme « mais, ou, donc, or, ni, car ». Une préposition introduit plutôt un complément (à, de, pour, avec...).",
+      "notion": "conjonction de coordination",
+      "type": "qcm",
+      "options": [
+        "Une conjonction de coordination",
+        "Un adverbe",
+        "Un pronom",
+        "Une préposition"
+      ],
+      "reponse": 0,
+      "etiquette": "Rattrapage · Français",
+      "rattrapage": {
+        "date": "2026-09-07",
+        "id": 5
+      },
+      "id": 9
+    },
+    {
+      "question": "Transforme au discours indirect : Il demande : « Est-ce que tu viens ? » devient : Il demande ... tu viens.",
+      "explication": "Comme la question posée attend une réponse par oui ou par non, on utilise « si » pour l'introduire au discours indirect, et non « que ».",
+      "notion": "transformation question",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "si"
+      ],
+      "id": 10
+    }
+  ]
+}

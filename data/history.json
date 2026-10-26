@@ -882,5 +882,35 @@
       "pronom relatif",
       "pronom personnel leur"
     ]
+  },
+  {
+    "date": "2026-10-26",
+    "matiere": "francais",
+    "niveau": "6eme",
+    "chapitre": "Le discours direct et le discours indirect",
+    "notions": [
+      "discours direct",
+      "ponctuation discours direct",
+      "discours indirect",
+      "verbe introducteur",
+      "transformation discours",
+      "changement pronom possessif",
+      "mot de liaison",
+      "transformation question"
+    ],
+    "rattrapages": [
+      {
+        "date": "2026-09-06",
+        "id": 8
+      },
+      {
+        "date": "2026-09-07",
+        "id": 5
+      }
+    ],
+    "notions_renfort": [
+      "encadrement de décimaux",
+      "conjonction de coordination"
+    ]
   }
 ]
