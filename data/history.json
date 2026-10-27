@@ -912,5 +912,35 @@
       "encadrement de décimaux",
       "conjonction de coordination"
     ]
+  },
+  {
+    "date": "2026-10-27",
+    "matiere": "anglais",
+    "niveau": "6eme",
+    "chapitre": "Vocabulaire : la nourriture",
+    "notions": [
+      "vocabulaire nourriture",
+      "vocabulaire fruits",
+      "vocabulaire nourriture",
+      "vocabulaire boissons",
+      "vocabulaire légumes",
+      "vocabulaire nourriture",
+      "classement vocabulaire",
+      "vocabulaire boissons"
+    ],
+    "rattrapages": [
+      {
+        "date": "2026-09-07",
+        "id": 7
+      },
+      {
+        "date": "2026-09-07",
+        "id": 8
+      }
+    ],
+    "notions_renfort": [
+      "pronom relatif",
+      "pronom personnel leur"
+    ]
   }
 ]

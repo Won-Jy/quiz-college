@@ -1,0 +1,157 @@
+{
+  "date": "2026-10-27",
+  "matiere": "anglais",
+  "matiere_affichee": "Anglais",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Vocabulaire : la nourriture",
+  "vacances": "Toussaint",
+  "genere_le": "2026-10-27T20:21:44+01:00",
+  "questions": [
+    {
+      "question": "Comment dit-on « le pain » en anglais ?",
+      "explication": "Le mot « bread » désigne le pain, c'est un mot de base du vocabulaire de la nourriture à connaître par cœur.",
+      "notion": "vocabulaire nourriture",
+      "type": "qcm",
+      "options": [
+        "cheese",
+        "milk",
+        "butter",
+        "bread"
+      ],
+      "reponse": 3,
+      "id": 1
+    },
+    {
+      "question": "Comment dit-on « une pomme » en anglais ?",
+      "explication": "« An apple » signifie une pomme ; pense à utiliser « an » devant un mot qui commence par une voyelle.",
+      "notion": "vocabulaire fruits",
+      "type": "qcm",
+      "options": [
+        "an apple",
+        "a pear",
+        "an orange",
+        "a banana"
+      ],
+      "reponse": 0,
+      "id": 2
+    },
+    {
+      "question": "Quel mot signifie « le fromage » ?",
+      "explication": "« Cheese » veut dire fromage, ne le confonds pas avec « cream » qui signifie la crème.",
+      "notion": "vocabulaire nourriture",
+      "type": "qcm",
+      "options": [
+        "chicken",
+        "cheese",
+        "cake",
+        "cream"
+      ],
+      "reponse": 1,
+      "id": 3
+    },
+    {
+      "question": "Comment dit-on « l'eau » en anglais ?",
+      "explication": "« Water » signifie l'eau ; « milk » est le lait, « juice » le jus et « tea » le thé, attention à ne pas les confondre.",
+      "notion": "vocabulaire boissons",
+      "type": "qcm",
+      "options": [
+        "water",
+        "tea",
+        "juice",
+        "milk"
+      ],
+      "reponse": 0,
+      "id": 4
+    },
+    {
+      "question": "Parmi ces mots, lequel désigne un légume ?",
+      "explication": "« Carrot » signifie carotte, c'est un légume. « Cherry » est un fruit, et « cookie » et « sandwich » ne sont pas des légumes.",
+      "notion": "vocabulaire légumes",
+      "type": "qcm",
+      "options": [
+        "sandwich",
+        "cookie",
+        "cherry",
+        "carrot"
+      ],
+      "reponse": 3,
+      "id": 5
+    },
+    {
+      "question": "Comment dit-on « la viande » en anglais ?",
+      "explication": "« Meat » signifie la viande. « Fish » est le poisson, « egg » l'œuf et « rice » le riz, ce sont d'autres aliments à connaître.",
+      "notion": "vocabulaire nourriture",
+      "type": "qcm",
+      "options": [
+        "fish",
+        "meat",
+        "egg",
+        "rice"
+      ],
+      "reponse": 1,
+      "id": 6
+    },
+    {
+      "question": "Quel mot ne fait pas partie des boissons ?",
+      "explication": "« Bread » signifie le pain, c'est un aliment solide et non une boisson, contrairement aux trois autres mots.",
+      "notion": "classement vocabulaire",
+      "type": "qcm",
+      "options": [
+        "water",
+        "juice",
+        "tea",
+        "bread"
+      ],
+      "reponse": 3,
+      "id": 7
+    },
+    {
+      "question": "Dans la phrase « Le livre que je lis est passionnant », quelle est la classe grammaticale du mot « que » ?",
+      "explication": "« Que » remplace « le livre » (c'est le COD de « lis ») et introduit une proposition relative : c'est un pronom relatif. La conjonction de subordination « que », elle, n'a pas de fonction et ne remplace rien (exemple : je crois que tu viens).",
+      "notion": "pronom relatif",
+      "type": "qcm",
+      "options": [
+        "Une conjonction de subordination",
+        "Un déterminant",
+        "Un adverbe",
+        "Un pronom relatif"
+      ],
+      "reponse": 3,
+      "etiquette": "Rattrapage · Français",
+      "rattrapage": {
+        "date": "2026-09-07",
+        "id": 7
+      },
+      "id": 8
+    },
+    {
+      "question": "Indique la classe grammaticale du mot en majuscules : « Donne-LEUR ce livre. »",
+      "explication": "Ici, « leur » remplace des personnes déjà citées (à eux) et reste invariable : c'est un pronom personnel. Attention à ne pas le confondre avec le déterminant possessif « leurs » qui, lui, accompagne un nom et prend un s au pluriel.",
+      "notion": "pronom personnel leur",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "pronom",
+        "pronom personnel",
+        "un pronom",
+        "un pronom personnel"
+      ],
+      "etiquette": "Rattrapage · Français",
+      "rattrapage": {
+        "date": "2026-09-07",
+        "id": 8
+      },
+      "id": 9
+    },
+    {
+      "question": "Traduis « le lait » en anglais : ______",
+      "explication": "Le mot « milk » désigne le lait en anglais, c'est un mot de vocabulaire de base à connaître.",
+      "notion": "vocabulaire boissons",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "milk"
+      ],
+      "id": 10
+    }
+  ]
+}
