@@ -942,5 +942,35 @@
       "pronom relatif",
       "pronom personnel leur"
     ]
+  },
+  {
+    "date": "2026-10-28",
+    "matiere": "maths",
+    "niveau": "6eme",
+    "chapitre": "Perimetre du rectangle, du carre et du cercle",
+    "notions": [
+      "formule périmètre carré",
+      "calcul périmètre carré",
+      "formule périmètre rectangle",
+      "calcul périmètre rectangle",
+      "formule périmètre cercle",
+      "calcul périmètre cercle",
+      "périmètre avec diamètre",
+      "longueur inconnue rectangle"
+    ],
+    "rattrapages": [
+      {
+        "date": "2026-09-09",
+        "id": 6
+      },
+      {
+        "date": "2026-09-09",
+        "id": 7
+      }
+    ],
+    "notions_renfort": [
+      "soustraction avec entier",
+      "problème monnaie"
+    ]
   }
 ]

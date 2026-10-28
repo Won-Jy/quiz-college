@@ -1,0 +1,160 @@
+{
+  "date": "2026-10-28",
+  "matiere": "maths",
+  "matiere_affichee": "Mathématiques",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Perimetre du rectangle, du carre et du cercle",
+  "vacances": "Toussaint",
+  "genere_le": "2026-10-28T20:27:41+01:00",
+  "questions": [
+    {
+      "question": "Quelle est la formule du périmètre d'un carré de côté c ?",
+      "explication": "Le périmètre d'un carré, c'est la somme de ses 4 côtés égaux, donc on multiplie le côté par 4.",
+      "notion": "formule périmètre carré",
+      "type": "qcm",
+      "options": [
+        "P = c x 2",
+        "P = c + 4",
+        "P = c x c",
+        "P = c x 4"
+      ],
+      "reponse": 3,
+      "id": 1
+    },
+    {
+      "question": "Un carré a un côté de 7 cm. Quel est son périmètre ?",
+      "explication": "On calcule 7 x 4 = 28 cm. Attention à ne pas confondre avec le calcul de l'aire (7 x 7 = 49).",
+      "notion": "calcul périmètre carré",
+      "type": "qcm",
+      "options": [
+        "49 cm",
+        "11 cm",
+        "14 cm",
+        "28 cm"
+      ],
+      "reponse": 3,
+      "id": 2
+    },
+    {
+      "question": "Quelle est la formule du périmètre d'un rectangle de longueur L et de largeur l ?",
+      "explication": "On additionne la longueur et la largeur, puis on multiplie par 2 car chaque côté est présent deux fois.",
+      "notion": "formule périmètre rectangle",
+      "type": "qcm",
+      "options": [
+        "P = L + l",
+        "P = L x l",
+        "P = L x 2 + l",
+        "P = (L + l) x 2"
+      ],
+      "reponse": 3,
+      "id": 3
+    },
+    {
+      "question": "Un rectangle mesure 9 cm de longueur et 4 cm de largeur. Quel est son périmètre ?",
+      "explication": "On calcule (9 + 4) x 2 = 13 x 2 = 26 cm. N'oublie pas de multiplier par 2 après l'addition.",
+      "notion": "calcul périmètre rectangle",
+      "type": "qcm",
+      "options": [
+        "18 cm",
+        "26 cm",
+        "36 cm",
+        "13 cm"
+      ],
+      "reponse": 1,
+      "id": 4
+    },
+    {
+      "question": "Quelle formule permet de calculer le périmètre d'un cercle de rayon r ?",
+      "explication": "Le périmètre d'un cercle s'obtient en multipliant 2 fois le rayon par π, ce qui correspond aussi à π multiplié par le diamètre.",
+      "notion": "formule périmètre cercle",
+      "type": "qcm",
+      "options": [
+        "P = 2 x π x r",
+        "P = 2 x r",
+        "P = π x r",
+        "P = π x r x r"
+      ],
+      "reponse": 0,
+      "id": 5
+    },
+    {
+      "question": "Un cercle a un rayon de 5 cm. En utilisant π environ égal à 3,14, quel est son périmètre ?",
+      "explication": "On calcule 2 x 3,14 x 5 = 31,4 cm. Attention à ne pas confondre avec l'aire du cercle (3,14 x 5 x 5 = 78,5).",
+      "notion": "calcul périmètre cercle",
+      "type": "qcm",
+      "options": [
+        "78,5 cm",
+        "15,7 cm",
+        "31,4 cm",
+        "10 cm"
+      ],
+      "reponse": 2,
+      "id": 6
+    },
+    {
+      "question": "Un cercle a un diamètre de 8 cm. En utilisant π environ égal à 3,14, quel est son périmètre ?",
+      "explication": "Avec le diamètre, on calcule directement P = π x d, soit 3,14 x 8 = 25,12 cm. Si tu reprends la formule avec le rayon, il ne faut pas oublier que le rayon vaut la moitié du diamètre, soit 4 cm.",
+      "notion": "périmètre avec diamètre",
+      "type": "qcm",
+      "options": [
+        "12,56 cm",
+        "50,24 cm",
+        "25,12 cm",
+        "16 cm"
+      ],
+      "reponse": 2,
+      "id": 7
+    },
+    {
+      "question": "Calcule : 5 - 2,3",
+      "explication": "Écris 5 comme 5,0 pour aligner les virgules : tu empruntes une unité pour faire 10 dixièmes - 3 dixièmes = 7, puis 4-2=2 unités, donc 2,7. Un nombre entier a toujours des dixièmes égaux à zéro.",
+      "notion": "soustraction avec entier",
+      "type": "qcm",
+      "options": [
+        "2,3",
+        "2,7",
+        "3,7",
+        "4,7"
+      ],
+      "reponse": 1,
+      "etiquette": "Rattrapage · Mathématiques",
+      "rattrapage": {
+        "date": "2026-09-09",
+        "id": 6
+      },
+      "id": 8
+    },
+    {
+      "question": "Un jouet coûte 12,50 euros. Tom paie avec un billet de 20 euros. Combien la caissière lui rend-elle ?",
+      "explication": "Il faut calculer 20 - 12,50 en écrivant 20 comme 20,00 pour aligner les virgules, ce qui donne 7,50 euros. Pense bien à emprunter sur les unités quand les dixièmes ou centièmes du haut sont plus petits.",
+      "notion": "problème monnaie",
+      "type": "qcm",
+      "options": [
+        "12,50 euros",
+        "8,50 euros",
+        "7,00 euros",
+        "7,50 euros"
+      ],
+      "reponse": 3,
+      "etiquette": "Rattrapage · Mathématiques",
+      "rattrapage": {
+        "date": "2026-09-09",
+        "id": 7
+      },
+      "id": 9
+    },
+    {
+      "question": "Un rectangle a un périmètre de 30 cm et une largeur de 6 cm. Quelle est sa longueur ? Donne la réponse en cm, sans l'unité.",
+      "explication": "Le périmètre est (L + l) x 2, donc 30 = (L + 6) x 2, ce qui donne L + 6 = 15, puis L = 9 cm.",
+      "notion": "longueur inconnue rectangle",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "9",
+        "9 cm",
+        "9,0"
+      ],
+      "id": 10
+    }
+  ]
+}
