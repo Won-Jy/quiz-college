@@ -972,5 +972,35 @@
       "soustraction avec entier",
       "problème monnaie"
     ]
+  },
+  {
+    "date": "2026-10-29",
+    "matiere": "francais",
+    "niveau": "6eme",
+    "chapitre": "Les recits de creation et les textes fondateurs",
+    "notions": [
+      "définition récit de création",
+      "vocabulaire du mythe",
+      "textes fondateurs",
+      "fonction du mythe",
+      "mythologie grecque",
+      "points communs des mythes",
+      "définition texte fondateur",
+      "récit de la Genèse"
+    ],
+    "rattrapages": [
+      {
+        "date": "2026-09-06",
+        "id": 8
+      },
+      {
+        "date": "2026-09-07",
+        "id": 5
+      }
+    ],
+    "notions_renfort": [
+      "encadrement de décimaux",
+      "conjonction de coordination"
+    ]
   }
 ]

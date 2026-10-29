@@ -1,0 +1,156 @@
+{
+  "date": "2026-10-29",
+  "matiere": "francais",
+  "matiere_affichee": "Français",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Les recits de creation et les textes fondateurs",
+  "vacances": "Toussaint",
+  "genere_le": "2026-10-29T20:31:09+01:00",
+  "questions": [
+    {
+      "question": "Qu'est-ce qu'un récit de création ?",
+      "explication": "Un récit de création explique l'origine du monde, des dieux ou des hommes. C'est le sens même de l'expression 'récit de création'.",
+      "notion": "définition récit de création",
+      "type": "qcm",
+      "options": [
+        "Un texte qui raconte comment le monde ou l'humanité est apparu",
+        "Un texte qui décrit un paysage",
+        "Un texte qui donne des conseils de sagesse",
+        "Un texte qui raconte la vie d'un héros guerrier"
+      ],
+      "reponse": 0,
+      "id": 1
+    },
+    {
+      "question": "Dans de nombreux récits de création, qu'est-ce que le chaos ?",
+      "explication": "Le chaos désigne souvent l'état confus et désordonné qui existe avant la création du monde. Les dieux viennent ensuite mettre de l'ordre dans ce chaos.",
+      "notion": "vocabulaire du mythe",
+      "type": "qcm",
+      "options": [
+        "Un désordre initial avant que le monde soit organisé",
+        "Un animal sacré",
+        "Un dieu très puissant",
+        "Le nom d'un continent"
+      ],
+      "reponse": 0,
+      "id": 2
+    },
+    {
+      "question": "Quel texte fondateur raconte la création du monde dans la tradition judéo-chrétienne ?",
+      "explication": "La Genèse est le premier livre de la Bible : il raconte la création du monde par Dieu en six jours. C'est un texte fondateur pour les religions juive et chrétienne.",
+      "notion": "textes fondateurs",
+      "type": "qcm",
+      "options": [
+        "L'Odyssée",
+        "La Genèse",
+        "Les Métamorphoses",
+        "L'Iliade"
+      ],
+      "reponse": 1,
+      "id": 3
+    },
+    {
+      "question": "Quelle est la fonction principale d'un mythe de création ?",
+      "explication": "Le mythe répond aux grandes questions que se posent les hommes sur l'origine du monde, des dieux et de l'humanité. Il donne une explication, même si elle n'est pas scientifique.",
+      "notion": "fonction du mythe",
+      "type": "qcm",
+      "options": [
+        "Décrire la vie quotidienne des paysans",
+        "Faire rire le lecteur",
+        "Expliquer l'origine du monde et donner du sens à l'existence humaine",
+        "Raconter un fait divers réel"
+      ],
+      "reponse": 2,
+      "id": 4
+    },
+    {
+      "question": "Dans la mythologie grecque, quel est le nom du premier état du monde avant l'apparition des dieux ?",
+      "explication": "Selon Hésiode, le Chaos est le premier état du monde, un vide originel d'où naissent ensuite les premiers dieux comme Gaïa et Ouranos.",
+      "notion": "mythologie grecque",
+      "type": "qcm",
+      "options": [
+        "Le Chaos",
+        "L'Élysée",
+        "Le Tartare",
+        "L'Olympe"
+      ],
+      "reponse": 0,
+      "id": 5
+    },
+    {
+      "question": "Quel point commun trouve-t-on entre la plupart des récits de création à travers le monde ?",
+      "explication": "Malgré leurs différences culturelles, les récits de création racontent souvent comment un monde ordonné apparaît à partir d'un désordre ou d'un vide initial.",
+      "notion": "points communs des mythes",
+      "type": "qcm",
+      "options": [
+        "Ils ont tous été écrits par le même auteur",
+        "Ils racontent le passage d'un désordre initial à un monde organisé",
+        "Ils sont tous écrits en vers",
+        "Ils se déroulent tous en France"
+      ],
+      "reponse": 1,
+      "id": 6
+    },
+    {
+      "question": "Qu'est-ce qu'un texte fondateur ?",
+      "explication": "Un texte fondateur est un texte ancien, souvent sacré ou mythologique, qui a marqué durablement une culture en expliquant ses origines ou ses valeurs.",
+      "notion": "définition texte fondateur",
+      "type": "qcm",
+      "options": [
+        "Un texte ancien qui a une grande importance pour une culture ou une religion",
+        "Un texte récent qui n'a influencé personne",
+        "Un texte qui parle seulement de sciences",
+        "Un texte écrit uniquement pour les enfants"
+      ],
+      "reponse": 0,
+      "id": 7
+    },
+    {
+      "question": "Écris le nombre décimal qui se trouve exactement entre 5,3 et 5,4. Réponds sans unité.",
+      "explication": "Pour trouver le nombre entre deux décimaux, on peut ajouter un zéro à chacun (5,30 et 5,40) puis prendre la moyenne des centièmes, ce qui donne 5,35.",
+      "notion": "encadrement de décimaux",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "5,35",
+        "5.35"
+      ],
+      "etiquette": "Rattrapage · Mathématiques",
+      "rattrapage": {
+        "date": "2026-09-06",
+        "id": 8
+      },
+      "id": 8
+    },
+    {
+      "question": "Dans la phrase « Marie et Paul jouent ensemble », quelle est la classe grammaticale du mot « et » ?",
+      "explication": "« Et » relie deux noms de même fonction : c'est une conjonction de coordination, comme « mais, ou, donc, or, ni, car ». Une préposition introduit plutôt un complément (à, de, pour, avec...).",
+      "notion": "conjonction de coordination",
+      "type": "qcm",
+      "options": [
+        "Un adverbe",
+        "Une préposition",
+        "Une conjonction de coordination",
+        "Un pronom"
+      ],
+      "reponse": 2,
+      "etiquette": "Rattrapage · Français",
+      "rattrapage": {
+        "date": "2026-09-07",
+        "id": 5
+      },
+      "id": 9
+    },
+    {
+      "question": "Selon le récit de la Genèse, en combien de jours Dieu crée-t-il le monde ?",
+      "explication": "Dans la Genèse, Dieu crée le monde en six jours puis se repose le septième jour. Attention à ne pas confondre avec le jour de repos.",
+      "notion": "récit de la Genèse",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "6",
+        "six"
+      ],
+      "id": 10
+    }
+  ]
+}
