@@ -1002,5 +1002,35 @@
       "encadrement de décimaux",
       "conjonction de coordination"
     ]
+  },
+  {
+    "date": "2026-10-30",
+    "matiere": "anglais",
+    "niveau": "6eme",
+    "chapitre": "Vocabulaire : les vetements et les couleurs",
+    "notions": [
+      "vocabulaire vêtements",
+      "vocabulaire couleurs",
+      "vocabulaire vêtements",
+      "vocabulaire couleurs",
+      "vocabulaire vêtements",
+      "vocabulaire couleurs",
+      "vocabulaire vêtements",
+      "vocabulaire couleurs"
+    ],
+    "rattrapages": [
+      {
+        "date": "2026-09-07",
+        "id": 7
+      },
+      {
+        "date": "2026-09-07",
+        "id": 8
+      }
+    ],
+    "notions_renfort": [
+      "pronom relatif",
+      "pronom personnel leur"
+    ]
   }
 ]

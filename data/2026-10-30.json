@@ -1,0 +1,157 @@
+{
+  "date": "2026-10-30",
+  "matiere": "anglais",
+  "matiere_affichee": "Anglais",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Vocabulaire : les vetements et les couleurs",
+  "vacances": "Toussaint",
+  "genere_le": "2026-10-30T20:09:32+01:00",
+  "questions": [
+    {
+      "question": "Comment dit-on « une chemise » en anglais ?",
+      "explication": "« A shirt » désigne une chemise. Fais attention à ne pas la confondre avec « a shoe » qui veut dire une chaussure.",
+      "notion": "vocabulaire vêtements",
+      "type": "qcm",
+      "options": [
+        "a sock",
+        "a shirt",
+        "a shoe",
+        "a skirt"
+      ],
+      "reponse": 1,
+      "id": 1
+    },
+    {
+      "question": "Quelle couleur correspond au mot anglais « red » ?",
+      "explication": "« Red » signifie rouge. Ne le confonds pas avec « pink » qui veut dire rose.",
+      "notion": "vocabulaire couleurs",
+      "type": "qcm",
+      "options": [
+        "rose",
+        "violet",
+        "orange",
+        "rouge"
+      ],
+      "reponse": 3,
+      "id": 2
+    },
+    {
+      "question": "Comment dit-on « des chaussures » en anglais ?",
+      "explication": "« Shoes » désigne les chaussures. « Socks » ce sont les chaussettes, ne les confonds pas.",
+      "notion": "vocabulaire vêtements",
+      "type": "qcm",
+      "options": [
+        "socks",
+        "trousers",
+        "gloves",
+        "shoes"
+      ],
+      "reponse": 3,
+      "id": 3
+    },
+    {
+      "question": "Quelle est la traduction de « yellow » ?",
+      "explication": "« Yellow » veut dire jaune. C'est une couleur très utilisée pour décrire les vêtements d'été.",
+      "notion": "vocabulaire couleurs",
+      "type": "qcm",
+      "options": [
+        "marron",
+        "vert",
+        "jaune",
+        "gris"
+      ],
+      "reponse": 2,
+      "id": 4
+    },
+    {
+      "question": "Comment dit-on « un pantalon » en anglais ?",
+      "explication": "En anglais, le mot « trousers » s'utilise toujours au pluriel, même pour parler d'un seul pantalon.",
+      "notion": "vocabulaire vêtements",
+      "type": "qcm",
+      "options": [
+        "shoe",
+        "a trouser",
+        "a pant",
+        "trousers"
+      ],
+      "reponse": 3,
+      "id": 5
+    },
+    {
+      "question": "Quel mot anglais désigne la couleur marron ?",
+      "explication": "« Brown » signifie marron. « Black » veut dire noir, attention à ne pas les mélanger.",
+      "notion": "vocabulaire couleurs",
+      "type": "qcm",
+      "options": [
+        "purple",
+        "grey",
+        "black",
+        "brown"
+      ],
+      "reponse": 3,
+      "id": 6
+    },
+    {
+      "question": "Complète : « a pair of ___ » (une paire de...)",
+      "explication": "On utilise « a pair of » pour les objets qui vont par deux, comme les gants, les chaussures ou les chaussettes.",
+      "notion": "vocabulaire vêtements",
+      "type": "qcm",
+      "options": [
+        "hat",
+        "gloves",
+        "coat",
+        "dress"
+      ],
+      "reponse": 1,
+      "id": 7
+    },
+    {
+      "question": "Dans la phrase « Le livre que je lis est passionnant », quelle est la classe grammaticale du mot « que » ?",
+      "explication": "« Que » remplace « le livre » (c'est le COD de « lis ») et introduit une proposition relative : c'est un pronom relatif. La conjonction de subordination « que », elle, n'a pas de fonction et ne remplace rien (exemple : je crois que tu viens).",
+      "notion": "pronom relatif",
+      "type": "qcm",
+      "options": [
+        "Un déterminant",
+        "Un adverbe",
+        "Un pronom relatif",
+        "Une conjonction de subordination"
+      ],
+      "reponse": 2,
+      "etiquette": "Rattrapage · Français",
+      "rattrapage": {
+        "date": "2026-09-07",
+        "id": 7
+      },
+      "id": 8
+    },
+    {
+      "question": "Indique la classe grammaticale du mot en majuscules : « Donne-LEUR ce livre. »",
+      "explication": "Ici, « leur » remplace des personnes déjà citées (à eux) et reste invariable : c'est un pronom personnel. Attention à ne pas le confondre avec le déterminant possessif « leurs » qui, lui, accompagne un nom et prend un s au pluriel.",
+      "notion": "pronom personnel leur",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "pronom",
+        "pronom personnel",
+        "un pronom",
+        "un pronom personnel"
+      ],
+      "etiquette": "Rattrapage · Français",
+      "rattrapage": {
+        "date": "2026-09-07",
+        "id": 8
+      },
+      "id": 9
+    },
+    {
+      "question": "Écris en anglais le mot qui désigne la couleur violette : It is ___.",
+      "explication": "La couleur violette se dit « purple » en anglais, attention à l'orthographe avec deux « p ».",
+      "notion": "vocabulaire couleurs",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "purple"
+      ],
+      "id": 10
+    }
+  ]
+}
