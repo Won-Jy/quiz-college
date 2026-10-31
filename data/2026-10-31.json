@@ -1,0 +1,159 @@
+{
+  "date": "2026-10-31",
+  "matiere": "histoire",
+  "matiere_affichee": "Histoire-Géographie",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "La fondation de Rome et la Republique romaine",
+  "vacances": "Toussaint",
+  "genere_le": "2026-10-31T19:26:51+01:00",
+  "questions": [
+    {
+      "question": "Selon la légende, quels sont les deux frères jumeaux qui auraient fondé Rome ?",
+      "explication": "La légende raconte que Romulus et Rémus, fils du dieu Mars, sont à l'origine de la fondation de Rome. C'est Romulus qui donnera son nom à la ville après avoir tué son frère.",
+      "notion": "légende fondatrice de Rome",
+      "type": "qcm",
+      "options": [
+        "Romulus et Rémus",
+        "Énée et Didon",
+        "Horace et Curiace",
+        "Jules César et Auguste"
+      ],
+      "reponse": 0,
+      "id": 1
+    },
+    {
+      "question": "Quel animal aurait recueilli et nourri les jumeaux abandonnés selon la légende ?",
+      "explication": "La louve qui allaite Romulus et Rémus est devenue le symbole de Rome, souvent représentée en statue ou sur des pièces de monnaie.",
+      "notion": "symbole de Rome",
+      "type": "qcm",
+      "options": [
+        "un aigle",
+        "une lionne",
+        "une chèvre",
+        "une louve"
+      ],
+      "reponse": 3,
+      "id": 2
+    },
+    {
+      "question": "Au bord de quel fleuve la ville de Rome est-elle fondée ?",
+      "explication": "Rome est bâtie sur sept collines au bord du Tibre, un fleuve qui permet les échanges commerciaux et facilite l'accès à la mer.",
+      "notion": "site géographique de Rome",
+      "type": "qcm",
+      "options": [
+        "l'Arno",
+        "le Pô",
+        "le Rhône",
+        "le Tibre"
+      ],
+      "reponse": 3,
+      "id": 3
+    },
+    {
+      "question": "D'après la tradition, en quelle année Rome aurait-elle été fondée ?",
+      "explication": "La tradition romaine fixe la fondation de Rome en 753 av. J.-C. ; ne confonds pas cette date avec 509 av. J.-C., qui marque le début de la République.",
+      "notion": "date légendaire",
+      "type": "qcm",
+      "options": [
+        "753 av. J.-C.",
+        "27 av. J.-C.",
+        "509 av. J.-C.",
+        "212 ap. J.-C."
+      ],
+      "reponse": 0,
+      "id": 4
+    },
+    {
+      "question": "Que se passe-t-il à Rome en 509 avant J.-C. ?",
+      "explication": "En 509 av. J.-C., les Romains chassent leur dernier roi et mettent en place un nouveau régime politique : la République, où le pouvoir n'appartient plus à un seul homme.",
+      "notion": "début de la République",
+      "type": "qcm",
+      "options": [
+        "la fondation de Rome",
+        "la mort de Romulus",
+        "l'invasion de Rome par les Gaulois",
+        "la fin de la royauté et le début de la République"
+      ],
+      "reponse": 3,
+      "id": 5
+    },
+    {
+      "question": "Sous la République, qui dirige Rome, élu chaque année ?",
+      "explication": "Deux consuls sont élus chaque année pour diriger la République romaine ; ce système évite qu'un seul homme garde tout le pouvoir trop longtemps.",
+      "notion": "magistrats romains",
+      "type": "qcm",
+      "options": [
+        "l'empereur",
+        "le pharaon",
+        "le roi",
+        "les deux consuls"
+      ],
+      "reponse": 3,
+      "id": 6
+    },
+    {
+      "question": "Comment s'appelle l'assemblée de Rome composée d'anciens magistrats, qui conseille les consuls ?",
+      "explication": "Le Sénat romain regroupe les anciens magistrats et donne son avis sur les grandes décisions ; attention à ne pas le confondre avec l'Ecclésia, l'assemblée des citoyens grecs vue dans le chapitre précédent.",
+      "notion": "institutions de la République",
+      "type": "qcm",
+      "options": [
+        "le Sénat",
+        "le Forum",
+        "le Conseil des Anciens",
+        "l'Ecclésia"
+      ],
+      "reponse": 0,
+      "id": 7
+    },
+    {
+      "question": "Calcule : 5 - 2,3",
+      "explication": "Écris 5 comme 5,0 pour aligner les virgules : tu empruntes une unité pour faire 10 dixièmes - 3 dixièmes = 7, puis 4-2=2 unités, donc 2,7. Un nombre entier a toujours des dixièmes égaux à zéro.",
+      "notion": "soustraction avec entier",
+      "type": "qcm",
+      "options": [
+        "2,3",
+        "3,7",
+        "2,7",
+        "4,7"
+      ],
+      "reponse": 2,
+      "etiquette": "Rattrapage · Mathématiques",
+      "rattrapage": {
+        "date": "2026-09-09",
+        "id": 6
+      },
+      "id": 8
+    },
+    {
+      "question": "Un jouet coûte 12,50 euros. Tom paie avec un billet de 20 euros. Combien la caissière lui rend-elle ?",
+      "explication": "Il faut calculer 20 - 12,50 en écrivant 20 comme 20,00 pour aligner les virgules, ce qui donne 7,50 euros. Pense bien à emprunter sur les unités quand les dixièmes ou centièmes du haut sont plus petits.",
+      "notion": "problème monnaie",
+      "type": "qcm",
+      "options": [
+        "8,50 euros",
+        "7,00 euros",
+        "12,50 euros",
+        "7,50 euros"
+      ],
+      "reponse": 3,
+      "etiquette": "Rattrapage · Mathématiques",
+      "rattrapage": {
+        "date": "2026-09-09",
+        "id": 7
+      },
+      "id": 9
+    },
+    {
+      "question": "Comment appelle-t-on les Romains les plus riches, les seuls à pouvoir devenir sénateurs ou magistrats au début de la République ?",
+      "explication": "Les patriciens forment la classe aristocratique de Rome et détiennent le pouvoir politique, contrairement aux plébéiens qui ont moins de droits.",
+      "notion": "société romaine",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "patriciens",
+        "les patriciens"
+      ],
+      "id": 10
+    }
+  ]
+}

@@ -1032,5 +1032,35 @@
       "pronom relatif",
       "pronom personnel leur"
     ]
+  },
+  {
+    "date": "2026-10-31",
+    "matiere": "histoire",
+    "niveau": "6eme",
+    "chapitre": "La fondation de Rome et la Republique romaine",
+    "notions": [
+      "légende fondatrice de Rome",
+      "symbole de Rome",
+      "site géographique de Rome",
+      "date légendaire",
+      "début de la République",
+      "magistrats romains",
+      "institutions de la République",
+      "société romaine"
+    ],
+    "rattrapages": [
+      {
+        "date": "2026-09-09",
+        "id": 6
+      },
+      {
+        "date": "2026-09-09",
+        "id": 7
+      }
+    ],
+    "notions_renfort": [
+      "soustraction avec entier",
+      "problème monnaie"
+    ]
   }
 ]
