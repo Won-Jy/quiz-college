@@ -1,0 +1,155 @@
+{
+  "date": "2026-11-02",
+  "matiere": "francais",
+  "matiere_affichee": "Français",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Le conte et le merveilleux",
+  "vacances": null,
+  "genere_le": "2026-11-02T23:43:00+01:00",
+  "questions": [
+    {
+      "question": "Qu'est-ce qu'un conte ?",
+      "explication": "Le conte est un récit fictif, souvent bref, qui met en scène des personnages et des événements imaginaires. Il se distingue d'un texte documentaire ou historique.",
+      "notion": "définition du conte",
+      "type": "qcm",
+      "options": [
+        "Un texte qui donne des informations scientifiques",
+        "Un poème qui raconte une histoire d'amour",
+        "Un récit vrai qui raconte un événement historique",
+        "Un récit court et imaginaire qui met souvent en scène le merveilleux"
+      ],
+      "reponse": 3,
+      "id": 1
+    },
+    {
+      "question": "Dans un conte, que désigne le merveilleux ?",
+      "explication": "Dans le merveilleux, la magie fait partie du monde du conte : personnages et lecteur l'acceptent sans surprise ni peur. Attention à ne pas confondre avec le fantastique, où le surnaturel provoque de la peur.",
+      "notion": "caractéristique du merveilleux",
+      "type": "qcm",
+      "options": [
+        "Des éléments surnaturels qui terrifient les personnages",
+        "Des événements historiques réels",
+        "Des événements qui pourraient vraiment se produire",
+        "Des éléments surnaturels acceptés naturellement par les personnages"
+      ],
+      "reponse": 3,
+      "id": 2
+    },
+    {
+      "question": "Quelle formule ouvre traditionnellement un conte ?",
+      "explication": "Cette formule place d'emblée le récit dans un temps indéterminé, typique du conte. Elle signale au lecteur qu'il entre dans un univers imaginaire.",
+      "notion": "formule d'ouverture",
+      "type": "qcm",
+      "options": [
+        "Il était une fois",
+        "C'est l'histoire de",
+        "Un jour comme les autres",
+        "Au début de l'histoire"
+      ],
+      "reponse": 0,
+      "id": 3
+    },
+    {
+      "question": "Dans un conte, comment appelle-t-on le personnage qui aide le héros dans sa quête ?",
+      "explication": "L'adjuvant est celui qui soutient le héros, par exemple une fée ou un animal magique. L'opposant, au contraire, cherche à l'empêcher de réussir.",
+      "notion": "personnages du conte",
+      "type": "qcm",
+      "options": [
+        "L'adjuvant",
+        "Le destinataire",
+        "Le narrateur",
+        "L'opposant"
+      ],
+      "reponse": 0,
+      "id": 4
+    },
+    {
+      "question": "Lequel de ces éléments est typique du merveilleux dans un conte ?",
+      "explication": "Une fée capable d'exaucer des vœux est un élément surnaturel caractéristique du merveilleux. Les autres propositions appartiennent à la vie quotidienne et réaliste.",
+      "notion": "élément merveilleux",
+      "type": "qcm",
+      "options": [
+        "Une dispute entre voisins",
+        "Un personnage qui prend le train",
+        "Une voiture qui tombe en panne",
+        "Une fée qui exauce des vœux"
+      ],
+      "reponse": 3,
+      "id": 5
+    },
+    {
+      "question": "Quelle est la dernière étape dans la structure traditionnelle d'un conte ?",
+      "explication": "La situation finale clôt le récit, souvent en rétablissant un équilibre après les aventures du héros. Elle suit les péripéties qui occupent le cœur de l'histoire.",
+      "notion": "structure du conte",
+      "type": "qcm",
+      "options": [
+        "La situation finale",
+        "Les péripéties",
+        "La situation initiale",
+        "L'élément perturbateur"
+      ],
+      "reponse": 0,
+      "id": 6
+    },
+    {
+      "question": "Pourquoi les contes se terminent-ils souvent bien, avec un héros récompensé ?",
+      "explication": "Le conte a souvent une visée éducative : il montre que la bonté, le courage ou la ruse finissent par être récompensés. C'est ce qu'on appelle la fonction morale du conte.",
+      "notion": "fonction du conte",
+      "type": "qcm",
+      "options": [
+        "Parce que c'est une règle obligatoire pour tous les récits",
+        "Parce que le conte transmet souvent une morale où la vertu est récompensée",
+        "Parce que le merveilleux empêche toute fin triste",
+        "Parce que les auteurs manquent d'imagination"
+      ],
+      "reponse": 1,
+      "id": 7
+    },
+    {
+      "question": "Écris le nombre décimal qui se trouve exactement entre 5,3 et 5,4. Réponds sans unité.",
+      "explication": "Pour trouver le nombre entre deux décimaux, on peut ajouter un zéro à chacun (5,30 et 5,40) puis prendre la moyenne des centièmes, ce qui donne 5,35.",
+      "notion": "encadrement de décimaux",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "5,35",
+        "5.35"
+      ],
+      "etiquette": "Rattrapage · Mathématiques",
+      "rattrapage": {
+        "date": "2026-09-06",
+        "id": 8
+      },
+      "id": 8
+    },
+    {
+      "question": "Dans la phrase « Marie et Paul jouent ensemble », quelle est la classe grammaticale du mot « et » ?",
+      "explication": "« Et » relie deux noms de même fonction : c'est une conjonction de coordination, comme « mais, ou, donc, or, ni, car ». Une préposition introduit plutôt un complément (à, de, pour, avec...).",
+      "notion": "conjonction de coordination",
+      "type": "qcm",
+      "options": [
+        "Une préposition",
+        "Un pronom",
+        "Une conjonction de coordination",
+        "Un adverbe"
+      ],
+      "reponse": 2,
+      "etiquette": "Rattrapage · Français",
+      "rattrapage": {
+        "date": "2026-09-07",
+        "id": 5
+      },
+      "id": 9
+    },
+    {
+      "question": "Complète la formule traditionnelle de fin de conte : \"Ils vécurent heureux et eurent beaucoup d'_______.\"",
+      "explication": "Cette formule de clôture signale le bonheur durable des personnages après la résolution de leurs épreuves. Elle marque la fin du récit, comme \"il était une fois\" en marquait le début.",
+      "notion": "formule de clôture",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "enfants"
+      ],
+      "id": 10
+    }
+  ]
+}

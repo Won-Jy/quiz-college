@@ -1062,5 +1062,35 @@
       "soustraction avec entier",
       "problème monnaie"
     ]
+  },
+  {
+    "date": "2026-11-02",
+    "matiere": "francais",
+    "niveau": "6eme",
+    "chapitre": "Le conte et le merveilleux",
+    "notions": [
+      "définition du conte",
+      "caractéristique du merveilleux",
+      "formule d'ouverture",
+      "personnages du conte",
+      "élément merveilleux",
+      "structure du conte",
+      "fonction du conte",
+      "formule de clôture"
+    ],
+    "rattrapages": [
+      {
+        "date": "2026-09-06",
+        "id": 8
+      },
+      {
+        "date": "2026-09-07",
+        "id": 5
+      }
+    ],
+    "notions_renfort": [
+      "encadrement de décimaux",
+      "conjonction de coordination"
+    ]
   }
 ]
