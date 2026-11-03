@@ -1,0 +1,158 @@
+{
+  "date": "2026-11-03",
+  "matiere": "anglais",
+  "matiere_affichee": "Anglais",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Be et have got",
+  "vacances": null,
+  "genere_le": "2026-11-03T21:28:46+01:00",
+  "questions": [
+    {
+      "question": "I ___ a student.",
+      "explication": "Avec le sujet I, on utilise toujours am pour le verbe be. Retiens bien : I am, jamais I is ou I are.",
+      "notion": "be - I am",
+      "type": "qcm",
+      "options": [
+        "is",
+        "are",
+        "have got",
+        "am"
+      ],
+      "reponse": 3,
+      "id": 1
+    },
+    {
+      "question": "They ___ two dogs.",
+      "explication": "They est un sujet pluriel, donc on utilise have got et non has got, qui est réservé à he/she/it.",
+      "notion": "have got - pluriel",
+      "type": "qcm",
+      "options": [
+        "has got",
+        "am",
+        "have got",
+        "is"
+      ],
+      "reponse": 2,
+      "id": 2
+    },
+    {
+      "question": "He ___ happy today.",
+      "explication": "Pour nier be à la troisième personne du singulier (he/she/it), on utilise isn't. Aren't correspond à you/we/they, et haven't sert pour have got.",
+      "notion": "be - négation",
+      "type": "qcm",
+      "options": [
+        "don't",
+        "isn't",
+        "aren't",
+        "haven't"
+      ],
+      "reponse": 1,
+      "id": 3
+    },
+    {
+      "question": "We ___ any homework today.",
+      "explication": "We est pluriel, donc on utilise haven't got pour nier have got. Hasn't got est réservé à he/she/it, et aren't/isn't servent à nier be.",
+      "notion": "have got - négation",
+      "type": "qcm",
+      "options": [
+        "isn't",
+        "aren't",
+        "hasn't got",
+        "haven't got"
+      ],
+      "reponse": 3,
+      "id": 4
+    },
+    {
+      "question": "___ you English?",
+      "explication": "Pour poser une question avec be, on inverse le sujet et l'auxiliaire : Are you...? You correspond toujours à are, jamais à is.",
+      "notion": "be - interrogation",
+      "type": "qcm",
+      "options": [
+        "Have",
+        "Are",
+        "Has",
+        "Is"
+      ],
+      "reponse": 1,
+      "id": 5
+    },
+    {
+      "question": "___ she got a brother?",
+      "explication": "Pour interroger avec have got à la troisième personne du singulier (she), on utilise Has, placé avant le sujet. Have sert pour I/you/we/they.",
+      "notion": "have got - interrogation",
+      "type": "qcm",
+      "options": [
+        "Is",
+        "Are",
+        "Has",
+        "Have"
+      ],
+      "reponse": 2,
+      "id": 6
+    },
+    {
+      "question": "My sister ___ blue eyes.",
+      "explication": "Pour décrire une caractéristique physique comme la couleur des yeux, on utilise have got et pas be. My sister est singulier (she), donc c'est has got.",
+      "notion": "be vs have got",
+      "type": "qcm",
+      "options": [
+        "has got",
+        "have got",
+        "are",
+        "is"
+      ],
+      "reponse": 0,
+      "id": 7
+    },
+    {
+      "question": "Dans la phrase « Le livre que je lis est passionnant », quelle est la classe grammaticale du mot « que » ?",
+      "explication": "« Que » remplace « le livre » (c'est le COD de « lis ») et introduit une proposition relative : c'est un pronom relatif. La conjonction de subordination « que », elle, n'a pas de fonction et ne remplace rien (exemple : je crois que tu viens).",
+      "notion": "pronom relatif",
+      "type": "qcm",
+      "options": [
+        "Un pronom relatif",
+        "Un adverbe",
+        "Une conjonction de subordination",
+        "Un déterminant"
+      ],
+      "reponse": 0,
+      "etiquette": "Rattrapage · Français",
+      "rattrapage": {
+        "date": "2026-09-07",
+        "id": 7
+      },
+      "id": 8
+    },
+    {
+      "question": "Indique la classe grammaticale du mot en majuscules : « Donne-LEUR ce livre. »",
+      "explication": "Ici, « leur » remplace des personnes déjà citées (à eux) et reste invariable : c'est un pronom personnel. Attention à ne pas le confondre avec le déterminant possessif « leurs » qui, lui, accompagne un nom et prend un s au pluriel.",
+      "notion": "pronom personnel leur",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "pronom",
+        "pronom personnel",
+        "un pronom",
+        "un pronom personnel"
+      ],
+      "etiquette": "Rattrapage · Français",
+      "rattrapage": {
+        "date": "2026-09-07",
+        "id": 8
+      },
+      "id": 9
+    },
+    {
+      "question": "Complète avec la forme correcte de have got : The dog ___ got four legs.",
+      "explication": "The dog correspond à it (troisième personne du singulier), donc on utilise has got et non have got.",
+      "notion": "have got - conjugaison",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "has",
+        "has got"
+      ],
+      "id": 10
+    }
+  ]
+}

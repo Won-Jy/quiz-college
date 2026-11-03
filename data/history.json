@@ -1092,5 +1092,35 @@
       "encadrement de décimaux",
       "conjonction de coordination"
     ]
+  },
+  {
+    "date": "2026-11-03",
+    "matiere": "anglais",
+    "niveau": "6eme",
+    "chapitre": "Be et have got",
+    "notions": [
+      "be - I am",
+      "have got - pluriel",
+      "be - négation",
+      "have got - négation",
+      "be - interrogation",
+      "have got - interrogation",
+      "be vs have got",
+      "have got - conjugaison"
+    ],
+    "rattrapages": [
+      {
+        "date": "2026-09-07",
+        "id": 7
+      },
+      {
+        "date": "2026-09-07",
+        "id": 8
+      }
+    ],
+    "notions_renfort": [
+      "pronom relatif",
+      "pronom personnel leur"
+    ]
   }
 ]
