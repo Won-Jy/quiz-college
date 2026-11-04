@@ -1,0 +1,160 @@
+{
+  "date": "2026-11-04",
+  "matiere": "maths",
+  "matiere_affichee": "Mathématiques",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Aires : rectangle, carre, triangle",
+  "vacances": null,
+  "genere_le": "2026-11-04T21:45:00+01:00",
+  "questions": [
+    {
+      "question": "Quelle formule permet de calculer l'aire d'un rectangle ?",
+      "explication": "L'aire d'un rectangle s'obtient en multipliant sa longueur par sa largeur. Attention à ne pas confondre avec le périmètre qui utilise une addition.",
+      "notion": "formule aire rectangle",
+      "type": "qcm",
+      "options": [
+        "Longueur + largeur",
+        "Longueur x largeur",
+        "Longueur x largeur x 2",
+        "(Longueur + largeur) x 2"
+      ],
+      "reponse": 1,
+      "id": 1
+    },
+    {
+      "question": "Quelle formule permet de calculer l'aire d'un carré de côté c ?",
+      "explication": "Le carré a quatre côtés égaux, donc son aire est côté multiplié par côté, ce qu'on peut aussi noter côté au carré (c2). Ne confonds pas avec le périmètre qui vaut côté x 4.",
+      "notion": "formule aire carre",
+      "type": "qcm",
+      "options": [
+        "c x 2",
+        "c x c",
+        "c x 4",
+        "c + c"
+      ],
+      "reponse": 1,
+      "id": 2
+    },
+    {
+      "question": "Un rectangle mesure 7 cm de longueur et 4 cm de largeur. Quelle est son aire ?",
+      "explication": "On multiplie la longueur par la largeur : 7 x 4 = 28 cm2. N'additionne jamais les deux dimensions, cela donnerait un résultat faux.",
+      "notion": "calcul aire rectangle",
+      "type": "qcm",
+      "options": [
+        "28 cm2",
+        "22 cm2",
+        "11 cm2",
+        "14 cm2"
+      ],
+      "reponse": 0,
+      "id": 3
+    },
+    {
+      "question": "Un carré a un côté de 6 cm. Quelle est son aire ?",
+      "explication": "L'aire du carré est côté x côté, donc 6 x 6 = 36 cm2. Attention à ne pas calculer le périmètre (6 x 4 = 24) à la place de l'aire.",
+      "notion": "calcul aire carre",
+      "type": "qcm",
+      "options": [
+        "6 cm2",
+        "12 cm2",
+        "36 cm2",
+        "24 cm2"
+      ],
+      "reponse": 2,
+      "id": 4
+    },
+    {
+      "question": "Quelle formule permet de calculer l'aire d'un triangle ?",
+      "explication": "L'aire d'un triangle est la moitié du produit de la base par la hauteur correspondante. Beaucoup d'élèves oublient de diviser par 2, pense bien à cette étape.",
+      "notion": "formule aire triangle",
+      "type": "qcm",
+      "options": [
+        "(base x hauteur) / 2",
+        "(base + hauteur) / 2",
+        "base + hauteur",
+        "base x hauteur"
+      ],
+      "reponse": 0,
+      "id": 5
+    },
+    {
+      "question": "Un triangle a une base de 8 cm et une hauteur de 5 cm. Quelle est son aire ?",
+      "explication": "On calcule (8 x 5) / 2 = 40 / 2 = 20 cm2. Si tu oublies de diviser par 2, tu trouves l'aire d'un rectangle, pas d'un triangle.",
+      "notion": "calcul aire triangle",
+      "type": "qcm",
+      "options": [
+        "4 cm2",
+        "13 cm2",
+        "20 cm2",
+        "40 cm2"
+      ],
+      "reponse": 2,
+      "id": 6
+    },
+    {
+      "question": "Un triangle rectangle a ses deux côtés de l'angle droit qui mesurent 6 cm et 4 cm. Quelle est son aire ?",
+      "explication": "Dans un triangle rectangle, les deux côtés de l'angle droit jouent le rôle de base et de hauteur. On calcule donc (6 x 4) / 2 = 12 cm2.",
+      "notion": "aire triangle rectangle",
+      "type": "qcm",
+      "options": [
+        "10 cm2",
+        "12 cm2",
+        "48 cm2",
+        "24 cm2"
+      ],
+      "reponse": 1,
+      "id": 7
+    },
+    {
+      "question": "Calcule : 5 - 2,3",
+      "explication": "Écris 5 comme 5,0 pour aligner les virgules : tu empruntes une unité pour faire 10 dixièmes - 3 dixièmes = 7, puis 4-2=2 unités, donc 2,7. Un nombre entier a toujours des dixièmes égaux à zéro.",
+      "notion": "soustraction avec entier",
+      "type": "qcm",
+      "options": [
+        "3,7",
+        "2,3",
+        "4,7",
+        "2,7"
+      ],
+      "reponse": 3,
+      "etiquette": "Rattrapage · Mathématiques",
+      "rattrapage": {
+        "date": "2026-09-09",
+        "id": 6
+      },
+      "id": 8
+    },
+    {
+      "question": "Un jouet coûte 12,50 euros. Tom paie avec un billet de 20 euros. Combien la caissière lui rend-elle ?",
+      "explication": "Il faut calculer 20 - 12,50 en écrivant 20 comme 20,00 pour aligner les virgules, ce qui donne 7,50 euros. Pense bien à emprunter sur les unités quand les dixièmes ou centièmes du haut sont plus petits.",
+      "notion": "problème monnaie",
+      "type": "qcm",
+      "options": [
+        "12,50 euros",
+        "7,00 euros",
+        "7,50 euros",
+        "8,50 euros"
+      ],
+      "reponse": 2,
+      "etiquette": "Rattrapage · Mathématiques",
+      "rattrapage": {
+        "date": "2026-09-09",
+        "id": 7
+      },
+      "id": 9
+    },
+    {
+      "question": "Un triangle a une aire de 24 cm2 et une base de 8 cm. Quelle est sa hauteur, en cm ? Donne uniquement le nombre.",
+      "explication": "Comme aire = (base x hauteur) / 2, on a hauteur = (2 x aire) / base, soit (2 x 24) / 8 = 48 / 8 = 6 cm.",
+      "notion": "hauteur triangle inconnue",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "6",
+        "6,0",
+        "6.0"
+      ],
+      "id": 10
+    }
+  ]
+}

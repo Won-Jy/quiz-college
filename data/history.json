@@ -1122,5 +1122,35 @@
       "pronom relatif",
       "pronom personnel leur"
     ]
+  },
+  {
+    "date": "2026-11-04",
+    "matiere": "maths",
+    "niveau": "6eme",
+    "chapitre": "Aires : rectangle, carre, triangle",
+    "notions": [
+      "formule aire rectangle",
+      "formule aire carre",
+      "calcul aire rectangle",
+      "calcul aire carre",
+      "formule aire triangle",
+      "calcul aire triangle",
+      "aire triangle rectangle",
+      "hauteur triangle inconnue"
+    ],
+    "rattrapages": [
+      {
+        "date": "2026-09-09",
+        "id": 6
+      },
+      {
+        "date": "2026-09-09",
+        "id": 7
+      }
+    ],
+    "notions_renfort": [
+      "soustraction avec entier",
+      "problème monnaie"
+    ]
   }
 ]
