@@ -1152,5 +1152,35 @@
       "soustraction avec entier",
       "problème monnaie"
     ]
+  },
+  {
+    "date": "2026-11-05",
+    "matiere": "francais",
+    "niveau": "6eme",
+    "chapitre": "Les classes grammaticales : nature des mots",
+    "notions": [
+      "nom commun",
+      "verbe conjugué",
+      "adjectif qualificatif",
+      "déterminant",
+      "pronom",
+      "adverbe",
+      "conjonction de coordination",
+      "nature d'un mot"
+    ],
+    "rattrapages": [
+      {
+        "date": "2026-09-06",
+        "id": 8
+      },
+      {
+        "date": "2026-09-07",
+        "id": 5
+      }
+    ],
+    "notions_renfort": [
+      "encadrement de décimaux",
+      "conjonction de coordination"
+    ]
   }
 ]

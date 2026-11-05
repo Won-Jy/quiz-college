@@ -1,0 +1,155 @@
+{
+  "date": "2026-11-05",
+  "matiere": "francais",
+  "matiere_affichee": "Français",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Les classes grammaticales : nature des mots",
+  "vacances": null,
+  "genere_le": "2026-11-05T22:00:32+01:00",
+  "questions": [
+    {
+      "question": "Dans la phrase 'Le chat dort sur le tapis', quel mot est un nom commun ?",
+      "explication": "Un nom commun désigne une personne, un animal ou une chose sans majuscule. Ici, 'chat' désigne l'animal dont on parle.",
+      "notion": "nom commun",
+      "type": "qcm",
+      "options": [
+        "le",
+        "sur",
+        "chat",
+        "dort"
+      ],
+      "reponse": 2,
+      "id": 1
+    },
+    {
+      "question": "Dans la phrase 'Elle mange une pomme rouge', quel mot est le verbe conjugué ?",
+      "explication": "Le verbe conjugué est le mot qui change selon le sujet et le temps. Ici, 'mange' indique l'action faite par 'Elle'.",
+      "notion": "verbe conjugué",
+      "type": "qcm",
+      "options": [
+        "rouge",
+        "Elle",
+        "mange",
+        "une"
+      ],
+      "reponse": 2,
+      "id": 2
+    },
+    {
+      "question": "Dans la phrase 'Il porte un grand sac', quel mot est un adjectif qualificatif ?",
+      "explication": "L'adjectif qualificatif donne une précision sur le nom qu'il accompagne. Ici, 'grand' précise comment est le sac.",
+      "notion": "adjectif qualificatif",
+      "type": "qcm",
+      "options": [
+        "porte",
+        "sac",
+        "grand",
+        "Il"
+      ],
+      "reponse": 2,
+      "id": 3
+    },
+    {
+      "question": "Dans la phrase 'Les enfants jouent dans le jardin', quel mot est un déterminant ?",
+      "explication": "Le déterminant se place devant le nom et l'introduit dans la phrase. Attention à ne pas le confondre avec le nom lui-même : 'enfants' est un nom, pas un déterminant.",
+      "notion": "déterminant",
+      "type": "qcm",
+      "options": [
+        "jardin",
+        "enfants",
+        "Les",
+        "jouent"
+      ],
+      "reponse": 2,
+      "id": 4
+    },
+    {
+      "question": "Dans la phrase 'Paul la regarde avec attention', quel mot est un pronom ?",
+      "explication": "Le pronom remplace un nom déjà évoqué pour éviter de le répéter. Ici, 'la' remplace une personne ou une chose dont on a déjà parlé.",
+      "notion": "pronom",
+      "type": "qcm",
+      "options": [
+        "Paul",
+        "la",
+        "regarde",
+        "attention"
+      ],
+      "reponse": 1,
+      "id": 5
+    },
+    {
+      "question": "Dans la phrase 'Elle parle doucement à son frère', quel mot est un adverbe ?",
+      "explication": "L'adverbe modifie le sens d'un verbe, d'un adjectif ou d'un autre adverbe et il est invariable. Ici, 'doucement' précise comment elle parle.",
+      "notion": "adverbe",
+      "type": "qcm",
+      "options": [
+        "parle",
+        "doucement",
+        "frère",
+        "Elle"
+      ],
+      "reponse": 1,
+      "id": 6
+    },
+    {
+      "question": "Dans la phrase 'Elle reste à la maison car il pleut', quel mot est une conjonction de coordination ?",
+      "explication": "La conjonction de coordination relie deux groupes ou deux phrases (mais, ou, et, donc, or, ni, car). Attention, 'à' n'est pas une conjonction mais une préposition.",
+      "notion": "conjonction de coordination",
+      "type": "qcm",
+      "options": [
+        "reste",
+        "à",
+        "car",
+        "Elle"
+      ],
+      "reponse": 2,
+      "id": 7
+    },
+    {
+      "question": "Écris le nombre décimal qui se trouve exactement entre 5,3 et 5,4. Réponds sans unité.",
+      "explication": "Pour trouver le nombre entre deux décimaux, on peut ajouter un zéro à chacun (5,30 et 5,40) puis prendre la moyenne des centièmes, ce qui donne 5,35.",
+      "notion": "encadrement de décimaux",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "5,35",
+        "5.35"
+      ],
+      "etiquette": "Rattrapage · Mathématiques",
+      "rattrapage": {
+        "date": "2026-09-06",
+        "id": 8
+      },
+      "id": 8
+    },
+    {
+      "question": "Dans la phrase « Marie et Paul jouent ensemble », quelle est la classe grammaticale du mot « et » ?",
+      "explication": "« Et » relie deux noms de même fonction : c'est une conjonction de coordination, comme « mais, ou, donc, or, ni, car ». Une préposition introduit plutôt un complément (à, de, pour, avec...).",
+      "notion": "conjonction de coordination",
+      "type": "qcm",
+      "options": [
+        "Un adverbe",
+        "Une conjonction de coordination",
+        "Une préposition",
+        "Un pronom"
+      ],
+      "reponse": 1,
+      "etiquette": "Rattrapage · Français",
+      "rattrapage": {
+        "date": "2026-09-07",
+        "id": 5
+      },
+      "id": 9
+    },
+    {
+      "question": "Dans la phrase 'Elle mange rapidement son repas.', quelle est la nature du mot 'rapidement' ?",
+      "explication": "Le mot 'rapidement' modifie le verbe 'mange' et est invariable : c'est un adverbe. Rappelle-toi que les adverbes en -ment sont très fréquents.",
+      "notion": "nature d'un mot",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "adverbe"
+      ],
+      "id": 10
+    }
+  ]
+}
