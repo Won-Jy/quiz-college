@@ -1,0 +1,157 @@
+{
+  "date": "2026-11-06",
+  "matiere": "anglais",
+  "matiere_affichee": "Anglais",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Le present simple",
+  "vacances": null,
+  "genere_le": "2026-11-06T21:22:53+01:00",
+  "questions": [
+    {
+      "question": "Complète : She ___ tennis every Sunday. (to play)",
+      "explication": "Avec he/she/it, on ajoute un -s au verbe au présent simple. C'est la règle de base à retenir pour la 3e personne du singulier.",
+      "notion": "présent simple 3e personne",
+      "type": "qcm",
+      "options": [
+        "playing",
+        "play",
+        "played",
+        "plays"
+      ],
+      "reponse": 3,
+      "id": 1
+    },
+    {
+      "question": "Quelle phrase est correcte ?",
+      "explication": "My brother correspond à he, donc le verbe prend un -s au présent simple. Attention à ne pas oublier cette terminaison avec les sujets singuliers.",
+      "notion": "présent simple 3e personne",
+      "type": "qcm",
+      "options": [
+        "My brother played basketball.",
+        "My brother play basketball.",
+        "My brother plays basketball.",
+        "My brother playing basketball."
+      ],
+      "reponse": 2,
+      "id": 2
+    },
+    {
+      "question": "Complète : He doesn't ___ football. (to like)",
+      "explication": "Après doesn't, le verbe reste à sa forme de base, sans -s. L'auxiliaire doesn't porte déjà la marque de la 3e personne.",
+      "notion": "forme négative présent simple",
+      "type": "qcm",
+      "options": [
+        "likes",
+        "liked",
+        "liking",
+        "like"
+      ],
+      "reponse": 3,
+      "id": 3
+    },
+    {
+      "question": "Complète : ___ you speak French?",
+      "explication": "Pour poser une question au présent simple avec you, on utilise Do. Does s'emploie seulement avec he/she/it.",
+      "notion": "forme interrogative présent simple",
+      "type": "qcm",
+      "options": [
+        "Are",
+        "Does",
+        "Do",
+        "Is"
+      ],
+      "reponse": 2,
+      "id": 4
+    },
+    {
+      "question": "Complète : ___ he watch TV every day?",
+      "explication": "Avec he, on utilise Does pour former la question au présent simple, et le verbe reste alors sans -s.",
+      "notion": "forme interrogative présent simple",
+      "type": "qcm",
+      "options": [
+        "Do",
+        "Does",
+        "Is",
+        "Are"
+      ],
+      "reponse": 1,
+      "id": 5
+    },
+    {
+      "question": "Complète : My sister ___ English. (to study)",
+      "explication": "Quand un verbe se termine par une consonne + y, on remplace le y par ies à la 3e personne du singulier. C'est le cas de study qui devient studies.",
+      "notion": "verbes terminés en -y",
+      "type": "qcm",
+      "options": [
+        "studing",
+        "studies",
+        "study",
+        "studys"
+      ],
+      "reponse": 1,
+      "id": 6
+    },
+    {
+      "question": "Complète : They ___ like cats.",
+      "explication": "They est un sujet pluriel, donc on utilise don't et non doesn't, qui est réservé à he/she/it.",
+      "notion": "forme négative présent simple",
+      "type": "qcm",
+      "options": [
+        "isn't",
+        "not",
+        "don't",
+        "doesn't"
+      ],
+      "reponse": 2,
+      "id": 7
+    },
+    {
+      "question": "Dans la phrase « Le livre que je lis est passionnant », quelle est la classe grammaticale du mot « que » ?",
+      "explication": "« Que » remplace « le livre » (c'est le COD de « lis ») et introduit une proposition relative : c'est un pronom relatif. La conjonction de subordination « que », elle, n'a pas de fonction et ne remplace rien (exemple : je crois que tu viens).",
+      "notion": "pronom relatif",
+      "type": "qcm",
+      "options": [
+        "Une conjonction de subordination",
+        "Un déterminant",
+        "Un pronom relatif",
+        "Un adverbe"
+      ],
+      "reponse": 2,
+      "etiquette": "Rattrapage · Français",
+      "rattrapage": {
+        "date": "2026-09-07",
+        "id": 7
+      },
+      "id": 8
+    },
+    {
+      "question": "Indique la classe grammaticale du mot en majuscules : « Donne-LEUR ce livre. »",
+      "explication": "Ici, « leur » remplace des personnes déjà citées (à eux) et reste invariable : c'est un pronom personnel. Attention à ne pas le confondre avec le déterminant possessif « leurs » qui, lui, accompagne un nom et prend un s au pluriel.",
+      "notion": "pronom personnel leur",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "pronom",
+        "pronom personnel",
+        "un pronom",
+        "un pronom personnel"
+      ],
+      "etiquette": "Rattrapage · Français",
+      "rattrapage": {
+        "date": "2026-09-07",
+        "id": 8
+      },
+      "id": 9
+    },
+    {
+      "question": "Complète avec le verbe to go : She ___ to the cinema on Saturdays.",
+      "explication": "Le verbe go se termine par o, donc on ajoute -es à la 3e personne du singulier : goes. C'est une des exceptions à connaître par cœur.",
+      "notion": "verbes terminés en -o",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "goes"
+      ],
+      "id": 10
+    }
+  ]
+}

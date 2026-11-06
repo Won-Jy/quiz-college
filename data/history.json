@@ -1182,5 +1182,35 @@
       "encadrement de décimaux",
       "conjonction de coordination"
     ]
+  },
+  {
+    "date": "2026-11-06",
+    "matiere": "anglais",
+    "niveau": "6eme",
+    "chapitre": "Le present simple",
+    "notions": [
+      "présent simple 3e personne",
+      "présent simple 3e personne",
+      "forme négative présent simple",
+      "forme interrogative présent simple",
+      "forme interrogative présent simple",
+      "verbes terminés en -y",
+      "forme négative présent simple",
+      "verbes terminés en -o"
+    ],
+    "rattrapages": [
+      {
+        "date": "2026-09-07",
+        "id": 7
+      },
+      {
+        "date": "2026-09-07",
+        "id": 8
+      }
+    ],
+    "notions_renfort": [
+      "pronom relatif",
+      "pronom personnel leur"
+    ]
   }
 ]
