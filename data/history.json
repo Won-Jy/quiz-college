@@ -1212,5 +1212,35 @@
       "pronom relatif",
       "pronom personnel leur"
     ]
+  },
+  {
+    "date": "2026-11-07",
+    "matiere": "histoire",
+    "niveau": "6eme",
+    "chapitre": "L'Empire romain et sa societe",
+    "notions": [
+      "fondation légendaire de Rome",
+      "République romaine",
+      "premier empereur romain",
+      "société romaine",
+      "statut des esclaves",
+      "organisation de la ville romaine",
+      "unité de l'Empire romain",
+      "date de fondation de Rome"
+    ],
+    "rattrapages": [
+      {
+        "date": "2026-09-09",
+        "id": 6
+      },
+      {
+        "date": "2026-09-09",
+        "id": 7
+      }
+    ],
+    "notions_renfort": [
+      "soustraction avec entier",
+      "problème monnaie"
+    ]
   }
 ]

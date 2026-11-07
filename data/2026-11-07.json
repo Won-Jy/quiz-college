@@ -1,0 +1,164 @@
+{
+  "date": "2026-11-07",
+  "matiere": "histoire",
+  "matiere_affichee": "Histoire-Géographie",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "L'Empire romain et sa societe",
+  "vacances": null,
+  "genere_le": "2026-11-07T19:40:06+01:00",
+  "questions": [
+    {
+      "question": "Qui est, selon la légende, le fondateur de Rome ?",
+      "explication": "La légende raconte que Romulus a fondé Rome et lui a donné son nom. Énée est un héros légendaire plus ancien, ancêtre des Romains, mais ce n'est pas lui le fondateur de la ville.",
+      "notion": "fondation légendaire de Rome",
+      "type": "qcm",
+      "options": [
+        "Jules César",
+        "Auguste",
+        "Romulus",
+        "Énée"
+      ],
+      "reponse": 2,
+      "id": 1
+    },
+    {
+      "question": "Avant de devenir un Empire, quel était le régime politique de Rome ?",
+      "explication": "Rome a d'abord été une République, dirigée par des magistrats élus et un Sénat, avant de devenir un Empire dirigé par un empereur. Attention à ne pas confondre avec la démocratie athénienne.",
+      "notion": "République romaine",
+      "type": "qcm",
+      "options": [
+        "l'Empire",
+        "la Démocratie",
+        "la République",
+        "la Monarchie absolue"
+      ],
+      "reponse": 2,
+      "id": 2
+    },
+    {
+      "question": "Quel est le nom du premier empereur romain ?",
+      "explication": "Auguste devient le premier empereur romain en 27 avant J.-C. Jules César, lui, n'a jamais porté le titre d'empereur même s'il a eu de nombreux pouvoirs.",
+      "notion": "premier empereur romain",
+      "type": "qcm",
+      "options": [
+        "Néron",
+        "Jules César",
+        "Auguste",
+        "Romulus"
+      ],
+      "reponse": 2,
+      "id": 3
+    },
+    {
+      "question": "Comment appelle-t-on les membres des grandes familles romaines riches et puissantes ?",
+      "explication": "Les patriciens forment l'aristocratie de Rome, par opposition aux plébéiens qui sont le reste des citoyens, souvent moins riches.",
+      "notion": "société romaine",
+      "type": "qcm",
+      "options": [
+        "les gaulois",
+        "les esclaves",
+        "les plébéiens",
+        "les patriciens"
+      ],
+      "reponse": 3,
+      "id": 4
+    },
+    {
+      "question": "Quel est le statut des esclaves dans la société romaine ?",
+      "explication": "Les esclaves n'ont aucun droit : ils appartiennent à leur maître comme un objet et peuvent être achetés ou vendus. Ils ne font pas partie des citoyens romains.",
+      "notion": "statut des esclaves",
+      "type": "qcm",
+      "options": [
+        "ils sont considérés comme des biens appartenant à leur maître",
+        "ils peuvent voter aux élections",
+        "ils sont citoyens à part entière",
+        "ils dirigent le Sénat"
+      ],
+      "reponse": 0,
+      "id": 5
+    },
+    {
+      "question": "Comment s'appelle la place centrale d'une ville romaine où se déroule la vie publique ?",
+      "explication": "Le forum est le cœur de la cité romaine, avec les temples, les tribunaux et les lieux de commerce. L'agora, c'est le nom de la place équivalente dans une cité grecque.",
+      "notion": "organisation de la ville romaine",
+      "type": "qcm",
+      "options": [
+        "le capitole",
+        "le cirque",
+        "le forum",
+        "l'agora"
+      ],
+      "reponse": 2,
+      "id": 6
+    },
+    {
+      "question": "Pourquoi les Romains construisent-ils un immense réseau de routes et d'aqueducs dans tout l'empire ?",
+      "explication": "Les voies et aqueducs permettent à Rome de contrôler et d'unifier un territoire immense, en facilitant les déplacements des soldats, des marchandises et des idées romaines.",
+      "notion": "unité de l'Empire romain",
+      "type": "qcm",
+      "options": [
+        "pour relier les provinces, déplacer les armées et faciliter le commerce",
+        "pour décorer les villes conquises",
+        "pour empêcher les échanges entre les régions",
+        "pour remplacer les temples des peuples conquis"
+      ],
+      "reponse": 0,
+      "id": 7
+    },
+    {
+      "question": "Calcule : 5 - 2,3",
+      "explication": "Écris 5 comme 5,0 pour aligner les virgules : tu empruntes une unité pour faire 10 dixièmes - 3 dixièmes = 7, puis 4-2=2 unités, donc 2,7. Un nombre entier a toujours des dixièmes égaux à zéro.",
+      "notion": "soustraction avec entier",
+      "type": "qcm",
+      "options": [
+        "4,7",
+        "2,7",
+        "3,7",
+        "2,3"
+      ],
+      "reponse": 1,
+      "etiquette": "Rattrapage · Mathématiques",
+      "rattrapage": {
+        "date": "2026-09-09",
+        "id": 6
+      },
+      "id": 8
+    },
+    {
+      "question": "Un jouet coûte 12,50 euros. Tom paie avec un billet de 20 euros. Combien la caissière lui rend-elle ?",
+      "explication": "Il faut calculer 20 - 12,50 en écrivant 20 comme 20,00 pour aligner les virgules, ce qui donne 7,50 euros. Pense bien à emprunter sur les unités quand les dixièmes ou centièmes du haut sont plus petits.",
+      "notion": "problème monnaie",
+      "type": "qcm",
+      "options": [
+        "12,50 euros",
+        "7,00 euros",
+        "8,50 euros",
+        "7,50 euros"
+      ],
+      "reponse": 3,
+      "etiquette": "Rattrapage · Mathématiques",
+      "rattrapage": {
+        "date": "2026-09-09",
+        "id": 7
+      },
+      "id": 9
+    },
+    {
+      "question": "En quelle année Rome aurait-elle été fondée, selon la légende ?",
+      "explication": "La tradition romaine fixe la fondation de Rome par Romulus en 753 avant J.-C. C'est une date légendaire, à retenir comme repère.",
+      "notion": "date de fondation de Rome",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "753 av. J.-C.",
+        "753 av. j.-c.",
+        "-753",
+        "753 avant jc",
+        "753 avant j.-c.",
+        "753 avant jésus-christ",
+        "753"
+      ],
+      "id": 10
+    }
+  ]
+}
