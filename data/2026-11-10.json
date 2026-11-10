@@ -1,0 +1,155 @@
+{
+  "date": "2026-11-10",
+  "matiere": "anglais",
+  "matiere_affichee": "Anglais",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Le present continu",
+  "vacances": null,
+  "genere_le": "2026-11-10T21:45:59+01:00",
+  "questions": [
+    {
+      "question": "Complète : She ___ eating an apple.",
+      "explication": "Avec « she » (il/elle), on utilise toujours « is » comme auxiliaire du présent continu. Retiens : I am, he/she/it is, you/we/they are.",
+      "notion": "auxiliaire be",
+      "type": "qcm",
+      "options": [
+        "are",
+        "do",
+        "is",
+        "am"
+      ],
+      "reponse": 2,
+      "id": 1
+    },
+    {
+      "question": "Quelle est la forme en -ing du verbe « play » ?",
+      "explication": "Pour la plupart des verbes, on ajoute simplement -ing à la fin du verbe sans rien changer. « play » devient donc « playing ».",
+      "notion": "formation -ing",
+      "type": "qcm",
+      "options": [
+        "playng",
+        "playying",
+        "playing",
+        "plaing"
+      ],
+      "reponse": 2,
+      "id": 2
+    },
+    {
+      "question": "Quelle est la forme en -ing du verbe « run » ?",
+      "explication": "Quand un verbe court se termine par une seule voyelle + une seule consonne, on double la consonne avant d'ajouter -ing. « run » devient donc « running ».",
+      "notion": "doublement consonne",
+      "type": "qcm",
+      "options": [
+        "runningg",
+        "runeing",
+        "runing",
+        "running"
+      ],
+      "reponse": 3,
+      "id": 3
+    },
+    {
+      "question": "Quelle est la forme en -ing du verbe « write » ?",
+      "explication": "Quand un verbe se termine par un -e muet, on supprime ce -e avant d'ajouter -ing. « write » devient donc « writing ».",
+      "notion": "suppression du e",
+      "type": "qcm",
+      "options": [
+        "writting",
+        "writing",
+        "writeing",
+        "writinge"
+      ],
+      "reponse": 1,
+      "id": 4
+    },
+    {
+      "question": "Complète : They ___ not watching TV.",
+      "explication": "Avec « they » (ils/elles), l'auxiliaire du présent continu est toujours « are ». On forme la négation avec are + not.",
+      "notion": "négation present continu",
+      "type": "qcm",
+      "options": [
+        "is",
+        "am",
+        "do",
+        "are"
+      ],
+      "reponse": 3,
+      "id": 5
+    },
+    {
+      "question": "Complète : ___ you reading a book right now?",
+      "explication": "Pour poser une question au présent continu avec « you », il faut placer l'auxiliaire « are » avant le sujet, pas « do » qui sert au présent simple.",
+      "notion": "question present continu",
+      "type": "qcm",
+      "options": [
+        "Does",
+        "Is",
+        "Do",
+        "Are"
+      ],
+      "reponse": 3,
+      "id": 6
+    },
+    {
+      "question": "Quelle phrase décrit une action en train de se passer maintenant ?",
+      "explication": "Le présent continu sert à décrire une action qui se déroule au moment où l'on parle, souvent accompagnée d'un mot comme « right now » ou « at the moment ».",
+      "notion": "usage present continu",
+      "type": "qcm",
+      "options": [
+        "He is playing football right now.",
+        "He played football yesterday.",
+        "He will play football tomorrow.",
+        "He plays football every Sunday."
+      ],
+      "reponse": 0,
+      "id": 7
+    },
+    {
+      "question": "Écris le nombre décimal qui se trouve exactement entre 5,3 et 5,4. Réponds sans unité.",
+      "explication": "Pour trouver le nombre entre deux décimaux, on peut ajouter un zéro à chacun (5,30 et 5,40) puis prendre la moyenne des centièmes, ce qui donne 5,35.",
+      "notion": "encadrement de décimaux",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "5,35",
+        "5.35"
+      ],
+      "etiquette": "Rattrapage · Mathématiques",
+      "rattrapage": {
+        "date": "2026-09-06",
+        "id": 8
+      },
+      "id": 8
+    },
+    {
+      "question": "Dans la phrase « Marie et Paul jouent ensemble », quelle est la classe grammaticale du mot « et » ?",
+      "explication": "« Et » relie deux noms de même fonction : c'est une conjonction de coordination, comme « mais, ou, donc, or, ni, car ». Une préposition introduit plutôt un complément (à, de, pour, avec...).",
+      "notion": "conjonction de coordination",
+      "type": "qcm",
+      "options": [
+        "Un pronom",
+        "Un adverbe",
+        "Une préposition",
+        "Une conjonction de coordination"
+      ],
+      "reponse": 3,
+      "etiquette": "Rattrapage · Français",
+      "rattrapage": {
+        "date": "2026-09-07",
+        "id": 5
+      },
+      "id": 9
+    },
+    {
+      "question": "Complète avec la bonne forme du verbe entre parenthèses : He (swim) in the pool now.",
+      "explication": "Il faut conjuguer l'auxiliaire « be » avec « he » (is), puis ajouter la forme en -ing du verbe « swim », qui double le m car il se termine par une seule voyelle et une seule consonne.",
+      "notion": "conjugaison complète",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "is swimming"
+      ],
+      "id": 10
+    }
+  ]
+}

@@ -1242,5 +1242,35 @@
       "soustraction avec entier",
       "problème monnaie"
     ]
+  },
+  {
+    "date": "2026-11-10",
+    "matiere": "anglais",
+    "niveau": "6eme",
+    "chapitre": "Le present continu",
+    "notions": [
+      "auxiliaire be",
+      "formation -ing",
+      "doublement consonne",
+      "suppression du e",
+      "négation present continu",
+      "question present continu",
+      "usage present continu",
+      "conjugaison complète"
+    ],
+    "rattrapages": [
+      {
+        "date": "2026-09-06",
+        "id": 8
+      },
+      {
+        "date": "2026-09-07",
+        "id": 5
+      }
+    ],
+    "notions_renfort": [
+      "encadrement de décimaux",
+      "conjonction de coordination"
+    ]
   }
 ]
