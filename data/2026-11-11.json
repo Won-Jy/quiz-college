@@ -1,0 +1,157 @@
+{
+  "date": "2026-11-11",
+  "matiere": "maths",
+  "matiere_affichee": "Mathématiques",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Volumes : cube et pave droit",
+  "vacances": null,
+  "genere_le": "2026-11-11T22:15:56+01:00",
+  "questions": [
+    {
+      "question": "Dans quelle unité exprime-t-on un volume ?",
+      "explication": "Un volume se mesure en unités cubes car on multiplie trois longueurs. Le cm3 est l'unité la plus courante pour les petits objets.",
+      "notion": "unité de volume",
+      "type": "qcm",
+      "options": [
+        "L uniquement",
+        "cm2",
+        "cm3",
+        "cm"
+      ],
+      "reponse": 2,
+      "id": 1
+    },
+    {
+      "question": "Quelle formule permet de calculer le volume d'un cube de côté c ?",
+      "explication": "Le cube a trois dimensions égales, donc on multiplie le côté trois fois : c x c x c. La formule 6 x c x c donne l'aire totale des faces, pas le volume.",
+      "notion": "formule volume cube",
+      "type": "qcm",
+      "options": [
+        "6 x c x c",
+        "4 x c",
+        "c x c x c",
+        "c x c"
+      ],
+      "reponse": 2,
+      "id": 2
+    },
+    {
+      "question": "Quel est le volume d'un cube de côté 3 cm ?",
+      "explication": "On calcule 3 x 3 x 3 = 27 cm3. Attention, 9 cm3 correspondrait seulement à l'aire d'une face (3x3), pas au volume.",
+      "notion": "calcul volume cube",
+      "type": "qcm",
+      "options": [
+        "9 cm3",
+        "27 cm3",
+        "18 cm3",
+        "12 cm3"
+      ],
+      "reponse": 1,
+      "id": 3
+    },
+    {
+      "question": "Quelle formule permet de calculer le volume d'un pavé droit de longueur L, largeur l et hauteur h ?",
+      "explication": "Le pavé droit possède trois dimensions différentes qu'il faut toutes multiplier ensemble pour obtenir le volume. L x l ne donne que l'aire d'une face.",
+      "notion": "formule volume pavé",
+      "type": "qcm",
+      "options": [
+        "(L x l x h) / 2",
+        "2 x (L + l + h)",
+        "L x l x h",
+        "L x l"
+      ],
+      "reponse": 2,
+      "id": 4
+    },
+    {
+      "question": "Un pavé droit a pour dimensions L = 5 cm, l = 4 cm et h = 3 cm. Quel est son volume ?",
+      "explication": "On multiplie les trois dimensions : 5 x 4 x 3 = 60 cm3. Si tu t'arrêtes après deux dimensions, tu obtiens seulement l'aire d'une face.",
+      "notion": "calcul volume pavé",
+      "type": "qcm",
+      "options": [
+        "60 cm3",
+        "15 cm3",
+        "20 cm3",
+        "12 cm3"
+      ],
+      "reponse": 0,
+      "id": 5
+    },
+    {
+      "question": "Un pavé droit a pour dimensions L = 2,5 cm, l = 4 cm et h = 2 cm. Quel est son volume ?",
+      "explication": "On calcule 2,5 x 4 = 10, puis 10 x 2 = 20 cm3. Attention à ne pas additionner les dimensions au lieu de les multiplier, et à bien placer la virgule.",
+      "notion": "volume avec décimaux",
+      "type": "qcm",
+      "options": [
+        "200 cm3",
+        "8,5 cm3",
+        "10 cm3",
+        "20 cm3"
+      ],
+      "reponse": 3,
+      "id": 6
+    },
+    {
+      "question": "Un cube a un volume de 64 cm3. Quelle est la longueur de son côté ?",
+      "explication": "Il faut chercher le nombre qui multiplié trois fois par lui-même donne 64 : 4 x 4 x 4 = 64. On ne divise pas 64 par 3, car le volume est un produit, pas une somme.",
+      "notion": "arête à partir du volume",
+      "type": "qcm",
+      "options": [
+        "21,33 cm",
+        "4 cm",
+        "16 cm",
+        "8 cm"
+      ],
+      "reponse": 1,
+      "id": 7
+    },
+    {
+      "question": "Dans la phrase « Le livre que je lis est passionnant », quelle est la classe grammaticale du mot « que » ?",
+      "explication": "« Que » remplace « le livre » (c'est le COD de « lis ») et introduit une proposition relative : c'est un pronom relatif. La conjonction de subordination « que », elle, n'a pas de fonction et ne remplace rien (exemple : je crois que tu viens).",
+      "notion": "pronom relatif",
+      "type": "qcm",
+      "options": [
+        "Un pronom relatif",
+        "Un adverbe",
+        "Une conjonction de subordination",
+        "Un déterminant"
+      ],
+      "reponse": 0,
+      "etiquette": "Rattrapage · Français",
+      "rattrapage": {
+        "date": "2026-09-07",
+        "id": 7
+      },
+      "id": 8
+    },
+    {
+      "question": "Indique la classe grammaticale du mot en majuscules : « Donne-LEUR ce livre. »",
+      "explication": "Ici, « leur » remplace des personnes déjà citées (à eux) et reste invariable : c'est un pronom personnel. Attention à ne pas le confondre avec le déterminant possessif « leurs » qui, lui, accompagne un nom et prend un s au pluriel.",
+      "notion": "pronom personnel leur",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "pronom",
+        "pronom personnel",
+        "un pronom",
+        "un pronom personnel"
+      ],
+      "etiquette": "Rattrapage · Français",
+      "rattrapage": {
+        "date": "2026-09-07",
+        "id": 8
+      },
+      "id": 9
+    },
+    {
+      "question": "Un pavé droit a pour dimensions 6 cm, 5 cm et 10 cm. Quel est son volume en cm3 ? (donne seulement le nombre)",
+      "explication": "On multiplie les trois dimensions : 6 x 5 x 10 = 300 cm3. C'est la méthode générale pour tout pavé droit.",
+      "notion": "calcul volume pavé",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "300"
+      ],
+      "id": 10
+    }
+  ]
+}

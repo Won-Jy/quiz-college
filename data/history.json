@@ -1272,5 +1272,35 @@
       "encadrement de décimaux",
       "conjonction de coordination"
     ]
+  },
+  {
+    "date": "2026-11-11",
+    "matiere": "maths",
+    "niveau": "6eme",
+    "chapitre": "Volumes : cube et pave droit",
+    "notions": [
+      "unité de volume",
+      "formule volume cube",
+      "calcul volume cube",
+      "formule volume pavé",
+      "calcul volume pavé",
+      "volume avec décimaux",
+      "arête à partir du volume",
+      "calcul volume pavé"
+    ],
+    "rattrapages": [
+      {
+        "date": "2026-09-07",
+        "id": 7
+      },
+      {
+        "date": "2026-09-07",
+        "id": 8
+      }
+    ],
+    "notions_renfort": [
+      "pronom relatif",
+      "pronom personnel leur"
+    ]
   }
 ]
