@@ -1,0 +1,158 @@
+{
+  "date": "2026-11-12",
+  "matiere": "francais",
+  "matiere_affichee": "Français",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Les fonctions dans la phrase : sujet, COD, COI",
+  "vacances": null,
+  "genere_le": "2026-11-12T22:25:13+01:00",
+  "questions": [
+    {
+      "question": "Dans la phrase « Le chat dort sur le canapé. », quel est le sujet du verbe ?",
+      "explication": "Le sujet est le groupe qui fait l'action du verbe : on pose la question « qui est-ce qui dort ? » et la réponse est « le chat ». Pense toujours à encadrer le sujet avec « c'est... qui » pour vérifier.",
+      "notion": "sujet du verbe",
+      "type": "qcm",
+      "options": [
+        "canapé",
+        "Le chat",
+        "sur le canapé",
+        "dort"
+      ],
+      "reponse": 1,
+      "id": 1
+    },
+    {
+      "question": "Dans la phrase « Dans le jardin jouent les enfants. », quel est le sujet du verbe ?",
+      "explication": "Le sujet n'est pas toujours placé avant le verbe : ici il est inversé. On cherche « qui est-ce qui joue ? » et la réponse est « les enfants », même si ce groupe est placé après le verbe.",
+      "notion": "sujet inversé",
+      "type": "qcm",
+      "options": [
+        "Dans le jardin",
+        "jouent",
+        "les enfants",
+        "jardin"
+      ],
+      "reponse": 2,
+      "id": 2
+    },
+    {
+      "question": "Dans la phrase « Marie mange une pomme. », quel est le COD ?",
+      "explication": "Le COD répond à la question « quoi ? » posée après le verbe : Marie mange quoi ? Une pomme. Il se place juste après le verbe, sans préposition.",
+      "notion": "COD",
+      "type": "qcm",
+      "options": [
+        "aucun COD",
+        "mange",
+        "une pomme",
+        "Marie"
+      ],
+      "reponse": 2,
+      "id": 3
+    },
+    {
+      "question": "Dans la phrase « Il pense à ses vacances. », quelle est la fonction de « à ses vacances » ?",
+      "explication": "Ce complément est introduit par la préposition « à » et répond à la question « à quoi ? » : c'est donc un COI, et non un COD qui n'a jamais de préposition devant lui.",
+      "notion": "COI",
+      "type": "qcm",
+      "options": [
+        "COD",
+        "sujet",
+        "attribut du sujet",
+        "COI"
+      ],
+      "reponse": 3,
+      "id": 4
+    },
+    {
+      "question": "Dans la phrase « Elle parle à sa sœur. », quel est le COI ?",
+      "explication": "Le COI comprend toujours sa préposition : il faut garder « à » devant « sa sœur » pour désigner correctement le complément d'objet indirect en entier.",
+      "notion": "COI complet",
+      "type": "qcm",
+      "options": [
+        "parle",
+        "Elle",
+        "à sa sœur",
+        "sa sœur"
+      ],
+      "reponse": 2,
+      "id": 5
+    },
+    {
+      "question": "Dans la phrase « Je le vois. », quelle est la fonction du pronom « le » ?",
+      "explication": "« Le » remplace un nom qui subit l'action du verbe « voir », sans préposition : il a donc la fonction de COD, même s'il est placé avant le verbe comme souvent avec les pronoms.",
+      "notion": "pronom COD",
+      "type": "qcm",
+      "options": [
+        "sujet",
+        "COD",
+        "attribut du sujet",
+        "COI"
+      ],
+      "reponse": 1,
+      "id": 6
+    },
+    {
+      "question": "Dans la phrase « Les oiseaux chantent le matin. », quelle est la fonction de « le matin » ?",
+      "explication": "Le verbe « chanter » n'a pas besoin de complément d'objet ici : « le matin » indique seulement le moment où se passe l'action, c'est donc un complément circonstanciel de temps, pas un COD.",
+      "notion": "distinction COD/CC",
+      "type": "qcm",
+      "options": [
+        "COI",
+        "COD",
+        "sujet",
+        "complément circonstanciel"
+      ],
+      "reponse": 3,
+      "id": 7
+    },
+    {
+      "question": "Calcule : 5 - 2,3",
+      "explication": "Écris 5 comme 5,0 pour aligner les virgules : tu empruntes une unité pour faire 10 dixièmes - 3 dixièmes = 7, puis 4-2=2 unités, donc 2,7. Un nombre entier a toujours des dixièmes égaux à zéro.",
+      "notion": "soustraction avec entier",
+      "type": "qcm",
+      "options": [
+        "2,7",
+        "2,3",
+        "3,7",
+        "4,7"
+      ],
+      "reponse": 0,
+      "etiquette": "Rattrapage · Mathématiques",
+      "rattrapage": {
+        "date": "2026-09-09",
+        "id": 6
+      },
+      "id": 8
+    },
+    {
+      "question": "Un jouet coûte 12,50 euros. Tom paie avec un billet de 20 euros. Combien la caissière lui rend-elle ?",
+      "explication": "Il faut calculer 20 - 12,50 en écrivant 20 comme 20,00 pour aligner les virgules, ce qui donne 7,50 euros. Pense bien à emprunter sur les unités quand les dixièmes ou centièmes du haut sont plus petits.",
+      "notion": "problème monnaie",
+      "type": "qcm",
+      "options": [
+        "12,50 euros",
+        "8,50 euros",
+        "7,50 euros",
+        "7,00 euros"
+      ],
+      "reponse": 2,
+      "etiquette": "Rattrapage · Mathématiques",
+      "rattrapage": {
+        "date": "2026-09-09",
+        "id": 7
+      },
+      "id": 9
+    },
+    {
+      "question": "Dans la phrase « Le professeur explique la leçon aux élèves. », recopie uniquement le groupe de mots qui est COD.",
+      "explication": "On pose la question « explique quoi ? » : la réponse « la leçon » est placée directement après le verbe sans préposition, c'est donc le COD, à ne pas confondre avec « aux élèves » qui est COI.",
+      "notion": "identification COD",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "la leçon"
+      ],
+      "id": 10
+    }
+  ]
+}

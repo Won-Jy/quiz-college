@@ -1302,5 +1302,35 @@
       "pronom relatif",
       "pronom personnel leur"
     ]
+  },
+  {
+    "date": "2026-11-12",
+    "matiere": "francais",
+    "niveau": "6eme",
+    "chapitre": "Les fonctions dans la phrase : sujet, COD, COI",
+    "notions": [
+      "sujet du verbe",
+      "sujet inversé",
+      "COD",
+      "COI",
+      "COI complet",
+      "pronom COD",
+      "distinction COD/CC",
+      "identification COD"
+    ],
+    "rattrapages": [
+      {
+        "date": "2026-09-09",
+        "id": 6
+      },
+      {
+        "date": "2026-09-09",
+        "id": 7
+      }
+    ],
+    "notions_renfort": [
+      "soustraction avec entier",
+      "problème monnaie"
+    ]
   }
 ]
