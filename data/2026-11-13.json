@@ -1,0 +1,155 @@
+{
+  "date": "2026-11-13",
+  "matiere": "anglais",
+  "matiere_affichee": "Anglais",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Pronoms personnels et adjectifs possessifs",
+  "vacances": null,
+  "genere_le": "2026-11-13T21:51:05+01:00",
+  "questions": [
+    {
+      "question": "Tom is a boy. ___ is twelve years old.",
+      "explication": "Tom est un garçon, donc on utilise le pronom He. Pense à toujours vérifier si la personne est un homme, une femme, ou une chose.",
+      "notion": "pronom personnel sujet",
+      "type": "qcm",
+      "options": [
+        "It",
+        "He",
+        "She",
+        "They"
+      ],
+      "reponse": 1,
+      "id": 1
+    },
+    {
+      "question": "Tom and Lucy are friends. ___ are in Year 7.",
+      "explication": "Quand il y a plusieurs personnes (Tom et Lucy), on utilise They, le pronom du pluriel.",
+      "notion": "pronom personnel pluriel",
+      "type": "qcm",
+      "options": [
+        "He",
+        "She",
+        "They",
+        "It"
+      ],
+      "reponse": 2,
+      "id": 2
+    },
+    {
+      "question": "I have a bike. This is ___ bike.",
+      "explication": "Le pronom I correspond toujours à l'adjectif possessif my, qui signifie 'mon/ma/mes'.",
+      "notion": "adjectif possessif my",
+      "type": "qcm",
+      "options": [
+        "my",
+        "your",
+        "his",
+        "her"
+      ],
+      "reponse": 0,
+      "id": 3
+    },
+    {
+      "question": "Emma has a cat. ___ cat is black.",
+      "explication": "Emma est une fille, donc on utilise Her pour dire que c'est le chat d'une fille.",
+      "notion": "adjectif possessif her",
+      "type": "qcm",
+      "options": [
+        "Her",
+        "Their",
+        "His",
+        "Its"
+      ],
+      "reponse": 0,
+      "id": 4
+    },
+    {
+      "question": "Peter has a sister. ___ sister is called Anna.",
+      "explication": "C'est Peter, un garçon, qui possède la sœur, donc on utilise His, et non Her qui correspondrait à une fille possédant quelque chose.",
+      "notion": "distinction his her",
+      "type": "qcm",
+      "options": [
+        "His",
+        "Its",
+        "Her",
+        "Their"
+      ],
+      "reponse": 0,
+      "id": 5
+    },
+    {
+      "question": "Look at the dog! ___ is sleeping.",
+      "explication": "Pour un animal ou une chose, on utilise généralement le pronom It, sauf si on connaît bien l'animal comme un animal de compagnie précis.",
+      "notion": "pronom it",
+      "type": "qcm",
+      "options": [
+        "It",
+        "He",
+        "She",
+        "They"
+      ],
+      "reponse": 0,
+      "id": 6
+    },
+    {
+      "question": "We have a dog. ___ dog is small.",
+      "explication": "We correspond à l'adjectif possessif Our, qui signifie 'notre/nos'. Attention à ne pas confondre avec Their qui correspond à They.",
+      "notion": "adjectif possessif our",
+      "type": "qcm",
+      "options": [
+        "My",
+        "Your",
+        "Their",
+        "Our"
+      ],
+      "reponse": 3,
+      "id": 7
+    },
+    {
+      "question": "Écris le nombre décimal qui se trouve exactement entre 5,3 et 5,4. Réponds sans unité.",
+      "explication": "Pour trouver le nombre entre deux décimaux, on peut ajouter un zéro à chacun (5,30 et 5,40) puis prendre la moyenne des centièmes, ce qui donne 5,35.",
+      "notion": "encadrement de décimaux",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "5,35",
+        "5.35"
+      ],
+      "etiquette": "Rattrapage · Mathématiques",
+      "rattrapage": {
+        "date": "2026-09-06",
+        "id": 8
+      },
+      "id": 8
+    },
+    {
+      "question": "Dans la phrase « Marie et Paul jouent ensemble », quelle est la classe grammaticale du mot « et » ?",
+      "explication": "« Et » relie deux noms de même fonction : c'est une conjonction de coordination, comme « mais, ou, donc, or, ni, car ». Une préposition introduit plutôt un complément (à, de, pour, avec...).",
+      "notion": "conjonction de coordination",
+      "type": "qcm",
+      "options": [
+        "Une conjonction de coordination",
+        "Un adverbe",
+        "Un pronom",
+        "Une préposition"
+      ],
+      "reponse": 0,
+      "etiquette": "Rattrapage · Français",
+      "rattrapage": {
+        "date": "2026-09-07",
+        "id": 5
+      },
+      "id": 9
+    },
+    {
+      "question": "They have a car. ___ car is red. (Complète avec l'adjectif possessif qui correspond à 'they')",
+      "explication": "They correspond à l'adjectif possessif their, qui signifie 'leur/leurs'. Attention à ne pas écrire 'there', qui a un sens différent.",
+      "notion": "adjectif possessif their",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "their"
+      ],
+      "id": 10
+    }
+  ]
+}

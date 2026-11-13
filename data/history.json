@@ -1332,5 +1332,35 @@
       "soustraction avec entier",
       "problème monnaie"
     ]
+  },
+  {
+    "date": "2026-11-13",
+    "matiere": "anglais",
+    "niveau": "6eme",
+    "chapitre": "Pronoms personnels et adjectifs possessifs",
+    "notions": [
+      "pronom personnel sujet",
+      "pronom personnel pluriel",
+      "adjectif possessif my",
+      "adjectif possessif her",
+      "distinction his her",
+      "pronom it",
+      "adjectif possessif our",
+      "adjectif possessif their"
+    ],
+    "rattrapages": [
+      {
+        "date": "2026-09-06",
+        "id": 8
+      },
+      {
+        "date": "2026-09-07",
+        "id": 5
+      }
+    ],
+    "notions_renfort": [
+      "encadrement de décimaux",
+      "conjonction de coordination"
+    ]
   }
 ]
