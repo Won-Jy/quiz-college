@@ -1,0 +1,158 @@
+{
+  "date": "2026-11-14",
+  "matiere": "histoire",
+  "matiere_affichee": "Histoire-Géographie",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Les debuts du judaisme",
+  "vacances": null,
+  "genere_le": "2026-11-14T20:02:12+01:00",
+  "questions": [
+    {
+      "question": "Le judaïsme est une religion monothéiste. Que signifie ce mot ?",
+      "explication": "Mono veut dire « un seul » et théos veut dire « dieu » en grec. Le judaïsme est la première religion connue à affirmer qu'il n'existe qu'un seul Dieu.",
+      "notion": "sens monothéisme",
+      "type": "qcm",
+      "options": [
+        "Ne croire en aucun dieu",
+        "Croire en des héros",
+        "Croire en un seul dieu",
+        "Croire en plusieurs dieux"
+      ],
+      "reponse": 2,
+      "id": 1
+    },
+    {
+      "question": "Quel est le nom du texte sacré qui raconte l'histoire et les lois du peuple hébreu ?",
+      "explication": "La Torah est le texte fondateur du judaïsme, écrit par des scribes. Elle contient les récits des origines et les lois données par Dieu.",
+      "notion": "texte sacré",
+      "type": "qcm",
+      "options": [
+        "Les Évangiles",
+        "L'Iliade",
+        "La Torah",
+        "Le Coran"
+      ],
+      "reponse": 2,
+      "id": 2
+    },
+    {
+      "question": "Selon la Torah, quel patriarche est considéré comme l'ancêtre du peuple hébreu, à qui Dieu fait une promesse ?",
+      "explication": "Abraham est le premier patriarche : Dieu lui promet une terre et une descendance nombreuse en échange de sa fidélité.",
+      "notion": "personnage Abraham",
+      "type": "qcm",
+      "options": [
+        "Salomon",
+        "Abraham",
+        "Moïse",
+        "David"
+      ],
+      "reponse": 1,
+      "id": 3
+    },
+    {
+      "question": "Comment appelle-t-on l'engagement entre Dieu et le peuple hébreu, qui devient ainsi son « peuple élu » ?",
+      "explication": "L'Alliance est un pacte : Dieu choisit le peuple hébreu et lui promet sa protection, en échange du respect de ses lois.",
+      "notion": "Alliance divine",
+      "type": "qcm",
+      "options": [
+        "Le Sacrifice",
+        "L'Exode",
+        "L'Alliance",
+        "Le Jugement"
+      ],
+      "reponse": 2,
+      "id": 4
+    },
+    {
+      "question": "Quel personnage aurait reçu de Dieu les Dix Commandements sur le mont Sinaï ?",
+      "explication": "Moïse fait sortir les Hébreux d'Égypte (l'Exode) puis reçoit sur le mont Sinaï les tables de la loi contenant les Dix Commandements.",
+      "notion": "personnage Moïse",
+      "type": "qcm",
+      "options": [
+        "Salomon",
+        "Abraham",
+        "Moïse",
+        "David"
+      ],
+      "reponse": 2,
+      "id": 5
+    },
+    {
+      "question": "Quel roi hébreu aurait fait construire le premier Temple à Jérusalem ?",
+      "explication": "David fait de Jérusalem la capitale du royaume, mais c'est son fils Salomon qui fait bâtir le premier Temple pour y conserver l'Arche d'Alliance.",
+      "notion": "Temple de Jérusalem",
+      "type": "qcm",
+      "options": [
+        "Abraham",
+        "David",
+        "Moïse",
+        "Salomon"
+      ],
+      "reponse": 3,
+      "id": 6
+    },
+    {
+      "question": "En 587 avant J.-C., le royaume de Juda est vaincu et le Temple de Jérusalem est détruit par quel peuple ?",
+      "explication": "Le roi de Babylone Nabuchodonosor détruit le Temple en 587 avant J.-C. et déporte une partie du peuple hébreu à Babylone.",
+      "notion": "destruction du Temple",
+      "type": "qcm",
+      "options": [
+        "Les Égyptiens",
+        "Les Romains",
+        "Les Grecs",
+        "Les Babyloniens"
+      ],
+      "reponse": 3,
+      "id": 7
+    },
+    {
+      "question": "Dans la phrase « Le livre que je lis est passionnant », quelle est la classe grammaticale du mot « que » ?",
+      "explication": "« Que » remplace « le livre » (c'est le COD de « lis ») et introduit une proposition relative : c'est un pronom relatif. La conjonction de subordination « que », elle, n'a pas de fonction et ne remplace rien (exemple : je crois que tu viens).",
+      "notion": "pronom relatif",
+      "type": "qcm",
+      "options": [
+        "Une conjonction de subordination",
+        "Un adverbe",
+        "Un déterminant",
+        "Un pronom relatif"
+      ],
+      "reponse": 3,
+      "etiquette": "Rattrapage · Français",
+      "rattrapage": {
+        "date": "2026-09-07",
+        "id": 7
+      },
+      "id": 8
+    },
+    {
+      "question": "Indique la classe grammaticale du mot en majuscules : « Donne-LEUR ce livre. »",
+      "explication": "Ici, « leur » remplace des personnes déjà citées (à eux) et reste invariable : c'est un pronom personnel. Attention à ne pas le confondre avec le déterminant possessif « leurs » qui, lui, accompagne un nom et prend un s au pluriel.",
+      "notion": "pronom personnel leur",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "pronom",
+        "pronom personnel",
+        "un pronom",
+        "un pronom personnel"
+      ],
+      "etiquette": "Rattrapage · Français",
+      "rattrapage": {
+        "date": "2026-09-07",
+        "id": 8
+      },
+      "id": 9
+    },
+    {
+      "question": "Comment appelle-t-on la dispersion du peuple hébreu hors de sa terre d'origine ?",
+      "explication": "Après les destructions et les exils, de nombreux Hébreux se sont installés loin de leur terre d'origine : c'est ce qu'on appelle la diaspora.",
+      "notion": "diaspora hébraïque",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "diaspora",
+        "la diaspora"
+      ],
+      "id": 10
+    }
+  ]
+}

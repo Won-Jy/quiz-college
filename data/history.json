@@ -1362,5 +1362,35 @@
       "encadrement de décimaux",
       "conjonction de coordination"
     ]
+  },
+  {
+    "date": "2026-11-14",
+    "matiere": "histoire",
+    "niveau": "6eme",
+    "chapitre": "Les debuts du judaisme",
+    "notions": [
+      "sens monothéisme",
+      "texte sacré",
+      "personnage Abraham",
+      "Alliance divine",
+      "personnage Moïse",
+      "Temple de Jérusalem",
+      "destruction du Temple",
+      "diaspora hébraïque"
+    ],
+    "rattrapages": [
+      {
+        "date": "2026-09-07",
+        "id": 7
+      },
+      {
+        "date": "2026-09-07",
+        "id": 8
+      }
+    ],
+    "notions_renfort": [
+      "pronom relatif",
+      "pronom personnel leur"
+    ]
   }
 ]
