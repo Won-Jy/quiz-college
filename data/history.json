@@ -1422,5 +1422,35 @@
       "encadrement de décimaux",
       "conjonction de coordination"
     ]
+  },
+  {
+    "date": "2026-11-18",
+    "matiere": "maths",
+    "niveau": "6eme",
+    "chapitre": "Les angles : mesurer et construire",
+    "notions": [
+      "vocabulaire de l'angle",
+      "mesure angle droit",
+      "nature d'un angle",
+      "nature d'un angle",
+      "mesure angle plat",
+      "lecture du rapporteur",
+      "construction d'un angle",
+      "angles adjacents et angle plat"
+    ],
+    "rattrapages": [
+      {
+        "date": "2026-09-07",
+        "id": 7
+      },
+      {
+        "date": "2026-09-07",
+        "id": 8
+      }
+    ],
+    "notions_renfort": [
+      "pronom relatif",
+      "pronom personnel leur"
+    ]
   }
 ]

@@ -1,0 +1,158 @@
+{
+  "date": "2026-11-18",
+  "matiere": "maths",
+  "matiere_affichee": "Mathématiques",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Les angles : mesurer et construire",
+  "vacances": null,
+  "genere_le": "2026-11-18T22:48:59+01:00",
+  "questions": [
+    {
+      "question": "Comment appelle-t-on le point commun aux deux côtés d'un angle ?",
+      "explication": "Le sommet est le point où se rejoignent les deux côtés de l'angle. C'est à partir de ce point qu'on place le centre du rapporteur pour mesurer l'angle.",
+      "notion": "vocabulaire de l'angle",
+      "type": "qcm",
+      "options": [
+        "L'arête",
+        "Le sommet",
+        "Le milieu",
+        "Le centre"
+      ],
+      "reponse": 1,
+      "id": 1
+    },
+    {
+      "question": "Un angle droit mesure :",
+      "explication": "Un angle droit mesure exactement 90 degrés, c'est l'angle que forme par exemple l'équerre.",
+      "notion": "mesure angle droit",
+      "type": "qcm",
+      "options": [
+        "90°",
+        "180°",
+        "100°",
+        "45°"
+      ],
+      "reponse": 0,
+      "id": 2
+    },
+    {
+      "question": "Un angle qui mesure 120° est :",
+      "explication": "Un angle obtus mesure plus de 90° et moins de 180°. Attention, ce n'est pas parce qu'il est grand qu'il est forcément plat, 120° n'atteint pas 180°.",
+      "notion": "nature d'un angle",
+      "type": "qcm",
+      "options": [
+        "obtus",
+        "plat",
+        "droit",
+        "aigu"
+      ],
+      "reponse": 0,
+      "id": 3
+    },
+    {
+      "question": "Un angle qui mesure 35° est :",
+      "explication": "Un angle aigu mesure moins de 90°. Comme 35° est inférieur à 90°, cet angle est aigu.",
+      "notion": "nature d'un angle",
+      "type": "qcm",
+      "options": [
+        "obtus",
+        "droit",
+        "aigu",
+        "plat"
+      ],
+      "reponse": 2,
+      "id": 4
+    },
+    {
+      "question": "Un angle plat mesure :",
+      "explication": "Un angle plat mesure 180°, ses deux côtés forment une ligne droite. Ne confonds pas avec l'angle complet qui mesure 360°.",
+      "notion": "mesure angle plat",
+      "type": "qcm",
+      "options": [
+        "90°",
+        "100°",
+        "360°",
+        "180°"
+      ],
+      "reponse": 3,
+      "id": 5
+    },
+    {
+      "question": "Sur ton rapporteur, une même graduation indique 50° et 130°. Tu sais que l'angle à mesurer est obtus. Quelle mesure dois-tu choisir ?",
+      "explication": "Un rapporteur a deux graduations superposées, il faut choisir celle qui correspond au type d'angle observé. Comme l'angle est obtus, il mesure plus de 90°, donc c'est 130° qu'il faut lire.",
+      "notion": "lecture du rapporteur",
+      "type": "qcm",
+      "options": [
+        "50°",
+        "130°",
+        "180°",
+        "90°"
+      ],
+      "reponse": 1,
+      "id": 6
+    },
+    {
+      "question": "Pour construire un angle de 60° avec un rapporteur, que dois-tu faire en premier ?",
+      "explication": "Pour construire un angle précis, on trace d'abord un côté, puis on place le centre du rapporteur sur l'origine de cette demi-droite avant de marquer le point correspondant à la mesure voulue.",
+      "notion": "construction d'un angle",
+      "type": "qcm",
+      "options": [
+        "Tracer l'angle à l'œil puis vérifier ensuite avec le rapporteur",
+        "Mesurer un angle déjà tracé sur la feuille",
+        "Tracer un cercle de rayon 60°",
+        "Tracer une demi-droite puis placer le centre du rapporteur sur son origine"
+      ],
+      "reponse": 3,
+      "id": 7
+    },
+    {
+      "question": "Dans la phrase « Le livre que je lis est passionnant », quelle est la classe grammaticale du mot « que » ?",
+      "explication": "« Que » remplace « le livre » (c'est le COD de « lis ») et introduit une proposition relative : c'est un pronom relatif. La conjonction de subordination « que », elle, n'a pas de fonction et ne remplace rien (exemple : je crois que tu viens).",
+      "notion": "pronom relatif",
+      "type": "qcm",
+      "options": [
+        "Un pronom relatif",
+        "Un déterminant",
+        "Un adverbe",
+        "Une conjonction de subordination"
+      ],
+      "reponse": 0,
+      "etiquette": "Rattrapage · Français",
+      "rattrapage": {
+        "date": "2026-09-07",
+        "id": 7
+      },
+      "id": 8
+    },
+    {
+      "question": "Indique la classe grammaticale du mot en majuscules : « Donne-LEUR ce livre. »",
+      "explication": "Ici, « leur » remplace des personnes déjà citées (à eux) et reste invariable : c'est un pronom personnel. Attention à ne pas le confondre avec le déterminant possessif « leurs » qui, lui, accompagne un nom et prend un s au pluriel.",
+      "notion": "pronom personnel leur",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "pronom",
+        "pronom personnel",
+        "un pronom",
+        "un pronom personnel"
+      ],
+      "etiquette": "Rattrapage · Français",
+      "rattrapage": {
+        "date": "2026-09-07",
+        "id": 8
+      },
+      "id": 9
+    },
+    {
+      "question": "Deux angles adjacents forment à eux deux un angle plat. Le premier angle mesure 70°. Quelle est la mesure du second angle, en degrés ?",
+      "explication": "Un angle plat mesure 180°, donc le second angle mesure 180 moins 70, soit 110°. Il faut toujours vérifier que la somme des deux angles adjacents redonne bien 180°.",
+      "notion": "angles adjacents et angle plat",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "110",
+        "110°"
+      ],
+      "id": 10
+    }
+  ]
+}
