@@ -1,0 +1,158 @@
+{
+  "date": "2026-11-19",
+  "matiere": "francais",
+  "matiere_affichee": "Français",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Le present de l'indicatif",
+  "vacances": null,
+  "genere_le": "2026-11-19T23:05:31+01:00",
+  "questions": [
+    {
+      "question": "Quelle est la terminaison correcte du verbe « chanter » à la 2e personne du singulier du présent ?",
+      "explication": "Au présent, les verbes du 1er groupe prennent un -s à la 2e personne du singulier : tu chantes. Attention à ne pas oublier ce -s.",
+      "notion": "terminaison 1er groupe",
+      "type": "qcm",
+      "options": [
+        "Tu chantes",
+        "Tu chante",
+        "Tu chantent",
+        "Tu chants"
+      ],
+      "reponse": 0,
+      "id": 1
+    },
+    {
+      "question": "Complète : « Ils ... contents de partir en vacances. »",
+      "explication": "Le verbe être au présent fait « ils sont » à la 3e personne du pluriel. C'est une forme à connaître par cœur, elle est irrégulière.",
+      "notion": "verbe être présent",
+      "type": "qcm",
+      "options": [
+        "son",
+        "sont",
+        "sonts",
+        "soient"
+      ],
+      "reponse": 1,
+      "id": 2
+    },
+    {
+      "question": "Complète : « Nous ... un chat noir. »",
+      "explication": "Le verbe avoir au présent donne « nous avons » à la 1re personne du pluriel. Ne confonds pas avec « ils ont », qui est la 3e personne.",
+      "notion": "verbe avoir présent",
+      "type": "qcm",
+      "options": [
+        "avonts",
+        "ont",
+        "avons",
+        "avont"
+      ],
+      "reponse": 2,
+      "id": 3
+    },
+    {
+      "question": "Complète : « Elle ... ses devoirs avant le dîner. »",
+      "explication": "Les verbes du 2e groupe comme « finir » prennent -it à la 3e personne du singulier du présent : elle finit. « Finie » est un participe passé féminin, pas une forme du présent.",
+      "notion": "verbe 2e groupe présent",
+      "type": "qcm",
+      "options": [
+        "finie",
+        "finisse",
+        "finis",
+        "finit"
+      ],
+      "reponse": 3,
+      "id": 4
+    },
+    {
+      "question": "Complète : « Nous ... des pommes au marché. »",
+      "explication": "Les verbes en -ger gardent le e après le g devant -ons pour conserver le son « j » : nous mangeons. Sans ce e, on prononcerait « gons » comme dans « garçon ».",
+      "notion": "verbes en -ger présent",
+      "type": "qcm",
+      "options": [
+        "mangent",
+        "mangeons",
+        "mangeont",
+        "mangons"
+      ],
+      "reponse": 1,
+      "id": 5
+    },
+    {
+      "question": "Complète : « Ils ... à l'école tous les matins. »",
+      "explication": "Le verbe aller est très irrégulier au présent : il fait « ils vont ». Il ne faut jamais ajouter de -s à « vont », qui est déjà la forme correcte.",
+      "notion": "verbe aller présent",
+      "type": "qcm",
+      "options": [
+        "vont",
+        "vait",
+        "vonts",
+        "allent"
+      ],
+      "reponse": 0,
+      "id": 6
+    },
+    {
+      "question": "Dans la phrase « La Terre tourne autour du Soleil », quelle valeur a le présent de l'indicatif ?",
+      "explication": "Quand le présent exprime un fait scientifique ou toujours vrai, comme ici, on parle de présent de vérité générale. C'est différent de l'habitude, qui concerne des actions répétées par une personne.",
+      "notion": "valeur du présent",
+      "type": "qcm",
+      "options": [
+        "Une action en train de se dérouler",
+        "Une vérité générale",
+        "Un fait habituel",
+        "Un ordre donné"
+      ],
+      "reponse": 1,
+      "id": 7
+    },
+    {
+      "question": "Calcule : 5 - 2,3",
+      "explication": "Écris 5 comme 5,0 pour aligner les virgules : tu empruntes une unité pour faire 10 dixièmes - 3 dixièmes = 7, puis 4-2=2 unités, donc 2,7. Un nombre entier a toujours des dixièmes égaux à zéro.",
+      "notion": "soustraction avec entier",
+      "type": "qcm",
+      "options": [
+        "2,7",
+        "2,3",
+        "3,7",
+        "4,7"
+      ],
+      "reponse": 0,
+      "etiquette": "Rattrapage · Mathématiques",
+      "rattrapage": {
+        "date": "2026-09-09",
+        "id": 6
+      },
+      "id": 8
+    },
+    {
+      "question": "Un jouet coûte 12,50 euros. Tom paie avec un billet de 20 euros. Combien la caissière lui rend-elle ?",
+      "explication": "Il faut calculer 20 - 12,50 en écrivant 20 comme 20,00 pour aligner les virgules, ce qui donne 7,50 euros. Pense bien à emprunter sur les unités quand les dixièmes ou centièmes du haut sont plus petits.",
+      "notion": "problème monnaie",
+      "type": "qcm",
+      "options": [
+        "7,50 euros",
+        "8,50 euros",
+        "7,00 euros",
+        "12,50 euros"
+      ],
+      "reponse": 0,
+      "etiquette": "Rattrapage · Mathématiques",
+      "rattrapage": {
+        "date": "2026-09-09",
+        "id": 7
+      },
+      "id": 9
+    },
+    {
+      "question": "Conjugue le verbe « prendre » à la 3e personne du singulier du présent de l'indicatif : « Il ... son sac avant de partir. »",
+      "explication": "Le verbe prendre est irrégulier : au singulier, on écrit je prends, tu prends, il prend, sans -d supplémentaire ni -t. Fais attention à ne pas écrire « prent ».",
+      "notion": "verbe 3e groupe présent",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "prend"
+      ],
+      "id": 10
+    }
+  ]
+}

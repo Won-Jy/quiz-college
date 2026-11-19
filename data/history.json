@@ -1452,5 +1452,35 @@
       "pronom relatif",
       "pronom personnel leur"
     ]
+  },
+  {
+    "date": "2026-11-19",
+    "matiere": "francais",
+    "niveau": "6eme",
+    "chapitre": "Le present de l'indicatif",
+    "notions": [
+      "terminaison 1er groupe",
+      "verbe être présent",
+      "verbe avoir présent",
+      "verbe 2e groupe présent",
+      "verbes en -ger présent",
+      "verbe aller présent",
+      "valeur du présent",
+      "verbe 3e groupe présent"
+    ],
+    "rattrapages": [
+      {
+        "date": "2026-09-09",
+        "id": 6
+      },
+      {
+        "date": "2026-09-09",
+        "id": 7
+      }
+    ],
+    "notions_renfort": [
+      "soustraction avec entier",
+      "problème monnaie"
+    ]
   }
 ]
