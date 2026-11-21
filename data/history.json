@@ -1512,5 +1512,35 @@
       "encadrement de décimaux",
       "conjonction de coordination"
     ]
+  },
+  {
+    "date": "2026-11-21",
+    "matiere": "histoire",
+    "niveau": "6eme",
+    "chapitre": "Les debuts du christianisme",
+    "notions": [
+      "identité de Jésus",
+      "origine géographique",
+      "sources écrites",
+      "diffusion par les apôtres",
+      "cause des persécutions",
+      "édit de Milan",
+      "religion officielle",
+      "date édit de Milan"
+    ],
+    "rattrapages": [
+      {
+        "date": "2026-09-07",
+        "id": 7
+      },
+      {
+        "date": "2026-09-07",
+        "id": 8
+      }
+    ],
+    "notions_renfort": [
+      "pronom relatif",
+      "pronom personnel leur"
+    ]
   }
 ]

@@ -1,0 +1,157 @@
+{
+  "date": "2026-11-21",
+  "matiere": "histoire",
+  "matiere_affichee": "Histoire-Géographie",
+  "niveau": "6eme",
+  "niveau_affiche": "6ème",
+  "chapitre": "Les debuts du christianisme",
+  "vacances": null,
+  "genere_le": "2026-11-21T21:27:44+01:00",
+  "questions": [
+    {
+      "question": "Qui est Jésus de Nazareth ?",
+      "explication": "Jésus est un juif qui prêche en Palestine au Ier siècle, sous la domination romaine. Il n'est ni empereur ni dieu dans la religion dont il est à l'origine, mais un homme considéré comme le fils de Dieu par les chrétiens.",
+      "notion": "identité de Jésus",
+      "type": "qcm",
+      "options": [
+        "Un dieu grec",
+        "Un prédicateur juif",
+        "Un pharaon égyptien",
+        "Un empereur romain"
+      ],
+      "reponse": 1,
+      "id": 1
+    },
+    {
+      "question": "Dans quelle région Jésus vit-il et prêche-t-il ?",
+      "explication": "Jésus naît et prêche en Palestine, une province de l'Empire romain située au bord de la Méditerranée orientale. C'est de cette région que part la diffusion du christianisme.",
+      "notion": "origine géographique",
+      "type": "qcm",
+      "options": [
+        "En Grèce",
+        "En Palestine",
+        "En Égypte",
+        "En Gaule"
+      ],
+      "reponse": 1,
+      "id": 2
+    },
+    {
+      "question": "Comment appelle-t-on les textes qui racontent la vie et les paroles de Jésus ?",
+      "explication": "Les Évangiles font partie du Nouveau Testament et rapportent la vie, les actes et l'enseignement de Jésus. Ne confonds pas avec les épopées, qui racontent les exploits de héros comme dans l'Iliade.",
+      "notion": "sources écrites",
+      "type": "qcm",
+      "options": [
+        "Les Évangiles",
+        "Les psaumes",
+        "Les épopées",
+        "Les annales"
+      ],
+      "reponse": 0,
+      "id": 3
+    },
+    {
+      "question": "Qui sont Pierre et Paul dans l'histoire du christianisme ?",
+      "explication": "Pierre et Paul sont des apôtres, c'est-à-dire des disciples chargés de propager l'enseignement de Jésus après sa mort, notamment dans tout l'Empire romain.",
+      "notion": "diffusion par les apôtres",
+      "type": "qcm",
+      "options": [
+        "Des apôtres qui diffusent le message de Jésus",
+        "Des philosophes grecs",
+        "Des empereurs romains",
+        "Des dieux romains"
+      ],
+      "reponse": 0,
+      "id": 4
+    },
+    {
+      "question": "Pourquoi certains empereurs romains persécutent-ils les chrétiens ?",
+      "explication": "Les chrétiens sont monothéistes et refusent de sacrifier aux dieux romains ni à l'empereur, ce qui est perçu comme un acte de rébellion par les autorités romaines. C'est cette désobéissance religieuse, et non des raisons fiscales ou militaires, qui provoque les persécutions.",
+      "notion": "cause des persécutions",
+      "type": "qcm",
+      "options": [
+        "Parce qu'ils refusent de rendre un culte à l'empereur et aux dieux romains",
+        "Parce qu'ils ne payent pas l'impôt",
+        "Parce qu'ils combattent dans l'armée romaine",
+        "Parce qu'ils refusent de parler latin"
+      ],
+      "reponse": 0,
+      "id": 5
+    },
+    {
+      "question": "Quel empereur autorise la liberté de culte pour les chrétiens par l'édit de Milan ?",
+      "explication": "C'est l'empereur Constantin qui, par l'édit de Milan, accorde la liberté de culte aux chrétiens. Ne le confonds pas avec Théodose, qui ira plus loin en imposant le christianisme comme religion officielle.",
+      "notion": "édit de Milan",
+      "type": "qcm",
+      "options": [
+        "Néron",
+        "Théodose",
+        "Constantin",
+        "Auguste"
+      ],
+      "reponse": 2,
+      "id": 6
+    },
+    {
+      "question": "Quel empereur fait du christianisme la religion officielle de l'Empire romain ?",
+      "explication": "C'est Théodose qui impose le christianisme comme religion officielle de l'Empire, plusieurs décennies après que Constantin a simplement toléré cette religion. Il faut bien distinguer les deux étapes : tolérance puis religion d'État.",
+      "notion": "religion officielle",
+      "type": "qcm",
+      "options": [
+        "Constantin",
+        "Jules César",
+        "Néron",
+        "Théodose"
+      ],
+      "reponse": 3,
+      "id": 7
+    },
+    {
+      "question": "Dans la phrase « Le livre que je lis est passionnant », quelle est la classe grammaticale du mot « que » ?",
+      "explication": "« Que » remplace « le livre » (c'est le COD de « lis ») et introduit une proposition relative : c'est un pronom relatif. La conjonction de subordination « que », elle, n'a pas de fonction et ne remplace rien (exemple : je crois que tu viens).",
+      "notion": "pronom relatif",
+      "type": "qcm",
+      "options": [
+        "Un adverbe",
+        "Un pronom relatif",
+        "Un déterminant",
+        "Une conjonction de subordination"
+      ],
+      "reponse": 1,
+      "etiquette": "Rattrapage · Français",
+      "rattrapage": {
+        "date": "2026-09-07",
+        "id": 7
+      },
+      "id": 8
+    },
+    {
+      "question": "Indique la classe grammaticale du mot en majuscules : « Donne-LEUR ce livre. »",
+      "explication": "Ici, « leur » remplace des personnes déjà citées (à eux) et reste invariable : c'est un pronom personnel. Attention à ne pas le confondre avec le déterminant possessif « leurs » qui, lui, accompagne un nom et prend un s au pluriel.",
+      "notion": "pronom personnel leur",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "pronom",
+        "pronom personnel",
+        "un pronom",
+        "un pronom personnel"
+      ],
+      "etiquette": "Rattrapage · Français",
+      "rattrapage": {
+        "date": "2026-09-07",
+        "id": 8
+      },
+      "id": 9
+    },
+    {
+      "question": "En quelle année l'édit de Milan accorde-t-il la liberté de culte aux chrétiens ?",
+      "explication": "L'édit de Milan est signé en 313 par l'empereur Constantin, mettant fin aux persécutions contre les chrétiens dans l'Empire romain.",
+      "notion": "date édit de Milan",
+      "type": "saisie",
+      "reponses_acceptees": [
+        "313"
+      ],
+      "id": 10
+    }
+  ]
+}
